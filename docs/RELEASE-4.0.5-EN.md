@@ -8,8 +8,8 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 | Platform | File | Size | SHA-256 Checksum |
 | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | `PvZ-Fusion-4.0.5-English-PC.zip` | 441.73 MB | `5d23dd55ad71b090be0ad4907c14954b2af786ff41950322b0778ccf918238dc` |
-| **Android** | `PvZ-Fusion-4.0.5-English-Android.apk` | 571.08 MB | `e1e3d8a0d7ac99106bd9e3341bfeb543d985860b1b7368446c49a0ca1cba5e27` |
+| **PC (Windows)** | `PvZ-Fusion-4.0.5-English-PC.zip` | 441.68 MB | `d63b7aac1ddfd1e006dacf64cdb7e3b39c55b45e97004208b672a114e45cd6cf` |
+| **Android** | `PvZ-Fusion-4.0.5-English-Android.apk` | 571.08 MB | `f2098a55c71bf8987094f0f3b4aa157eb0d28b83db4f4d15c7fb59451ad5108a` |
 
 ---
 

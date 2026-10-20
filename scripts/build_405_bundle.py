@@ -44,6 +44,35 @@ ANDROID_RUNTIME_BACKING_EXACT = {
     "回到索引": "Back to Index",
 }
 
+CUSTOM_IZ_LEVEL_MAP = {
+    "101CustomIZ1：光茵荏苒": "101CustomIZ1: Lawn of Time",
+    "104CustomIZ1-3教程": "104CustomIZ1-3 Tutorial",
+    "110CustomIZ1-6教程": "110CustomIZ1-6 Tutorial",
+    "112CustomIZ1-7教程": "112CustomIZ1-7 Tutorial",
+    "201CustomIZ2：菇泛远影": "201CustomIZ2: Shroomshade",
+    "203CustomIZ2-2教程": "203CustomIZ2-2 Tutorial",
+    "210CustomIZ2-6教程": "210CustomIZ2-6 Tutorial",
+    "212CustomIZ2-7教程": "212CustomIZ2-7 Tutorial",
+    "214CustomIZ2-8教程": "214CustomIZ2-8 Tutorial",
+    "301CustomIZ3：推波助澜": "301CustomIZ3: Making Waves",
+    "303CustomIZ3-2教程": "303CustomIZ3-2 Tutorial",
+    "305CustomIZ3-3教程": "305CustomIZ3-3 Tutorial",
+    "311CustomIZ3-6教程": "311CustomIZ3-6 Tutorial",
+    "313CustomIZ3-7教程": "313CustomIZ3-7 Tutorial",
+    "401CustomIZ4：磁荧流转": "401CustomIZ4: Magnetic Flux",
+    "402CustomIZ4-1教程": "402CustomIZ4-1 Tutorial",
+    "404CustomIZ4-2教程": "404CustomIZ4-2 Tutorial",
+    "406CustomIZ4-3教程": "406CustomIZ4-3 Tutorial",
+    "412CustomIZ4-6教程": "412CustomIZ4-6 Tutorial",
+    "414CustomIZ4-7教程": "414CustomIZ4-7 Tutorial",
+    "418CustomIZ4-10教程": "418CustomIZ4-10 Tutorial",
+    "501CustomIZ5：殊途同归": "501CustomIZ5: Different Paths",
+    "503CustomIZ5-2教程": "503CustomIZ5-2 Tutorial",
+    "505CustomIZ5-3教程": "505CustomIZ5-3 Tutorial",
+    "601CustomIZ特别感谢": "601CustomIZSpecial Thanks",
+    "602CustomIZ3-10提示": "602CustomIZ3-10 Hint",
+}
+
 
 def read_tmp_text(raw: bytes) -> tuple[str, int] | None:
     if len(raw) < TEXT_OFFSET + 4:
@@ -370,6 +399,35 @@ def patch_text_assets(
                     data.m_Script = json.dumps(json.load(f), ensure_ascii=False, indent=2)
                 data.save()
                 stats["patched_assets"].append({"name": name, "help_topics_updated": 11})
+
+        elif name in CUSTOM_IZ_LEVEL_MAP:
+            new_name = CUSTOM_IZ_LEVEL_MAP[name]
+            data = obj.read()
+            data.m_Name = new_name
+            data.save()
+            stats["patched_assets"].append({"name": name, "renamed_to": new_name})
+
+    # Update ResourceManager container for renamed CustomIZ assets
+    for obj in env.objects:
+        if obj.type.name == "ResourceManager":
+            rm = obj.read()
+            existing_keys = {k for k, _ in rm.m_Container}
+            new_entries = []
+            for k, v in rm.m_Container:
+                for old_name, new_name in CUSTOM_IZ_LEVEL_MAP.items():
+                    old_suffix = old_name.lower()
+                    if k.lower().endswith(old_suffix):
+                        prefix = k[: -len(old_suffix)]
+                        new_k = prefix + new_name.lower()
+                        if new_k not in existing_keys:
+                            new_entries.append((new_k, v))
+                            existing_keys.add(new_k)
+            if new_entries:
+                rm.m_Container.extend(new_entries)
+                rm.save()
+                stats["resource_manager_entries_added"] = len(new_entries)
+                print(f"Added {len(new_entries)} ResourceManager entries for CustomIZ levels")
+            break
 
     return stats
 

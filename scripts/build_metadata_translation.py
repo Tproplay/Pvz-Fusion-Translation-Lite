@@ -896,6 +896,79 @@ ANDROID_381_INVEST_ENUM_FIELDS = {
     9730: ("藏一手", "Ace Up the Sleeve"),
 }
 
+LEVEL_EDITOR_ENUM_GROUPS = [
+    ("Bullet Property", [
+        ("寒冷秒数", "Chill Duration"),
+        ("红温", "Overheat"),
+        ("余烬", "Ember"),
+        ("中毒秒数", "Poison Duration"),
+        ("蒜值", "Garlic Value"),
+        ("水草值", "Kelp Value"),
+        ("冻结值", "Freeze Value"),
+        ("冻结秒数", "Freeze Duration"),
+        ("传送秒数", "Teleport Duration"),
+    ]),
+    ("Zombie Property", [
+        ("攻击力", "Attack Power"),
+        ("一类防具血量", "Armor 1 HP"),
+        ("二类防具血量", "Armor 2 HP"),
+        ("基础移速", "Base Move Speed"),
+        ("体型", "Size"),
+        ("本体血量", "Base HP"),
+        ("本体最大血量", "Base Max HP"),
+    ]),
+    ("Item Type", [
+        ("无", "None"),
+        ("铲子", "Shovel"),
+        ("手套", "Glove"),
+        ("锤子", "Hammer"),
+        ("小推车", "Lawn Mower"),
+        ("金咖啡豆", "Golden Coffee Bean"),
+        ("桶", "Bucket"),
+        ("加农炮目标", "Cannon Target"),
+        ("植物预览", "Plant Preview"),
+        ("僵尸预览", "Zombie Preview"),
+        ("其他", "Other"),
+    ]),
+    ("Math Operation", [
+        ("加", "Add"),
+        ("减", "Subtract"),
+        ("乘", "Multiply"),
+        ("除", "Divide"),
+        ("取余", "Modulo"),
+    ]),
+    ("Special Plant", [
+        ("寒冰菇", "Ice-shroom"),
+        ("火爆辣椒", "Jalapeno"),
+    ]),
+    ("Grid Obstacle", [
+        ("墓碑", "Grave"),
+        ("弹坑", "Crater"),
+        ("梯子", "Ladder"),
+        ("冰块", "Ice Block"),
+    ]),
+    ("Particle Property", [
+        ("大小倍率", "Size Multiplier"),
+        ("速度", "Speed"),
+        ("伤害", "Damage"),
+        ("方向角度", "Direction Angle"),
+    ]),
+    ("Buff Category", [
+        ("普通词条", "Common Modifier"),
+        ("究极词条", "Ultimate Modifier"),
+        ("僵尸词条", "Zombie Modifier"),
+    ]),
+    ("EventListValueType", [
+        ("整数", "Integer"),
+        ("小数", "Float"),
+        ("布尔", "Boolean"),
+        ("字符串", "String"),
+        ("植物类型", "Plant Type"),
+        ("僵尸类型", "Zombie Type"),
+        ("对象", "Object"),
+    ]),
+]
+
 # Reviewed Android 3.9 additions. The PC community project did not yet ship a
 # 3.9 string pack when this migration was made, so these exact mappings cover
 # only new player-facing text. Internal diagnostics, creator handles, font
@@ -2112,10 +2185,17 @@ def main() -> int:
         invest_input,
         "Android Investment display",
     )
+    editor_enum_fields = {}
+    for label, fields in LEVEL_EDITOR_ENUM_GROUPS:
+        try:
+            editor_enum_fields.update(resolve_contiguous_enum_fields(base, fields, label))
+        except Exception as e:
+            print(f"Notice: Could not resolve enum fields for {label}: {e}")
+
     definition_patched_base, display_enum_changes = translate_validated_enum_fields(
         base,
-        {**synergy_fields, **invest_fields},
-        "Android display",
+        {**synergy_fields, **invest_fields, **editor_enum_fields},
+        "display enum",
     )
     synergy_enum_changes = [
         change for change in display_enum_changes
@@ -2124,6 +2204,10 @@ def main() -> int:
     invest_enum_changes = [
         change for change in display_enum_changes
         if int(change["field_index"]) in invest_fields
+    ]
+    editor_enum_changes = [
+        change for change in display_enum_changes
+        if int(change["field_index"]) in editor_enum_fields
     ]
     output = build_metadata(definition_patched_base, layout, translated_bytes)
     output_layout, output_literals = parse_metadata(output)
