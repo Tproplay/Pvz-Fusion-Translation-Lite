@@ -1325,7 +1325,13 @@ def resolve_contiguous_enum_fields(
     """
     layout = parse_definition_layout(data)
     field_count = layout.field_size // 12
-    ordered = list(expected_fields.values())
+    if isinstance(expected_fields, dict):
+        if expected_fields and isinstance(next(iter(expected_fields.values())), tuple):
+            ordered = list(expected_fields.values())
+        else:
+            ordered = list(expected_fields.items())
+    else:
+        ordered = list(expected_fields)
     expected_names = [source for source, _translated in ordered]
     field_names = []
     for field_index in range(field_count):
@@ -1372,6 +1378,14 @@ def clean_modifier_source_title(source: str) -> str:
     return re.sub(r"<[^>]+>", "", title).strip()
 
 
+def find_dumps_dir(strings_dir: Path) -> Path:
+    for parent in strings_dir.parents:
+        candidate = parent / "Dumps"
+        if candidate.is_dir():
+            return candidate
+    return strings_dir.parents[2] / "Dumps"
+
+
 def load_modifier_sources(
     strings_dir: Path,
 ) -> tuple[set[str], dict[str, str], dict[str, str], dict[str, list[str]]]:
@@ -1380,7 +1394,8 @@ def load_modifier_sources(
     title_translations: dict[str, str] = {}
     exact_title_translations: dict[str, str] = {}
     ambiguous_title_translations: dict[str, set[str]] = {}
-    source_path = strings_dir.parents[2] / "Dumps" / "travel_buffs.json"
+    dumps_dir = find_dumps_dir(strings_dir)
+    source_path = dumps_dir / "travel_buffs.json"
     translated_path = strings_dir / "travel_buffs.json"
     if not source_path.exists():
         raise FileNotFoundError(f"missing travel modifier source dump: {source_path}")
@@ -1536,7 +1551,7 @@ def load_pc_translations(
                 added += 1
         counts[filename] = added
 
-    dumps_dir = strings_dir.parents[2] / "Dumps"
+    dumps_dir = find_dumps_dir(strings_dir)
     for filename in STRUCTURED_PAIR_FILES:
         source_path = dumps_dir / filename
         translated_path = strings_dir / filename
@@ -1713,10 +1728,12 @@ def csharp_format(template: str, values: Iterable[str]) -> str:
     open_token = "\0OPEN_BRACE\0"
     close_token = "\0CLOSE_BRACE\0"
     protected = template.replace("{{", open_token).replace("}}", close_token)
+    has_zero = bool(re.search(r"\{0\}", protected))
 
     def replace(match: re.Match[str]) -> str:
         index = int(match.group(1))
-        return values_list[index] if index < len(values_list) else match.group(0)
+        actual_index = index if has_zero else (index - 1)
+        return values_list[actual_index] if 0 <= actual_index < len(values_list) else match.group(0)
 
     protected = re.sub(r"\{(\d+)(?:,[^}:]+)?(?::[^}]+)?\}", replace, protected)
     return protected.replace(open_token, "{").replace(close_token, "}")
@@ -2077,14 +2094,22 @@ def main() -> int:
                 }
             )
 
+    enums_dir = args.strings_dir.parent / "Enums"
+    synergy_input = ANDROID_381_SYNERGY_ENUM_FIELDS
+    invest_input = ANDROID_381_INVEST_ENUM_FIELDS
+    if (enums_dir / "SynergyType.json").is_file():
+        synergy_input = read_json(enums_dir / "SynergyType.json")
+    if (enums_dir / "InvestBuff.json").is_file():
+        invest_input = read_json(enums_dir / "InvestBuff.json")
+
     synergy_fields = resolve_contiguous_enum_fields(
         base,
-        ANDROID_381_SYNERGY_ENUM_FIELDS,
+        synergy_input,
         "Android affinity display",
     )
     invest_fields = resolve_contiguous_enum_fields(
         base,
-        ANDROID_381_INVEST_ENUM_FIELDS,
+        invest_input,
         "Android Investment display",
     )
     definition_patched_base, display_enum_changes = translate_validated_enum_fields(
@@ -2224,8 +2249,13 @@ def main() -> int:
             "self-validation failed: a new SP Evolution recipe did not follow PC-or-Chinese policy"
         )
 
+    # Custom level editor enums and EventListValueType are translated via translate_validated_enum_fields above
+
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_bytes(output)
+    temp_meta = args.output.with_suffix(".tmp")
+    temp_meta.write_bytes(output)
+    if temp_meta.exists():
+        temp_meta.replace(args.output)
     report = {
         "format_version": 1,
         "base": {

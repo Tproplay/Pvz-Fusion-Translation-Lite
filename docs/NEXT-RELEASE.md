@@ -1,6 +1,6 @@
 # Android 3.8.1 English v3.8.1-en.2 update
 
-Current release: [Android 4.0 English prerelease 1](https://github.com/silvershadowkat/pvzf-android-translation/releases/tag/v4.0-release-1). This default-branch document is historical. For current source and future fixes, switch to `agent/translation-4.0-prerelease1` and read [the tagged upgrade handoff](https://github.com/silvershadowkat/pvzf-android-translation/blob/v4.0-release-1/docs/testing/ANDROID40-PRE1.md). It documents PC and context-aware AI translation rules, tested APK provenance, known omissions, music preservation, and the three-payload audit.
+> **Historical Note:** This document records legacy release notes (3.8.1/4.0). For current 4.0.5 documentation, build pipeline, and developer guides, see [RESEARCH-4.0.5.md](RESEARCH-4.0.5.md) and [CLAUDE.md](CLAUDE.md).
 
 
 This file records the grouped fixes prepared for the second public English

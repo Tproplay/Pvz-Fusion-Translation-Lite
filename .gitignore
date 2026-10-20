@@ -1,3 +1,4 @@
+# Ignore everything by default
 /*
 !/.gitignore
 !/README.md
@@ -8,13 +9,16 @@
 !/docs/
 !/docs/**
 !/scripts/
-!/scripts/*.py
+!/scripts/**
 !/assets/
-assets/*
-!/assets/credits-parchment-approved-3.8.1-testing.png
+!/assets/**
+!/translation-data/
+!/translation-data/**
 
-# Never commit proprietary game builds, extracted game data, signing keys,
-# generated metadata, or local Python environments.
+# Ignore generated dumps or large work files if needed
+translation-data/Dumps/untranslated_dump*.json
+
+# Ignore game builds, large binary artifacts, signing keys, and intermediate files
 *.apk
 *.aab
 *.dat
@@ -33,13 +37,14 @@ assets/*
 *.pem
 *.key
 .venv/
+build/
+temp/
 artifacts/
 decoded/
 extracted/
 generated/
 tools/
 vendor/
-translation-data/
 translator-source/
 il2cpp/
 analysis/
