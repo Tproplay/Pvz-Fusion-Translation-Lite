@@ -110,18 +110,6 @@ difficulty and modifier fixes are already embedded in the pending APK; this
 mixed old/new result points to a stale external metadata override, not a
 different translation inside the APK.
 
-## Community testing thanks
-
-Special thanks for rapid, thorough device testing and clear screenshots:
-
-- **モア, the Virtue of Cuteness** (`absolute201616`)
-- **S.O.R.O.B Pengantar Minuman 🤖** (`jazzuke1`)
-
-The full Discord display names and usernames are recorded here for precise
-attribution. The proposed in-game heading is `English 3.8.1 Android Testing:`
-with the shorter display forms `モア` and `S.O.R.O.B` so the parchment remains
-readable.
-
 ## Troubleshooting blindly renamed packages
 
 Do not change only the manifest package ID to install a second copy beside the
