@@ -67,6 +67,7 @@ Do **not** copy an old game installation's entire directory over a new installat
 ## Documentation & Reference Links
 
 - [Architecture & Developer Guide (Build Commands & Repo Structure)](docs/ARCHITECTURE.md)
+- [Android Release Signing Key & Verification](docs/signing/SIGNING-KEY.md)
 - [Release Notes Archive](docs/release-notes/)
 - [Release Template](docs/RELEASE_TEMPLATE.md)
 - [4.0.5 Technical Research & Binary Layout](docs/RESEARCH-4.0.5.md)

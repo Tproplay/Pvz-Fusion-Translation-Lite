@@ -59,6 +59,10 @@ All translation data is strictly separated from build scripts:
 │   │   ├── RELEASE-4.0.5-EN.md        # v4.0.5 dual release notes
 │   │   ├── RELEASE-3.9-EN.md          # v3.9 legacy release notes
 │   │   └── RELEASE-3.8.1-EN.md        # v3.8.1 legacy release notes
+│   ├── signing/                       # Public Android release signing materials
+│   │   ├── pvz-fusion-release.keystore# Public JKS keystore for in-place updates
+│   │   ├── certificate.pem            # Exported public X.509 certificate
+│   │   └── SIGNING-KEY.md             # Key documentation & verification guide
 │   ├── ARCHITECTURE.md                # This architecture and dev guide
 │   ├── RESEARCH-4.0.5.md              # In-depth 4.0.5 engine & binary research
 │   ├── CLAUDE.md                      # AI agent maintainer handoff guide

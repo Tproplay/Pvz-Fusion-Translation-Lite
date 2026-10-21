@@ -142,18 +142,28 @@ def build_all(
 
     signed_dir = android_output / "signed"
     signed_dir.mkdir(parents=True, exist_ok=True)
+
+    keystore_path = Path("docs/signing/pvz-fusion-release.keystore")
     cmd_sign = [
         "java", "-jar", str(signer_jar),
         "--apks", str(unsigned_apk),
         "--out", str(signed_dir),
     ]
+    if keystore_path.exists():
+        cmd_sign.extend([
+            "--ks", str(keystore_path),
+            "--ksAlias", "androiddebugkey",
+            "--ksPass", "android",
+            "--ksKeyPass", "android",
+        ])
+
     run_command(cmd_sign, "Signing Android APK (v1, v2, v3)")
 
     # E. Move and name final signed APK
     final_signed_name = "PvZ-Fusion-4.0.5-English-Android.apk"
     final_signed_path = android_output / final_signed_name
 
-    matched_apks = list(signed_dir.glob("*-aligned-debugSigned.apk"))
+    matched_apks = list(signed_dir.glob("*-aligned-*.apk"))
     if matched_apks:
         shutil.move(str(matched_apks[0]), str(final_signed_path))
         print(f"-> Signed APK ready: {final_signed_path}")

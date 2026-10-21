@@ -36,6 +36,10 @@ translation-data/Dumps/untranslated_dump*.json
 *.p12
 *.pem
 *.key
+
+# Explicitly track public release signing materials
+!docs/signing/
+!docs/signing/**
 .venv/
 build/
 temp/

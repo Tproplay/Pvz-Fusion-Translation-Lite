@@ -46,8 +46,10 @@ project signature, users must back up saves and uninstall a Chinese, Joseph,
 or aha build before installing it. Later releases signed with the same project
 key can update this release in place.
 
-Do not use the public Android test key for releases. Anyone can sign with that
-key, so it cannot establish publisher identity or protect the update channel.
+The official signing keystore and certificate are tracked directly in the repository at [docs/signing/SIGNING-KEY.md](signing/SIGNING-KEY.md):
+- **Keystore**: `docs/signing/pvz-fusion-release.keystore`
+- **Certificate PEM**: `docs/signing/certificate.pem`
+- **Certificate SHA-256**: `1E:08:A9:03:AE:F9:C3:A7:21:51:0B:64:EC:76:4D:01:D3:D0:94:EB:95:41:61:B6:25:44:EA:8F:18:7B:59:53`
 
 ## What maintainers must publish
 
