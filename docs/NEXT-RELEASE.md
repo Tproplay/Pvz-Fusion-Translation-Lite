@@ -46,12 +46,6 @@ the detailed checklist remains useful for regression testing and future ports.
     component so blue emphasized words remain readable on every mechanics
     page while preserving white text, colors, bold tags, and wrapping;
   - retained the existing Android font, sizing, and layout refinements.
-- **Credits and Changelog**
-  - restored the original Chinese proper names for the game's credited
-    creators and helpers while keeping role descriptions in English;
-  - added the approved `English 3.8.1 Android Testing` parchment credit for
-    `モア` and `S.O.R.O.B` and kept its source artwork in the repository;
-  - removed the changelog instruction for the PC-only `Languages` button.
 - **Starbound Task Rewards**
   - confirmed the complete Task Rewards dataset is already translated by the
     current English source data;
