@@ -188,7 +188,7 @@ def main() -> int:
     parser.add_argument("--repo", default="Pvz-Fusion-Translation-Lite", help="GitHub repo name")
     parser.add_argument("--tag", default="v4.0.5", help="Git tag name")
     parser.add_argument("--name", default="PvZ: Fusion v4.0.5 — English Release (PC & Android)", help="Release title")
-    parser.add_argument("--notes", type=Path, default=Path("docs/RELEASE-4.0.5-EN.md"), help="Path to release notes")
+    parser.add_argument("--notes", type=Path, default=Path("docs/release-notes/RELEASE-4.0.5-EN.md"), help="Path to release notes")
     parser.add_argument(
         "--pc-zip",
         type=Path,

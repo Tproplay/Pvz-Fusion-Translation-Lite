@@ -6,10 +6,15 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 ## Downloads
 
-| Platform | File | Size | SHA-256 Checksum |
-| :--- | :--- | :--- | :--- |
-| **PC (Windows)** | `PvZ-Fusion-4.0.5-English-PC.zip` | 441.68 MB | `d63b7aac1ddfd1e006dacf64cdb7e3b39c55b45e97004208b672a114e45cd6cf` |
-| **Android** | `PvZ-Fusion-4.0.5-English-Android.apk` | 571.08 MB | `f2098a55c71bf8987094f0f3b4aa157eb0d28b83db4f4d15c7fb59451ad5108a` |
+| Platform | File | Size | SHA-256 Checksum | Mirror (Google Drive) |
+| :--- | :--- | :--- | :--- | :--- |
+| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 441.68 MB | `d63b7aac1ddfd1e006dacf64cdb7e3b39c55b45e97004208b672a114e45cd6cf` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.08 MB | `f2098a55c71bf8987094f0f3b4aa157eb0d28b83db4f4d15c7fb59451ad5108a` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
+
+### 🌐 Alternative Download Mirror (Google Drive)
+If you experience slow download speeds or issues downloading from GitHub Releases, download directly from Google Drive:
+- 🖥️ **PC Version (Windows ZIP)**: [Google Drive Download](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing)
+- 📱 **Android Version (Signed APK)**: [Google Drive Download](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link)
 
 ---
 
