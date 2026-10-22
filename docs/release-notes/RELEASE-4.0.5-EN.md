@@ -4,12 +4,22 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 ---
 
+## 🚨 Hotfix 1 (Oct 22, 2026)
+- **Suburban Almanac Headers**: Fixed title text wrapping onto two lines in Plant, Zombie, and Index Almanac views by enforcing single-line formatting (`<nobr><size=70%>...</size></nobr>`).
+- **Difficulty Text Sizing**: Scaled "Purgatory Difficulty" to 85% and "Evolved Difficulty" to 90% for clean button fit.
+- **HP Display Buttons**: Scaled "Toggle Plant HP (Q)" to 80% and "Toggle Zombie HP (W/R)" to 70% to fit within stone tablet frames on PC.
+- **Odyssey One Sign**: Fixed "Odyssey" wrapping the letter "y" onto a separate line in the Grand Garden minecart station.
+- **Profile Creation**: Fully translated save creation ("Save [name] created successfully") and save management notifications.
+- **Android Compatibility**: Fixed startup crash and removed trailing blank lines from Starbound challenge strings.
+
+---
+
 ## Downloads
 
 | Platform | File | Size | SHA-256 Checksum | Mirror (Google Drive) |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 441.68 MB | `d63b7aac1ddfd1e006dacf64cdb7e3b39c55b45e97004208b672a114e45cd6cf` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.08 MB | `f2098a55c71bf8987094f0f3b4aa157eb0d28b83db4f4d15c7fb59451ad5108a` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
+| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.63 MB | `a6b7f16b6ac9f1340a9216b95f7bfb41e79599ef16c62148fcad2f91c1289066` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.11 MB | `69c7ebcec94ea6cfccb3fb4fe67804b4418fe2277fedcda5ed9449c51e7a635a` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
 
 ### 🌐 Alternative Download Mirror (Google Drive)
 If you experience slow download speeds or issues downloading from GitHub Releases, download directly from Google Drive:
