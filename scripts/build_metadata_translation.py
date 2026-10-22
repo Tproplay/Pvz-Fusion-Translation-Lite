@@ -30,6 +30,14 @@ MODIFIER_CATEGORY_PREFIXES = ("祝福-", "诅咒-", "质变-")
 SP_EVOLUTION_SOURCE_TITLE = "【SP进化】"
 SP_EVOLUTION_TRANSLATED_TITLE = "[SP Evolution]"
 
+# Rogue Shooting group names used by ShootingGroupBuff to construct ShootingBuffType enum names via Enum.Parse.
+# These literals MUST NEVER be translated, otherwise Enum.Parse fails at runtime.
+ROUGE_SHOOTING_GROUP_NAMES = frozenset({
+    "业火", "交易", "光棱", "全能", "天罚", "宝藏",
+    "战锤", "明月", "木桩", "烈阳", "硬化", "裂空",
+})
+
+
 def _load_json_data(rel_path: str):
     p = Path(__file__).resolve().parent.parent / "translation-data" / rel_path
     if p.is_file():
@@ -886,7 +894,12 @@ def main() -> int:
     for index, literal in enumerate(literals):
         if CJK_RE.search(literal.text):
             cjk_before += 1
-        translated_text, method = translate_literal(
+        if literal.text in ROUGE_SHOOTING_GROUP_NAMES:
+            translated_text = literal.text
+            method = "preserved_internal_identifier"
+            preserved_new_39_indexes.add(index)
+        else:
+            translated_text, method = translate_literal(
             literal.text,
             exact,
             pc_exact_sources,
@@ -1029,6 +1042,7 @@ def main() -> int:
         and item.text in pc_exact_sources
         and exact[item.text] != item.text
         and index not in preserved_new_39_indexes
+        and item.text not in ROUGE_SHOOTING_GROUP_NAMES
     ]
     if pc_exact_remnants:
         preview = json.dumps(pc_exact_remnants[:10], ensure_ascii=False)
