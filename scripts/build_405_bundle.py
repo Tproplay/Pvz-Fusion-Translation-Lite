@@ -564,7 +564,13 @@ def patch_ui_strings(
                 replacer = replace_tmp_text
             if text in exact_map:
                 val = exact_map[text]
-                if platform == "pc" or is_ui_text:
+                if "Credits" in val and "蓝飘飘fly" in val:
+                    clean_val = clean_size_tags(val)
+                    if platform == "pc":
+                        val = f"<size=80%>{clean_val}</size>"
+                    else:
+                        val = f"<size=16>{clean_val}</size>"
+                elif platform == "pc" or is_ui_text:
                     val = clean_size_tags(val)
                 new_raw = replacer(new_raw, val)
                 stats["exact_matches"] += 1
@@ -575,7 +581,13 @@ def patch_ui_strings(
                     if m:
                         try:
                             translated_text = render_regex_template(repl, m, exact_map)
-                            if platform == "pc" or is_ui_text:
+                            if "Credits" in translated_text and "蓝飘飘fly" in translated_text:
+                                clean_credits = clean_size_tags(translated_text)
+                                if platform == "pc":
+                                    translated_text = f"<size=80%>{clean_credits}</size>"
+                                else:
+                                    translated_text = f"<size=16>{clean_credits}</size>"
+                            elif platform == "pc" or is_ui_text:
                                 translated_text = clean_size_tags(translated_text)
                             new_raw = replacer(new_raw, translated_text)
                             stats["regex_matches"] += 1

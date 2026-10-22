@@ -1,7 +1,7 @@
 {
   "-------Main UI": "Main UI-------",
   "^(\\d+)轮": "{1} Rounds",
-  "^开发人员名单\\s+": "<size=12>Credits\nProgram, Director: 蓝飘飘fly\nAnimation: 蓝飘飘fly\nArtist, Visual Director: 机鱼吐司\nVideo Editor: 梦珞\nAnimation Helper: 射命丸文\nArt Helper: 蓝蝶</size>",
+  "^开发人员名单\\s+": "<size=16>Credits\nProgram, Director: 蓝飘飘fly\nAnimation: 蓝飘飘fly\nArtist, Visual Director: 矾鱼吐司\nVideo Editor: 梦珞\nAnimation Helper: 射命丸文\nArt Helper: 蓝蝶</size>",
   "第(\\d+)已完成": "Level {1} Completed",
   "^确定退出吗？\\s+": "Are you sure you want to exit?\nProgress will not be saved!\nExcept for Survival Mode.",
   "下一阶段：(\\d+)分(\\d+)秒\\s+当前水分：(\\d+)/100\\s+当前成长阶段：(\\d+)/2\\s+成长值：(\\d+)/100": "<size=40>Cooldown: {1}:{2}\nHydration: {3}/100\nStage: {4}/2\nFavorability: {5}/100",
