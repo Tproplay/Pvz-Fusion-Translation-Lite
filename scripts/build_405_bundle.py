@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Any
 
 import UnityPy
+from UnityPy.enums import TextureFormat
 from PIL import Image
 
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
@@ -422,26 +423,30 @@ def patch_text_assets(
             if modified and data is not None:
                 data.save()
 
-    # Update ResourceManager container for renamed CustomIZ assets
+    # Update ResourceManager container for renamed CustomIZ assets in-place (avoids duplicate asset yields)
     for obj in env.objects:
         if obj.type.name == "ResourceManager":
             rm = obj.read()
-            existing_keys = {k for k, _ in rm.m_Container}
-            new_entries = []
+            updated_container = []
+            replaced_count = 0
             for k, v in rm.m_Container:
+                replaced = False
                 for old_name, new_name in custom_iz_level_map.items():
                     old_suffix = old_name.lower()
                     if k.lower().endswith(old_suffix):
                         prefix = k[: -len(old_suffix)]
                         new_k = prefix + new_name.lower()
-                        if new_k not in existing_keys:
-                            new_entries.append((new_k, v))
-                            existing_keys.add(new_k)
-            if new_entries:
-                rm.m_Container.extend(new_entries)
+                        updated_container.append((new_k, v))
+                        replaced = True
+                        replaced_count += 1
+                        break
+                if not replaced:
+                    updated_container.append((k, v))
+            if replaced_count > 0:
+                rm.m_Container = updated_container
                 rm.save()
-                stats["resource_manager_entries_added"] = len(new_entries)
-                print(f"Added {len(new_entries)} ResourceManager entries for CustomIZ levels")
+                stats["resource_manager_entries_updated"] = replaced_count
+                print(f"Updated {replaced_count} ResourceManager entries for CustomIZ levels")
             break
 
     return stats
@@ -652,6 +657,13 @@ def patch_textures(
             try:
                 img = Image.open(file_path).convert("RGBA")
                 data = obj.read()
+                if name in (
+                    "SelectorScreen_WoodSign1",
+                    "SelectorScreen_WoodSign2",
+                    "SelectorScreen_WoodSign2_press",
+                    "thanks",
+                ):
+                    data.m_TextureFormat = TextureFormat.RGBA32
                 data.image = img
                 data.save()
                 stats["textures_replaced"].append(
