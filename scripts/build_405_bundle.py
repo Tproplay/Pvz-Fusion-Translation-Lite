@@ -104,9 +104,44 @@ def replace_ui_text(raw: bytes, value: str, valid_ids: set[int] | None = None) -
     return raw[:UI_TEXT_OFFSET] + field + raw[old_end:]
 
 
-def discover_ui_script_ids(env: UnityPy.Environment) -> tuple[set[int], set[int]]:
+def read_input_field_text(raw: bytes) -> tuple[int, str, int] | None:
+    marker = struct.pack("<I", 0x3F40C0C1)
+    idx = raw.find(marker)
+    if idx == -1:
+        return None
+    pos = idx + 4
+    if pos + 4 > len(raw):
+        return None
+    length = struct.unpack_from("<I", raw, pos)[0]
+    if length > 500:
+        return None
+    start = pos + 4
+    end = start + length
+    padded_end = end + ((-length) & 3)
+    if padded_end > len(raw):
+        return None
+    try:
+        val = raw[start:end].decode("utf-8")
+        return pos, val, padded_end
+    except UnicodeDecodeError:
+        return None
+
+
+def replace_input_field_text(raw: bytes, value: str) -> bytes:
+    parsed = read_input_field_text(raw)
+    if parsed is None:
+        return raw
+    pos, _old, padded_end = parsed
+    enc = value.encode("utf-8")
+    field = struct.pack("<I", len(enc)) + enc
+    field += b"\0" * ((-len(enc)) & 3)
+    return raw[:pos] + field + raw[padded_end:]
+
+
+def discover_ui_script_ids(env: UnityPy.Environment) -> tuple[set[int], set[int], set[int]]:
     tmp_ids = set()
     ui_text_ids = set()
+    input_field_ids = set()
     for obj in env.objects:
         if obj.type.name == "MonoScript":
             try:
@@ -117,13 +152,17 @@ def discover_ui_script_ids(env: UnityPy.Environment) -> tuple[set[int], set[int]
                     tmp_ids.add(obj.path_id)
                 elif cls == "Text" and ns == "UnityEngine.UI":
                     ui_text_ids.add(obj.path_id)
+                elif cls in ("TMP_InputField", "InputField"):
+                    input_field_ids.add(obj.path_id)
             except Exception:
                 pass
     if not tmp_ids:
         tmp_ids = {2359, 3797, 2372, 3818}
     if not ui_text_ids:
         ui_text_ids = {1568, 1574}
-    return tmp_ids, ui_text_ids
+    if not input_field_ids:
+        input_field_ids = {779}
+    return tmp_ids, ui_text_ids, input_field_ids
 
 
 def serialized_string(value: str) -> bytes:
@@ -528,8 +567,8 @@ def patch_ui_strings(
         except Exception:
             pass
 
-    tmp_script_ids, ui_text_script_ids = discover_ui_script_ids(env)
-    print(f"Discovered UI script IDs: TMP={tmp_script_ids}, UI.Text={ui_text_script_ids}")
+    tmp_script_ids, ui_text_script_ids, input_field_script_ids = discover_ui_script_ids(env)
+    print(f"Discovered UI script IDs: TMP={tmp_script_ids}, UI.Text={ui_text_script_ids}, InputField={input_field_script_ids}")
 
     for obj in env.objects:
         if obj.type.name != "MonoBehaviour":
@@ -545,9 +584,16 @@ def patch_ui_strings(
         if script_path_id in tmp_script_ids:
             parsed = read_tmp_text(raw)
             is_ui_text = False
+            is_input_field = False
         elif script_path_id in ui_text_script_ids:
             parsed = read_ui_text(raw, ui_text_script_ids)
             is_ui_text = True
+            is_input_field = False
+        elif script_path_id in input_field_script_ids:
+            if_parsed = read_input_field_text(raw)
+            parsed = (if_parsed[1], if_parsed[2]) if if_parsed is not None else None
+            is_ui_text = False
+            is_input_field = True
         else:
             continue
 
@@ -560,7 +606,9 @@ def patch_ui_strings(
 
         if CJK_RE.search(text):
             stats["total_cjk_seen"] += 1
-            if is_ui_text:
+            if is_input_field:
+                replacer = replace_input_field_text
+            elif is_ui_text:
                 replacer = lambda r, v: replace_ui_text(r, v, ui_text_script_ids)
             else:
                 replacer = replace_tmp_text
