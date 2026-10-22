@@ -380,8 +380,9 @@ def modifier_source_reason(
 def normalize_modifier_translation(
     translated: str,
     preferred_title: str | None = None,
+    source: str | None = None,
 ) -> tuple[str, bool]:
-    """Preserve the runtime delimiter while putting the body on its own line."""
+    """Preserve the runtime delimiter while matching source newline convention."""
     delimiter_index = translated.find("：")
     delimiter_length = 1
     if delimiter_index < 0:
@@ -414,7 +415,9 @@ def normalize_modifier_translation(
     title_markup = f"<nobr>{title}</nobr>"
     if shrink_title:
         title_markup = f"<size=80%>{title_markup}</size>"
-    return f"{title_markup}：\n{body}", shrink_title
+    had_newline = source is not None and ("：\n" in source or ":\n" in source)
+    delim = "：\n" if had_newline else "："
+    return f"{title_markup}{delim}{body}", shrink_title
 
 
 def load_pc_translations(
@@ -972,6 +975,7 @@ def main() -> int:
             translated_text, title_shrunk = normalize_modifier_translation(
                 translated_text,
                 preferred_title,
+                source=literal.text,
             )
             modifier_records.append(
                 {
@@ -1076,7 +1080,7 @@ def main() -> int:
                 malformed_modifier_outputs.append(record)
             continue
         translated = str(record["translation"])
-        parts = translated.split("：\n", 1)
+        parts = translated.split("：\n", 1) if "：\n" in translated else translated.split("：", 1)
         if len(parts) != 2:
             malformed_modifier_outputs.append(record)
             continue
