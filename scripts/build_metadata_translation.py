@@ -32,6 +32,13 @@ SP_EVOLUTION_TRANSLATED_TITLE = "[SP Evolution]"
 
 # Rogue Shooting group names used by ShootingGroupBuff to construct ShootingBuffType enum names via Enum.Parse.
 # These literals MUST NEVER be translated, otherwise Enum.Parse fails at runtime.
+# In-level display overrides: The Gods: Evolved level titles are displayed on 2 lines on menu cards,
+# but should be a single line in-game during the level.
+METADATA_IN_LEVEL_OVERRIDES = {
+    "诸神进化：炼狱": "The Gods: Evolved - Purgatory",
+    "诸神进化：射击": "The Gods: Evolved - Shoot 'Em Up",
+}
+
 ROUGE_SHOOTING_GROUP_NAMES = frozenset({
     "业火", "交易", "光棱", "全能", "天罚", "宝藏",
     "战锤", "明月", "木桩", "烈阳", "硬化", "裂空",
@@ -827,6 +834,7 @@ def main() -> int:
     base = args.base.read_bytes()
     layout, literals = parse_metadata(base)
     exact, pc_exact_sources, regex_entries, pc_counts, required_overrides = load_pc_translations(args.strings_dir)
+    exact.update(METADATA_IN_LEVEL_OVERRIDES)
     previous_base = None
     previous_literals: list[MetadataLiteral] = []
     previous_literal_texts: set[str] = set()
