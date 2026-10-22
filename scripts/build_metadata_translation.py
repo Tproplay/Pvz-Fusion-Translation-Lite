@@ -1005,18 +1005,9 @@ def main() -> int:
         invest_input,
         "Android Investment display",
     )
-    editor_enums_path = enums_dir / "LevelEditorEnums.json"
-    editor_enum_groups = read_json(editor_enums_path) if editor_enums_path.is_file() else []
-    editor_enum_fields = {}
-    for label, fields in editor_enum_groups:
-        try:
-            editor_enum_fields.update(resolve_contiguous_enum_fields(base, fields, label))
-        except Exception as e:
-            print(f"Notice: Could not resolve enum fields for {label}: {e}")
-
     definition_patched_base, display_enum_changes = translate_validated_enum_fields(
         base,
-        {**synergy_fields, **invest_fields, **editor_enum_fields},
+        {**synergy_fields, **invest_fields},
         "display enum",
     )
     synergy_enum_changes = [
@@ -1026,10 +1017,6 @@ def main() -> int:
     invest_enum_changes = [
         change for change in display_enum_changes
         if int(change["field_index"]) in invest_fields
-    ]
-    editor_enum_changes = [
-        change for change in display_enum_changes
-        if int(change["field_index"]) in editor_enum_fields
     ]
     output = build_metadata(definition_patched_base, layout, translated_bytes)
     output_layout, output_literals = parse_metadata(output)
