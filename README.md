@@ -15,6 +15,10 @@ This project provides automated tools to build, test, and package complete Engli
 
 *Full release notes and checksums available in [docs/release-notes/RELEASE-4.0.5-EN.md](docs/release-notes/RELEASE-4.0.5-EN.md).*
 
+> [!TIP]
+> **No Uninstall Required**: If you were previously using an English translation from this repository, you **do not need to uninstall the previous version**! All builds from this repository use our consistent release signing key, allowing you to install the updated APK directly over your existing installation without losing your save data or progression.
+> *(An uninstall is only required if you are migrating from the official Chinese APK or another translator's build with a different signature).*
+
 ---
 
 ## Architecture & Translation Policy
