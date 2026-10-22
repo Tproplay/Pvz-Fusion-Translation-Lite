@@ -24,6 +24,7 @@ from PIL import Image
 
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
 SIZE_TAG_RE = re.compile(r"</?size(?:=[^>]+)?>")
+NORMALIZE_PERCENT_SIZE_RE = re.compile(r"<size\s*=\s*(\d+%)>")
 TEXT_OFFSET = 88
 
 
@@ -139,7 +140,12 @@ def replace_runtime_backing_text(raw: bytes, backing_map: dict[str, str]) -> tup
     return None
 
 
-def clean_size_tags(text: str) -> str:
+def clean_size_tags(text: str, keep_percent: bool = False) -> str:
+    if keep_percent:
+        text = NORMALIZE_PERCENT_SIZE_RE.sub(r"<size=\1>", text)
+        if re.search(r"<size=\d+%", text):
+            return re.sub(r"<size=(?!\d+%)[^>]+>", "", text)
+        return SIZE_TAG_RE.sub("", text)
     return SIZE_TAG_RE.sub("", text)
 
 
@@ -566,8 +572,12 @@ def patch_ui_strings(
                         val = f"<size=80%>{clean_val}</size>"
                     else:
                         val = f"<size=16>{clean_val}</size>"
-                elif platform == "pc" or is_ui_text:
-                    val = clean_size_tags(val)
+                elif is_ui_text:
+                    val = clean_size_tags(val, keep_percent=False)
+                elif platform == "pc":
+                    val = clean_size_tags(val, keep_percent=True)
+                else:
+                    val = NORMALIZE_PERCENT_SIZE_RE.sub(r"<size=\1>", val)
                 new_raw = replacer(new_raw, val)
                 stats["exact_matches"] += 1
                 text_modified = True
@@ -583,8 +593,12 @@ def patch_ui_strings(
                                     translated_text = f"<size=80%>{clean_credits}</size>"
                                 else:
                                     translated_text = f"<size=16>{clean_credits}</size>"
-                            elif platform == "pc" or is_ui_text:
-                                translated_text = clean_size_tags(translated_text)
+                            elif is_ui_text:
+                                translated_text = clean_size_tags(translated_text, keep_percent=False)
+                            elif platform == "pc":
+                                translated_text = clean_size_tags(translated_text, keep_percent=True)
+                            else:
+                                translated_text = NORMALIZE_PERCENT_SIZE_RE.sub(r"<size=\1>", translated_text)
                             new_raw = replacer(new_raw, translated_text)
                             stats["regex_matches"] += 1
                             text_modified = True
