@@ -4,6 +4,15 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 ---
 
+## 🚨 Hotfix 2 (Oct 22, 2026)
+- **Rogue Shooting Crash Fix**: Resolved `ShootingGroupBuff` initialization crash caused by missing enum parsing for `Shooting_Wooden Post1` when opening buff selection menus.
+- **The Gods: Evolved Localization & Polish**:
+  - Fully translated reroll modifiers, difficulty multiplier descriptions, defeat reward calculation formulas, and classic clear reward text.
+  - Translated new plant banners ("New Plant Obtained").
+  - Fixed empty first line on modifier parchment cards by preserving newline layout.
+  - Refined level title layout: cleanly wraps on stage selection cards while displaying on a single line in gameplay level headers.
+- **Custom Level Editor**: Translated `TMP_InputField` placeholders in custom level settings ("Set Sun Amount" and "Plant Sun Drops").
+
 ## 🚨 Hotfix 1 (Oct 22, 2026)
 - **Suburban Almanac Headers**: Fixed title text wrapping onto two lines in Plant, Zombie, and Index Almanac views by enforcing single-line formatting (`<nobr><size=70%>...</size></nobr>`).
 - **Difficulty Text Sizing**: Scaled "Purgatory Difficulty" to 85% and "Evolved Difficulty" to 90% for clean button fit.
@@ -18,8 +27,8 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 | Platform | File | Size | SHA-256 Checksum | Mirror (Google Drive) |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.63 MB | `a6b7f16b6ac9f1340a9216b95f7bfb41e79599ef16c62148fcad2f91c1289066` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.11 MB | `69c7ebcec94ea6cfccb3fb4fe67804b4418fe2277fedcda5ed9449c51e7a635a` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
+| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.64 MB | `d6d90a52f5a366bd14b3f03167df414870ba14c070ac86a05ff0e89018074c82` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.11 MB | `07bf0e7c2dd4283b0338de650340804dafbcf57c20af8b3ba013d10710137605` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
 
 ### 🌐 Alternative Download Mirror (Google Drive)
 If you experience slow download speeds or issues downloading from GitHub Releases, download directly from Google Drive:
