@@ -25,53 +25,7 @@ CJK_RE = re.compile(r"[\u3400-\u9fff]")
 SIZE_TAG_RE = re.compile(r"</?size(?:=[^>]+)?>")
 TEXT_OFFSET = 88
 
-TYPE_MAP = {
-    "玩法": "Gameplay",
-    "基本机制": "Basic Mechanics",
-    "植物特性": "Plant Traits",
-    "植物体系": "Plant Systems",
-    "植物机制": "Plant Systems",
-    "僵尸机制": "Zombie Mechanics",
-    "环境机制": "Environmental Mechanics",
-    "关卡机制": "Level Mechanics",
-    "杂项": "Miscellaneous",
-}
 
-ANDROID_RUNTIME_BACKING_EXACT = {
-    "返回菜单": "Back to Menu",
-    "上一页": "Previous Page",
-    "下一页": "Next Page",
-    "回到索引": "Back to Index",
-}
-
-CUSTOM_IZ_LEVEL_MAP = {
-    "101CustomIZ1：光茵荏苒": "101CustomIZ1: Lawn of Time",
-    "104CustomIZ1-3教程": "104CustomIZ1-3 Tutorial",
-    "110CustomIZ1-6教程": "110CustomIZ1-6 Tutorial",
-    "112CustomIZ1-7教程": "112CustomIZ1-7 Tutorial",
-    "201CustomIZ2：菇泛远影": "201CustomIZ2: Shroomshade",
-    "203CustomIZ2-2教程": "203CustomIZ2-2 Tutorial",
-    "210CustomIZ2-6教程": "210CustomIZ2-6 Tutorial",
-    "212CustomIZ2-7教程": "212CustomIZ2-7 Tutorial",
-    "214CustomIZ2-8教程": "214CustomIZ2-8 Tutorial",
-    "301CustomIZ3：推波助澜": "301CustomIZ3: Making Waves",
-    "303CustomIZ3-2教程": "303CustomIZ3-2 Tutorial",
-    "305CustomIZ3-3教程": "305CustomIZ3-3 Tutorial",
-    "311CustomIZ3-6教程": "311CustomIZ3-6 Tutorial",
-    "313CustomIZ3-7教程": "313CustomIZ3-7 Tutorial",
-    "401CustomIZ4：磁荧流转": "401CustomIZ4: Magnetic Flux",
-    "402CustomIZ4-1教程": "402CustomIZ4-1 Tutorial",
-    "404CustomIZ4-2教程": "404CustomIZ4-2 Tutorial",
-    "406CustomIZ4-3教程": "406CustomIZ4-3 Tutorial",
-    "412CustomIZ4-6教程": "412CustomIZ4-6 Tutorial",
-    "414CustomIZ4-7教程": "414CustomIZ4-7 Tutorial",
-    "418CustomIZ4-10教程": "418CustomIZ4-10 Tutorial",
-    "501CustomIZ5：殊途同归": "501CustomIZ5: Different Paths",
-    "503CustomIZ5-2教程": "503CustomIZ5-2 Tutorial",
-    "505CustomIZ5-3教程": "505CustomIZ5-3 Tutorial",
-    "601CustomIZ特别感谢": "601CustomIZSpecial Thanks",
-    "602CustomIZ3-10提示": "602CustomIZ3-10 Hint",
-}
 
 
 def read_tmp_text(raw: bytes) -> tuple[str, int] | None:
@@ -176,8 +130,8 @@ def serialized_string(value: str) -> bytes:
     return field + b"\0" * ((-len(field)) & 3)
 
 
-def replace_runtime_backing_text(raw: bytes) -> tuple[bytes, str, str] | None:
-    for source, target in ANDROID_RUNTIME_BACKING_EXACT.items():
+def replace_runtime_backing_text(raw: bytes, backing_map: dict[str, str]) -> tuple[bytes, str, str] | None:
+    for source, target in backing_map.items():
         source_field = serialized_string(source)
         if raw.endswith(source_field):
             return raw[: -len(source_field)] + serialized_string(target), source, target
@@ -246,6 +200,26 @@ def patch_text_assets(
         except Exception:
             pass
 
+    almanac_type_map = {}
+    if (strings_dir / "almanac_type_map.json").is_file():
+        with (strings_dir / "almanac_type_map.json").open("r", encoding="utf-8") as f:
+            almanac_type_map = json.load(f)
+
+    custom_iz_level_map = {}
+    if (strings_dir / "custom_iz_level_map.json").is_file():
+        with (strings_dir / "custom_iz_level_map.json").open("r", encoding="utf-8") as f:
+            custom_iz_level_map = json.load(f)
+
+    tips_iz = {}
+    if (strings_dir / "tips_iz.json").is_file():
+        with (strings_dir / "tips_iz.json").open("r", encoding="utf-8") as f:
+            tips_iz = json.load(f)
+
+    tips_fs = {}
+    if (strings_dir / "tips_fs.json").is_file():
+        with (strings_dir / "tips_fs.json").open("r", encoding="utf-8") as f:
+            tips_fs = json.load(f)
+
     trans_plants_by_id = {p["seedType"]: p for p in lawn_trans["plants"]}
     trans_zombies_by_id = {z["theZombieType"]: z for z in zombie_trans["zombies"]}
 
@@ -299,7 +273,7 @@ def patch_text_assets(
                     if isinstance(text_val, str):
                         text_val = clean_size_tags(text_val)
                     d["text"] = text_val
-                d["type"] = TYPE_MAP.get(d.get("type"), d.get("type"))
+                d["type"] = almanac_type_map.get(d.get("type"), d.get("type"))
                 if orig_title in exact_strings:
                     d["title"] = exact_strings[orig_title]
                 updated += 1
@@ -400,12 +374,53 @@ def patch_text_assets(
                 data.save()
                 stats["patched_assets"].append({"name": name, "help_topics_updated": 11})
 
-        elif name in CUSTOM_IZ_LEVEL_MAP:
-            new_name = CUSTOM_IZ_LEVEL_MAP[name]
-            data = obj.read()
-            data.m_Name = new_name
-            data.save()
-            stats["patched_assets"].append({"name": name, "renamed_to": new_name})
+        else:
+            orig_name = name
+            is_renamed = False
+            new_name = custom_iz_level_map.get(orig_name, orig_name)
+            if new_name != orig_name:
+                is_renamed = True
+
+            tip_trans = (
+                tips_iz.get(orig_name)
+                or tips_iz.get(new_name)
+                or tips_fs.get(orig_name)
+                or tips_fs.get(new_name)
+            )
+
+            data = None
+            modified = False
+            if is_renamed:
+                data = obj.read()
+                data.m_Name = new_name
+                modified = True
+                stats["patched_assets"].append({"name": orig_name, "renamed_to": new_name})
+
+            try:
+                if data is None:
+                    data = obj.read()
+                tree = json.loads(data.m_Script)
+                if isinstance(tree, dict) and "tips" in tree and tree["tips"]:
+                    tip_val = tree["tips"]
+                    if not tip_trans and isinstance(tip_val, str) and CJK_RE.search(tip_val):
+                        for regex, repl in compiled_regexs:
+                            m = regex.search(tip_val)
+                            if m:
+                                try:
+                                    tip_trans = render_regex_template(repl, m, exact_strings)
+                                    break
+                                except Exception:
+                                    pass
+                    if tip_trans and tip_trans != tip_val:
+                        tree["tips"] = tip_trans
+                        data.m_Script = json.dumps(tree, ensure_ascii=False)
+                        modified = True
+                        stats["tips_updated"] = stats.get("tips_updated", 0) + 1
+            except Exception:
+                pass
+
+            if modified and data is not None:
+                data.save()
 
     # Update ResourceManager container for renamed CustomIZ assets
     for obj in env.objects:
@@ -414,7 +429,7 @@ def patch_text_assets(
             existing_keys = {k for k, _ in rm.m_Container}
             new_entries = []
             for k, v in rm.m_Container:
-                for old_name, new_name in CUSTOM_IZ_LEVEL_MAP.items():
+                for old_name, new_name in custom_iz_level_map.items():
                     old_suffix = old_name.lower()
                     if k.lower().endswith(old_suffix):
                         prefix = k[: -len(old_suffix)]
@@ -479,7 +494,10 @@ def patch_ui_strings(
                 if cn and en and cn not in exact_map:
                     exact_map[cn] = en
 
-    for fname in ["customlevel_strings.json", "abyss_buffs.json", "travel_buffs.json", "tips_fs.json", "tips_iz.json"]:
+    backing_file = strings_dir / "runtime_backing_strings.json"
+    runtime_backing = json.load(backing_file.open("r", encoding="utf-8")) if backing_file.is_file() else {}
+
+    for fname in ["customlevel_strings.json", "abyss_buffs.json", "travel_buffs.json"]:
         extra_path = strings_dir / fname
         if extra_path.is_file():
             try:
@@ -561,7 +579,7 @@ def patch_ui_strings(
                         except Exception:
                             pass
 
-        backing_res = replace_runtime_backing_text(new_raw)
+        backing_res = replace_runtime_backing_text(new_raw, runtime_backing)
         if backing_res is not None:
             new_raw, _s, _t = backing_res
             stats["backing_fields"] += 1
@@ -571,8 +589,7 @@ def patch_ui_strings(
             obj.set_raw_data(new_raw)
 
     game_object_name_map = {
-        "铅笔": "Pencil",
-        "橡皮": "Eraser",
+        name: exact_map[name] for name in ("铅笔", "橡皮") if name in exact_map
     }
     for obj in env.objects:
         if obj.type.name == "GameObject":
