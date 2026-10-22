@@ -27,11 +27,11 @@ If you experience slow download speeds or issues downloading from GitHub Release
 3. Run `PlantsVsZombiesRH.exe` to play.
    *(No extra patching or mod managers required; all translation assets are already compiled and integrated).*
 
+### Android
 > [!TIP]
 > **No Uninstall Required**: If you were previously using an English translation from this repository, you **do not need to uninstall the previous version**! Because all builds from this repository use our consistent release signing key, you can install the updated APK directly over your existing installation and your saves and progress will be preserved automatically.
 > *(An uninstall is only needed if you are migrating from the official Chinese version or another build with a different signature).*
 
-### Android
 1. **Back up your save data** before installing (see [Safe Save Migration](#-moving-save-files-safely) below).
 2. If you previously installed a manual translation or left an `il2cpp` / `global-metadata.dat` override inside:
    ```text
