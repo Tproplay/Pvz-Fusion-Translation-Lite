@@ -347,7 +347,7 @@ def patch_text_assets(
             tree = json.loads(data.m_Script)
             updated_entries = 0
             for e in tree.get("entries", []):
-                for field in ("title", "description", "condition"):
+                for field in ("title", "description", "condition", "group"):
                     val = e.get(field)
                     if not val:
                         continue
