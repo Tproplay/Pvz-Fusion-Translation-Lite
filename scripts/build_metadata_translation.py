@@ -1017,22 +1017,27 @@ def main() -> int:
             )
 
     enums_dir = args.strings_dir.parent / "Enums"
-    synergy_input = read_json(enums_dir / "SynergyType.json") if (enums_dir / "SynergyType.json").is_file() else {}
-    invest_input = read_json(enums_dir / "InvestBuff.json") if (enums_dir / "InvestBuff.json").is_file() else {}
+    all_enum_fields = {}
+    synergy_fields = {}
+    invest_fields = {}
+    if enums_dir.is_dir():
+        for enum_file in sorted(enums_dir.glob("*.json")):
+            enum_data = read_json(enum_file)
+            if enum_data:
+                fields = resolve_contiguous_enum_fields(
+                    base,
+                    enum_data,
+                    enum_file.stem,
+                )
+                all_enum_fields.update(fields)
+                if enum_file.stem == "SynergyType":
+                    synergy_fields = fields
+                elif enum_file.stem == "InvestBuff":
+                    invest_fields = fields
 
-    synergy_fields = resolve_contiguous_enum_fields(
-        base,
-        synergy_input,
-        "Android affinity display",
-    )
-    invest_fields = resolve_contiguous_enum_fields(
-        base,
-        invest_input,
-        "Android Investment display",
-    )
     definition_patched_base, display_enum_changes = translate_validated_enum_fields(
         base,
-        {**synergy_fields, **invest_fields},
+        all_enum_fields,
         "display enum",
     )
     synergy_enum_changes = [

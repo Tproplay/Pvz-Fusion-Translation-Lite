@@ -1,0 +1,9 @@
+{
+  "整数": "Integer",
+  "小数": "Float",
+  "布尔": "Boolean",
+  "字符串": "String",
+  "植物类型": "Plant Type",
+  "僵尸类型": "Zombie Type",
+  "对象": "Object"
+}
