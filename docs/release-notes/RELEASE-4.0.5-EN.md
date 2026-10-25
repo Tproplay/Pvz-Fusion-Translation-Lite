@@ -4,6 +4,13 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 ---
 
+## 🚨 Hotfix 3 (Oct 25, 2026)
+- **BepInEx Mod Compatibility Fix**: Added automatic Harmony patcher support (`patch_bepinex_harmony.py`) that gracefully resolves legacy `CreatePlant.MixBombCheck` hook failures, allowing all 217+ (and 360+) community BepInEx plant mods (including *BigSuperGatling*, *BloodMoonPhantomCabbage*, *PVZCustomization*, etc.) to load cleanly without crashing plugin initialization.
+- **The Gods: Evolved Localization**: Translated 250+ additional modifiers, timed abilities, lane battle perks, and faction traits.
+- **The Gods: Almanac Tactics**: Localized tactic type classifications and filters in Suburban Almanac.
+- **Starbound Upgrades Tips**: Fully translated the entire tip section and challenges in Starbound upgrades.
+- **TD Level Upgrades & Broken Upgrades**: Localized plant upgrade TD levels, broken upgrade descriptions, and tactic modifiers.
+
 ## 🚨 Hotfix 2 (Oct 22, 2026)
 - **Rogue Shooting Crash Fix**: Resolved `ShootingGroupBuff` initialization crash caused by missing enum parsing for `Shooting_Wooden Post1` when opening buff selection menus.
 - **The Gods: Evolved Localization & Polish**:
@@ -27,8 +34,8 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 | Platform | File | Size | SHA-256 Checksum | Mirror (Google Drive) |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.64 MB | `d6d90a52f5a366bd14b3f03167df414870ba14c070ac86a05ff0e89018074c82` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.11 MB | `07bf0e7c2dd4283b0338de650340804dafbcf57c20af8b3ba013d10710137605` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
+| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.63 MB | `acad6c2060ed2e32182b0ed8526093b81f1274fc582ee084ad7d36e67ce14268` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.12 MB | `ca4cf66de4aed28e998f1b5f8063595b47c164b94ba140e91efc563dae4e1016` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
 
 ### 🌐 Alternative Download Mirror (Google Drive)
 If you experience slow download speeds or issues downloading from GitHub Releases, download directly from Google Drive:
@@ -44,6 +51,7 @@ If you experience slow download speeds or issues downloading from GitHub Release
 2. Extract the archive into a folder of your choice.
 3. Run `PlantsVsZombiesRH.exe` to play.
    *(No extra patching or installation required; all translation assets are already compiled and integrated).*
+   *(Optional: If you use BepInEx modpacks with legacy plant mods, run `python patch_bepinex_harmony.py` in your modded game folder to ensure all legacy mods load without errors).*
 
 ### Android
 > [!TIP]
