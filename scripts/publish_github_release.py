@@ -103,6 +103,7 @@ def publish_release(
     notes_file: Path | None = None,
     pc_zip: Path | None = None,
     android_apk: Path | None = None,
+    harmony_fix_zip: Path | None = None,
 ) -> int:
     token = get_github_token()
 
@@ -161,6 +162,8 @@ def publish_release(
         assets_to_upload.append((pc_zip, pc_zip.name))
     if android_apk and android_apk.exists():
         assets_to_upload.append((android_apk, android_apk.name))
+    if harmony_fix_zip and harmony_fix_zip.exists():
+        assets_to_upload.append((harmony_fix_zip, harmony_fix_zip.name))
 
     for path, asset_name in assets_to_upload:
         if asset_name in existing_assets:
@@ -201,6 +204,12 @@ def main() -> int:
         default=Path("build/android-405/PvZ-Fusion-4.0.5-English-Android.apk"),
         help="Path to Android APK asset",
     )
+    parser.add_argument(
+        "--harmony-fix-zip",
+        type=Path,
+        default=Path("build/BepInEx-Harmony-Fix-v4.0.5.zip"),
+        help="Path to BepInEx Harmony Fix zip asset",
+    )
 
     args = parser.parse_args()
     try:
@@ -212,6 +221,7 @@ def main() -> int:
             notes_file=args.notes,
             pc_zip=args.pc_zip,
             android_apk=args.android_apk,
+            harmony_fix_zip=args.harmony_fix_zip,
         )
     except Exception as exc:
         print(f"Failed to publish release: {exc}", file=sys.stderr)
