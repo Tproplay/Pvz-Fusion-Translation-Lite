@@ -1,8 +1,15 @@
-# Plants vs. Zombies: Fusion v4.0.5 — English Release (PC & Android)
+# Plants vs. Zombies: Fusion v4.0.5 — English Release (Hotfix 4 - PC & Android)
 
 A complete, unified English translation release of **Plants vs. Zombies: Fusion (植物大战僵尸: 融合版) v4.0.5** for both Windows PC and Android.
 
 ---
+
+## 🚨 Hotfix 4 (Oct 27, 2026)
+- **Level Creator Node Enums & Dropdowns**: Fully localized missing node dropdown enums (`EventTravelEntryKind` for Common / Ultimate / Zombie Modifiers, `EventWorldEffect` for Ice-shroom / Jalapeno, and `EventZombieStatus` for status effects).
+- **Odyssey & Challenge Title Fixes**: Fixed `旅行冒险` (`Odyssey Adventure: `) and `旅行：` (`Odyssey: `) prefixes concatenating with plant names, and broadened regex matching for multi-word names.
+- **The Gods Upgrade Paths Banner**: Formatted `"The Gods Upgrade Paths"` with single-line `<nobr>` tags to eliminate multi-line awkward text wrapping.
+- **UI & Card Size Refinements**: Adjusted seed card action buttons (`Draw Modifier`, `Upgrade Mecha`, `Buy Move`) from oversized `<size=30>` down to `<size=17>` to prevent button border overflow. Cleaned up HP toggle hotkeys and in-level stage headers.
+- **Level Name Polish**: Renamed "All your brainz r belong to us" to "Your brainz belong to us".
 
 ## 🚨 Hotfix 3 (Oct 25, 2026)
 - **BepInEx Mod Compatibility Fix**: Added automatic Harmony patcher support (`patch_bepinex_harmony.py`) that gracefully resolves legacy `CreatePlant.MixBombCheck` hook failures, allowing all 217+ (and 360+) community BepInEx plant mods (including *BigSuperGatling*, *BloodMoonPhantomCabbage*, *PVZCustomization*, etc.) to load cleanly without crashing plugin initialization.
@@ -34,8 +41,8 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 
 | Platform | File | Size | SHA-256 Checksum | Mirror (Google Drive) |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.82 MB | `c23c9f4cb7cdf197c58b1a02195a6e1a7633f7970afbcd4657af2aaddcd87dc2` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 570.98 MB | `8e057aa6d74008752377c3335ac0112a0b79963e5eb67d84b8c8e7a5d124fa13` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
+| **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.82 MB | `d5b5d331b37a4008b3ccbed75cca95354a2db1ff22af5357576ad4b9a2ec334b` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 570.98 MB | `3aa1ad35ba33a3ad687c2ae6d25e85bd068df762da47e09adae1fef83da0d312` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
 | **BepInEx Mod Compatibility Fix** | [`BepInEx-Harmony-Fix-v4.0.5.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 109.59 KB | `3339c39a69bf8f13df000770e76777cbf0583ea80240917d0dbd66af95b394b9` | [Harmony Fix Drive Mirror](https://drive.google.com/file/d/1Ft6W1WTl91HcC0g7tOtjxBfXxl3JGM-q/view?usp=sharing) |
 
 ### 🌐 Alternative Download Mirror (Google Drive)
