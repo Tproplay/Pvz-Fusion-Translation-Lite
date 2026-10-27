@@ -35,7 +35,7 @@ A complete, unified English translation release of **Plants vs. Zombies: Fusion 
 | Platform | File | Size | SHA-256 Checksum | Mirror (Google Drive) |
 | :--- | :--- | :--- | :--- | :--- |
 | **PC (Windows)** | [`PvZ-Fusion-4.0.5-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 442.82 MB | `c23c9f4cb7cdf197c58b1a02195a6e1a7633f7970afbcd4657af2aaddcd87dc2` | [PC Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 571.12 MB | `ca4cf66de4aed28e998f1b5f8063595b47c164b94ba140e91efc563dae4e1016` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
+| **Android** | [`PvZ-Fusion-4.0.5-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 570.98 MB | `8e057aa6d74008752377c3335ac0112a0b79963e5eb67d84b8c8e7a5d124fa13` | [Android Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
 | **BepInEx Mod Compatibility Fix** | [`BepInEx-Harmony-Fix-v4.0.5.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | 109.59 KB | `3339c39a69bf8f13df000770e76777cbf0583ea80240917d0dbd66af95b394b9` | [Harmony Fix Drive Mirror](https://drive.google.com/file/d/1Ft6W1WTl91HcC0g7tOtjxBfXxl3JGM-q/view?usp=sharing) |
 
 ### 🌐 Alternative Download Mirror (Google Drive)
