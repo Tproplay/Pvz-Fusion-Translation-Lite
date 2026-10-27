@@ -1,0 +1,55 @@
+name: "💡 Suggest a Change / Improvement"
+description: "Suggest an improvement to translations, UI formatting, modding support, or tooling."
+title: "[Suggestion]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to improve the English translation, fonts, layout, or modding compatibility?
+        Feel free to submit your proposal here or discuss it in our **[Discord Server](https://discord.gg/mDeAWbfnKP)**!
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggestion Category
+      options:
+        - "Translation Quality & Terminology Consistency"
+        - "Font Sizing, Typography, and UI Layout"
+        - "Modding Compatibility (BepInEx / MelonLoader / Harmony)"
+        - "Android Packaging & Compatibility"
+        - "Build Tools & Automation"
+        - "Documentation & Setup Guides"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Proposed Change
+      description: Clearly describe the change or enhancement you would like to see.
+      placeholder: "I suggest changing the wording of '...' to '...' because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Motivation & Benefits
+      description: Why would this change be beneficial to players and the community?
+      placeholder: "This makes the description more aligned with standard PvZ terminology..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative approaches or workarounds?
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context / Mockups
+      description: Add any relevant images, mockups, or extra details.

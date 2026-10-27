@@ -1,0 +1,76 @@
+name: "🌐 Missing / Broken Translation"
+description: "Report untranslated Chinese text, grammar issues, or overlapping/truncated text."
+title: "[Translation]: "
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found untranslated Chinese strings, awkward phrasing, or clipped text?
+        Please fill out this form! You can also share screenshots directly in our **[Discord Server](https://discord.gg/mDeAWbfnKP)**.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Game Mode / Feature Area
+      description: Where is the untranslated or broken text located?
+      options:
+        - "The Gods: Evolved (诸神进化 - Modifiers, Perks, Traits)"
+        - "Suburban Almanac (Plants, Zombies, Fusion Recipes)"
+        - "Suburban Almanac (Tactics Index / Filters)"
+        - "Starbound Upgrades / TD Levels / Broken Upgrades"
+        - "Odyssey / Gacha / Reincarnation / Shop"
+        - "Custom Level Editor (Nodes, Attributes, Canvas)"
+        - "Vasebreaker PVP / Mini-Games"
+        - "Main Menu, Settings, Audio, Profile Creation"
+        - "In-Game Banners, Dialogue, Prompts"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform are you observing this on?
+      options:
+        - "Windows PC"
+        - "Android"
+        - "Both"
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: Specific Location / Trigger
+      description: Exact level, screen, plant name, or steps to view this text.
+      placeholder: "In Odyssey Mode, when selecting the 3rd upgrade for Starbound..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: original_text
+    attributes:
+      label: Untranslated or Broken Text
+      description: Copy the Chinese text or describe how the text appears (e.g. truncated, overlapping, question marks).
+      placeholder: "Text appears in Chinese: '...' or overlaps the edge of the card."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_translation
+    attributes:
+      label: Suggested English Translation (Optional)
+      description: If you have a recommendation for how this should be translated or formatted.
+      placeholder: "Proposed translation: '...'"
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot(s)
+      description: |
+        Screenshots are extremely helpful for locating the exact string IDs!
+        Please drag and drop screenshot(s) here.
+    validations:
+      required: true

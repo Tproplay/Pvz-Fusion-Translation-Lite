@@ -1,6 +1,8 @@
 # Ignore everything by default
 /*
 !/.gitignore
+!/.github/
+!/.github/**
 !/README.md
 !/CLAUDE.md
 !/LICENSE

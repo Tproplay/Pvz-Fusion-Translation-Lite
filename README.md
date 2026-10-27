@@ -2,6 +2,11 @@
 
 A unified, repeatable English translation toolkit for both the **PC (Windows)** and **Android (IL2CPP)** releases of *Plants vs. Zombies: Fusion* (植物大战僵尸：融合版).
 
+[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/mDeAWbfnKP)
+[![GitHub Release](https://img.shields.io/github/v/release/Tproplay/Pvz-Fusion-Translation-Lite?logo=github)](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases)
+
+Join our community on **[Discord (https://discord.gg/mDeAWbfnKP)](https://discord.gg/mDeAWbfnKP)** for updates, support, modding discussion, and reporting untranslated strings or bugs!
+
 This project provides automated tools to build, test, and package complete English translations without decompiling game code or distributing proprietary game binaries.
 
 ---

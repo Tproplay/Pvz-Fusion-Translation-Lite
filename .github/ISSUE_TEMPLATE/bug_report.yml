@@ -1,0 +1,89 @@
+name: "🐛 Bug / Crash Report"
+description: "Report a game crash, error, visual glitch, or unexpected behavior."
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue! Please check if your issue has already been reported.
+        💬 **Need faster assistance?** You can also report issues and get real-time help in our **[Discord Server](https://discord.gg/mDeAWbfnKP)**.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform/device are you playing on?
+      options:
+        - "Windows PC (Standalone English Translation)"
+        - "Windows PC (BepInEx Modded)"
+        - "Windows PC (MelonLoader)"
+        - "Android (Signed English APK)"
+        - "Android (Emulator - BlueStacks / LDPlayer / MuMu)"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Game / Translation Version
+      description: Which version are you using? (e.g., v4.0.5 Hotfix 3, v4.0.5 Hotfix 2)
+      placeholder: "v4.0.5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug / Crash Description
+      description: A clear and concise description of what happened.
+      placeholder: "When opening the buff selection in The Gods: Evolved, the game freezes and crashes to desktop..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed step-by-step instructions on how to reproduce the issue.
+      placeholder: |
+        1. Launch the game
+        2. Go to '...'
+        3. Click on '...'
+        4. See crash / error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs Actual Behavior
+      description: What did you expect to happen versus what actually happened?
+      placeholder: "Expected: Buff menu opens cleanly.\nActual: Game encounters an exception and exits."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Error Messages
+      description: |
+        Please paste relevant log outputs here.
+        - On PC with BepInEx: Paste errors from `BepInEx/LogOutput.log`
+        - On PC standalone: Paste errors from `output_log.txt` or crash popups
+        - On Android: Paste logcat or crash stack trace if available
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Videos
+      description: Drag and drop screenshots or screen recordings showing the issue.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Verification Checklist
+      options:
+        - label: "I have confirmed I am on the latest release of the translation."
+          required: true
+        - label: "I checked that a duplicate issue does not already exist."
+          required: false
