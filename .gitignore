@@ -5,6 +5,8 @@
 !/.github/**
 !/README.md
 !/CLAUDE.md
+!/GEMINI.md
+!/AGENTS.md
 !/LICENSE
 !/THIRD_PARTY.md
 !/requirements.txt
