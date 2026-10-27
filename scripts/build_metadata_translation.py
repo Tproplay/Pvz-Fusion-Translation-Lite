@@ -43,7 +43,7 @@ def _load_json_data(rel_path: str):
 # These literals MUST NEVER be translated, otherwise Enum.Parse fails at runtime.
 ROUGE_SHOOTING_GROUP_NAMES = frozenset(_load_json_data("Strings/shooting_group_names.json"))
 
-# In-level display overrides: The Gods: Evolved level titles are displayed on 2 lines on menu cards,
+# In-level display overrides: level titles displayed on 2 lines on menu cards,
 # but should be a single line in-game during the level.
 METADATA_IN_LEVEL_OVERRIDES = _load_json_data("Strings/in_level_overrides.json")
 
@@ -828,7 +828,10 @@ def main() -> int:
     base = args.base.read_bytes()
     layout, literals = parse_metadata(base)
     exact, pc_exact_sources, regex_entries, pc_counts, required_overrides = load_pc_translations(args.strings_dir)
-    exact.update(METADATA_IN_LEVEL_OVERRIDES)
+    in_level_path = args.strings_dir / "in_level_overrides.json"
+    in_level_overrides = read_json(in_level_path) if in_level_path.is_file() else METADATA_IN_LEVEL_OVERRIDES
+    exact.update(in_level_overrides)
+    pc_exact_sources.update(in_level_overrides)
     previous_base = None
     previous_literals: list[MetadataLiteral] = []
     previous_literal_texts: set[str] = set()
