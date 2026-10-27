@@ -30,21 +30,6 @@ MODIFIER_CATEGORY_PREFIXES = ("祝福-", "诅咒-", "质变-")
 SP_EVOLUTION_SOURCE_TITLE = "【SP进化】"
 SP_EVOLUTION_TRANSLATED_TITLE = "[SP Evolution]"
 
-# Rogue Shooting group names used by ShootingGroupBuff to construct ShootingBuffType enum names via Enum.Parse.
-# These literals MUST NEVER be translated, otherwise Enum.Parse fails at runtime.
-# In-level display overrides: The Gods: Evolved level titles are displayed on 2 lines on menu cards,
-# but should be a single line in-game during the level.
-METADATA_IN_LEVEL_OVERRIDES = {
-    "诸神进化：炼狱": "The Gods: Evolved - Purgatory",
-    "诸神进化：射击": "The Gods: Evolved - Shoot 'Em Up",
-}
-
-ROUGE_SHOOTING_GROUP_NAMES = frozenset({
-    "业火", "交易", "光棱", "全能", "天罚", "宝藏",
-    "战锤", "明月", "木桩", "烈阳", "硬化", "裂空",
-})
-
-
 def _load_json_data(rel_path: str):
     p = Path(__file__).resolve().parent.parent / "translation-data" / rel_path
     if p.is_file():
@@ -52,6 +37,15 @@ def _load_json_data(rel_path: str):
             import json
             return json.load(f)
     return {}
+
+
+# Rogue Shooting group names used by ShootingGroupBuff to construct ShootingBuffType enum names via Enum.Parse.
+# These literals MUST NEVER be translated, otherwise Enum.Parse fails at runtime.
+ROUGE_SHOOTING_GROUP_NAMES = frozenset(_load_json_data("Strings/shooting_group_names.json"))
+
+# In-level display overrides: The Gods: Evolved level titles are displayed on 2 lines on menu cards,
+# but should be a single line in-game during the level.
+METADATA_IN_LEVEL_OVERRIDES = _load_json_data("Strings/in_level_overrides.json")
 
 ANDROID_CONFIRMED_EXACT = _load_json_data("Strings/android_metadata_strings.json")
 ANDROID_REQUIRED_OVERRIDE_SOURCES = set(_load_json_data("Strings/android_required_overrides.json"))
