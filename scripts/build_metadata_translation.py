@@ -491,6 +491,45 @@ def load_pc_translations(
                         added += 1
         counts[f"structured:{filename}"] = added
 
+    almanac_dir = dumps_dir.parent / "Almanac"
+    lawn_dump = dumps_dir / "LawnStrings.json"
+    lawn_trans = almanac_dir / "LawnStringsTranslate.json"
+    if lawn_dump.is_file() and lawn_trans.is_file():
+        d_lawn = read_json(lawn_dump)
+        t_lawn = read_json(lawn_trans)
+        if isinstance(d_lawn, dict) and isinstance(t_lawn, dict):
+            trans_plants = {p["seedType"]: p for p in t_lawn.get("plants", []) if isinstance(p, dict) and "seedType" in p}
+            added = 0
+            for d in d_lawn.get("plants", []):
+                if not isinstance(d, dict):
+                    continue
+                t = trans_plants.get(d.get("seedType"))
+                if t:
+                    cn, en = d.get("name"), t.get("name")
+                    if cn and en and cn not in exact and CJK_RE.search(cn):
+                        exact[cn] = en
+                        added += 1
+            counts["structured:LawnStrings.json"] = added
+
+    zombie_dump = dumps_dir / "ZombieStrings.json"
+    zombie_trans = almanac_dir / "ZombieStringsTranslate.json"
+    if zombie_dump.is_file() and zombie_trans.is_file():
+        d_zomb = read_json(zombie_dump)
+        t_zomb = read_json(zombie_trans)
+        if isinstance(d_zomb, dict) and isinstance(t_zomb, dict):
+            trans_zomb = {z["theZombieType"]: z for z in t_zomb.get("zombies", []) if isinstance(z, dict) and "theZombieType" in z}
+            added = 0
+            for d in d_zomb.get("zombies", []):
+                if not isinstance(d, dict):
+                    continue
+                t = trans_zomb.get(d.get("theZombieType"))
+                if t:
+                    cn, en = d.get("name"), t.get("name")
+                    if cn and en and cn not in exact and CJK_RE.search(cn):
+                        exact[cn] = en
+                        added += 1
+            counts["structured:ZombieStrings.json"] = added
+
     for filename in REGEX_FILES:
         path = strings_dir / filename
         if not path.exists():
