@@ -1,9 +1,7 @@
 <align=center><size=20>Disclaimer</size></align>
 The Official source of PvZ Fusion is only on the dev, 蓝飘飘fly's Bilibili</color>
-The only valid source of this translation is from this community: <color=#64DD17>discord.gg/DPAC5ZVJ8T</color> and the associated GitHub pages.
+The only valid source of this translation is from this github repository: <color=#64DD17>github.com/Tproplay/Pvz-Fusion-Translation-Lite</color>.
 Stay away from other sources like <color=#8B0000>pvzfusion.net</color> or <color=#8B0000>pvzfusion.pro</color> as they redistribute our work without permission.
-If you'd like to change the language of the translation, make sure to check out the "Languages" menu in the bottom right of this menu.
-Please visit our community for future updates and support.
 
 <align=center><size=130%>Plants VS. Zombies: Fusion - Update 4.0.5 Changelog</size></align>
 
@@ -92,6 +90,6 @@ Please visit our community for future updates and support.
 Tidebreaker Wither-pult
 Moon Festival Selene Cabbage
 
-8. Overhauled Super Level Editor's code editor (untranslated)
+8. Overhauled Super Level Editor's code editor
 
 9. Miscellaneous bug fixes and optimizations.

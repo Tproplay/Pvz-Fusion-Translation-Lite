@@ -416,9 +416,14 @@ def patch_text_assets(
             if help_trans_path.is_file():
                 data = obj.read()
                 with help_trans_path.open("r", encoding="utf-8") as f:
-                    data.m_Script = json.dumps(json.load(f), ensure_ascii=False, indent=2)
+                    help_json = json.load(f)
+                    data.m_Script = json.dumps(help_json, ensure_ascii=False, indent=2)
                 data.save()
-                stats["patched_assets"].append({"name": name, "help_topics_updated": 11})
+                stats["patched_assets"].append({
+                    "name": name,
+                    "help_topics_updated": len(help_json.get("topics", [])),
+                    "help_nodes_updated": len(help_json.get("nodes", []))
+                })
 
         else:
             orig_name = name
