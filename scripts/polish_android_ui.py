@@ -94,7 +94,7 @@ TEXT_OVERRIDES = {
     178983: CREDITS_TEXT,
     # The longer PC label collides with the two skin-navigation arrows on
     # Android. These are the three duplicated Almanac plant-detail variants.
-    179605: "<size=80%><color=black>Skin</color></size>",
+    179605: "<size=80%>Skin</size>",
     179732: "Your Weapon",
     179832: "41_5\nBerserker I",
     179962: "Adventure Trials",
@@ -106,7 +106,7 @@ TEXT_OVERRIDES = {
     181063: "Plant Draw",
     181201: "Reset Trial",
     182450: "Planting Direction",
-    182740: "<size=80%><color=black>Skin</color></size>",
+    182740: "<size=80%>Skin</size>",
     182805: "Copy Code",
     182982: "Level 1 Reward: Reward\nReward\nReward",
     182983: "Level 1 Reward: Reward\nReward\nReward",
@@ -175,7 +175,7 @@ TEXT_OVERRIDES = {
     192383: "Complete Level 10 to expand Plant Storage",
     192490: "Plant Draw",
     192682: "The plant cards above are the Prize Pool contents",
-    193174: "<size=80%><color=black>Skin</color></size>",
+    193174: "<size=80%>Skin</size>",
     194057: "Route 1",
     194085: "Difficulty cannot be changed in-game. Set it beforehand.",
     194173: "Follow Us",
