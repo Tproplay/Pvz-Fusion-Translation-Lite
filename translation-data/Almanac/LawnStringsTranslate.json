@@ -5046,6 +5046,153 @@
             "introduce": "<align=left><color=black>Threetato Mine loves playing tricks underground. It shoots out surprises not once, not twice, but thrice—like a cheeky prankster with a never-ending stash of boom. Watch your step, or you might get a triple whammy that’ll blow your boots off.\n\n- Written by Mrs. Draco</color>",
             "info": "Threetato Mine resurfaces after exploding and fires potatoes across three lanes.\n\n<color=blue>Reversible by pressing R</color>\n<color=black>Damage: </color><color=#8B0000>20×3/1.5s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Short plant (evades straight-firing projectiles).\n<color=black>•</color> When armed, explodes on contact, dealing 5400 damage, knocks back for 1 tile and retreats into the ground.\n<color=black>•</color> Re-emerges 15s after exploding. Explodes and disappears immediately upon contact with vehicles.</color>\n<color=black>Upgrades: </color><color=#8B0000>\n<color=black>• Basic Upgrade: </color>(160 Sun) Projectile Damage +50%\n<color=black>• Elite Upgrade Path 1: </color>(400 Sun) Projectile Damage +200%\n<color=black>• Elite Upgrade Path 2: </color>(400 Sun) Now unleashes an Ultimate move every 60s, firing 250 shots straight ahead over 5s, plus 500 more in a 0-45° spread</color>",
             "cost": "Cost: <color=#8B0000>400</color>\nRecharge: <color=#8B0000>30s</color>"
+        },
+        {
+            "seedType": 210,
+            "name": "Artist Sunflower",
+            "introduce": "<align=left><color=black>Artist Sunflower graduated from the Art Department of Sun University. She is famous throughout abstract art for her signature negative space painting. \"Blank space represents infinite possibilities,\" Artist Sunflower said in an interview. \"Even if the essence in the painter's eyes never changes, in the eyes of a thousand plants there are a thousand buds and vines.\"</color>",
+            "info": "Produces sun and paints portraits of plants, while occasionally attracting visiting client plants looking for commissions.\n\n<color=black>Sun Output: </color><color=#8B0000>25×2/20s</color>\n<color=black>Special: ① </color><color=#8B0000>Click to pick up/put down the paintbrush; when held, click another plant to paint its portrait.</color>\n<color=black>② </color><color=#8B0000>5 seconds after appearing, invites an unidentified plant<sup>[1]</sup> at random<sup>[2]</sup> one tile ahead. If no portrait is painted within 30 seconds, it will be recalled. Inviting has a 90s cooldown.</color>\n<color=black>[1]: </color><color=#8B0000>Displays normal portrait in [Cricket Arena] and [Custom Levels].</color>\n<color=black>[2]: </color><color=#8B0000>Plants obtainable from Surprise Boxes.</color>",
+            "cost": "Cost: <color=#8B0000>150</color>\nRecharge: <color=#8B0000>7.5s</color>"
+        },
+        {
+            "seedType": 312,
+            "name": "Hurricane Dragon",
+            "introduce": "<align=left><color=black>Long ago, an aged craftsman entered the deep mountains to fell bamboo for New Year's firecrackers. Knowing his illness had lingered long and this might be his life's final masterpiece, he chose a thousand-year-old bamboo and filled it with cinnabar using master craftsmanship. On New Year's Eve, he lit the fuse; the powder burned away in silence. As the craftsman closed his eyes in melancholy, the bamboo suddenly soared into the sky, engulfed in blazing flames and roaring into the distance—its cry like a phoenix and roar like a dragon. The villagers were awestruck, and the craftsman rejoiced in delight; his illness was thus cured.</color>",
+            "info": "Scattered bullets gather dragon souls; in the awakened state, spits piercing Dragon Flame projectiles.\n\n<color=black>Requirement: </color><color=#8B0000>Mystery Mode</color>\n<color=black>Damage: </color><color=#8B0000>300×10/0.33s\n1500×5/0.66s (Dragon Flame)</color>\n<color=black>Special: </color><color=#8B0000>Click to switch attack modes. Projectiles spread within ±15°.</color>\n<color=black>Spread Mode: </color><color=#8B0000>Gain 1 energy per round.</color>\n<color=black>Dragon Flame Mode: </color><color=#8B0000>Consumes 3 energy per round. Projectiles have infinite piercing and fly up to 5 tiles.</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 313,
+            "name": "Parallel Spacetime Torchwood",
+            "introduce": "<align=left><color=black>Parallel Spacetime Torchwood is proud of his tree hollow. His hollow already houses a miniature parallel universe and can hold even more things: books, gourmet food, plushies, and so on. Because this miniature universe merely overlaps his current universe in other dimensions, he has been choosing his position very carefully to keep this parallel universe intact.</color>",
+            "info": "Manipulates parallel spacetime, projecting passing projectiles across every lane.\n\n<color=black>Requirement: </color><color=#8B0000>Mystery Mode</color>\n<color=black>Special: ① </color><color=#8B0000>Splits passing plant projectiles into one for each lane.</color>\n<color=black>② </color><color=#8B0000>Only one can be planted per lane, and all Parallel Spacetime Torchwoods must be planted in the same column.</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1489,
+            "name": "Magnetic Cabbage-pult",
+            "introduce": "<align=left><color=black>\"Pesky magnetism—it keeps making metal shavings fly onto my head,\" Magnetic Cabbage-pult complained. His hairstyle was far harder to manage than his brothers'. As a result, whenever attending events, he was always the last one to show up.</color>",
+            "info": "A Cabbage-pult capable of fusing metallic equipment.\n\n<color=black>Damage: </color><color=#8B0000>80/3s</color>\n<color=black>Fusible Equipment: </color><color=#8B0000>Buckets, Chrono Cores</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Cabbage-pult + Magnet-shroom</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1490,
+            "name": "Bucket Cabbage-pult",
+            "introduce": "<align=left><color=black>Bucket Cabbage-pult is obsessed with the glockenspiel; even on the battlefield, he still appreciates this art. For this, he wrapped his keys into cabbages, performing magnificent melodies with metallic clatter. The zombies lucky enough to enjoy it declared that the tune struck right through their skulls.</color>",
+            "info": "Lobbed cabbages ricochet continuously among the clatter of zombie helmets.\n\n<color=black>Toughness: </color><color=#8B0000>2000</color>\n<color=black>Damage: </color><color=#8B0000>160/3s</color>\n<color=black>Special: </color><color=#8B0000>Each time a projectile hits metallic armor, it ricochets 1 time.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Magnetic Cabbage-pult (Base) + Bucket</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1491,
+            "name": "Chrono Cabbage-pult",
+            "introduce": "<align=left><color=black>\"To comprehend the overlapping nature of spacetime, one must first study the structure of a cabbage—they share many similarities,\" Chrono Cabbage-pult explained. \"'Interstellar'? You'd better discuss that with Chrono Kernel-pult; I'm not very fond of wormholes.\"</color>",
+            "info": "Quickly lobs cabbages to spread teleportation status, but briefly overloads when chained too much.\n\n<color=black>Damage: </color><color=#8B0000>0/1s</color>\n<color=black>Special: ① </color><color=#8B0000>The first 2 hits on teleporting zombies can ricochet 1 time. On hit, behaves like Chrono Pea.</color>\n<color=black>② </color><color=#8B0000>After attacking continuously for 16 times, rests for the duration of 10 attack intervals.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Magnetic Cabbage-pult (Base) + Chrono Core</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1492,
+            "name": "Floating Fume-shroom",
+            "introduce": "<align=left><color=black>Thanks to his genuine friendship with Threepeater Mega-shroom, Floating Fume-shroom smoothly became the first playtester of 'Mischief Shroom'. \"I'm very satisfied with the gaming experience!\" said Floating Fume-shroom after playing. \"Though I still don't quite understand why I had to hang outside the cockpit.\"</color>",
+            "info": "Fires fumes to strike low-flying enemies, and rains down spore showers on the ground.\n\n<color=black>Damage: </color><color=#8B0000>40/1.5s</color>\n<color=black>Special: </color><color=#8B0000>Fumes only target airborne enemies and rain down 12 spores (10 damage each) within range on ground zombies.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Fume-shroom + Blover</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1493,
+            "name": "Fume-shroom Flower Pot",
+            "introduce": "<align=left><color=black>Fume-shroom Flower Pot is actually not a flower pot. \"Originally I was just an ordinary Fume-shroom...\" Fume-shroom Flower Pot said earnestly. \"Never rashly poke your head out while they're playing Whack-a-Zombie. Don't ask me why...\"</color>",
+            "info": "Allows mushrooms above to release beneficial particles upon attacking, boosting plants of the same type.\n\n<color=black>Attributes: </color><color=#8B0000>Low profile, Carrier, Plantable on bare ground</color>\n<color=black>Special: </color><color=#8B0000>For each round of attacks from designated plants above, all plants of that type on the field gain an attack boost (stackable, lasts 10s):\n• Super Fume-shroom: 4%\n• Mega-shroom: 8%\n• Other Fume-shrooms: 1%\n• Gloom-shrooms: 4%</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Flower Pot (Base) + Fume-shroom</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1494,
+            "name": "Magnetic Squash",
+            "introduce": "<align=left><color=black>Magnetic Squash is a coach at the Martial Arts Academy. He has been at this job for twenty years; countless students have learned the legendary Mount Tai Slam from his teachings, including the iron weapons on the racks.</color>",
+            "info": "Releases a special magnetic field upon landing, forcing iron armor to crush wearers like a Squash.\n\n<color=black>Damage: </color><color=#8B0000>1800 (Crush)</color>\n<color=black>Range: </color><color=#8B0000>Left 0.5 tiles ~ Right 1 tile</color>\n<color=black>Special: </color><color=#8B0000>When attacking, knocks off absorbable zombie armor within a 1.5-tile radius and causes that armor to crush zombies like a Squash.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Squash + Magnet-shroom</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1495,
+            "name": "Umbrella Squash",
+            "introduce": "<align=left><color=black>\"I've grown hair!\" Umbrella Squash shouted excitedly. He was the only Squash here with a thick head of hair—though soon, not anymore. \"GIVE ME BACK MY HAIR!!!!\" Umbrella Squash leaped toward the zombies in a fury, eager to avenge his hair.</color>",
+            "info": "A Squash disguised as an Umbrella Leaf; takes action once its umbrella leaves wither after repeated use.\n\n<color=black>Damage: </color><color=#8B0000>1800 (Crush)</color>\n<color=black>Special: ① </color><color=#8B0000>Deflected projectiles crush random zombies on the field, dealing 600 damage.</color>\n<color=black>② </color><color=#8B0000>After deflecting projectiles or knockbacks 3 times, turns into a Squash and slams the nearest zombie on the lawn (lane priority).</color>\n<color=black>③ </color><color=#8B0000>Umbrella knockback: Deals no damage.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Squash + Umbrella Leaf</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1496,
+            "name": "Melon-pult Shooter",
+            "introduce": "<align=left><color=black>\"Everyone says you reap what you sow, but I beg to differ,\" Melon-pult Shooter said. \"I shall prove: sow melons, reap peas.\" He was immensely proud, believing he had overturned the foundation of biology. Yet his pride lasted only briefly; he soon realized grafted traits cannot be inherited.</color>",
+            "info": "Lobs launcher upward to rapid-fire melons, switching back to the basket when ammo is depleted.\n\n<color=black>Damage: </color><color=#8B0000>60×4/1.5s</color>\n<color=black>Special: ① </color><color=#8B0000>Lobs launcher upward for the first 15 rounds, firing 4 lobbed projectiles per round.</color>\n<color=black>② </color><color=#8B0000>On the 16th round, hurls the launcher for 5x damage, then reverts to Melon-pult.</color>\n<color=black>③ </color><color=#8B0000>Both projectiles and the launcher deal melon splash damage.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Melon-pult + Peashooter</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1497,
+            "name": "Threepeater Scaredy-shroom",
+            "introduce": "<align=left><color=black>Threepeater Scaredy-shroom won the Scaredy-shroom division champion in the 6th Courage Competition. Even though they couldn't pass a single test stage, at least they weren't afraid of the other two heads right beside them.</color>",
+            "info": "Shoots across 3 lanes with rapidly rising attack speed; makes a desperate stand when overwhelmed.\n\n<color=black>Damage: </color><color=#8B0000>20×3/1.5s</color>\n<color=black>Special: ① </color><color=#8B0000>Gains 5% attack speed boost per attack round (up to 150%).</color>\n<color=black>② </color><color=#8B0000>For each zombie within a 3×3 area, ducks the bottom, top, and middle head in order; when all are ducked, fires 20 peas into each of the 3 lanes, then resets the attack speed boost.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Scaredy-shroom + Threepeater</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1498,
+            "name": "Squash Fume-shroom",
+            "introduce": "<align=left><color=black>Despite often being reported for using physical force to settle disputes, Squash Fume-shroom insisted he never raised a hand. He explained that at most he only sprays harmless spores; as for the Squashes most frequently witnessed jumping from his back to crush folks, he claimed they were purely hallucinations from inhaling spores.</color>",
+            "info": "Sprays fumes to attack groups of zombies, and summons Squash brothers to crush nearby targets.\n\n<color=black>Damage: </color><color=#8B0000>40/1.5s</color>\n<color=black>Special: </color><color=#8B0000>When attacking, protrudes two Squashes dealing 20x attack power; after 2s, slams the leftmost zombie on the field (lane priority), then requires a 10s recharge.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Fume-shroom + Squash</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1499,
+            "name": "Cabbage-pult Shooter",
+            "introduce": "<align=left><color=black>Cabbage-pult Shooter once served as Peashooter's agent, managing travel and interview schedules as well as pea farm enterprises. Admittedly he did a fine job, but was ultimately fired after being caught privately crafting and selling Pea Cannon merchandise out of cabbage leaves.</color>",
+            "info": "Lobs launcher upward to rapid-fire cabbages; empty launcher can be tossed to a pult ahead for reuse.\n\n<color=black>Damage: </color><color=#8B0000>40×4/1.5s</color>\n<color=black>Special: ① </color><color=#8B0000>Lobs launcher upward for the first 15 rounds, firing 4 ricocheting projectiles per round.</color>\n<color=black>② </color><color=#8B0000>On the 16th round, hurls the launcher forward to fuse if a Cabbage-pult is ahead; otherwise hits zombies for 5x damage, then reverts to Cabbage-pult.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Cabbage-pult + Peashooter</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1500,
+            "name": "Melon Scaredy-shroom",
+            "introduce": "<align=left><color=black>\"W-welcome to my home...\" Melon Scaredy-shroom cowered behind the sofa to greet guests. \"That wall has our Scaredy-shroom family photo. Everyone is too shy, so we could only take photos separately and stitch them together... please don't touch that gold medal...\" That was the gold medal he won at the 10th Scaredy-shroom Weightlifting Contest, taking first place with half a watermelon.</color>",
+            "info": "Rapidly ramps up melon throwing speed; charges power in secret when frightened to prepare a counterattack.\n\n<color=black>Damage: </color><color=#8B0000>80/3s</color>\n<color=black>Special: ① </color><color=#8B0000>Gains 10% attack speed boost per attack (up to 200%). Resets when frightened.</color>\n<color=black>② </color><color=#8B0000>Charges up while frightened; upon rising, hurls a projectile at the nearest target dealing up to 1800 damage.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Scaredy-shroom + Melon-pult</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1501,
+            "name": "Garlic Squash",
+            "introduce": "<align=left><color=black>Garlic Squash is always teary-eyed. Some say she can't stand her own smell; others say it's because she jumped at zombies and missed. Only she knows the truth: it's the frustration of eating fat-loss garlic meals for months with no sign of slimming down.</color>",
+            "info": "A garlic-flavored Squash that startles zombies just by rising... though prone to missing because of it.\n\n<color=black>Damage: </color><color=#8B0000>1800 (Crush)</color>\n<color=black>Special: </color><color=#8B0000>When leaping, forces zombies to change lanes. If the target is non-Gargantuar and HP is below attack power, grants 1 Garlic value and inflicts severe poison, causing them to turn and flee rapidly.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Squash + Garlic</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1502,
+            "name": "Silver Squash",
+            "introduce": "<align=left><color=black>\"Some might mistake me for a Bucket Squash. I must solemnly declare: he is iron, I am silver,\" Silver Squash said with a serious expression. \"Silver has better ductility, so I can make much more vivid facial expressions when slamming!\"</color>",
+            "info": "A Squash as heavy as a mountain of silver.\n\n<color=black>Damage: </color><color=#8B0000>2400 (Crush)</color>\n<color=black>Range: </color><color=#8B0000>Left 0.5 tiles ~ Right 1 tile</color>\n<color=black>Special: </color><color=#8B0000>Can be upgraded to <b>Gold Squash</b> for 3000 coins.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Squash + Marigold</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 1503,
+            "name": "Gold Squash",
+            "introduce": "<align=left><color=black>As a rising star on Wall Street, Gold Squash is currently embroiled in public controversy, accused of plagiarizing patents from Starfruit Squash and Squash Fume-shroom. \"There must be zombies slandering me!\" Gold Squash fumed. He decided to place a high bounty on other Squashes to crush anyone suspicious.</color>",
+            "info": "A Squash as heavy as a mountain of gold. Special skill summons Squashes to crush the lawn.\n\n<color=black>Damage: </color><color=#8B0000>3600 (Crush)</color>\n<color=black>Range: </color><color=#8B0000>Left 0.5 tiles ~ Right 1 tile</color>\n<color=black>Special: </color><color=#8B0000>Casts special skill once for free when upgraded from Silver Squash.</color>\n<color=black>Super: </color><color=#8B0000>Costs 3000 coins, 15s cooldown. Summons 3 Gold Squashes that slam random zombies on the field, each dealing 0.5x damage.</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 5006,
+            "name": "Ultimate Disillusion-shroom",
+            "introduce": "<align=left><color=black>Legend tells that when sanity nears collapse, a warm voice echoes by one's ear. Those who hold fast to themselves can shine with their own radiance; those who drown in desire twist into runaway monsters. She is both an invitation to salvation and bait toward disillusionment—the choice has always lain in the listener's own hands, but very few have survived.</color>",
+            "info": "Explosion hypnotizes damaged zombies and summons a Gargantuar to temporarily protect the lawn, turning the tide of battle.\n<color=blue>Advanced Form of Disillusion-shroom</color>\n\n<color=black>Requirement: </color><color=#8B0000>Purchase modifier in Odyssey Mode\n*Requires both basic form modifiers first</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Disillusion-shroom + Doom-shroom</color>\n<color=black>Damage: </color><color=#8B0000>7200 (Ash)</color>\n<color=black>Special: </color><color=#8B0000>After triggering Doom-shroom effect:\n• Hypnotizes zombies in range with ≤75% HP\n• Hypnotizes zombies in range under Disillusionment\n• Regardless of hypnosis success, inflicts Disillusionment (triggers craterless Doom-shroom explosion upon death)\n• Summons a hypnotized Ultimate Obsidian Gargantuar, granting all plants 90% damage reduction for 6s before reverting to an Armed Gargantuar</color>\n<color=black>Perk 1: </color><color=#8B0000>Controlled Fusion: All Doom-shroom explosions leave no craters</color>\n<color=black>Perk 2: </color><color=#8B0000>Explosive Arsenal: Summoned slams spawn Imps with matching toughness; Imps self-destruct with Doom-shroom explosions based on current HP upon attacking; Obsidian Imp self-destruct ignores damage reduction. Gargantuar loses 10% toughness HP per slam, Imps lose 10% per second.</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 5007,
+            "name": "Ultimate Greed-shroom",
+            "introduce": "<align=left><color=black>For those who once placed material wealth above all else, Ultimate Greed-shroom is the physical embodiment of that cold desire. If you crave wealth, Ultimate Greed-shroom will return it tenfold; yet every debt comes with a price, and Ultimate Greed-shroom will always collect the recompense she is due...</color>",
+            "info": "Explosions turn damaged zombies into gold and raises the stakes of impending crises to reap massive rewards.\n<color=blue>Advanced Subspecies of Disillusion-shroom</color>\n\n<color=black>Requirement: </color><color=#8B0000>Purchase modifier in Odyssey Mode\n*Requires both basic form modifiers first</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Greed-shroom + Doom-shroom</color>\n<color=black>Conversion Formula: </color><color=#8B0000>Hypno-shroom ↔ Marigold</color>\n<color=black>Damage: </color><color=#8B0000>7200 (Ash)</color>\n<color=black>Special: </color><color=#8B0000>After triggering Doom-shroom effect:\n• Turns zombies in range with ≤75% HP into silver statues\n• Turns zombies in range with Bounty status into gold statues\n• Inflicts Bounty status on zombies in range\n• Once per round: Inflicts 'Frenzied Curse' on the next spawning Leader Zombie (worth 1000 points on kill), accompanied by an Ultimate Obsidian Gargantuar with 'Frenzied Curse' (worth 2000 points on kill)</color>\n<color=black>Perk 1: </color><color=#8B0000>Controlled Fusion: All Doom-shroom explosions leave no craters</color>\n<color=black>Perk 2: </color><color=#8B0000>Explosive Arsenal: Total score gained from defeating 'Frenzied Curse' leaders increases by 1000</color>",
+            "cost": ""
+        },
+        {
+            "seedType": 5008,
+            "name": "Magnetic Squash Wall-nut",
+            "introduce": "<align=left><color=black>Magnetic Squash Wall-nut suffers from extreme OCD. He cannot stand chaos; even amidst battle, he insists on pulling projectiles into neat lines along his magnetic flux. Naturally, zombies often comment 'nothing is more chaotic than your face,' after which they get to see something far more chaotic: an enraged Magnetic Squash Wall-nut.</color>",
+            "info": "Attracts surrounding projectiles and imbues them with heavy energy, then slams them all into zombies.\n\n<color=black>Requirement: </color><color=#8B0000>Odyssey Mode</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Squash-nut + Magnet-nut</color>\n<color=black>Toughness: </color><color=#8B0000>4000</color>\n<color=black>Damage: </color><color=#8B0000>1800 (Crush)</color>\n<color=black>Range: </color><color=#8B0000>5×5</color>\n<color=black>Special: ① </color><color=#8B0000>Attracts horizontal straight-flying projectiles within a 1.5-tile radius, adding [own damage] to them, and absorbs them (does not retain bullet properties, does not attack zombies).</color>\n<color=black>② </color><color=#8B0000>After absorbing 10 projectiles, evenly slams them down onto each zombie within range, dealing small-area crush damage with each. Does not block zombies while slamming.</color>\n<color=black>Perk 1: </color><color=#8B0000>I Love Slamming: Targeting range expands to a full lane</color>\n<color=black>Perk 2: </color><color=#8B0000>I Love Attracting: Only attacks after absorbing 30 projectiles</color>",
+            "cost": ""
         }
     ]
 }

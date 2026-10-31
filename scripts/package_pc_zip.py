@@ -38,6 +38,10 @@ def package_pc_zip(pc_dir: Path, output_zip: Path) -> None:
 
 
 if __name__ == "__main__":
-    pc_folder = Path("build/PC_PVZ-Fusion-4.0.5")
-    zip_dest = Path("build/PvZ-Fusion-4.0.5-English-PC.zip")
+    if Path("build/PC_PVZ-Fusion-4.1").exists():
+        pc_folder = Path("build/PC_PVZ-Fusion-4.1")
+        zip_dest = Path("build/PvZ-Fusion-4.1-English-PC.zip")
+    else:
+        pc_folder = Path("build/PC_PVZ-Fusion-4.0.5")
+        zip_dest = Path("build/PvZ-Fusion-4.0.5-English-PC.zip")
     package_pc_zip(pc_folder, zip_dest)

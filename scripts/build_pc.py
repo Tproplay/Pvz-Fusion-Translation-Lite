@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build PC English translation for PvZ Fusion 4.0.5.
+"""Build PC English translation for PvZ Fusion 4.1.
 
 Rebuilds:
 1. IL2CPP string literal metadata (global-metadata.dat)
@@ -34,7 +34,7 @@ def build_pc(
 ) -> int:
     start_time = time.time()
     print("=" * 60)
-    print("PvZ Fusion 4.0.5 — PC Translation Builder")
+    print("PvZ Fusion 4.1 — PC Translation Builder")
     print("=" * 60)
 
     py_exe = sys.executable
@@ -110,8 +110,8 @@ def main() -> int:
     parser.add_argument(
         "--pc-dir",
         type=Path,
-        default=Path("build/PC_PVZ-Fusion-4.0.5"),
-        help="Path to PC game folder (default: build/PC_PVZ-Fusion-4.0.5)",
+        default=Path("build/PC_PVZ-Fusion-4.1") if Path("build/PC_PVZ-Fusion-4.1").exists() else Path("build/PC_PVZ-Fusion-4.0.5"),
+        help="Path to PC game folder (default: build/PC_PVZ-Fusion-4.1)",
     )
     parser.add_argument(
         "--data-dir",
@@ -122,8 +122,8 @@ def main() -> int:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("build/pc-405"),
-        help="Path to output release artifacts directory (default: build/pc-405)",
+        default=Path("build/pc-41") if Path("build/PC_PVZ-Fusion-4.1").exists() else Path("build/pc-405"),
+        help="Path to output release artifacts directory (default: build/pc-41)",
     )
     parser.add_argument("--skip-bundle", action="store_true", help="Skip rebuilding data.unity3d")
     parser.add_argument("--skip-metadata", action="store_true", help="Skip rebuilding global-metadata.dat")

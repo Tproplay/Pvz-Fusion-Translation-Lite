@@ -1415,6 +1415,24 @@
             "name": "Crimson Elephant",
             "introduce": "<align=left><color=black>Crimson Elephant lets out an enraged roar and stomps the ground with all four feet, shaking the earth itself. After escaping the laboratory years ago, it not only rejoined the Giga Football forces, but grew into an elite war elephant and was equipped with specialized heavy armor. Yet the cactus spine it stepped on during that chaotic escape is still stuck in its foot to this day.</color>",
             "info": "Launches a devastating assault on the front lines, pushing troops forward and unleashing a powerful shockwave.\n\n<color=black>Damage: </color><color=#4B0082>7200 (Non-bite)</color>\n<color=black>Toughness: </color><color=#4B0082>72000</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 3 Evolved Zombie.\n<color=black>•</color> Giant zombie. Immune to knockback and hypnotization. Every 5th attack performs a crush attack, pushing non-boss zombies in front of it forward by 0.74 tiles and dealing area damage within a 1.5-tile radius.</color>"
+        },
+        {
+            "theZombieType": 339,
+            "name": "<BOSS> Abyssal Trident",
+            "introduce": "<align=left><color=black>After prolonged trials, the Ultimate Trident Zombie finally earned the approval of the Abyssal Trident, transforming from an enslaved tool into a master of storms, casting aside primitive instincts of gnawing and destruction. At this moment, he and the trident embody the will of the ancient abyss. Before absolute lightning, no matter how fierce the struggle, all is but a fleeting ripple in the eternal waves.\n</color>",
+            "info": "Descends amidst storms; the trident's raging tides submerge all.\n\n<color=black>Toughness: </color><color=#8B0000>90000</color>\n<color=black>Special: </color><color=#8B0000>Immune to Freeze, Immobilize, and Knockback. Cycles between Channeling Lightning and Discharging Lightning.</color>\n<color=black>Channel Lightning: </color><color=#8B0000>Hurls giant tridents at random plants, then continuously summons two columns of Deep Sea Trident Warriors. After 9s, retrieves the giant trident and gains thunder power.</color>\n<color=black>Discharge Lightning: </color><color=#8B0000>50% chance to direct lightning at a random plant (dealing 120 damage 12 times); otherwise channels it into himself, dashing across the lawn as ball lightning and instantly killing plants in its path.</color>"
+        },
+        {
+            "theZombieType": 134,
+            "name": "Dolphin Football Tall-nut Zombie",
+            "introduce": "<align=left><color=black>Hard workouts gave Dolphin Football Tall-nut Zombie a robust physique, but also gave him a pointed head. Though he insists it's to reduce wind drag, the zombies unanimously believe he simply hasn't finished evolving since crawling out of the sea.\n</color>",
+            "info": "Weaves back and forth across the lawn to disrupt defense, moving with greater finesse when in good health.\n\n<color=black>Bite Damage: </color><color=#8B0000>100</color>\n<color=black>Toughness: </color><color=#8B0000>3000 + 12000 (Type 1)</color>\n<color=black>Speed: </color><color=#8B0000>Fast</color>\n<color=black>Special: </color><color=#8B0000>Immune to Immobilize and Knockback. Moves back and forth to the right of column 1. Inflicts Wet status on contact with plants. Ignores plants while Type 1 armor HP is above 2/3.</color>"
+        },
+        {
+            "theZombieType": 135,
+            "name": "Cherry Warlord Zombie",
+            "introduce": "<align=left><color=black>After being thwarted by Ultimate Cherry Warlord for so long, the zombies finally decided to cultivate their own God of War. Although the final product of this experiment wasn't entirely controllable, it was successful enough—after all, he really eats anything... oh goodness, who let him out?!\n</color>",
+            "info": "Grows stronger and tougher with each tearing bite.\n\n<color=black>Bite Damage: </color><color=#8B0000>50</color>\n<color=black>Tear Damage: </color><color=#8B0000>1000</color>\n<color=black>Toughness: </color><color=#8B0000>2200</color>\n<color=black>Speed: </color><color=#8B0000>Slow</color>\n<color=black>Special: </color><color=#8B0000>Immune to Knockback. While attacking, tears into targets 1.5 tiles ahead every 1.5s, restoring [10x Bite Damage] HP and spitting explosive cherries. For the first 132 tears, restores an additional [1x Bite Damage] toughness.</color>"
         }
     ]
 }

@@ -1193,7 +1193,7 @@ def main() -> int:
         for index in range(len(literals))
         if "【SP进化】" in literals[index].text
     ]
-    if len(sp_evolution_records) != 4 or any(
+    if len(sp_evolution_records) < 4 or any(
         (
             record["new_39"] is True
             and record["translation"] != record["source"]
