@@ -538,9 +538,13 @@ def patch_text_assets(
                     pid = getattr(v, "path_id", 0)
                     for alias in (
                         "ui/travelrogue/wrench",
+                        "ui/travelrogue/Wrench",
+                        "UI/TravelRogue/wrench",
+                        "UI/TravelRogue/Wrench",
                         "ui/travelrogue/disassembly wrench",
                         "ui/travelrogue/wrenches",
                         "wrench",
+                        "Wrench",
                         "disassembly wrench",
                     ):
                         if (alias, pid) not in existing_entries:
@@ -549,9 +553,17 @@ def patch_text_assets(
 
             if new_entries:
                 rm.m_Container.extend(new_entries)
+                # CRITICAL: ResourceManager.m_Container MUST be sorted alphabetically by key
+                # because Unity engine uses std::lower_bound (binary search) to lookup resources.
+                # An unsorted m_Container breaks binary search and causes Resources.Load to return null!
+                rm.m_Container.sort(key=lambda x: x[0])
                 rm.save()
                 stats["resource_manager_entries_added"] = len(new_entries)
-                print(f"Added {len(new_entries)} ResourceManager entries for CustomIZ and TravelRogue assets")
+                print(f"Added {len(new_entries)} ResourceManager entries for CustomIZ and TravelRogue assets (sorted)")
+            else:
+                # Even if no new entries added, ensure container is properly sorted
+                rm.m_Container.sort(key=lambda x: x[0])
+                rm.save()
             break
 
     return stats
