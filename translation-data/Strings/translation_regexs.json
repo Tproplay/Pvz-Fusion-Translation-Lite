@@ -786,5 +786,7 @@
   "^升级为\\s*(.+?)\\s*[·•.]\\s*(\\d+)阳光$": "Upgrade to {1} · {2} Sun",
   "^生产配方[·•.]成品保底(木头|白银|黄金|钻石|棱彩)$": "Recipe · Min Outcome: {1}",
   "^铲除[·•.]返还(\\d+)阳光$": "Shovel · Refund {1} Sun",
-  "^铲除\\s*[·•.]\\s*返还(\\d+)阳光$": "Shovel · Refund {1} Sun"
+  "^铲除\\s*[·•.]\\s*返还(\\d+)阳光$": "Shovel · Refund {1} Sun",
+  "^(Diamond|Prismatic)\\s+(Flower Pot|Coffee Bean|Card Reader)$": "<size=85%>{1} {2}</size>",
+  "^(钻石|棱彩)(花盆|咖啡豆|读卡器)$": "<size=85%>{1} {2}</size>"
 }

@@ -260,6 +260,14 @@ def patch_text_assets(
     with (strings_dir / "translation_strings.json").open("r", encoding="utf-8") as f:
         exact_strings = json.load(f)
 
+    for extra_fname in ("odyssey_evolution.json", "travel_buffs.json", "abyss_buffs.json"):
+        extra_p = strings_dir / extra_fname
+        if extra_p.is_file():
+            try:
+                exact_strings.update(json.load(extra_p.open("r", encoding="utf-8")))
+            except Exception:
+                pass
+
     regex_map = {}
     with (strings_dir / "translation_regexs.json").open("r", encoding="utf-8") as f:
         regex_map.update(json.load(f))
@@ -497,26 +505,53 @@ def patch_text_assets(
             if modified and data is not None:
                 data.save()
 
-    # Update ResourceManager container for renamed CustomIZ assets
+    # Update ResourceManager container for renamed CustomIZ assets and UI assets
     for obj in env.objects:
         if obj.type.name == "ResourceManager":
             rm = obj.read()
-            existing_keys = {k for k, _ in rm.m_Container}
+            existing_entries = {(k.lower(), getattr(v, "path_id", 0)) for k, v in rm.m_Container}
             new_entries = []
             for k, v in rm.m_Container:
+                pid = getattr(v, "path_id", 0)
                 for old_name, new_name in custom_iz_level_map.items():
                     old_suffix = old_name.lower()
                     if k.lower().endswith(old_suffix):
                         prefix = k[: -len(old_suffix)]
                         new_k = prefix + new_name.lower()
-                        if new_k not in existing_keys:
+                        if (new_k, pid) not in existing_entries:
                             new_entries.append((new_k, v))
-                            existing_keys.add(new_k)
+                            existing_entries.add((new_k, pid))
+
+                if k.lower().startswith("ui/travelrogue/"):
+                    sub = k[len("ui/travelrogue/"):]
+                    trans = exact_strings.get(sub)
+                    if trans:
+                        clean_trans = re.sub(r"<[^>]+>", "", trans).strip().lower()
+                        new_k = f"ui/travelrogue/{clean_trans}"
+                        if (new_k, pid) not in existing_entries:
+                            new_entries.append((new_k, v))
+                            existing_entries.add((new_k, pid))
+
+            # Explicit wrench aliases to ensure BOTH wrench sprite (15441) and texture (1946) always resolve
+            for k, v in list(rm.m_Container):
+                if k.lower() in ("ui/travelrogue/扳手", "ui/travelrogue/wrench"):
+                    pid = getattr(v, "path_id", 0)
+                    for alias in (
+                        "ui/travelrogue/wrench",
+                        "ui/travelrogue/disassembly wrench",
+                        "ui/travelrogue/wrenches",
+                        "wrench",
+                        "disassembly wrench",
+                    ):
+                        if (alias, pid) not in existing_entries:
+                            new_entries.append((alias, v))
+                            existing_entries.add((alias, pid))
+
             if new_entries:
                 rm.m_Container.extend(new_entries)
                 rm.save()
                 stats["resource_manager_entries_added"] = len(new_entries)
-                print(f"Added {len(new_entries)} ResourceManager entries for CustomIZ levels")
+                print(f"Added {len(new_entries)} ResourceManager entries for CustomIZ and TravelRogue assets")
             break
 
     return stats
@@ -752,6 +787,16 @@ def patch_ui_strings(
                     data.save()
             except Exception:
                 pass
+
+    for obj in env.objects:
+        if obj.path_id in (15441, 1946) and obj.type.name in ("Sprite", "Texture2D"):
+            try:
+                data = obj.read()
+                data.m_Name = "Wrench"
+                data.save()
+                print(f"Patched {obj.type.name} {obj.path_id} name to Wrench")
+            except Exception as e:
+                print(f"Warning patching {obj.path_id}: {e}")
 
     return stats
 
