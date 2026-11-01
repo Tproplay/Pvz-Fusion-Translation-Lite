@@ -14,6 +14,8 @@
 !/docs/**
 !/scripts/
 !/scripts/**
+!/scripts//tools/
+!/scripts//tools/**
 !/assets/
 !/assets/**
 !/translation-data/
@@ -51,7 +53,7 @@ artifacts/
 decoded/
 extracted/
 generated/
-tools/
+/tools/
 vendor/
 translator-source/
 il2cpp/
