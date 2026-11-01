@@ -1,147 +1,137 @@
 # Repeatable update workflow
 
-> **Historical Note:** This document records legacy release notes (3.8.1/4.0). For current 4.0.5 documentation, build pipeline, and developer guides, see [RESEARCH-4.0.5.md](RESEARCH-4.0.5.md) and [CLAUDE.md](CLAUDE.md).
+> **Current Version:** v4.1 (PC & Android). This document describes the repeatable translation maintenance workflow for PvZ Fusion 4.1. For architecture details see [ARCHITECTURE.md](ARCHITECTURE.md). For AI agent/maintainer handoff see [CLAUDE.md](CLAUDE.md).
+
+> [!IMPORTANT]
+> **No hardcoded translations in scripts.** All translation text MUST live in JSON files under `translation-data/`. Scripts must read from those files at runtime. Never embed Chinese→English mappings, display strings, or UI labels directly in Python source code.
 
 
 ## 1. Preserve clean inputs
 
-Keep the official Chinese APK and its extracted `global-metadata.dat` and
-`data.unity3d` unchanged. Generated files must never become the baseline for a
-future patch run.
+Keep the official game files (`global-metadata.dat` and `data.unity3d`) unchanged in their `.orig` backup form. Generated translated files must never become the baseline for a future patch run — always start from the clean originals.
 
-Record the size and SHA-256 of every input. This makes it possible to identify
-silent upstream replacements and prevents applying a patch to the wrong game
-version.
+Record the size and SHA-256 of every input. This makes it possible to identify silent upstream replacements and prevents applying a patch to the wrong game version.
 
-## 2. Update translation sources
+## 2. Update translation data
 
-Pull the latest `Teyliu/PVZF-Translation` data and the associated translator
-source. Review which base game version the release supports before building.
+All translation data lives under `translation-data/`. The metadata builder consumes these files at runtime — **never hardcode Chinese→English mappings in Python scripts**:
 
-The metadata builder consumes:
+**Exact string files** (`translation-data/Strings/`):
+- `translation_strings.json` — exact UI strings, button labels, C# literals
+- `odyssey_evolution.json` — Odyssey Evolved (Super Stack Up) mode strings
+- `abyss_buffs.json` — Abyss / Realm modifier strings
+- `customlevel_strings.json` — custom level editor strings
 
-- `translation_strings.json`
-- `customlevel_strings.json`
-- `abyss_buffs.json`
-- structurally aligned `travel_buffs.json`, `tips_fs.json`, and `tips_iz.json`
-- `translation_regexs.json`
-- `customlevel_regexs.json`
+**Regex pattern files** (`translation-data/Strings/`):
+- `translation_regexs.json` — dynamic regex rules (use `{1}`, `{2}` 1-based indexing or `$1`, `$2`)
+- `customlevel_regexs.json` — regex for custom level editor strings
 
-Historical Android Chinese/English metadata pairs are optional fallback
-sources. Current PC translations always take precedence.
+**Structured pair files** (`translation-data/Strings/`):
+- `travel_buffs.json` — Travel / Investment Odyssey buff descriptions
+- `tips_fs.json` — Final Stage tips
+- `tips_iz.json` — Invasion Zone tips
 
-For new or changed 3.9 content, the current PC project is the only English
-authority. If it has no translation, preserve the official Android 3.9 Chinese
-text. Do not generate AI-assisted English for new 3.9 content. Reviewed 3.8.1
-Android translations may remain only for unchanged source strings.
+**Android-specific override files** (`translation-data/Strings/`):
+- `android_metadata_strings.json` — confirmed Android-only exact mappings (fallback; PC translations win)
+- `android_required_overrides.json` — strings where Android semantics require a different rendering than PC
+- `android_modifier_titles.json` — Android modifier display titles
+- `runtime_backing_strings.json` — runtime navigation backing fields (Back to Menu, etc.)
 
-## 3. Generate metadata deterministically
+**Enum translations** (`translation-data/Enums/`):
+- `SynergyType.json`, `InvestBuff.json` — Android IL2CPP definition-string heap enum field renames
+- Various event enum files for the custom level editor
 
-Run `scripts/build_metadata_translation.py` against the clean metadata file.
-Inspect the generated JSON report for:
+**Almanac databases** (`translation-data/Almanac/`):
+- `LawnStringsTranslate.json` — plant entries
+- `ZombieStringsTranslate.json` — zombie entries
+- `DetailStringsTranslate.json` — mechanics entries
+- `LevelCreatorHelpTranslate.json` — level editor tutorial chapters
+
+**Reference dumps** (`translation-data/Dumps/`) — raw official game files used as source references:
+- `LawnStrings.json`, `ZombieStrings.json`, `DetailStrings.json`, `LevelCreatorHelp.json`
+- `ShootingAlmanacIndex.json`, `PlantEvolutionData.json`, `TalentData.json`
+- `travel_buffs.json`, `tips_fs.json`, `tips_iz.json`, `AbyssBuffData.json`
+- `untranslated_dump_41.json` — v4.1 untranslated string audit list
+
+## 3. Adding new translations
+
+When a new untranslated string is found (via screenshot or dump):
+
+1. Identify the string in the game using `scripts/tools/lookup_string.py "string text"`.
+2. Add the translation to the appropriate JSON file in `translation-data/Strings/` — **never in a script**.
+3. For dynamic/parametric strings, add a regex rule to `translation_regexs.json` with 1-based group references (`{1}`, `{2}` or `$1`, `$2`).
+4. Verify with `scripts/tools/quick_audit.py`.
+5. Rebuild PC with `scripts/build_pc.py`.
+
+> [!CAUTION]
+> Do not blindly translate every CJK-bearing string. Debug/test messages, internal enum keys, and configuration identifiers whose mutation can break game behavior or save files must be left untouched. Only promote strings that are confirmed player-facing.
+
+## 4. Generate metadata deterministically
+
+Run `scripts/build_pc.py` which invokes `scripts/build_metadata_translation.py` against the clean `.orig` metadata. Inspect the generated JSON report at `build/pc-41/metadata-report.json` for:
 
 - input and output hashes
-- unchanged literal count
-- valid rebuilt offsets and sizes
-- translations grouped by source method
+- unchanged vs. translated literal count
+- translations grouped by source method (`pc_exact`, `pc_regex`, `pc_regex_csharp_template`, `android_confirmed_exact`)
 - remaining CJK-bearing literals
 
-The builder reparses the generated file and aborts if any rebuilt literal does
-not round-trip exactly.
-
-Run `scripts/audit_remaining_cjk.py` after the metadata and Unity passes. Do
-not blindly translate every CJK-bearing metadata literal: some are internal
-keys, debug/test messages, or configuration values whose mutation can break
-game behavior. Promote additional strings only when their player-facing use is
-confirmed.
-
-## 4. Test the metadata hot patch
-
-The Android build mirrors metadata to this writable location:
-
-```text
-/storage/emulated/0/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/il2cpp/Metadata/global-metadata.dat
-```
-
-Back up saves and the existing metadata first. Android scoped-storage rules may
-require a device file manager with appropriate access or ADB. Fully close the
-game before replacing the file.
-
-Project policy: do not add an automatic stale-metadata migration to the APK.
-The launcher must not inspect, delete, rename, replace, or move the user's
-external `files/il2cpp` data during startup. APK updates can preserve that
-directory, so release notes must tell users to back up their game files and
-manually remove only a confirmed stale metadata override when necessary. A
-clean install is the alternative. Never direct users to delete save or
-progression files.
-
-Test at minimum:
-
-- first launch and main menu
-- adventure and challenge selection
-- almanac plants and zombies
-- Odyssey modifier selection and descriptions
-- custom levels and tutorials
-- font rendering, rich-text tags, and line wrapping
-- save/load and relaunch
-
-For the 2026-08-14 Investment/Odyssey, UI-position, audio, and custom-level
-investigation, including exact reproduction routes, see
-`docs/testing/DISCORD_AUDIT_2026-08-14.md`.
+Run `scripts/audit_remaining_cjk.py` after every build.
 
 ## 5. Patch `data.unity3d`
 
-Metadata alone cannot translate serialized `TextAsset` data, baked UI strings,
-textures containing Chinese text, or font references. The asset pipeline should
-operate by semantic asset name/type rather than fixed path ID so it survives
-reasonable changes between game versions.
+Run `scripts/build_405_bundle.py` (invoked automatically by `build_pc.py`) to patch:
 
-Planned asset stages:
+1. Almanac text databases (`LawnStrings`, `ZombieStrings`, `DetailStrings`, `LevelCreatorHelp`) replaced with translated versions.
+2. Dynamic UI `TextAsset` objects translated in-place.
+3. Serialized `MonoBehaviour` UI components (TMP and legacy `UI.Text`) translated at their byte offsets.
+4. Font injected for full Latin coverage.
+5. Localized textures replaced by asset name (wave banners, comic particles).
 
-1. Replace the three almanac text databases with current PC English JSON.
-2. Translate level, custom-level, tutorial, and Abyss text assets.
-3. Validate that every original JSON asset remains JSON with the same root
-   structure and top-level fields.
-4. Replace localized textures by asset name.
-5. Inject or retarget a font with Latin coverage and preserve its Unity
-   dependencies.
-6. Apply field-level `MonoBehaviour` transformations derived from Joseph's
-   broader 3.6.1 delta.
-7. Reopen the rebuilt bundle and verify every intended object.
+The bundle builder reads all replacement content from JSON files — never from inline Python dicts.
 
-For Android 3.8.1, run `scripts/apply_pc_texture_translations.py` after the
-final credits bake. It audits all PNGs in the PC English texture catalog but
-only serializes the eight exact-name, exact-size particle replacements. The
-pass verifies that each same-name Sprite still references its Texture2D and
-replaces its incompatible Chinese tight mesh with a full-canvas quad before
-reopening the output to validate the complete unclipped Sprite. It deliberately
-preserves the approved Android `thanks` parchment, skips the obsolete PC
-`Logo3.6` artwork, and does not touch the parked Abyss entrance.
-
-## 6. Package and sign
-
-Only after metadata and bundle tests pass:
-
-1. Run `package_apk_payload.py` to replace the two payload files in the chosen
-   APK shell and remove its obsolete JAR signature entries.
-2. Preserve all unrelated native libraries and launcher code.
-3. Align the APK.
-4. Sign it with the project's stable private release key.
-5. Verify the signature and installability on a test device.
-
-Never commit the key. Store at least two secure backups and document its alias
-and certificate fingerprint without recording its password.
-
-Example verification commands after signing:
+## 6. Test locally (PC only during development)
 
 ```powershell
-zipalign -c 4 translated.apk
-apksigner verify --verbose --print-certs translated.apk
-aapt dump badging translated.apk
+.\.venv\Scripts\python.exe scripts\build_pc.py
 ```
 
-## 7. Release without game binaries in source control
+- Game runs immediately from `build/PC_PVZ-Fusion-4.1/PlantsVsZombiesRH.exe`.
+- Do **not** build Android APK or package ZIP during iterative testing.
 
-The preferred public deliverable is a patcher that accepts a user-supplied
-official APK and produces a locally signed translated build. Translation data
-must retain Teyliu project attribution and comply with CC BY-NC 4.0.
+Test at minimum:
+- main menu, adventure and challenge selection
+- Odyssey Evolved mode selection and difficulty cards
+- Round Shop, augment (hex) system, investment strategies
+- Almanac plants, zombies, and mechanics
+- Custom level editor and tutorials
+- Font rendering, rich-text tags (`<color>`, `<size>`, `<nobr>`), line wrapping
+- Save/load and relaunch
+
+## 7. Release build (GitHub + Google Drive)
+
+Only when ready for a public release, build **both platforms**:
+
+```powershell
+# PC build + ZIP
+.\.venv\Scripts\python.exe scripts\build_pc.py
+.\.venv\Scripts\python.exe scripts\package_pc_zip.py
+
+# Android APK (signed)
+.\.venv\Scripts\python.exe scripts\build_android.py
+```
+
+Then publish:
+```powershell
+.\.venv\Scripts\python.exe scripts\publish_github_release.py
+```
+
+Update Google Drive file IDs in-place with `gdrive mutate update`. Compute and publish SHA-256 checksums for all release artifacts.
+
+## 8. Safety: what maintainers must verify before release
+
+- metadata literal count and round-trip validation (checked automatically by builder)
+- Unity TextAsset root/schema validation
+- Almanac entry/title coverage
+- remaining CJK inventory (`audit_remaining_cjk.py`)
+- APK audit confirming only the two payloads changed (`audit_apk_release.py`)
+- physical smoke test on device or PC executable
