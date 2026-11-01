@@ -3,93 +3,71 @@ The Official source of PvZ Fusion is only on the dev, 蓝飘飘fly's Bilibili</c
 The only valid source of this translation is from this github repository: <color=#64DD17>github.com/Tproplay/Pvz-Fusion-Translation-Lite</color>.
 Stay away from other sources like <color=#8B0000>pvzfusion.net</color> or <color=#8B0000>pvzfusion.pro</color> as they redistribute our work without permission.
 
-<align=center><size=130%>Plants VS. Zombies: Fusion - Update 4.0.5 Changelog</size></align>
+<align=center><size=130%>Plants VS. Zombies: Fusion - Update 4.1 Changelog</size></align>
 
-1. Memory - Snowy Night Update!
-- Pre-requisite: Defeat Ice-borg Executrix Mk. Alpha in Adventure Extra - Snow Level 9
-- Enter through Recommended Levels
+1. Odyssey: Evolved Rework
+- Earn Points by completing rounds to purchase plants, upgrade the shop, and reroll
+- Synthesize duplicate cards or upgrade the shop to acquire higher-tier cards
+- Equip seed packets with various equipment for powerful bonus stats
+- Fusion plants inherit the tiers and gear of both component materials
+- Zombies reaching the house deduct HP instead of causing an instant defeat
 
-2. The Gods Evolved
-- New The Gods Almanac where you can buy paths and upgrades
-- New level progression and currency
+2. New Plants
+- Common & Basic Series:
+  - Artist Sunflower
+  - Ball Cactus
+  - Magnetic Cabbage-pult
+  - Bucket Cabbage-pult
+  - Chrono Cabbage-pult
+  - Floating Fume-shroom
+  - Fume-shroom Flower Pot
+  - Magnetic Squash
+  - Umbrella Squash
+  - Melon-pult Shooter
+  - Threepeater Scaredy-shroom
+  - Squash Fume-shroom
+  - Cabbage-pult Shooter
+  - Melon Scaredy-shroom
+  - Garlic Squash
+  - Silver Squash
+  - Gold Squash
+- Ultimate Series:
+  - Ultimate Disillusion-shroom
+  - Ultimate Greed-shroom
+  - Magnetic Squash Wall-nut
+  - Hurricane Dragon
+  - Parallel Spacetime Torchwood
 
-3. New Plants
-- Snowy Night Base Plants:
-  - Tundraweed
-  - Sword-shroom
-  - Shield-shroom
-  - Lithops
-- Basic Fusions:
-  - Frostbiter (Chomper + Ice-shroom)
-  - Cactus Squash (Squash + Cactus)
-  - Spiky Pumpkin (Spikeweed > Pumpkin)
-  - Fume-spreader (Fume-shroom + Threepeater)
-  - Hot Pot (Jalapeno > Flower Pot)
-  - Sword Tundraweed (Tundraweed + Sword-shroom)
-  - Shield Tundraweed (Tundraweed + Shield-shroom)
-  - Clash-shroom (Sword-shroom + Shield-shroom)
-  - Aqua Tundraweed (Aloe Aqua + Tundraweed)
-  - Aqua Sword-shroom (Aloe Aqua + Sword-shroom)
-  - Aqua Shield-shroom (Aloe Aqua + Shield-shroom)
-  - Lithops Tundraweed (Tundraweed + Lithops)
-  - Sword Lithops (Sword-shroom + Lithops)
-  - Shield Lithops (Shield-shroom + Lithops)
-  - Aqua Lithops (Aloe Aqua + Lithops)
-  - Lichen Firnace (Firnace + Hoarfrost Lichen)
-  - Tundraweed Firnace (Firnace + Tundraweed)
-  - Sword Firnace (Firnace + Sword-shroom)
-  - Shield Firnace (Firnace + Shield-shroom)
-  - Snow Threepeater (Ice-shroom + Threepeater)
-  - Flytrapper (Chomper + Blover)
-  - Ball Cactus (Cactus > Puff-shroom, bugged)
-- Titan Fusion:
-  - Mandiboulder (Spikeweed ∞ [Spikerock] ∞ Spikeweed)
-- Odyssey Fusions:
-  - Common Subspecies:
-    - Pyroboros Pot (Dragonbreath Torcher > Flower Pot)
-  - Legendary:
-    - Final Magnetar
-  - Unique:
-    - Drone Commando (Pea-storm Commando + Blover)
-    - Snipurr (Snipea > Cattail)
-    - Snipad (Shovel a Snipot)
-    - Melancholy Commando (Pea-storm Commando + Gloom-shroom)
+3. New Zombies
+- Derivative Zombie:
+  - Cherry Warlord Zombie
+- Ultimate Zombie:
+  - Dolphin Football Tall-nut Zombie
+- Boss:
+  - Abyssal Trident
 
-4. New Zombies
-- Common:
-  - Lost Automaton
-  - Force Shield Automaton
-  - Vibroblade Automaton
-  - Penguin Automaton
-  - Snowfur Automaton
-  - Snow Crab
-  - Turrethead Automaton
-- Neutral:
-    - Snowbeak
-- Odyssey:
-    - Harpooneer Frost Tall-nut Zombie
+4. Level Updates
+- Super Random: Question Mark Showdown: Paint portraits of random plants recruited by Artist Sunflower and use them to fight off incoming zombies
 
-5. New Levels
-- Odyssey Gacha: Scratch Off!
-- New I, Zombie default level group levels to replace the crappy old RNG ones
-- ZombiesTD Classic 1 & 2 (enter through Recommended Levels)
+5. New Modifiers
+- Shrink Ray — Mini Professor Z!
 
-6. Noteworthy Balance Changes
-- Odyssey Cursed Mode now has incremental Modifier price increase
-- Reworked Gatling Cherrybomber + Infernal Squashwood synergy
-- New Infernal Sparkwood + SP Phoenix Threepeater/Drone synergy
-- Firnace: buffed Sun production and duration, increased seed packet CD, to reduce micro-management
-- Doom Kelp: No longer leaves a Doom Lily Pad on explosion
-- Charm-shroom & Charmatron: buffed attack speed, nerfed attack damage
-- Both Magnetar Synergy Modifiers [Astral Convergence], [Celestial Beacon] reworked
-- Pulsar: Now Magnetar Modifiers also have effects for Pulsar
-- Coach Zombie: Pole-vaulting distance buff no longer stacks
-- Professor Cherryz: Now more threatening the longer he remains on the field
+6. Balance Adjustments
+- Blover Pot, Levitater, Sunny Pumpkin: Numerical stat buffs
+- Threepeater Cannoneer series: Attack speed nerfed
+- Buck-nut, Steel Pumpkin, Football-nut: Significantly increased HP recovery when consuming matching metal objects
+- Magnet Blover: Converts digested metal into item drops
+- Calamity-shroom & Avarice-shroom: Reworked effects. Removed Avarice-shroom's restriction in Odyssey Cursed Difficulty
+- Trident Zombie: Added a slowing effect when inflicting Wet status
+- Pozeidon: Can bite and amplify Wet debuff like Trident Zombie; giant tridents create whirlpools that attract projectiles
+- Trident Jugger-nut Gargantuar: Throwing tridents no longer requires HP to fall below 50%
 
-7. New Skins
-Tidebreaker Wither-pult
-Moon Festival Selene Cabbage
+7. Other Improvements
+- Random Mode no longer immediately triggers the next wave when total zombie HP on the lawn is low
+- Polished expression animations for select plants
+- The Magic Brush recognition plugin is now server-deployed, eliminating device-dependent discrepancies
+- Improved the pacing of points and modifier acquisition in Classic Odyssey Mode
 
-8. Overhauled Super Level Editor's code editor
-
-9. Miscellaneous bug fixes and optimizations.
+8. Bug Fixes & Quality of Life
+- Fixed a bug where Floating Super Gatling Pea vanished upon scene transition
+- Fixed a bug where Bountiful Points erroneously received Cursed Difficulty point multipliers
