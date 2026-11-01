@@ -694,5 +694,17 @@
   "^当前积分\\s*(\\d+(?:\\.\\d+)?)$": "Current Points: {1}",
   "^商店\\s*Lv\\.?(\\d+)\\s*卡槽\\s*(\\d+/\\d+)\\s*备战\\s*(\\d+/\\d+)\\s*装备\\s*(\\d+)\\s*礼盒\\s*(\\d+)$": "Shop Lv.{1} Slots {2}\nBench {3} Gear {4} Boxes {5}",
   "^每格额外(\\d+)%": "Each slot +{1}% ",
-  "^每格额外(\\d+)%定向已有植物[\\s；;]+棱彩同种最低钻石[,，]红卡同种不再刷新[。\\.](?:\\s*3钻石合棱彩[,，]3棱彩合至尊红卡[\\s；;]+概率已计入持有卡的钻石保底[。\\.]?)?$": "Each slot +{1}% targeted chance for owned plants. Prismatic min Diamond for same species; Red cards of same species won't refresh.\n3 Diamonds fuse to Prismatic, 3 Prismatics fuse to Supreme Red Card. Odds include Diamond pity for held cards."
-}
+  "^每格额外(\\d+)%定向已有植物[\\s；;]+棱彩同种最低钻石[,，]红卡同种不再刷新[。\\.](?:\\s*3钻石合棱彩[,，]3棱彩合至尊红卡[\\s；;]+概率已计入持有卡的钻石保底[。\\.]?)?$": "Each slot +{1}% targeted chance for owned plants. Prismatic min Diamond for same species; Red cards of same species won't refresh.\n3 Diamonds fuse to Prismatic, 3 Prismatics fuse to Supreme Red Card. Odds include Diamond pity for held cards.",
+  "^(.+?)\\s*的装备\\s*[（\\(]?\\s*(\\d+/\\d+)\\s*[）\\)]?$": "{1}'s Gear ({2})",
+  "^可合成装备\\s*[（\\(]?\\s*(\\d+)\\s*[）\\)]?$": "Craftable Gear ({1})",
+  "^刷新\\s*[（\\(]\\s*(\\d+)次?\\s*[）\\)]$": "Refresh ({1})",
+  "^\\n?溢出\\s*(\\d+)\\s*张[，,]\\s*请先腾出卡位$": "\nOverflow {1} card(s), please clear a slot first",
+  "^售卖\\n[（\\(]?\\s*(\\d+)\\s*积分[）\\)]?$": "Sell\n({1} Pts)",
+  "^遭遇难度\\s*(\\d+)$": "Encounter Difficulty {1}",
+  "^(\\d+%\\s*)?(\\d+)\\s*积分$": "{1}{2} Points",
+  "^(\\d+%\\s*)?随机\\s*([a-zA-Z]+)\\s*品质卡\\s*[×x]\\s*(\\d+(?:~\\d+)?)$": "{1}Random {2} Quality Card ×{3}",
+  "^(\\d+%\\s*)?随机基础装备$": "{1}Random Basic Gear",
+  "^(\\d+%\\s*)?随机进阶装备$": "{1}Random Advanced Gear",
+  "^敌人生命额外\\s*[×x]\\s*(\\d+(?:\\.\\d+)?)\\n基础积分\\s*[×x]\\s*(\\d+(?:\\.\\d+)?)\\n([\\s\\S]+)$": "Extra Enemy HP ×{1}\nBase Points ×{2}\n{3}",
+  "^领袖\\s*(\\d+)\\s*只$": "{1} Boss"
+}
