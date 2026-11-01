@@ -5,6 +5,7 @@
 ### 1. Local Testing & Iterative Development
 * **Default Target**: Build **only the PC version** to `build/PC_PVZ-Fusion-4.1/` using `scripts/build_pc.py`.
 * **Constraint**: Do not build the Android APK during iterative testing or debugging unless explicitly asked by the user.
+* **No ZIP Packaging During Testing**: Do not run `scripts/package_pc_zip.py` during iterative development. The user directly tests the game from `build/PC_PVZ-Fusion-4.1/PlantsVsZombiesRH.exe`. Only package ZIP files when explicitly preparing an official release for GitHub / Google Drive.
 
 ### 2. Releasing to GitHub & Google Drive
 * **Default Target**: Always build and package **both platforms**:
