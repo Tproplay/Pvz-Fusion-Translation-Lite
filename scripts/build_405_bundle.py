@@ -548,7 +548,7 @@ def patch_ui_strings(
     backing_file = strings_dir / "runtime_backing_strings.json"
     runtime_backing = json.load(backing_file.open("r", encoding="utf-8")) if backing_file.is_file() else {}
 
-    for fname in ["customlevel_strings.json", "abyss_buffs.json", "travel_buffs.json"]:
+    for fname in ["customlevel_strings.json", "abyss_buffs.json", "travel_buffs.json", "odyssey_evolution.json"]:
         extra_path = strings_dir / fname
         if extra_path.is_file():
             try:

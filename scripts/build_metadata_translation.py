@@ -22,7 +22,7 @@ from typing import Iterable
 MAGIC = b"\xaf\x1b\xb1\xfa"
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
 CSHARP_FORMAT_FIELD_RE = re.compile(r"\{(\d+)(?:,[^}:]+)?(?::[^}]+)?\}")
-EXACT_FILES = ("translation_strings.json", "customlevel_strings.json", "abyss_buffs.json")
+EXACT_FILES = ("translation_strings.json", "customlevel_strings.json", "abyss_buffs.json", "odyssey_evolution.json")
 REGEX_FILES = ("translation_regexs.json", "customlevel_regexs.json")
 STRUCTURED_PAIR_FILES = ("travel_buffs.json", "tips_fs.json", "tips_iz.json")
 
