@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Android English translation release for PvZ Fusion 4.0.5.
+"""Build Android English translation release for PvZ Fusion 4.1.
 
 Pipeline:
 1. Android Metadata: global-metadata.dat (aligned with Android base)
@@ -17,6 +17,11 @@ import sys
 import time
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 
 def run_command(cmd: list[str], desc: str) -> None:
     print(f"\n--> {desc}...")
@@ -33,13 +38,13 @@ def build_android(
 ) -> int:
     total_start = time.time()
     print("=" * 70)
-    print("PvZ Fusion 4.0.5 — Android Translation Release Builder")
+    print("PvZ Fusion 4.1 — Android Translation Release Builder")
     print("=" * 70)
 
     py_exe = sys.executable
     scripts_dir = Path(__file__).resolve().parent
 
-    android_output = output_dir / "android-405"
+    android_output = output_dir / "android-41"
     android_output.mkdir(parents=True, exist_ok=True)
 
     meta_orig = android_output / "global-metadata.dat.orig"
@@ -89,7 +94,7 @@ def build_android(
     run_command(cmd_android_bundle, "Building Android data.unity3d")
 
     # 3. Package Unsigned APK
-    unsigned_apk = android_output / "unsigned-pvzrh4.0.5.apk"
+    unsigned_apk = android_output / "unsigned-pvzrh4.1.apk"
     pkg_report = android_output / "package-report.json"
     cmd_pkg = [
         py_exe,
@@ -129,7 +134,7 @@ def build_android(
     run_command(cmd_sign, "Signing Android APK (v1, v2, v3)")
 
     # 5. Move and name final signed APK
-    final_signed_name = "PvZ-Fusion-4.0.5-English-Android.apk"
+    final_signed_name = "PvZ-Fusion-4.1-English-Android.apk"
     final_signed_path = android_output / final_signed_name
 
     matched_apks = list(signed_dir.glob("*-aligned-*.apk"))
@@ -158,8 +163,8 @@ def main() -> int:
     parser.add_argument(
         "--base-apk",
         type=Path,
-        default=Path("build/pvzrh4.0.5.apk"),
-        help="Path to clean official base Android APK (default: build/pvzrh4.0.5.apk)",
+        default=Path("build/pvzrh4.1.apk") if Path("build/pvzrh4.1.apk").exists() else Path("build/pvzrh4.0.5.apk"),
+        help="Path to clean official base Android APK (default: build/pvzrh4.1.apk)",
     )
     parser.add_argument(
         "--output-dir",
@@ -189,3 +194,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package PC translated game files into PvZ-Fusion-4.0.5-English-PC.zip."""
+"""Package PC translated game files into PvZ-Fusion-4.1-English-PC.zip."""
 
 import os
 import sys

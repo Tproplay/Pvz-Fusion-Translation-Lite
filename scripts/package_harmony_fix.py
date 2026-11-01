@@ -28,7 +28,7 @@ def create_harmony_fix_zip() -> Path:
     shutil.copy2(patch_script, pkg_dir / "patch_bepinex_harmony.py")
 
     readme_content = """========================================================================
- Plants vs. Zombies: Fusion 4.0.5 - BepInEx Mod Compatibility Fix
+ Plants vs. Zombies: Fusion 4.1 - BepInEx Mod Compatibility Fix
 ========================================================================
 
 WHY IS THIS NEEDED?
@@ -60,7 +60,7 @@ Option B (Using the Python Patcher Script):
 """
     (pkg_dir / "README.txt").write_text(readme_content, encoding="utf-8")
 
-    zip_out = Path("build/BepInEx-Harmony-Fix-v4.0.5.zip")
+    zip_out = Path("build/BepInEx-Harmony-Fix-v4.1.zip")
     with zipfile.ZipFile(zip_out, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for root, dirs, files in os.walk(pkg_dir):
             for f in sorted(files):

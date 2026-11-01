@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Publish PvZ Fusion 4.0.5 English Release to GitHub.
+"""Publish PvZ Fusion 4.1 English Release to GitHub.
 
-Creates or updates the GitHub release for tag v4.0.5 and uploads:
-1. PvZ-Fusion-4.0.5-English-PC.zip
-2. PvZ-Fusion-4.0.5-English-Android.apk
+Creates or updates the GitHub release for tag v4.1 and uploads:
+1. PvZ-Fusion-4.1-English-PC.zip
+2. PvZ-Fusion-4.1-English-Android.apk
+3. BepInEx-Harmony-Fix-v4.1.zip
 """
 
 from __future__ import annotations
@@ -17,6 +18,11 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 
 
 def get_github_token() -> str:
@@ -98,8 +104,8 @@ def upload_asset_with_curl(
 def publish_release(
     owner: str = "Tproplay",
     repo: str = "Pvz-Fusion-Translation-Lite",
-    tag: str = "v4.0.5",
-    name: str = "PvZ: Fusion v4.0.5 — English Release (PC & Android)",
+    tag: str = "v4.1",
+    name: str = "PvZ: Fusion v4.1 — English Release (PC & Android)",
     notes_file: Path | None = None,
     pc_zip: Path | None = None,
     android_apk: Path | None = None,
@@ -189,25 +195,25 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--owner", default="Tproplay", help="GitHub repo owner")
     parser.add_argument("--repo", default="Pvz-Fusion-Translation-Lite", help="GitHub repo name")
-    parser.add_argument("--tag", default="v4.0.5", help="Git tag name")
-    parser.add_argument("--name", default="PvZ: Fusion v4.0.5 — English Release (PC & Android)", help="Release title")
-    parser.add_argument("--notes", type=Path, default=Path("docs/release-notes/RELEASE-4.0.5-EN.md"), help="Path to release notes")
+    parser.add_argument("--tag", default="v4.1", help="Git tag name")
+    parser.add_argument("--name", default="PvZ: Fusion v4.1 — English Release (PC & Android)", help="Release title")
+    parser.add_argument("--notes", type=Path, default=Path("docs/release-notes/NEXT-RELEASE.md"), help="Path to release notes")
     parser.add_argument(
         "--pc-zip",
         type=Path,
-        default=Path("build/PvZ-Fusion-4.0.5-English-PC.zip"),
+        default=Path("build/PvZ-Fusion-4.1-English-PC.zip"),
         help="Path to PC zip asset",
     )
     parser.add_argument(
         "--android-apk",
         type=Path,
-        default=Path("build/android-405/PvZ-Fusion-4.0.5-English-Android.apk"),
+        default=Path("build/android-41/PvZ-Fusion-4.1-English-Android.apk"),
         help="Path to Android APK asset",
     )
     parser.add_argument(
         "--harmony-fix-zip",
         type=Path,
-        default=Path("build/BepInEx-Harmony-Fix-v4.0.5.zip"),
+        default=Path("build/BepInEx-Harmony-Fix-v4.1.zip"),
         help="Path to BepInEx Harmony Fix zip asset",
     )
 

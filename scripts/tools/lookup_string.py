@@ -21,6 +21,11 @@ import struct
 import sys
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 METADATA_PATH = ROOT / "build/PC_PVZ-Fusion-4.1/PlantsVsZombiesRH_Data/il2cpp_data/Metadata/global-metadata.dat.orig"
 STRINGS_DIR = ROOT / "translation-data/Strings"

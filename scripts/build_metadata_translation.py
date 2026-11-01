@@ -16,7 +16,13 @@ import re
 import struct
 from dataclasses import dataclass
 from pathlib import Path
+import sys
 from typing import Iterable
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 
 
 MAGIC = b"\xaf\x1b\xb1\xfa"
@@ -669,6 +675,14 @@ def observed_translations_report(
 
 def csharp_format(template: str, values: Iterable[str]) -> str:
     values_list = list(values)
+    # Support $1, $2, etc. (1-based group references from standard regex)
+    template = re.sub(
+        r"\$(\d+)",
+        lambda m: values_list[int(m.group(1)) - 1]
+        if 1 <= int(m.group(1)) <= len(values_list) and values_list[int(m.group(1)) - 1] is not None
+        else m.group(0),
+        template,
+    )
     open_token = "\0OPEN_BRACE\0"
     close_token = "\0CLOSE_BRACE\0"
     protected = template.replace("{{", open_token).replace("}}", close_token)

@@ -88,7 +88,6 @@ All translation data is strictly separated from build scripts:
 ├── scripts/
 │   ├── build_pc.py                       # Dedicated PC build script (metadata + bundle)
 │   ├── build_android.py                  # Android APK build + signing
-│   ├── build_all.py                      # Legacy dual build script
 │   ├── build_metadata_translation.py     # Deterministic IL2CPP metadata builder
 │   ├── build_405_bundle.py               # Unified Unity data.unity3d patcher
 │   ├── package_apk_payload.py            # Surgical APK payload replacer
@@ -98,7 +97,7 @@ All translation data is strictly separated from build scripts:
 │   ├── dump_untranslated_strings.py      # Dump untranslated strings to Dumps/
 │   ├── extract_text_assets.py            # Extract TextAssets from data.unity3d
 │   ├── audit_remaining_cjk.py            # Audit remaining CJK in built files
-│   ├── audit_translation_provenance.py   # Track translation data provenance
+│   ├── audit_apk_release.py              # Comparative APK release audit
 │   └── tools/
 │       ├── lookup_string.py              # Look up a string across all data sources
 │       ├── apply_translation.py          # Apply a single translation entry
@@ -180,7 +179,7 @@ flowchart TD
     end
 
     subgraph Toolkit ["Translation Pipeline"]
-        Scripts["scripts/build_all.py"]
+        Scripts["scripts/build_pc.py / build_android.py"]
         MetaGen["scripts/build_metadata_translation.py"]
         BundleGen["scripts/build_405_bundle.py"]
         APKPack["scripts/package_apk_payload.py"]

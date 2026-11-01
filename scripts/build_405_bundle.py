@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build and patch the Unity data.unity3d bundle for PvZ Fusion 4.0.5 (PC & Android).
+"""Build and patch the Unity data.unity3d bundle for PvZ Fusion 4.1 (PC & Android).
 
 Consumes clean translation data from translation-data/ directory:
 1. Almanac TextAssets (LawnStrings, ZombieStrings, DetailStrings)
@@ -14,9 +14,15 @@ import argparse
 import json
 import re
 import struct
+import sys
 import time
 from pathlib import Path
 from typing import Any
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 
 import UnityPy
 from UnityPy.enums import TextureFormat
