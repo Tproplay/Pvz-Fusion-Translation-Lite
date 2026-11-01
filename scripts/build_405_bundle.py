@@ -706,6 +706,40 @@ def patch_ui_strings(
         if text_modified:
             obj.set_raw_data(new_raw)
 
+    # Patch HoverGardenConfig quality tiers (PathID 195430 or by signature)
+    for obj in env.objects:
+        if obj.type.name != "MonoBehaviour":
+            continue
+        raw = bytes(obj.get_raw_data())
+        if len(raw) >= 588 and struct.unpack_from("<i", raw, 524)[0] == 5:
+            if b"\xe6\x9c\xa8\xe5\xa4\xb4" in raw[528:544] and b"\xe7\x99\xbd\xe9\x93\xb6" in raw[540:556]:
+                pos = 528
+                orig_tiers = []
+                for _ in range(5):
+                    tlen = struct.unpack_from("<i", raw, pos)[0]
+                    tstr = raw[pos + 4 : pos + 4 + tlen].decode("utf-8", "ignore")
+                    orig_tiers.append(tstr)
+                    pad = (4 - (tlen % 4)) % 4
+                    pos += 4 + tlen + pad
+
+                serialized_tiers = bytearray()
+                replaced_names = []
+                for orig_tier in orig_tiers:
+                    trans = exact_map.get(orig_tier, orig_tier)
+                    trans_with_space = f"{trans} " if not trans.endswith(" ") else trans
+                    replaced_names.append(trans_with_space)
+                    t_bytes = trans_with_space.encode("utf-8")
+                    serialized_tiers.extend(struct.pack("<i", len(t_bytes)))
+                    serialized_tiers.extend(t_bytes)
+                    pad = (4 - (len(t_bytes) % 4)) % 4
+                    serialized_tiers.extend(b"\x00" * pad)
+
+                new_raw = raw[:528] + serialized_tiers + raw[pos:]
+                obj.set_raw_data(bytes(new_raw))
+                stats["hover_garden_config_tiers"] = replaced_names
+                print(f"Patched HoverGardenConfig quality tiers (PathID {obj.path_id}): {replaced_names}")
+                break
+
     game_object_name_map = {
         name: exact_map[name] for name in ("铅笔", "橡皮") if name in exact_map
     }
