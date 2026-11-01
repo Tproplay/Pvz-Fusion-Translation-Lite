@@ -203,10 +203,20 @@ def render_regex_template(
             return ""
         if exact_map and g in exact_map:
             return exact_map[g]
+        if exact_map and g.strip() in exact_map:
+            leading = g[: len(g) - len(g.lstrip())]
+            trailing = g[len(g.rstrip()) :]
+            return f"{leading}{exact_map[g.strip()]}{trailing}"
         if exact_map:
-            tag_m = re.match(r"^(<[^>]+>)(.+?)(</[^>]+>)$", g)
-            if tag_m and tag_m.group(2) in exact_map:
-                return f"{tag_m.group(1)}{exact_map[tag_m.group(2)]}{tag_m.group(3)}"
+            tag_m = re.match(r"^((?:<[^>]+>)+)(.+?)((?:</[^>]+>)+)$", g)
+            if tag_m:
+                inner = tag_m.group(2)
+                if inner in exact_map:
+                    return f"{tag_m.group(1)}{exact_map[inner]}{tag_m.group(3)}"
+                if inner.strip() in exact_map:
+                    leading = inner[: len(inner) - len(inner.lstrip())]
+                    trailing = inner[len(inner.rstrip()) :]
+                    return f"{tag_m.group(1)}{leading}{exact_map[inner.strip()]}{trailing}{tag_m.group(3)}"
         return g
 
     translated_groups = [_trans_val(g) for g in groups]

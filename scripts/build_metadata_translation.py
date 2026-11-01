@@ -792,14 +792,31 @@ def translate_literal(
         match = compiled.search(text)
         if match is None:
             continue
-        dynamic: list[str] = []
-        for group in match.groups():
-            if group in exact:
-                dynamic.append(exact[group])
-            elif group in observed:
-                dynamic.append(observed[group][0])
-            else:
-                dynamic.append(group)
+        def _trans_meta_group(g: str | None) -> str:
+            if g is None:
+                return ""
+            if g in exact:
+                return exact[g]
+            if g in observed:
+                return observed[g][0]
+            if g.strip() in exact:
+                leading = g[: len(g) - len(g.lstrip())]
+                trailing = g[len(g.rstrip()) :]
+                return f"{leading}{exact[g.strip()]}{trailing}"
+            tag_m = re.match(r"^((?:<[^>]+>)+)(.+?)((?:</[^>]+>)+)$", g)
+            if tag_m:
+                inner = tag_m.group(2)
+                if inner in exact:
+                    return f"{tag_m.group(1)}{exact[inner]}{tag_m.group(3)}"
+                if inner in observed:
+                    return f"{tag_m.group(1)}{observed[inner][0]}{tag_m.group(3)}"
+                if inner.strip() in exact:
+                    leading = inner[: len(inner) - len(inner.lstrip())]
+                    trailing = inner[len(inner.rstrip()) :]
+                    return f"{tag_m.group(1)}{leading}{exact[inner.strip()]}{trailing}{tag_m.group(3)}"
+            return g
+
+        dynamic = [_trans_meta_group(group) for group in match.groups()]
         result = csharp_format(template, dynamic)
         # A broad PC regex can legitimately produce another PC source key.
         # Example: 手推车挑战 becomes the intermediate mixed-language text
