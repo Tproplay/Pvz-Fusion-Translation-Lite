@@ -572,6 +572,8 @@ def patch_ui_strings(
         except Exception:
             pass
 
+    exact_map_norm = {k.replace("\r\n", "\n").strip(): v for k, v in exact_map.items()}
+
     tmp_script_ids, ui_text_script_ids, input_field_script_ids = discover_ui_script_ids(env)
     print(f"Discovered UI script IDs: TMP={tmp_script_ids}, UI.Text={ui_text_script_ids}, InputField={input_field_script_ids}")
 
@@ -617,8 +619,14 @@ def patch_ui_strings(
                 replacer = lambda r, v: replace_ui_text(r, v, ui_text_script_ids)
             else:
                 replacer = replace_tmp_text
-            if text in exact_map:
-                val = exact_map[text]
+            val = exact_map.get(text)
+            if val is None:
+                norm_text = text.replace("\r\n", "\n").strip()
+                val = exact_map_norm.get(norm_text)
+                if val is not None and "\r\n" in text and "\r\n" not in val:
+                    val = val.replace("\n", "\r\n")
+
+            if val is not None:
                 if "Credits" in val and "蓝飘飘fly" in val:
                     clean_val = clean_size_tags(val)
                     if platform == "pc":
@@ -637,6 +645,8 @@ def patch_ui_strings(
             else:
                 for regex, repl in compiled_regexs:
                     m = regex.search(text)
+                    if not m:
+                        m = regex.search(text.replace("\r\n", "\n").strip())
                     if m:
                         try:
                             translated_text = render_regex_template(repl, m, exact_map)

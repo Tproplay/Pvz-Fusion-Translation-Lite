@@ -690,7 +690,7 @@
         },
         "13002": {
             "name": "Voodoo Dummy",
-            "desc": "Summons a Dummy Zombie on the lawn which distributes 60% of the damage it takes among all zombies; can be moved with the Zombie Glove; cannot transfer damage dealt by Hypnotized Zombies"
+            "desc": "Summons a Dummy Zombie on the lawn which distributes 60% of damage taken equally among all zombies; can be moved with Zombie Glove.\nInstantly eliminates touched hypnotized zombies"
         },
         "13003": {
             "name": "Voodoo Dummy - A",
