@@ -671,7 +671,7 @@
   "^当前积分\\s*(\\d+:\\d+)$": "Current Points: {1}",
   "^生命\\s*(\\d+/\\d+)$": "HP {1}",
   "^连胜\\s*(\\d+)\\s*预计利息\\s*(\\d+)$": "Streak {1}  Est. Interest {2}",
-  "^旅行进化\\s*(.+)[，,]\\s*生命\\s*(.+)[，,]\\s*难度\\s*(.+)$": "Odyssey Evolution {1}, HP {2}, Difficulty {3}",
+  "^旅行进化\\s*(.+)[，,]\\s*生命\\s*(.+)[，,]\\s*难度\\s*(.+)$": "Odyssey Evolved {1}, HP {2}, Difficulty {3}",
   "^商店 Lv\\.(\\d+)\\s*卡槽\\s*(\\d+/\\d+)\\s*\\n?备战\\s*(\\d+/\\d+)\\s*装备\\s*(\\d+)\\s*礼盒\\s*(\\d+)$": "Shop Lv.{1}  Slots {2}\nBench {3}  Gear {4}  Boxes {5}",
   "^(?!待)([^\\s：]+)(：?挑战1?)$": "Fusion Challenge: {1}",
   "^(.+?)[,，]\\s*生命\\s*(\\d+/\\d+)[,，]\\s*难度\\s*(.+)$": "{1}, HP {2}, Difficulty {3}",
@@ -716,5 +716,20 @@
   "^点击后[，,]?\\s*从\\s*(\\d+)\\s*种随机\\s*(.+?)\\s*品质究极植物中选择1张\\r?\\n消耗品[，,]?\\s*选取成功后消耗1个$": "Click to choose 1 of {1} random {2} Ultimate Plants\nConsumable; consumed upon successful selection",
   "^点击后[，,]?\\s*从\\s*(\\d+)\\s*件随机基础装备中选择1件\\r?\\n消耗品[，,]?\\s*选取成功后消耗1个$": "Click to choose 1 of {1} random Basic Gear\nConsumable; consumed upon successful selection",
   "^点击后[，,]?\\s*从\\s*(\\d+)\\s*件随机进阶装备中选择1件\\r?\\n消耗品[，,]?\\s*选取成功后消耗1个$": "Click to choose 1 of {1} random Advanced Gear\nConsumable; consumed upon successful selection",
-  "^点击后[，,]?\\s*从\\s*(\\d+)\\s*件随机究极装备中选择1件\\r?\\n消耗品[，,]?\\s*选取成功后消耗1个$": "Click to choose 1 of {1} random Ultimate Gear\nConsumable; consumed upon successful selection"
-}
+  "^点击后[，,]?\\s*从\\s*(\\d+)\\s*件随机究极装备中选择1件\\r?\\n消耗品[，,]?\\s*选取成功后消耗1个$": "Click to choose 1 of {1} random Ultimate Gear\nConsumable; consumed upon successful selection",
+  "^木头(.+)$": "Wood {1}",
+  "^白银(.+)$": "Silver {1}",
+  "^黄金(.+)$": "Gold {1}",
+  "^钻石(.+)$": "Diamond {1}",
+  "^棱彩(.+)$": "Prismatic {1}",
+  "^探索\n(.+)\n解锁(.+)$": "Explore\n{1}\nUnlock {2}",
+  "^Unexplored · 白银(.+)$": "Unexplored · Silver {1}",
+  "^Unexplored · 黄金(.+)$": "Unexplored · Gold {1}",
+  "^Unexplored · 钻石(.+)$": "Unexplored · Diamond {1}",
+  "^Unexplored · 棱彩(.+)$": "Unexplored · Prismatic {1}",
+  "^出售全部(.+?)植物卡\\s*[·\\.]\\s*(\\d+)张\\s*[·\\.]\\s*回收(\\d+(?:,\\d+)*)阳光$": "Sell All {1} Plant Cards · {2} Card(s) · Recycles {3} Sun",
+  "^产光\\s*(\\d+(?:\\.\\d+)?%)$": "Sun Prod {1}",
+  "^研究\\s*[·\\.]\\s*(\\d+)点$": "Research: {1} Pt(s)",
+  "^下波\\s*(\\d+(?:\\.\\d+)?)\\s*秒$": "Next Wave: {1}s",
+  "^最近自动保存[，,]?$": "Latest Auto-Save"
+}
