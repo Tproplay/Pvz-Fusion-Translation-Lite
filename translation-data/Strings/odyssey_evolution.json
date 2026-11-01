@@ -481,9 +481,9 @@
   "赋能": "Empower",
   "Upgrade: 赋能": "Upgrade: Empower",
   "在场上生成一个木桩僵尸,木桩僵尸会把受到伤害的60%均摊给全场僵尸,可以使用僵尸手套移动木桩僵尸\n木桩会秒杀解除到的魅惑僵尸": "Spawns a Dummy Zombie on the lawn which distributes 60% of damage taken equally among all zombies; can be moved with Zombie Glove.\nInstantly eliminates touched hypnotized zombies",
-  "超级叠叠乐": "Super Stack-Up",
-  "旅行 进化\n全新升级": "Odyssey: Evolved\nAll-New Upgrade",
-  "旅行：进化\n全新升级": "Odyssey: Evolved\nAll-New Upgrade",
+  "超级叠叠乐": "Plant Tycoon",
+  "旅行 进化\n全新升级": "Odyssey: Evolved",
+  "旅行：进化\n全新升级": "Odyssey: Evolved",
   "狂战-铁卫": "Berserker - Iron Guard",
   "狂战-铁卫：植物在右4列时，对僵尸额外造成30%伤害": "Berserker - Iron Guard: When plants are in the right 4 columns, deal 30% additional damage to zombies",
   "狂战-铁卫：植物在右4列时，对僵尸额外造成100%伤害": "Berserker - Iron Guard: When plants are in the right 4 columns, deal 100% additional damage to zombies",
@@ -1131,5 +1131,7 @@
   "钻石读卡器": "<size=75%>Diamond Card Reader</size>",
   "棱彩读卡器": "<size=75%>Prismatic Card Reader</size>",
   "钻石咖啡豆": "<size=75%>Diamond Coffee Bean</size>",
-  "棱彩咖啡豆": "<size=75%>Prismatic Coffee Bean</size>"
+  "棱彩咖啡豆": "<size=75%>Prismatic Coffee Bean</size>",
+  "每种植物只能出战一张卡，请拖到同种卡牌位置替换": "Only 1 of each plant type can be deployed. Drag to the matching slot to replace it.",
+  "每种植物只能出战一张卡,请拖到同种卡牌位置替换": "Only 1 of each plant type can be deployed. Drag to the matching slot to replace it."
 }
