@@ -542,9 +542,8 @@ def load_pc_translations(
             if not isinstance(pattern, str) or not isinstance(translated, str):
                 continue
             compiled = re.compile(pattern, re.DOTALL)
-            cjk_runs = re.findall(r"[\u3400-\u9fff]+", pattern)
-            anchor = max(cjk_runs, key=len) if cjk_runs else ""
-            regex_entries.append((pattern, translated, compiled, anchor))
+            cjk_runs = tuple(re.findall(r"[\u3400-\u9fff]+", pattern))
+            regex_entries.append((pattern, translated, compiled, cjk_runs))
             added += 1
         counts[filename] = added
 
@@ -725,8 +724,8 @@ def translate_csharp_template_with_pc_regex(
         lambda match: sentinels[int(match.group(1))], text
     )
     candidates: set[str] = set()
-    for _pattern, template, compiled, anchor in regex_entries:
-        if anchor and anchor not in sample:
+    for _pattern, template, compiled, cjk_runs in regex_entries:
+        if cjk_runs and not any(run in sample for run in cjk_runs):
             continue
         match = compiled.search(sample)
         if match is None or match.span() != (0, len(sample)):
@@ -786,8 +785,8 @@ def translate_literal(
         translated, label = observed[text]
         return resolve_chain(translated), f"reference:{label}"
 
-    for _pattern, template, compiled, anchor in regex_entries:
-        if anchor and anchor not in text:
+    for _pattern, template, compiled, cjk_runs in regex_entries:
+        if cjk_runs and not any(run in text for run in cjk_runs):
             continue
         match = compiled.search(text)
         if match is None:
