@@ -19,3 +19,9 @@
 
 ### 3. Workflow & Agent Execution
 * **Single Agent Only**: Do not use multi-agent teamwork orchestration or subagent delegation for translation tasks. Execute all screenshot transcription, string lookups, JSON updates, PC builds, and file cleanups directly as a single agent using the fast CLI tools in `scripts/tools/` (`lookup_string.py`, `apply_translation.py`, `quick_audit.py`) for immediate and rapid execution.
+
+### 4. Translation Data & Integrity Rules
+* **Strict JSON-Only Translations**: Never hardcode Chinese→English translations or dictionary mappings directly inside Python scripts. All translations must be stored in the appropriate JSON files under `translation-data/Strings/` (e.g., `translation_strings.json`, `odyssey_evolution.json`, `abyss_buffs.json`) or structured files (`travel_buffs.json`, `tips_fs.json`). Scripts must only act as loaders/builders that read from these files.
+* **Regex 1-Based Numbering**: In `translation_regexs.json`, all dynamic capture group replacements must strictly use 1-based indexing (`{1}`, `{2}` or `$1`, `$2`). Never use `{0}` as a group reference.
+* **Screenshot Cleanup Policy**: When processing untranslated UI screenshots from `translation-data/untranslated_screenshot/`, delete only the processed `.png` files after verification. Never delete or remove the directories/subfolders themselves.
+* **Protected Internal Enums**: Never translate enum names and identifiers that are parsed dynamically via reflection or `Enum.Parse()` (such as entries listed in `translation-data/Strings/shooting_group_names.json`), as translating them causes runtime crashes and corrupts save files.
