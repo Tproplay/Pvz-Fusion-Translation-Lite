@@ -44,9 +44,13 @@ def build_pc(
     meta_orig = pc_dir / "PlantsVsZombiesRH_Data/il2cpp_data/Metadata/global-metadata.dat.orig"
     bundle_target = pc_dir / "PlantsVsZombiesRH_Data/data.unity3d"
     bundle_orig = pc_dir / "PlantsVsZombiesRH_Data/data.unity3d.orig"
+    ga_target = pc_dir / "GameAssembly.dll"
+    ga_orig = pc_dir / "GameAssembly.dll.orig"
 
     ensure_orig_backup(meta_target, meta_orig)
     ensure_orig_backup(bundle_target, bundle_orig)
+    if ga_target.exists():
+        ensure_orig_backup(ga_target, ga_orig)
 
     output_dir.mkdir(parents=True, exist_ok=True)
     meta_report = output_dir / "metadata-report.json"
@@ -95,6 +99,19 @@ def build_pc(
         print(f"-> Bundle built successfully: {bundle_target}")
     else:
         print("\n[2/2] Skipping bundle build (--skip-bundle)")
+
+    # 3. Patch PC GameAssembly (Detour for Level Titles)
+    if ga_orig.exists():
+        print("\n[3/3] Patching PC GameAssembly.dll...")
+        cmd_ga = [
+            py_exe,
+            str(scripts_dir / "patch_pc_binary.py"),
+        ]
+        res = subprocess.run(cmd_ga)
+        if res.returncode != 0:
+            print(f"ERROR: GameAssembly patch failed with code {res.returncode}")
+            return res.returncode
+        print(f"-> GameAssembly patched successfully: {ga_target}")
 
     elapsed = round(time.time() - start_time, 2)
     print("\n" + "=" * 60)
