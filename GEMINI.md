@@ -16,3 +16,6 @@
 * **Distribution Mirrors**:
   * **Google Drive**: Update existing file IDs in-place using `gdrive mutate update`.
   * **GitHub Release**: Update release metadata and assets for `v4.1` using `scripts/publish_github_release.py`.
+
+### 3. Workflow & Agent Execution
+* **Single Agent Only**: Do not use multi-agent teamwork orchestration or subagent delegation for translation tasks. Execute all screenshot transcription, string lookups, JSON updates, PC builds, and file cleanups directly as a single agent using the fast CLI tools in `scripts/tools/` (`lookup_string.py`, `apply_translation.py`, `quick_audit.py`) for immediate and rapid execution.
