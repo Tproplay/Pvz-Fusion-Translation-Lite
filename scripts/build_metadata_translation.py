@@ -674,11 +674,13 @@ def csharp_format(template: str, values: Iterable[str]) -> str:
     close_token = "\0CLOSE_BRACE\0"
     protected = template.replace("{{", open_token).replace("}}", close_token)
     has_zero = bool(re.search(r"\{0\}", protected))
-
     def replace(match: re.Match[str]) -> str:
         index = int(match.group(1))
         actual_index = index if has_zero else (index - 1)
-        return values_list[actual_index] if 0 <= actual_index < len(values_list) else match.group(0)
+        if 0 <= actual_index < len(values_list):
+            v = values_list[actual_index]
+            return v if v is not None else ""
+        return match.group(0)
 
     protected = re.sub(r"\{(\d+)(?:,[^}:]+)?(?::[^}]+)?\}", replace, protected)
     return protected.replace(open_token, "{").replace(close_token, "}")

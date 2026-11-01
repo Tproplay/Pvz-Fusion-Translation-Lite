@@ -198,10 +198,18 @@ def render_regex_template(
     if not groups:
         return template
 
-    translated_groups = [
-        exact_map.get(g, g) if exact_map and g in exact_map else g
-        for g in groups
-    ]
+    def _trans_val(g: str | None) -> str:
+        if g is None:
+            return ""
+        if exact_map and g in exact_map:
+            return exact_map[g]
+        if exact_map:
+            tag_m = re.match(r"^(<[^>]+>)(.+?)(</[^>]+>)$", g)
+            if tag_m and tag_m.group(2) in exact_map:
+                return f"{tag_m.group(1)}{exact_map[tag_m.group(2)]}{tag_m.group(3)}"
+        return g
+
+    translated_groups = [_trans_val(g) for g in groups]
 
     result = template
     has_zero = bool(re.search(r"\{0\}", result))
