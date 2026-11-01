@@ -655,7 +655,6 @@
   "选择你要挑战的难度": "Choose Your Difficulty",
   "普通": "Normal",
   "极限": "Extreme",
-  "深渊：第(\\d+)关": "Abyss: Level {0}",
   "究极植物数量已达上限": "Odyssey Plants Limit Reached!",
   "关卡结算": "Level Statistics",
   "丢失小推车数量": "Number of lost lawn mowers:",
@@ -7137,4 +7136,4 @@
   "额外获得{0}件基础装备": "Gain an extra {0} Basic Gear",
   "遭遇：选择难度": "Encounter: Choose Difficulty",
   "遭遇选择难度": "Encounter: Choose Difficulty"
-}
+}
