@@ -74,13 +74,13 @@
         },
         {
             "theZombieType": 12,
-            "name": "Ducky Tube Conehead Zombie",
+            "name": "Ducky Tube Conehead",
             "introduce": "<align=left><color=black>They say bad students always have fancy stationery, but Ducky Tube Conehead doesn't agree. After all, he refuses to admit he's one of them.</color>",
             "info": "Can swim in water lanes.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 370 (Type 1)</color>"
         },
         {
             "theZombieType": 13,
-            "name": "Ducky Tube Buckethead Zombie",
+            "name": "Ducky Tube Buckethead",
             "introduce": "<align=left><color=black>Ducky Tube Buckethead never wanted to wear that leaky float ring… but what can he do? That rusty bucket on his head isn't exactly waterproof.</color>",
             "info": "Can swim in water lanes.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 1100 (Type 1)</color>"
         },
@@ -332,7 +332,7 @@
         },
         {
             "theZombieType": 55,
-            "name": "Frost Legion Blockhead Zombie",
+            "name": "Frost Legion Blockhead",
             "introduce": "<align=left><color=black>\"In the freezing Snowy Plains, keeping warm is essential. In fact, ice makes a great insulator,\" Blockhead Zombie proudly tells the others—but no one takes his advice. He doesn't seem to notice that ice is also a great soundproofing material.</color>",
             "info": "A legionnaire zombie wearing an iceblock helmet.\n\n<color=black>Toughness: </color><color=#4B0082>500 + 370 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Immune to Chill and Freeze. Vulnerable to Deep Chill.</color>"
         },
@@ -356,7 +356,7 @@
         },
         {
             "theZombieType": 59,
-            "name": "Dolphinhead Newspaper Zombie",
+            "name": "Dolphinhead Newspaper",
             "introduce": "<align=left><color=black>He once dreamed of becoming a mermaid, but the surgeon who was supposed to fix him got his top and bottom halves completely mixed up.</color>",
             "info": "Gets angry when his reading is interrupted... then goes home to fetch another tabloid.\n\n<color=black>Toughness: </color><color=#4B0082>720 + 720 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>After losing his tabloid, greatly increases speed and reverses direction. Upon exiting on the right, spawns a brand new Dolphinhead Newspaper Zombie. This does not trigger if he's hypnotized.</color>"
         },
@@ -368,7 +368,7 @@
         },
         {
             "theZombieType": 61,
-            "name": "Dolphinhead Football Zombie",
+            "name": "Dolphinhead Football",
             "introduce": "<align=left><color=black>This guy moves like a fish in water on the football field. Wait! It's supposed to be a metaphor! Who said you could flood the lawn!?</color>",
             "info": "Moves across the field with nimble strides, eager to show off his stylish helmet.\n\n<color=black>Toughness: </color><color=#4B0082>720 + 1400 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Ignores plant collision while wearing his helmet. Upon reaching the first column or the edge of the lawn, he restores all HP, equips a new helmet, and reverses direction.</color>"
         },
@@ -452,7 +452,7 @@
         },
         {
             "theZombieType": 75,
-            "name": "Hypno Pepper Digger Zombie",
+            "name": "Hypno Pepper Digger",
             "introduce": "<align=left><color=black>Hypno Pepper Digger excels at sneaking behind defenses, using her magically infused pickaxe to convert plants into zombies. But those newly made zombies are righteous at heart: they dislike ambush tactics and will turn against her… unaware that they are also 'ambushing the ambusher'.</color>",
             "info": "Uses her pickaxe to convert plants into Hypnotized Zombies, then burns them with a self-destruct flame.\n\n<color=black>Toughness: </color><color=#4B0082>1500</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> If pickaxe hasn't been removed, attacks convert non-defensive plants into random hypnotized zombotanies, or apply 500 mining progress to defensive plants.\n<color=black>•</color>On reaching the backline and emerging, she will self-destruct like the Hypno Pepper Zombie after a short delay, releasing a row of flames that deals 1800 damage only to Hypnotized Zombies in her lane.</color>"
         },
@@ -464,13 +464,13 @@
         },
         {
             "theZombieType": 77,
-            "name": "Olympic Pole Vaulting Zombie",
+            "name": "Olympic Pole Vaulting",
             "introduce": "<align=left><color=black>Powerful burst strength is Olympic Pole Vaulting Zombie's secret to victory. As long as he runs faster during his approach, he can leap farther when taking off - though he seems to have forgotten that pole vaulting is about jumping high, not jumping far.</color>",
             "info": "Excels at long-distance jumps, and with sufficient run-up can flawlessly clear obstacles.\n\n<color=black>Toughness: </color><color=#4B0082>1350</color>\n<color=black>Traits: </color><color=#4B0082>When encountering the first plant, vaults forward 3 tiles and then loses the pole. Begins accelerating for a run-up upon entering the field. If the run-up lasts more than 8s, the jump becomes unblockable by tall plants.</color>"
         },
         {
             "theZombieType": 78,
-            "name": "Chameleon Football Zombie",
+            "name": "Chameleon Football",
             "introduce": "<align=left><color=black>The Chameleon Football Zombie has never lost a single match in his entire career — an achievement most Football Zombies can only dream of. His secret to victory is surprisingly simple: whenever the opponent is about to win, he just switches into their uniform.</color>",
             "info": "Changes into different-colored uniforms based on incoming damage intensity.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 1400  (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>After 15s on the field, if he is still wearing his football helmet, he becomes a regular Football Zombie. Otherwise, he becomes a Rush Football Zombie that ignores plant. If defeated within 3s of appearing, he instead becomes a Giga Football Zombie with high toughness whose helmet cannot be removed by Magnet-shrooms.\n<color=black>Weakness: </color><color=#4B0082>Magnet-shroom</color>"
         },
@@ -494,7 +494,7 @@
         },
         {
             "theZombieType": 82,
-            "name": "Buckethead Newspaper Zombie",
+            "name": "Buckethead Newspaper",
             "introduce": "<align=left><color=black>What do lawn mowers, popcorn machines, and Buckethead Newspaper Zombies have in common? They're all tough as steel, painted red, very old — and they all creak when they move.</color>",
             "info": "Firmly believes in the protective power of metal, and shares his \"expertise\" with others through his magazine.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 1100 (Type 1) + 1100 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>On spawn, grants 50 DR Value to himself and all other Newspaper Zombies in the same lane. After his magazine is destroyed, this bonus increases to 100.</color>\n<color=black>Weakness: </color><color=#4B0082>Magnet-shroom</color>"
         },
@@ -512,7 +512,7 @@
         },
         {
             "theZombieType": 85,
-            "name": "Frost Legion Packed Ice Zombie",
+            "name": "Frost Legion Packed Ice",
             "introduce": "<align=left><color=black>Don't worry, even if all the inner ice melts, he's not going to get water in his brain — he has got none of that left!</color>",
             "info": "A tundra zombie that uses layered ice as armor.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 1100 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Immune to Chill and Freeze.</color>"
         },
@@ -548,7 +548,7 @@
         },
         {
             "theZombieType": 91,
-            "name": "Pole Vaulting Football Zombie",
+            "name": "Pole Vaulting Football",
             "introduce": "<align=left><color=black>No one knows why Pole-Vaulting Football Zombie brings a pole to a football game, but according to him, it's because he wants to use it to jump over that horse wearing a jersey.</color>",
             "info": "A Football zombie that also pole-vaults.\n\n<color=black>Toughness: </color>720+1400 (Type 1)\n<color=black>Movement Speed: </color>Medium Fast\n<color=black>Traits: </color><color=#4B0082>Vaults over the first Plant he encounters (blocked by Tall Plants), then loses his pole.</color>"
         },
@@ -626,7 +626,7 @@
         },
         {
             "theZombieType": 104,
-            "name": "Cherryshooter Newspaper Zombie",
+            "name": "Cherryshooter Newspaper",
             "introduce": "<align=left><color=black>This zombie's favorite fruit is cherries, and even his newspaper is cherry-flavored. The newspaper he holds is the only thing that can temper his rage.</color>",
             "info": "Goes into an explosive cherry barrage when his newspaper is broken.\n\n<color=black>Damage: </color><color=#4B0082>1000 (explosive cherries)</color>\n<color=black>Toughness: </color><color=#4B0082>1500 + 200 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>Becomes temporarily invincible after its newspaper's broken, then proceeds to shoot explosive cherries every 0.75s.</color>\n<color=black>Explosion Range: </color><color=#4B0082>Cross Splash, can be absorbed by Wall-nuts and Pumpkins at Difficulty 4 or lower.</color>"
         },
@@ -662,7 +662,7 @@
         },
         {
             "theZombieType": 110,
-            "name": "Golden Mystery-box Zombie",
+            "name": "Golden Mystery-box",
             "introduce": "<align=left><color=black>Golden Mystery-box Zombie just can't make up his mind. One moment, he wants to dress up as a Buck-nut Zombie. The next, he's invested in reading like Scholar Zombie. Perhaps swatting that box off his head will help him make a decision...\n\n-Written by Hazy</color>",
             "info": "A golden one!? I wonder what's inside this Mystery-box...\n\n<color=black>Toughness: </color><color=#4B0082>270 + 720 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>After the box falls off, spawns a random non-Odyssey zombie with full Toughness. Also has a chance to unlock an Odyssey Modifier when defeated, up to 1 per minute.</color>"
         },
@@ -686,7 +686,7 @@
         },
         {
             "theZombieType": 114,
-            "name": "Screen Door Buckshooter Zombie",
+            "name": "Screen Door Buckshooter",
             "introduce": "<align=left><color=black>Screen Door Buckshooter Zombie loves piling on layers of iron gear, much to the confusion of his fellow zombies. \"If Magnet-shrooms can yank off our helmets, why not just wear MORE metal?\" he reasoned. His logic seemed sound—until he met the Magnet Blover and learned that sometimes, less is more.</color>",
             "info": "Buckshooter Zombie has acquired some new equipment: a bucket and a screen door!\n\n<color=black>Damage: </color><color=#4B0082>80/1.5s</color>\n<color=black>Toughness: </color><color=#4B0082>1350 + 1100 (Type 1) + 1100 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>Constantly shoots iron peas at your plants whilst having decent defense. These can knock back hypnotized zombies.</color>"
         },
@@ -824,7 +824,7 @@
         },
         {
             "theZombieType": 203,
-            "name": "Gatling Cherry Newspaper Zombie",
+            "name": "Gatling Cherry Newspaper",
             "introduce": "<align=left><color=black>\"I'm getting old...\" Gatling Cherry Newspaper Zombie lamented while walking through the street. Despite containing his pressure, it was enough to keep both plants and zombies down. \"Only that guy can still inspire me to fight...\" he muttered as he put away the newspaper and ambled on.</color>",
             "info": "Deals immense damage.\n\n<color=black>Damage:</color><color=#4B0082>400 (biting) 1000 (cherries)</color>\n<color=black>Toughness: </color><color=#4B0082>1500 + 1500 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>Invulnerable until his newspaper is destroyed. Becomes temporarily invincible after its newspaper's broken, and proceeds to shoot 4 explosive cherries every 0.5s.</color>\n<color=black>Odyssey Modifiers:\n</color><color=#4B0082>1. Now ignores plants when enraged\n2. Now immune to status effects</color>"
         },
@@ -890,13 +890,13 @@
         },
         {
             "theZombieType": 214,
-            "name": "Gatling Explode-o-rider Zombie",
+            "name": "Gatling Explode-o-rider",
             "introduce": "<align=left><color=black>Gatling Explode-o-rider Zombie always wakes up in a terrible mood — especially when a whale riding colleague drags him to work. Fueled by rage, he's ready to blow away any plants in his path before heading back for a nap.</color>",
             "info": "Jumps into and demolishes from behind your defense by shooting explosive cherries!\n\n<color=black>Damage: </color><color=#4B0082>1000</color>\n<color=black>Toughness: </color><color=#4B0082>1500</color>\n<color=black>Traits: </color><color=#4B0082>Starts to shoot 4 explosive cherries every 1.5s, 3s after entering your lawn.</color>"
         },
         {
             "theZombieType": 215,
-            "name": "Diamond Mystery-box Zombie",
+            "name": "Diamond Mystery-box",
             "introduce": "<align=left><color=black>A master of cosplay, Diamond Mystery-box Zombie knows how to act as tough as the big shots of the zombie league. The only thing stopping them from pretending to be Dr. Edgar Zomboss is the paralyzing fear of encountering the <i>actual</i> Dr. Edgar.\n\n-Written by Hazy</color>",
             "info": "Randomly spawns one of your worst nightmares, or a blessing perhaps?\n\n<color=black>Toughness: </color><color=#4B0082>20000 + 1100 (Type 1)\n<color=black>Traits: </color><color=#4B0082>After the box falls off, spawns a random Odyssey zombie with 80/100/120% Toughness. Also has a chance to unlock an Odyssey Modifier when defeated, up to 1 per minute.</color>"
         },
@@ -968,7 +968,7 @@
         },
         {
             "theZombieType": 227,
-            "name": "Frost Tall-nut Iceclaw Zombie",
+            "name": "Frost Tall-nut Iceclaw",
             "introduce": "<align=left><color=black>Unlike other zombies that live surrounding the snow, Frost Tall-nut Iceclaw Zombie doesn't like hiding in igloos to escape the freezing winds. Not because his consitution allows for resistance to the cold... but because his head's too big!</color>",
             "info": "Frost Tall-nut Zombies with icy claws. They pack a punch.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 1100 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Inherits traits from Frost Tall-nut Zombie. Transformed from regular zombies by Doominator and Thornminator.</color>"
         },
@@ -1040,7 +1040,7 @@
         },
         {
             "theZombieType": 239,
-            "name": "Clown-on-the-Jetski Zombie",
+            "name": "Clown-on-the-Jetski",
             "introduce": "<align=left><color=black>The first zombie to use pogo sticks and Jack-in-the-Boxes on water. How did he do it? \"Science! Newton's third law, nitroglycerin, and springs! Oh yeah!\" Is he a genius or a maniac? Who knows!</color>",
             "info": "Uses a modified pogo stick to jetski across water lanes, rushing at plants and littering a cluster of Jack-in-the-Boxes.\n\n<color=black>Toughness: </color><color=#4B0082>6000</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Very fast. When stopped by a plant, dies instantly and litters bombs that detonate like Jack-in-the-Boxes within a 3.5-tile radius, for a total of (plants hit × map lanes) bombs, each dealing 500 damage.\n<color=black>•</color> Always triggers a Jack-in-the-Box explosion on death.</color>\n<color=black>Odyssey Modifiers:\n</color><color=#4B0082>1. Bomb damage +500\n2. Bomb damage +500</color>"
         },
@@ -1058,7 +1058,7 @@
         },
         {
             "theZombieType": 242,
-            "name": "Gatling Doom Newspaper Zombie",
+            "name": "Gatling Doom Newspaper",
             "introduce": "<align=left><color=black>Gatling Doom Newspaper Zombie is highly accomplished in both explosives science and nuclear physics. After dedicating half his life to science, he now chooses to hide his achievements and simply enjoy his crossword puzzles. But if anyone dares to disturb his reading time, he does not mind showing off his old graduation project.</color>",
             "info": "Fires hard-to-extinguish Irradiated Shells and can forcibly heal himself by reducing his own lifespan.\n\n<color=black>Damage: </color><color=#4B0082>400 (bite) 1000 (doom shell)</color>\n<color=black>Toughness: </color><color=#4B0082>1500 +1500 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Inherits traits from Scholar Zombie.\n<color=black>•</color> After losing his newspaper, fires 4 Irradiated Shells every 0.5s. These each deal a total of 5 instances of damage to plants, with 1s between each instance of damage. After dealing damage to plants, recovers an equal amount of HP when taking damage but reduces own max HP by 1%.</color>"
         },
@@ -1094,7 +1094,7 @@
         },
         {
             "theZombieType": 248,
-            "name": "Obsidian Tall-nut Iceclaw Zombie",
+            "name": "Obsidian Tall-nut Iceclaw",
             "introduce": "<align=left><color=black>Obsidian Tall-nut Iceclaw Zombie loves to meditate. He likes to find a quiet place to sit down, gently stroking his weathered obsidian head with his claws, producing a pleasing rustling sound. He lets his thoughts drift with time, only to gather again at some moment, pulling him back to reality. Looking at the obsidian powder he scraped off, he can't help but exclaim: \"Wow, I'm so cool I'm literally flaking!\"</color>",
             "info": "Possesses sharp obsidian iceclaws that deal tremendous damage.\n\n<color=black>Damage: </color><color=#4B0082>1000\n<color=black>Toughness: </color>720 + 4400 (Type 1)\n<color=black>Movement Speed: </color>Medium\n<color=black>Traits: </color>Immune to Chill and Freeze. Vulnerable to Deep Chill.</color>"
         },
@@ -1118,7 +1118,7 @@
         },
         {
             "theZombieType": 252,
-            "name": "Buckshot Knight Captain Zombie",
+            "name": "Buckshot Knight Captain",
             "introduce": "<align=left><color=black>Equipped with a powerful, long-range Gatling gun, and clad in tough football gear for himself and his mount, Buckshot Knight Captain Zombie bought his knighthood with three brain combo meals. Using his flag to command and coordinate with his comrades, he is fully armed from body to name. \"Perhaps we should give him a simpler name, like Tank,\" Dr. Zomboss remarked.</color>",
             "info": "Advances steadily riding a cursed steed in iron armor, summoning his subordinates to attack when the situation turns unfavorable.\n\n<color=black>Damage: </color><color=#4B0082>80x6/1.5s\n<color=black>Toughness: </color>4500 + 9000 (Type 2)\n<color=black>Movement Speed: </color>Medium Fast\n<color=black>Traits:</color>\n<color=black>•</color> Immune to knockback.\n<color=black>•</color> Rides a steed that crushes plants.\n<color=black>•</color> When crushing, applies [0.01 × (Plant HP + Toughness) / 2] curse stacks. When base HP falls below 50%, summons a column of Black Knight Zombies. When the steed is defeated, dismounts, fully restores HP, and transforms into a Buckshot Commando Zombie.</color>"
         },
@@ -1142,13 +1142,13 @@
         },
         {
             "theZombieType": 256,
-            "name": "Giga Football Acrobat Zombie",
+            "name": "Giga Football Acrobat",
             "introduce": "<align=left><color=black>Ever since Giga Football Acrobat Zombie was a kid, his biggest dream was to collect all the flags from his matches, enemies, and battles, and wear them as a way to show his power and skill. He still hasn't collected all the flags, but one thing is for sure: he's got quite a few of them, and each one carries a long story about how he obtained it.\n\n-- Written by clarkstacks</color>",
             "info": "Rolls through gaps in the defenses and tears through plants with razor-sharp claws.\n\n<color=black>Damage: </color><color=#4B0082>100 (bite)\n<color=black>Toughness: </color>3000 + 6000 (Type 1)\n<color=black>Movement Speed: </color>Medium Fast\n<color=black>Traits: </color>\n<color=black>•</color> Has 80% knockback resistance. Bites apply Curse stacks equal to his attack power.\n<color=black>•</color> After his first bite, performs a roll, moving forward 2.7 tiles while ignoring plants.\n<color=black>Odyssey Modifiers:</color>\n1. Roll once immediately on appearance\n2. Deal ×2 damage after rolling</color>"
         },
         {
             "theZombieType": 257,
-            "name": "Giga Football-nut Acrobat Zombie",
+            "name": "Giga Football-nut Acrobat",
             "introduce": "<align=left><color=black>What is the most important thing for learning how to roll? Talent, technique, or tireless practice day and night? \"None of those!\" Giga Football-nut Acrobat Zombie gave the final answer: \"What you need to learn how to roll is a head hard enough to withstand it!\"</color>",
             "info": "A stronger Football Acrobat Zombie who rallies his troops and launches attacks with his rolls.\n\n<color=black>Damage: </color><color=#4B0082>200 (bite)\n<color=black>Toughness: </color>3000 + 12000 (Type 1)\n<color=black>Movement Speed: </color>Medium Fast\n<color=black>Traits: </color>\n<color=black>•</color> Has 80% knockback resistance. Bites apply Curse stacks equal to his attack power.\n<color=black>•</color> After his first bite, performs a roll, moving forward 2.9 tiles while ignoring plants, and summons a column of Giga Football Acrobat Zombies.\n<color=black>Odyssey Modifiers:</color>\n1. Roll once immediately on appearance\n2. Deal ×2 damage after rolling</color>"
         },
@@ -1178,25 +1178,25 @@
         },
         {
             "theZombieType": 262,
-            "name": "Harpooneer Frost Tall-nut Zombie",
+            "name": "Harpooneer Frost Tall-nut",
             "introduce": "<align=left><color=black>Harpooneer Frost Tall-nut Zombie is the most famous fisherman in the Arctic Circle. His harpoon is used to catch the freshest live fish beneath the ice, while his Tall-nut head is used to crack open frozen fish that have been preserved for decades.</color>",
             "info": "Launches Snow Harpoons to glaciate prey, then carves them up one by one with his spear.\n\n<color=black>Toughness: </color>3000 + 6000 (Type 1)\n<color=black>Movement Speed: </color>Medium Fast\n<color=black>Traits: </color>\n<color=black>•</color> Inherits Giga Trident-nut Zombie traits for his harpoon targetting. Immune to Chill, vulnerable to Deep chill.\n<color=black>•</color> 6-9s after entering or when blocked, throws 3 snow harpoons at one target, each causing damage to plants equal to 20% (minimum of 60) of their current HP and applying glaciation.\n<color=black>•</color> Attacks at close range afterwards, applying 1 second of Freeze and 10 Cryo Points to plants in the 2 tiles in front. Plants become glaciated after accumulating 100 Cryo Points.\n<color=black>Odyssey Modifiers:</color>\n1. Now throws 2 extra snow harpoons each attack</color>"
         },
         {
             "theZombieType": 300,
-            "name": "Gatling Cherry Scholar Zombie",
+            "name": "Gatling Cherry Scholar",
             "introduce": "<align=left><color=black>\"There's always more to life than just math puzzles… like the reed outside the window… or tonight's moonlight,\" mumbles Gatling Cherry Scholar Zombie. \"But first, I really need to solve this Sudoku. It's… surprisingly hard.\"</color>",
             "info": "Fires a rapid barrage of explosive cherry rounds when angered.\n\n<color=black>Damage: </color><color=#4B0082>400 (bite) 1000 (explosive cherry)</color>\n<color=black>Toughness: </color><color=#4B0082>1500 + 1500 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 1 Evolved Zombie.\n<color=black>•</color> Inherits traits from Scholar Zombie.\n<color=black>•</color> After losing his paper, fires 4 explosive cherry bullets every 0.5s.</color>"
         },
         {
             "theZombieType": 301,
-            "name": "Gatling Cherry Bachelor Zombie",
+            "name": "Gatling Cherry Bachelor",
             "introduce": "<align=left><color=black>A renowned demolition lecturer at Zombie International University, Gatling Cherry Bachelor Zombie only agreed to come after Professor Cherryz promised three things: cherry pie, big explosions, and Zuma. \"Good ol' Cherryz wasn't wrong,\" he says.</color>",
             "info": "Fires explosive cherries even before getting angry.\n\n<color=black>Damage: </color><color=#4B0082>400 (bite) 1000 (explosive cherry)</color>\n<color=black>Toughness: </color><color=#4B0082>3000 + 3000 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 2 Evolved Zombie.\n<color=black>•</color> Inherits traits from previous tier(s).\n<color=black>•</color> Fires 4 explosive cherries every 1.5s even before losing his newspaper.</color>"
         },
         {
             "theZombieType": 302,
-            "name": "Gatling Cherry Doctor Zombie",
+            "name": "Gatling Cherry Doctor",
             "introduce": "<align=left><color=black>To advance in explosive sciences, Gatling Cherry Doctor Zombie is heading abroad. His cherry pie stash strapped to his back? Just part of being prepared.</color>",
             "info": "Graduated magna cum bombis — ready to show it.\n\n<color=black>Damage: </color><color=#4B0082>400 (bite) 1000 (explosive cherry)</color>\n<color=black>Toughness: </color><color=#4B0082>6000 + 6000 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 3 Evolved Zombie.\n<color=black>•</color> Inherits traits from previous tier(s).\n<color=black>•</color> When angered, picks up his ammo pack and fires 1 extra cherry every 0.5s.</color>"
         },
@@ -1208,19 +1208,19 @@
         },
         {
             "theZombieType": 304,
-            "name": "Giga Football-nut Elite Zombie",
+            "name": "Giga Football-nut Elite",
             "introduce": "<align=left><color=black>Emerging from the depths of an eerie realm, Giga Football-nut Elite Zombie is a living mystery. He embodies being dark, dangerous, and disoriented. Even he can't recall his origins, only that the past feels like a lucid dream that fades with dawn.</color>",
             "info": "A hardened warrior, fearless in the dark.\n\n<color=black>Toughness: </color><color=#4B0082>12000 + 12000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 2 Evolved Zombie. \n<color=black>•</color> Regenerates 5% max HP every 3s.</color>"
         },
         {
             "theZombieType": 305,
-            "name": "Giga Football-nut Leader Zombie",
+            "name": "Giga Football-nut Leader",
             "introduce": "<align=left><color=black>Right-hand zombie to the Striker, Giga Football-nut Leader is admired by subordinates and trusted by command. He's loyal, skilled, and confused why commendations never come in the form of fresh brains.</color>",
             "info": "Tears through the frontlines with ruthless power.\n\n<color=black>Damage: </color><color=#4B0082>200 (bite)</color>\n<color=black>Toughness: </color><color=#4B0082>24000 + 24000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 3 Evolved Zombie.\n<color=black>•</color> Inherits traits from previous tier(s).\n<color=black>•</color> Immune to knockback, chill, freeze, and butter.\n<color=black>•</color> Bites disable plant healing and make victims receive triple damage for 1s.</color>"
         },
         {
             "theZombieType": 306,
-            "name": "Giga Buckshot Leader Zombie",
+            "name": "Giga Buckshot Leader",
             "introduce": "<align=left><color=black>Feared on the battlefield, beloved off it. Giga Buckshot Leader dazzles troops with his signature trick: hiding bullets in his banner.</color>",
             "info": "Suppressive fire that doesn't cease.\n\n<color=black>Damage: </color><color=#4B0082>200 (bite) 80/0.1s (iron pea)</color>\n<color=black>Toughness: </color><color=#4B0082>24000 + 24000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 3 Evolved Zombie.\n<color=black>•</color> Immune to knockback, chill, freeze, and butter.</color>"
         },
@@ -1280,13 +1280,13 @@
         },
         {
             "theZombieType": 316,
-            "name": "Giga Trident-nut Firstmate Zombie",
+            "name": "Giga Trident-nut Firstmate",
             "introduce": "<align=left><color=black>Armed with eye drops and a reinforced Tallnut helmet, he's ready to spear the catch of the day, or his rivals.</color>",
             "info": "You can't dodge what he targets.\n\n<color=black>Toughness: </color><color=#4B0082>6000 + 6000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 2 Evolved Zombie.\n<color=black>•</color> 6-9s after entering or when blocked, throws 8 tridents at random plants 4 tiles ahead (unaffected by Umbrellas).\n<color=black>•</color> Base trident damage +100.</color>"
         },
         {
             "theZombieType": 317,
-            "name": "Giga Trident-nut Captain Zombie",
+            "name": "Giga Trident-nut Captain",
             "introduce": "<align=left><color=black>A mighty warrior once slated for forklift duty — until he failed the helmet size test. So now he simply hurls more tridents, harder.</color>",
             "info": "Tridents rain down in scattershot.\n\n<color=black>Toughness: </color><color=#4B0082>12000 + 12000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 3 Evolved Zombie.\n<color=black>•</color> 6-9s after entering or when blocked, throws 12 cluster tridents.\n<color=black>•</color> Splits into 1 extra trident for each plant 4 tiles ahead. \n<color=black>•</color> Base trident damage +300.</color>"
         },
@@ -1304,7 +1304,7 @@
         },
         {
             "theZombieType": 320,
-            "name": "Netherite Excavator Zombie",
+            "name": "Netherite Excavator",
             "introduce": "<align=left><color=black>Head of the Zombie's Nether Mining Bureau followed by hundreds of eager, labor-worthy zombies, he dreams of a mining empire. Edgar scoffs: \"He just keeps tunneling into other zombies' graves since he's blinded by his helmet. That's why they're always chasing him.\"</color>",
             "info": "Leads other zombies underground in one big dig.\n\n<color=black>Toughness: </color><color=#4B0082>12000 + 12000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 3 Evolved Zombie.\n<color=black>•</color> Each attack adds 8000 mining progress to the plant.\n<color=black>•</color> Inherits traits from previous tier(s).\n<color=black>•</color> Enters underground with nearby non-vehicle zombies. They emerge together later.</color>"
         },
@@ -1328,19 +1328,19 @@
         },
         {
             "theZombieType": 324,
-            "name": "Knight Clown-on-the-Pogo Zombie",
+            "name": "Knight Clown-on-the-Pogo",
             "introduce": "<align=left><color=black>Don't bother him—he's in love. He's not in the mood to hear your pessimistic take on his romance, and if you try, you'll be met with an explosively emotional response.</color>",
             "info": "Pogo zombie with a modern explosive-loaded pogo stick. Only slightly magnetic and difficult to disarm.\n\n<color=black>Toughness: </color><color=#4B0082>3000 + 3000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 1 Evolved Zombie.\n<color=black>•</color> Inherits Clown-on-the-Pogo Zombie traits.\n<color=black>•</color> Does not lose pogo stick if knocked back by Umbrellas.\n<color=black>•</color> If killed while still holding the stick, triggers a Jack-in-the-Box explosion.</color>"
         },
         {
             "theZombieType": 325,
-            "name": "King Clown-on-the-Pogo Zombie",
+            "name": "King Clown-on-the-Pogo",
             "introduce": "<align=left><color=black>He once struggled with poor sales of pogo sticks, watermelons, and jack-in-the-boxes. So he consulted Catapult Zombie. \"You've got to imagine the watermelon and jack-in-the-box as one,\" the advice went. Judging by the explosive success, it worked.</color>",
             "info": "Equipped with a single-use charger for his explosive pogo stick.\n\n<color=black>Toughness: </color><color=#4B0082>6000 + 6000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 2 Evolved Zombie.\n<color=black>•</color> Inherits the traits of Knight Clown-on-the-Pogo Zombie.\n<color=black>•</color> If spawned on the right half of the field, charges up for 5s and then makes a long leap of about 4 tiles.</color>"
         },
         {
             "theZombieType": 326,
-            "name": "Emperor Clown-on-the-Pogo Zombie",
+            "name": "Emperor Clown-on-the-Pogo",
             "introduce": "<align=left><color=black>After much time, he's finally overcome the pain of his breakup. Now he's dressed in flashy colors and ready to court a new goddess. He's now pursuing Queen Jill-in-the-Box. Hopefully, his emotional stamina has improved.</color>",
             "info": "With an upgraded charging system, the smoke from his explosive pogo stick masks his decoy stand-in.\n\n<color=black>Toughness: </color><color=#4B0082>12000 + 12000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 3 Evolved Zombie.\n<color=black>•</color> Inherits the traits of King Clown-on-the-Pogo Zombie but charging duration is reduced to 0.5s.\n<color=black>•</color> Can cheat death if holding his pogo stick.</color>"
         },
@@ -1424,7 +1424,7 @@
         },
         {
             "theZombieType": 134,
-            "name": "Dolphin Football Tall-nut Zombie",
+            "name": "Dolphin Football Tall-nut",
             "introduce": "<align=left><color=black>Hard workouts gave Dolphin Football Tall-nut Zombie a robust physique, but also gave him a pointed head. Though he insists it's to reduce wind drag, the zombies unanimously believe he simply hasn't finished evolving since crawling out of the sea.\n</color>",
             "info": "Weaves back and forth across the lawn to disrupt defense, moving with greater finesse when in good health.\n\n<color=black>Bite Damage: </color><color=#8B0000>100</color>\n<color=black>Toughness: </color><color=#8B0000>3000 + 12000 (Type 1)</color>\n<color=black>Speed: </color><color=#8B0000>Fast</color>\n<color=black>Special: </color><color=#8B0000>Immune to Immobilize and Knockback. Moves back and forth to the right of column 1. Inflicts Wet status on contact with plants. Ignores plants while Type 1 armor HP is above 2/3.</color>"
         },
