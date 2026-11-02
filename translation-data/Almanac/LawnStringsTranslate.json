@@ -359,7 +359,7 @@
         },
         {
             "seedType": 217,
-            "name": "<size=26>Holographic Obsidian Tall-nut</size>",
+            "name": "Holographic Obsidian Tall-nut",
             "introduce": "<align=left><color=black>As a deep-rooted plant, Obsidian Tall-nut hates being constantly moved around. To avoid this, he spent a fortune to obtain a holographic projection device from Grim Arbiter; allowing him to make his holographic projections to help defend the lawn instead. Yet, he still remains puzzled: why does he feel pain whenever these holograms take damage?</color>",
             "info": "A holographic projection of Obsidian Tall-nut.\n\n<color=black>Toughness: </color><color=#8B0000>20000</color>\n<color=black>Special:\n </color><color=#8B0000><color=black>•</color> Tall plant, anti-crush.\n<color=black>•</color> Redirects all damage to the main Obsidian Tall-nut that is being projected.</color>",
             "cost": ""
@@ -380,7 +380,7 @@
         },
         {
             "seedType": 220,
-            "name": "<size=30>Golden Recycling Vase</size>",
+            "name": "Golden Recycling Vase",
             "introduce": "<align=left><color=black>Golden Recycling is the largest barter platform among plants. As the founder, Golden Recycling Vase helps plants trade unused secondhand items, and also offers those looking for a random trip a chance, and a way, to get there.</color>",
             "info": "Golden Recycling Vase can recycle unwanted plants and turn them into surprises!\n\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> When charge is below 3, you can use the Glove to move plants inside and for it to gain charge. Base plants/simple fusions/advanced fusions grant 1/2/3 charges respectively\n<color=black>•</color> Tap to break the pot. Drops a plant seed packet based on stored charge:\n-1 charge: Base plant\n-2 charge: Simple fusion\n-3 or more: Advanced fusion\n\n<color=black>•</color> If an Odyssey plant was ever stored, it will always drop an Odyssey plant.</color>",
             "cost": "Cost: <color=#8B0000>200</color>\nRecharge: <color=#8B0000>30s</color>"
@@ -450,21 +450,21 @@
         },
         {
             "seedType": 230,
-            "name": "<size=30>Lumo-shroom: Lumo-sun</size>",
+            "name": "Lumo-shroom: Lumo-sun",
             "introduce": "<align=left><color=black>The first time Lumo-shroom saw a lumofly as a child, she was captivated. The flickering lights in the grass: a life so beautiful yet fleeting, like lamps or stars, painting the night sky with dreams. Perhaps that's why she looks at the lumo-suns she produces with joy instead of distaste.</color>",
             "info": "Lumo-sun is a Sun-shroom living in symbiosis with lumoflies, its sun drops are worth a little more.\n\n<color=blue>PvZ: Symbiosis Collab Plant</color>\n<color=black>Sun Output: </color><color=#8B0000>20→35/25s\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Sun-shrooms convert into Lumo-shrooms, gaining the <u>Lumo-sun</u> ability after 150s if their tile's Lumos Level is 1 or higher. Each additional Lumos Level accelerates the conversion by 100%.\n<color=black>•</color> Lumo-sun: Produces Lumo-sun, which is worth 20 each (35 when grown up).</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Sun-shroom + Lumos Level</color>"
         },
         {
             "seedType": 231,
-            "name": "<size=30>Lumo-shroom: Lumo-sprite</size>",
+            "name": "Lumo-shroom: Lumo-sprite",
             "introduce": "<align=left><color=black>It wasn't until she heard the story of \"decayed grass giving birth to lumoflies\" that Lumo-shroom understood why her friends never seemed sad when parting. To them, each cycle was a grand reunion, not the end of life. \"We are destined to part, but we are also destined to meet again.\"</color>",
             "info": "Lumo-sprite is the second form of Lumo-shroom, it gives zombies that bite it their own Lumo-sprites!\n\n<color=blue>PvZ: Symbiosis Collab Plant</color>\n<color=black>Sun Output: </color><color=#8B0000>20→35/25s\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> After an additional 150s under Lumos, Lumo-shrooms gain the <u>Lumo-sprite</u> ability. Each additional Lumos Level accelerates upgrades speed by 100%.\n<color=black>•</color> Lumo-sprite: When a zombie bites a Lumo-shroom, 1 Lumo-sprite starts to follow that zombie (2 if grown up). Each time a followed zombie takes damage, 1 Lumo-sprite flies off and produces a small Lumo-sun. When the zombie dies, all Lumo-sprites following it are released, dropping an equal number of Lumo-suns. A zombie can have up to 20 Lumo-sprites following it at once.</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Lumo-shroom + Lumos Level</color>"
         },
         {
             "seedType": 232,
-            "name": "<size=30>Lumo-shroom: Lumo-burst</size>",
+            "name": "Lumo-shroom: Lumo-burst",
             "introduce": "<align=left><color=black>\"If you look up and see the fireflies swarming, that's me, back by your side.\" Lumo-shroom never feared death. Born of decayed grass, shining at summer's end, she embraces a final, resolute brilliance to ignite the symphony of rebirth. As night falls, silence spreads, the wheel of yin and yang turns, and the cycle endures forever.</color>",
             "info": "Lumo-burst is the third form of Lumo-shroom, it explodes into many Lumo-sprites when eaten!\n\n<color=blue>PvZ: Symbiosis Collab Plant</color>\n<color=black>Sun Output: </color><color=#8B0000>20→35/25s\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> After yet another 150s under Lumos, Lumo-shrooms finally gain the <u>Lumo-burst</u> ability. Each additional Lumos Level accelerates upgrades speed by 100%.\n<color=black>•</color> Lumo-burst: When a Lumo-shroom dies, all zombies in a small radius are followed by five Lumo-flies (increased range when grown up).</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Lumo-shroom + Lumos Level</color>"
@@ -485,7 +485,7 @@
         },
         {
             "seedType": 235,
-            "name": "<size=30>Doubleblast Passionfruit</size>",
+            "name": "Doubleblast Passionfruit",
             "introduce": "<align=left><color=black>Doubleblast Passionfruit only fires one shot at a time, so what’s the \"double blast\"? Ah, it’s the sound of zombie bones cracking.</color>",
             "info": "Doubleblast Passionfruit is a floating passionfruit that fires seeds at enemies.\n\n<color=blue>SHUTTLE Collab Plant</color>\n<color=black>Damage: </color><color=#8B0000>40/1.5s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Flying plant.\n<color=black>•</color> Each hit deals an extra damage equal to 10% of the zombie's max Toughness to the zombie's headgear armor (Type 1).\n<color=black>Ultimate: </color>Costs 3000 Coins, Cooldown: 2s; launches a giant passionfruit seed that deals damage to armor equivalent to 20% of current HP.</color>",
             "cost": "Cost: <color=#8B0000>100</color>\nRecharge: <color=#8B0000>7.5s</color>"
@@ -569,7 +569,7 @@
         },
         {
             "seedType": 249,
-            "name": "<size=30>Swordmaster Starfruit</size>",
+            "name": "Swordmaster Starfruit",
             "introduce": "<align=left><color=black>\"I have fought across 3,000 miles of battlefield, my blade halting millions in their tracks.\" The Swordmaster Starfruit, a lover of fine drinks and poetry, takes great pride in his impeccable cosplaying skills. With a sly smile, he adds, \"My sword never bleeds, for it is merely a decoration.\"</color>",
             "info": "A guest from afar, I think you will want to become friends.\n\n<color=black>Damage: </color><color=#8B0000>(200×5+30×20)/6s</color>\n<color=black>Special: </color><color=#8B0000>Each attack unleashes 5 swords that pierce infinitely, dealing 200 damage each. Additionally, it inflicts 30 damage to all zombies within the surrounding area, repeating this 20 times.</color>",
             "cost": "Cost: <color=#8B0000>325</color>\nRecharge: <color=#8B0000>30s</color>"
@@ -632,7 +632,7 @@
         },
         {
             "seedType": 301,
-            "name": "<size=30>Overclocked Cherrybomber</size>",
+            "name": "Overclocked Cherrybomber",
             "introduce": "<align=left><color=black>Other plants can't stop envying his explosive firepower. He just shrugs it off: \"I'm no genius here. It's all just hard work and sweat.\" Of course, he is referring to how he secretly stole everyone else's equipment and strapped it onto himself.</color>",
             "info": "Overclocked Cherrybomber is stronger than the former 'strongest' damage-dealer.\n\n<color=#4A2900>Usage Condition: Harvest Mode | Legendary Odyssey Plant</color>\n<color=black>Damage: </color><color=#8B0000>300×6/0.5s</color>\n<color=black>Special: </color><color=#8B0000> Shoots explosive cherries at a horrifying rate after charging up for a 1.5s.</color>",
             "cost": "\n"
@@ -653,7 +653,7 @@
         },
         {
             "seedType": 304,
-            "name": "<size=30>Enlightened Solarnova</size>",
+            "name": "Enlightened Solarnova",
             "introduce": "<align=left><color=black>Legend says she once served the Sun itself, carrying its fiercest light within her radiant bloom. When danger draws near, Enlightened Solarnova turns that blessing into judgment - every beam of sunlight she fires is a decree of holy fire.</color>",
             "info": "Enlightened Solarnova forges her produced sun and nearby projectiles into solar judgments that rain down from above, causing area explosions.\n\n<color=#4A2900>Usage Condition: Harvest Mode | Legendary Odyssey Plant</color>\n<color=black>Sun Output: </color><color=#8B0000>50/3s</color>\n<color=black>Damage: </color><color=#8B0000>1800 (Cremator)</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> When producing sun, if zombies are present, converts the sun into a solar judgment and fires it at the nearest zombie.\n<color=black>•</color> When firing a solar judgment, absorbs plant-side projectiles within a 1.5-tile radius, gaining +2% damage per projectile absorbed.\n<color=black>•</color> Solar Judgments: Falls from the sky, dealing AoE damage (1.5-tile radius) and dropping 50 sun; can target flying zombies.\n<color=black>Ultimate: </color>Costs 16000 Coins; fires 1 solar judgment at every zombie present.</color>",
             "cost": "\n"
@@ -674,7 +674,7 @@
         },
         {
             "seedType": 307,
-            "name": "<size=30>Primal Twin Solar-nut</size>",
+            "name": "Primal Twin Solar-nut",
             "introduce": "<align=left><color=black>\"What will the garden of the future look like?\" To find out, Twin Solar-nut of the past built a light-powered time device and journeyed to the present. He had planned to take a quick look and return, but after seeing versions of himself wrecking a lab, inhabiting a zombie's body, and even skipping a beach ice cream party, he decided to stay a while and set things right.</color>",
             "info": "Primal Twin Solar-nut is the older, stronger ancestor of Twin Solar-nut.\n\n<color=#4A2900>Usage Condition: Harvest Mode</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> When damaged, negates the hit, instead takes a fixed 50 damage and drops 15 Sun.\n<color=black>•</color> Tap to spend 500 Sun to restore 100% Toughness and create a Giant Solar-nut in the tile ahead.</color>",
             "cost": "\n"
@@ -765,7 +765,7 @@
         },
         {
             "seedType": 908,
-            "name": "<size=30>Gatling Icicle-shroom</size>",
+            "name": "Gatling Icicle-shroom",
             "introduce": "<align=left><color=black>The little puff-shrooms who once shouted, \"We are going to join the army!\" have matured into veterans with resolute eyes. Wherever and whenever, the Gatling Icicle-shroom Company is committed to ensuring that the mission is accomplished.</color>",
             "info": "Gatling Icicle-shroom shoots 4 freezing icicles on its own, combine 3 of them on 1 tile to get 12 icicles!\n\n<color=#4A2900>Usage Condition: Odyssey Mode</color>\n<color=black>Damage: </color><color=#8B0000>20×4×3/1.5s</color>\n<color=#0077b6>Cryo System: </color><color=#8B0000>Each hit adds 5 Cryo points. Icicles deal 4 times more damage to frozen enemies. Each icicle can pierce 2 times.</color>\n<color=black>Odyssey Modifiers:\n</color><color=#8B0000>1. Increased penetration to infinite times, the first 5 hits of horizontal shots each split into 2 new bullets at ±15°, dealing (20 × split count)% more damage\n2. Increased damage to Frozen and chill-immune zombies by 12× | Gatling Sunburst-shroom Subspecies Unlocked</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Gatling Snow > Puff-shroom×3</color>"
@@ -912,14 +912,14 @@
         },
         {
             "seedType": 929,
-            "name": "<size=30>Gatling Sunburst-shroom</size>",
+            "name": "Gatling Sunburst-shroom",
             "introduce": "<align=left><color=black>\"Production is also part of the fight!\" said Gatling Sunburst-shroom, wiping its sweat. Its platoon has been reorganized into the 'Sunshine Bay Construction Corps,' but their fighting spirit remains undiminished.</color>",
             "info": "Gatling Sunburst-shroom generates lots of sun quickly by producing 5 sun every time one of its projectiles deals damage!\n\n<color=#4A2900>Usage Condition: Odyssey Mode | Unlockable With Gatling Icicle-shroom's Modifier</color>\n<color=black>Damage: </color><color=#8B0000>20×4×3/1.5s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Subspecies of Gatling Icicle-shroom.\n<color=black>•</color> Shots no longer slow but instead drop 5 sun on hitting the 1st and 2nd zombies.\n<color=black>•</color> Each subsequent pierce deals 20 more damage but requires 5 sun per hit (does not consume Sun if the total amount of Sun is below 15k).\n<color=black>•</color> Synergizes with the sun value doubling Odyssey Modifier and dropped suns are worth 15 each when the modifier is active.</color>\n<color=black>Odyssey Modifiers:\n</color><color=#8B0000>1. Increased penetration to infinite times, the first 5 hits of horizontal shots each split into 2 new bullets at ±15°, dealing (20 × split count)% more damage\n2. Gatling Sunburst-shroom Subspecies Unlocked</color>",
             "cost": "\nConversion Recipe: <color=#8B0000>Ice-shroom <-> Sunflower"
         },
         {
             "seedType": 930,
-            "name": "<size=30>Gatling Frenzy-shroom</size>",
+            "name": "Gatling Frenzy-shroom",
             "introduce": "<align=left><color=black>Compared to the composed demeanor of Gatling Doom, Gatling Frenzy-shroom has a much shorter temper, especially when someone calls her a \"Gray Egg\". She often yells \"Quietus!\" and charges into the fray.</color>",
             "info": "Gradually speeds up its rate of fire to become even more powerful than Gatling Doom himself! Very unstable however.\n\n<color=#4A2900>Usage Condition: Odyssey Mode | Unlockable With Gatling Doom's Modifier</color>\n<color=black>Damage: </color><color=#8B0000>300/1.5s (0.2s Minimum)</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Subspecies of Gatling Doom.\n<color=black>•</color> Each attack will shorten the attack interval by 0.1s, to a minimum of 0.2s. Explodes when zombies get near.\n<color=black>•</color> Fires an Ultimate Doom Shell every 16 attacks, dealing 1800 damage, and then rests for 4.5s.</color>\n<color=black>Odyssey Modifiers:\n</color><color=#8B0000>1. No more rest after firing an Ultimate Doom Shell | Gatling Frenzy-shroom Subspecies Unlocked | Effects also apply to SP variants\n2. Now fires an Ultimate Doom Shell every 4 attacks | Effects also apply to SP variants</color>",
             "cost": "Conversion Recipe: <color=#8B0000>Peashooter <-> Scaredy-shroom"
@@ -1213,7 +1213,7 @@
         },
         {
             "seedType": 972,
-            "name": "<size=30>SP Gatling Frenzy-shroom</size>",
+            "name": "SP Gatling Frenzy-shroom",
             "introduce": "<align=left><color=black>SP Gatling Frenzy-shroom has been growing her hair out for a while now. A lot of people ask how the crack in her helmet got there. She always answers, \"Oh, that was on purpose. It lets my hair show.\"</color>",
             "info": "SP Gatling Frenzy-shroom fires special Irradiated Shells at accelerating rates that enhance status effects, resetting attack rate if zombies dare come near..\n\n<color=#4A2900>Usage Condition: Odyssey Mode | Unlock Modifier Available after Obtaining Doom Gatling's 2 Modifiers</color>\n<color=black>Damage: </color><color=#8B0000>300/1.5s (0.2 Minimum)</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Promotion of Gatling Frenzy-shroom, inherits its other traits; Subspecies of SP Gatling Doom.\n<color=black>•</color> Fires Irradiated Shells. Fires an Ultimate Irradiated Shell every 16 attacks, dealing 1800 damage, and then rests for 4.5s.\n<color=black>•</color> When frightened, resets attack speed and triggers a craterless Doom-shroom effect (does not self-destruct).\n<color=black>•</color> Depending on the target's debuffs, gains the following effects:\n- Chilled: Chilled duration increased by 25%.\n- Enflamed: Damage bonus increased by an additive 40%, stackable with other increases.\n- Poisoned: Poison points now stack twice.</color>\n<color=black>Main Odyssey Modifiers:\n</color><color=#8B0000>1. No more rest after firing an Ultimate Doom Shell | Gatling Frenzy-shroom Subspecies Unlocked | Effects also apply to SP variants\n2. Now fires an Ultimate Doom Shell every 4 attacks | Effects also apply to SP variants</color>\n\n<color=black>Cherrybomber Drone Synergy Modifier:</color><color=#8B0000>\n<color=black>•</color> You must have unlocked all Gatling Cherrybomber and Gatling Doom's modifiers before this synergy becomes available in the shop for 15k.\n<color=black>•</color> When Cherrybomber Drone and SP Gatling Frenzy-shroom are on the same tile, they perform coordinated attacks, and the former gains 0.05 energy while the latter gains 0.1 energy. Energy drains at 0.3 per second. For the first 7 whole points of energy, each increases the number of shots fired during coordinated attacks by 1. Energy above 7 increases the 8th bullet’s damage by ×(1 + excess point).</color>",
             "cost": "Conversion Recipe: <color=#8B0000>Peashooter <-> Scaredy-shroom</color>\nPromotion Recipe: <color=#8B0000>Doom-shroom > Gatling Frenzy-shroom</color>"
@@ -1318,14 +1318,14 @@
         },
         {
             "seedType": 987,
-            "name": "<size=30>SP Gatling Icicle-shroom</size>",
+            "name": "SP Gatling Icicle-shroom",
             "introduce": "<align=left><color=black>After years of military service, the SP Gatling Icicle-shroom unit has risen to officer rank within a massive army. \"We must look pretty imposing to the troops now,\" they say. In reality, they're still just as tiny as ever.</color>",
             "info": "SP Gatling Icicle-shroom now fires a powered up icicle, which deals insane damage to chillled and frozen zombies!\n\n<color=#4A2900>Usage Condition: Odyssey Mode | Unlock Modifier Available after Obtaining Gatling Icicle-shroom's 2 Modifiers</color>\n<color=black>Damage: </color><color=#8B0000>40×4/1.5</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Promotion of Gatling Icicle-shroom, inherits its other traits.\n<color=black>•</color> Short plant. Projectiles pierce up to 2 times, apply Chill, and inflict 5 Cryo points. Deals ×4 damage to Frozen zombies or those immune to Chill/Freeze.\n<color=black>•</color> Every 4th shot becomes a Glacial Icicle with infinite pierce. Against Chilled zombies, applies Freeze for 4s and deals 12× damage; if the target is already Frozen, removes Freeze and instead deals 48× damage.\n<color=black>Main Odyssey Modifiers:\n</color><color=#8B0000>1. Increased penetration to infinite times, the first 5 hits of horizontal shots each split into 2 new bullets at ±15°, dealing (20 × split count)% more damage | Effects also apply to SP variants\n2. Increased damage to Frozen and chill-immune zombies by 12× | Effects also apply to SP variants</color>\n\n<color=black>Litter-pult Synergy Modifier:</color><color=#8B0000>\n<color=black>•</color> You must have unlocked all Gatling Icicle-shroom and Wither-pult's modifiers before this synergy becomes available in the shop for 15k.\n<color=black>•</color> When Litter-pult and SP Gatling Icicle-shroom are planted on the same tile, the former's projectiles split one extra time, apply Chill, and inflict 5 Cryo points; while the latter's projectiles apply Toxic Effect; gain mini-garlic-butter properties.</color>",
             "cost": "\nPromotion Recipe: <color=#8B0000>Peashooter > Gatling Icicle-shroom</color>"
         },
         {
             "seedType": 988,
-            "name": "<size=26>SP Gatling Sunburst-shroom</size>",
+            "name": "SP Gatling Sunburst-shroom",
             "introduce": "<align=left><color=black>Despite earning countless honors and medals, the SP Gatling Sunburst-shroom unit treasures something else most: the grass rings woven for them by locals during their time with the \"Sunshine Bay Corps.\" They wear them proudly on their helmets, showing them off to every comrade.</color>",
             "info": "SP Gatling Sunburst-shroom now fires a powered up cone, which increases sun production and maxiumum amount!\n\n<color=#4A2900>Usage Condition: Odyssey Mode | Unlock Modifier Available after Obtaining Gatling Icicle-shroom's 2 Modifiers</color>\n<color=black>Damage: </color><color=#8B0000>40×4/1.5s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Promotion of Gatling Sunburst-shroom, inherits its other traits; Subspecies of SP Gatling Icicle-shroom.\n<color=black>•</color> Projectiles pierce up to 2 times. The first 2 hits each grant 5 Sun. After 2 pierces, if Sun > 15,000, consumes 5 Sun to multiply this hit's damage by (1 + hit count) times.\n<color=black>•</color> Every 4th shot becomes an Astral Light Cone with infinite pierce. Each hit increases Sun gain by 1% for 3s and raises the Sun cap by 100.</color>\n<color=black>Odyssey Modifiers:\n</color><color=#8B0000>1. Increased penetration to infinite times, the first 5 hits of horizontal shots each split into 2 new bullets at ±15°, dealing (20 × split count)% more damage | Effects also apply to SP variants</color>",
             "cost": "Conversion Recipe: <color=#8B0000>Ice-shroom <-> Sunflower</color>\nPromotion Recipe: <color=#8B0000>Peashooter > Gatling Sunburst-shroom</color>"
@@ -1360,14 +1360,14 @@
         },
         {
             "seedType": 993,
-            "name": "<size=30>Mesmer Cattail (Aquatic)</size>",
+            "name": "Mesmer Cattail (Aquatic)",
             "introduce": "<align=left><color=black>Many plants ask how does she get her beautiful colours. What many do not know is that she is actually stuck in her magical girl transformation.</color>",
             "info": "Fires globally tracking magic projectiles and can use radiant magic to charm enemies.\n\n<color=blue>Plant Girls vs Zombies Collab Plant</color>\n<color=#4A2900>Usage Condition: Odyssey Mode</color>\n<color=black>Damage: </color><color=#8B0000>300×2/1.5s</color>\n<color=black>Special: <color=#8B0000>\n<color=black>•</color> Global targeting, prioritizes flying enemies.\n<color=black>•</color> Manual activation: select a tile in its row to hypnotize all zombies within 1-tile radius; can target flying units. After use, enters 50s cooldown. Each regular shot additionally reduces cooldown by 1s.\n<color=black>Odyssey Modifiers:</color>\n<color=#8B0000>1. Ability CD Halved, Ability radius +0.5 tiles\n2. Hypnotized zombies spawned by her ability deal an additional 30% true damage that ignores damage reduction when biting</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Hypno-shroom > Cattail Girl</color>"
         },
         {
             "seedType": 994,
-            "name": "<size=30>Mesmer Cattail (Land)</size>",
+            "name": "Mesmer Cattail (Land)",
             "introduce": "<align=left><color=black>Many plants ask how does she get her beautiful colours. What many do not know is that she is actually stuck in her magical girl transformation.</color>",
             "info": "Fires globally tracking magic projectiles and can use radiant magic to charm enemies.\n\n<color=blue>Plant Girls vs Zombies Collab Plant</color>\n<color=#4A2900>Usage Condition: Odyssey Mode</color>\n<color=black>Damage: </color><color=#8B0000>300×2/1.5s</color>\n<color=black>Special: <color=#8B0000>\n<color=black>•</color> Subspecies of Mesmer Cattail (aquatic).\n<color=black>•</color> Global targeting, prioritizes flying enemies.\n<color=black>•</color> Manual activation: select a tile in its row to hypnotize all zombies within 1-tile radius; can target flying units. After use, enters 50s cooldown. Each regular shot additionally reduces cooldown by 1s.\n<color=black>Odyssey Modifiers:</color>\n<color=#8B0000>1. Ability CD Halved, Ability radius +0.5 tiles\n2. Hypnotized zombies spawned by her ability deal an additional 30% true damage that ignores damage reduction when biting</color>",
             "cost": "\nConversion Recipe: <color=#8B0000>Shovel <-> Shovel</color>"
@@ -1402,7 +1402,7 @@
         },
         {
             "seedType": 999,
-            "name": "<size=30>SP Phoenix Threepeater</size>",
+            "name": "SP Phoenix Threepeater",
             "introduce": "<align=left><color=black>Most plants no longer remember the age when heavenly flames rained from above and the world burned with dazzling brilliance. Even those who do dismiss it as nothing more than a myth. But today, SP Phoenix Drone spreads his wings after enduring an eternity of fire. Gale winds scatter the ashes of his rebirth, while blazing flames burn away the shell that once confined him. \"I shall bless all plants with the courage to rise. Let the flames herald a new era.\"</color>",
             "info": "The phoenix spreads its wings, reborn in flame.\n\n<color=#4A2900>Usage Condition: Odyssey Mode | Unlock Modifier Available after Obtaining Phoenix Threepeater's 2 Modifiers</color>\n<color=black>Damage: </color><color=#8B0000>180×n/1.5</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Promotion of Phoenix Threepeater, inherits its other traits.\n<color=black>•</color> Each cycle of attack fires a Phoenix Pea down every lane. Phoenix Peas pierce up to 2 targets and inflict Enflamed on hit.\n<color=black>•</color> Upon appearance and upon death, unleashes the Jalapeno effect 6 times in every lane and fires 6 Phoenix Peas.\n<color=black>Odyssey Modifiers:\n</color><color=#8B0000>1. Phoenix Drone Subspecies Unlocked | Phoenix Threepeater & Phoenix Drone: Shots can now pierce infinitely and cause Enflamed explosions upon impact | Effects also apply to SP variants\n2. Phoenix Threepeater & Phoenix Drone: Global enflamed damage bonus 50% → 150%, and regular ignited projectiles can now inflict the debuff  | Effects also apply to SP variants</color>\n\n<color=black>Infernal Sparkwood Synergy Modifier:</color><color=#8B0000>\n<color=black>•</color> You must have unlocked all Phoenix Threepeater and Infernal Squashwood's modifiers before this synergy becomes available in the shop for 15k.\n<color=black>•</color> Infernal Sparkwood now ignites the lawn instead of a single lane on spawning Spicy plant. SP Phoenix Threepeater and Drone projectiles splits into all lanes on passing through Infernal Sparkwood</color>",
             "cost": "\nPromotion Recipe: <color=#8B0000>Jalapeno > Phoenix Threepeater</color>"
@@ -4223,14 +4223,14 @@
         },
         {
             "seedType": 1396,
-            "name": "<size=22>Puff-shroom Spreading: Fume-shroom</size>",
+            "name": "Puff-shroom Spreading: Fume-shroom",
             "introduce": "<align=left><color=black></color>",
             "info": "Spreading Puff-shrooms using Fume-shroom will spread them out on the tiles ahead, and will create extra Puff-shrooms in the process!\n\n<color=black>Special: </color><color=#8B0000>Plants down a Fume-shroom in place of the Puff-shroom and spawns Puff-shrooms in equal intervals ahead (decreasing per tile). The more Puff-shrooms consumed in fusion, the more will be spawned.</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Fume-shroom > Puff-shroom</color>"
         },
         {
             "seedType": 1397,
-            "name": "<size=22>Puff-shroom Spreading: Scaredy-shroom</size>",
+            "name": "Puff-shroom Spreading: Scaredy-shroom",
             "introduce": "<align=left><color=black></color>",
             "info": "Spreading Puff-shrooms using Scaredy-shroom will spread them out on ajacent tiles, and will create extra Puff-shrooms in the process!\n\n<color=black>Special: </color><color=#8B0000>Plants down a Scaredy-shroom in place of the Puff-shroom and spawns Puff-shrooms evenly across front, upper, and lower adjacent tiles (prioritizing front). The more Puff-shrooms consumed in fusion, the more will be spawned.</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Scaredy-shroom > Puff-shroom</color>"
@@ -4930,7 +4930,7 @@
         },
         {
             "seedType": 352,
-            "name": "<size=30>Explode-o-shooter (TD)</size>",
+            "name": "Explode-o-shooter (TD)",
             "introduce": "<align=left><color=black>Meet Explode-o-shooter, the ultimate plant killer. He's more irritable than ever—who would've thought the warm and friendly Cherryshooter would swallow another special cherry? Don't push your luck with him. That cherry stuck in his throat might just be his next shot—his face is already turning red!</color>",
             "info": "Shoots out cherries that explode in an area on impact.\n\n<color=blue>Reversible by pressing R</color>\n<color=black>Damage: </color><color=#8B0000>20/3s</color>\n<color=black>Special: </color><color=#8B0000>Immune to explosive cherries and deals AoE damage.</color>\n<color=black>Upgrades: </color><color=#8B0000>\n<color=black>• Basic Upgrade: </color>(160 Sun) Attack Damage +50%\n<color=black>• Elite Upgrade Path 1: </color>(400 Sun) Attack Damage +100%, Explosion Radius +50%\n<color=black>• Elite Upgrade Path 2: </color>(400 Sun) Attack Speed +200%</color>",
             "cost": "Cost: <color=#8B0000>400</color>\nRecharge: <color=#8B0000>50s</color>"
@@ -4951,7 +4951,7 @@
         },
         {
             "seedType": 355,
-            "name": "<size=30>Frost Gloom-shroom (TD)</size>",
+            "name": "Frost Gloom-shroom (TD)",
             "introduce": "<align=left><color=black>Dreaming of a career as a physicist, the Frost Gloom-shroom dedicates his days to unraveling the complexities of the world, avoiding contact with other plants. \"Why do I have multiple strings of icicles sprouting from my head?\" he muses, the latest question occupying his thoughts. He's oddly adamant about calling them \"strings.\"</color>",
             "info": "Frost Gloom-shroom releases chilling fumes around that can freeze zombies.\n\n<color=black>Damage: </color><color=#8B0000>5/3.8s (Piercing)</color>\n<color=black>Special: </color><color=#8B0000>Attacks apply Chill.</color>\n<color=black>Upgrades: </color><color=#8B0000>\n<color=black>• Basic Upgrade: </color>(80 Sun) Attack Speed +50%\n<color=black>• Elite Upgrade Path 1: </color>(200 Sun) Attacks add 10 Cryo points\n<color=black>• Elite Upgrade Path 2: </color>(200 Sun) Chill Duration ×2</color>",
             "cost": "Cost: <color=#8B0000>200</color>\nRecharge: <color=#8B0000>7.5s</color>"
@@ -5063,14 +5063,14 @@
         },
         {
             "seedType": 313,
-            "name": "<size=26>Parallel Spacetime Torchwood</size>",
+            "name": "Parallel Spacetime Torchwood",
             "introduce": "<align=left><color=black>Parallel Spacetime Torchwood is proud of his tree hollow. His hollow already houses a miniature parallel universe and can hold even more things: books, gourmet food, plushies, and so on. Because this miniature universe merely overlaps his current universe in other dimensions, he has been choosing his position very carefully to keep this parallel universe intact.</color>",
             "info": "Manipulates parallel spacetime, projecting passing projectiles across every lane.\n\n<color=black>Requirement: </color><color=#8B0000>Mystery Mode</color>\n<color=black>Special: ① </color><color=#8B0000>Splits passing plant projectiles into one for each lane.</color>\n<color=black>② </color><color=#8B0000>Only one can be planted per lane, and all Parallel Spacetime Torchwoods must be planted in the same column.</color>",
             "cost": ""
         },
         {
             "seedType": 1489,
-            "name": "<size=30>Magnetic Cabbage-pult</size>",
+            "name": "Magnetic Cabbage-pult",
             "introduce": "<align=left><color=black>\"Pesky magnetism—it keeps making metal shavings fly onto my head,\" Magnetic Cabbage-pult complained. His hairstyle was far harder to manage than his brothers'. As a result, whenever attending events, he was always the last one to show up.</color>",
             "info": "A Cabbage-pult capable of fusing metallic equipment.\n\n<color=black>Damage: </color><color=#8B0000>80/3s</color>\n<color=black>Fusible Equipment: </color><color=#8B0000>Buckets, Chrono Cores</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Cabbage-pult + Magnet-shroom</color>",
             "cost": ""
@@ -5098,7 +5098,7 @@
         },
         {
             "seedType": 1493,
-            "name": "<size=30>Fume-shroom Flower Pot</size>",
+            "name": "Fume-shroom Flower Pot",
             "introduce": "<align=left><color=black>Fume-shroom Flower Pot is actually not a flower pot. \"Originally I was just an ordinary Fume-shroom...\" Fume-shroom Flower Pot said earnestly. \"Never rashly poke your head out while they're playing Whack-a-Zombie. Don't ask me why...\"</color>",
             "info": "Allows mushrooms above to release beneficial particles upon attacking, boosting plants of the same type.\n\n<color=black>Attributes: </color><color=#8B0000>Low profile, Carrier, Plantable on bare ground</color>\n<color=black>Special: </color><color=#8B0000>For each round of attacks from designated plants above, all plants of that type on the field gain an attack boost (stackable, lasts 10s):\n• Super Fume-shroom: 4%\n• Mega-shroom: 8%\n• Other Fume-shrooms: 1%\n• Gloom-shrooms: 4%</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Flower Pot (Base) + Fume-shroom</color>",
             "cost": ""
@@ -5126,7 +5126,7 @@
         },
         {
             "seedType": 1497,
-            "name": "<size=26>Threepeater Scaredy-shroom</size>",
+            "name": "Threepeater Scaredy-shroom",
             "introduce": "<align=left><color=black>Threepeater Scaredy-shroom won the Scaredy-shroom division champion in the 6th Courage Competition. Even though they couldn't pass a single test stage, at least they weren't afraid of the other two heads right beside them.</color>",
             "info": "Shoots across 3 lanes with rapidly rising attack speed; makes a desperate stand when overwhelmed.\n\n<color=black>Damage: </color><color=#8B0000>20×3/1.5s</color>\n<color=black>Special: ① </color><color=#8B0000>Gains 5% attack speed boost per attack round (up to 150%).</color>\n<color=black>② </color><color=#8B0000>For each zombie within a 3×3 area, ducks the bottom, top, and middle head in order; when all are ducked, fires 20 peas into each of the 3 lanes, then resets the attack speed boost.</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Scaredy-shroom + Threepeater</color>",
             "cost": ""
@@ -5175,21 +5175,21 @@
         },
         {
             "seedType": 5006,
-            "name": "<size=26>Ultimate Disillusion-shroom</size>",
+            "name": "Ultimate Disillusion-shroom",
             "introduce": "<align=left><color=black>Legend tells that when sanity nears collapse, a warm voice echoes by one's ear. Those who hold fast to themselves can shine with their own radiance; those who drown in desire twist into runaway monsters. She is both an invitation to salvation and bait toward disillusionment—the choice has always lain in the listener's own hands, but very few have survived.</color>",
             "info": "Explosion hypnotizes damaged zombies and summons a Gargantuar to temporarily protect the lawn, turning the tide of battle.\n<color=blue>Advanced Form of Disillusion-shroom</color>\n\n<color=black>Requirement: </color><color=#8B0000>Purchase modifier in Odyssey Mode\n*Requires both basic form modifiers first</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Disillusion-shroom + Doom-shroom</color>\n<color=black>Damage: </color><color=#8B0000>7200 (Ash)</color>\n<color=black>Special: </color><color=#8B0000>After triggering Doom-shroom effect:\n• Hypnotizes zombies in range with ≤75% HP\n• Hypnotizes zombies in range under Disillusionment\n• Regardless of hypnosis success, inflicts Disillusionment (triggers craterless Doom-shroom explosion upon death)\n• Summons a hypnotized Ultimate Obsidian Gargantuar, granting all plants 90% damage reduction for 6s before reverting to an Armed Gargantuar</color>\n<color=black>Perk 1: </color><color=#8B0000>Controlled Fusion: All Doom-shroom explosions leave no craters</color>\n<color=black>Perk 2: </color><color=#8B0000>Explosive Arsenal: Summoned slams spawn Imps with matching toughness; Imps self-destruct with Doom-shroom explosions based on current HP upon attacking; Obsidian Imp self-destruct ignores damage reduction. Gargantuar loses 10% toughness HP per slam, Imps lose 10% per second.</color>",
             "cost": ""
         },
         {
             "seedType": 5007,
-            "name": "<size=30>Ultimate Greed-shroom</size>",
+            "name": "Ultimate Greed-shroom",
             "introduce": "<align=left><color=black>For those who once placed material wealth above all else, Ultimate Greed-shroom is the physical embodiment of that cold desire. If you crave wealth, Ultimate Greed-shroom will return it tenfold; yet every debt comes with a price, and Ultimate Greed-shroom will always collect the recompense she is due...</color>",
             "info": "Explosions turn damaged zombies into gold and raises the stakes of impending crises to reap massive rewards.\n<color=blue>Advanced Subspecies of Disillusion-shroom</color>\n\n<color=black>Requirement: </color><color=#8B0000>Purchase modifier in Odyssey Mode\n*Requires both basic form modifiers first</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Greed-shroom + Doom-shroom</color>\n<color=black>Conversion Formula: </color><color=#8B0000>Hypno-shroom ↔ Marigold</color>\n<color=black>Damage: </color><color=#8B0000>7200 (Ash)</color>\n<color=black>Special: </color><color=#8B0000>After triggering Doom-shroom effect:\n• Turns zombies in range with ≤75% HP into silver statues\n• Turns zombies in range with Bounty status into gold statues\n• Inflicts Bounty status on zombies in range\n• Once per round: Inflicts 'Frenzied Curse' on the next spawning Leader Zombie (worth 1000 points on kill), accompanied by an Ultimate Obsidian Gargantuar with 'Frenzied Curse' (worth 2000 points on kill)</color>\n<color=black>Perk 1: </color><color=#8B0000>Controlled Fusion: All Doom-shroom explosions leave no craters</color>\n<color=black>Perk 2: </color><color=#8B0000>Explosive Arsenal: Total score gained from defeating 'Frenzied Curse' leaders increases by 1000</color>",
             "cost": ""
         },
         {
             "seedType": 5008,
-            "name": "<size=30>Magnetic Squash Wall-nut</size>",
+            "name": "Magnetic Squash Wall-nut",
             "introduce": "<align=left><color=black>Magnetic Squash Wall-nut suffers from extreme OCD. He cannot stand chaos; even amidst battle, he insists on pulling projectiles into neat lines along his magnetic flux. Naturally, zombies often comment 'nothing is more chaotic than your face,' after which they get to see something far more chaotic: an enraged Magnetic Squash Wall-nut.</color>",
             "info": "Attracts surrounding projectiles and imbues them with heavy energy, then slams them all into zombies.\n\n<color=black>Requirement: </color><color=#8B0000>Odyssey Mode</color>\n<color=black>Fusion Formula: </color><color=#8B0000>Squash-nut + Magnet-nut</color>\n<color=black>Toughness: </color><color=#8B0000>4000</color>\n<color=black>Damage: </color><color=#8B0000>1800 (Crush)</color>\n<color=black>Range: </color><color=#8B0000>5×5</color>\n<color=black>Special: ① </color><color=#8B0000>Attracts horizontal straight-flying projectiles within a 1.5-tile radius, adding [own damage] to them, and absorbs them (does not retain bullet properties, does not attack zombies).</color>\n<color=black>② </color><color=#8B0000>After absorbing 10 projectiles, evenly slams them down onto each zombie within range, dealing small-area crush damage with each. Does not block zombies while slamming.</color>\n<color=black>Perk 1: </color><color=#8B0000>I Love Slamming: Targeting range expands to a full lane</color>\n<color=black>Perk 2: </color><color=#8B0000>I Love Attracting: Only attacks after absorbing 30 projectiles</color>",
             "cost": ""
