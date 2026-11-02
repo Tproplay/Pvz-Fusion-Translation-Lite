@@ -11,14 +11,16 @@ This project provides automated tools to build, test, and package complete Engli
 
 ---
 
-## 📥 Downloads (v4.0.5)
+## 📥 Downloads (v4.1)
 
 | Platform | Primary Download (GitHub) | Alternative Mirror (Google Drive) |
 | :--- | :--- | :--- |
-| **PC (Windows)** | [GitHub Release (v4.0.5)](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | [Google Drive Mirror](https://drive.google.com/file/d/1tthm97SKriP5Ix8KRSakh1mOA5TWT2jd/view?usp=sharing) |
-| **Android (APK)** | [GitHub Release (v4.0.5)](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.0.5) | [Google Drive Mirror](https://drive.google.com/file/d/1AFrHBVx1wnsnwjDy74zSeFT2I5Ri0rMe/view?usp=drive_link) |
+| **PC (Windows)** | [GitHub Release (v4.1)](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | [Google Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
+| **Android (APK)** | [GitHub Release (v4.1)](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | [Google Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
 
-*Full release notes and checksums available in [docs/release-notes/RELEASE-4.0.5-EN.md](docs/release-notes/RELEASE-4.0.5-EN.md).*
+> 📁 **Google Drive Folder**: Access all v4.1 downloads in the [Version 4.1 Folder](https://drive.google.com/drive/folders/1vFkBmV5aZXHBiYlVDd9H6xjclvs_G8fk?usp=sharing).
+>
+> 📜 **Release Notes & Checksums**: View complete release notes, changelog, and SHA-256 verification hashes in [docs/release-notes/RELEASE-4.1-EN.md](docs/release-notes/RELEASE-4.1-EN.md).
 
 ---
 
