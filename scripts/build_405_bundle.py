@@ -810,11 +810,13 @@ def patch_ui_strings(
             except Exception as e:
                 print(f"Warning patching {obj.path_id}: {e}")
 
-    # Patch Plant/Buff Almanac RectTransforms to fix text cutoff on left/right margins (+2px right adjustment)
+    # Patch Plant/Buff and Zombie Almanac RectTransforms to give right margin and avoid scrollbar overlap
     # Scroll views: AlmanacPlantMenu (186280), AlmanacPlantWindow (189200), AlmanacBuffMenu (185468)
-    # Text containers: AlmanacPlantMenu (190504), AlmanacPlantWindow (192671), AlmanacBuffMenu (193589)
+    # Plant/Buff text containers: AlmanacPlantMenu (190504), AlmanacPlantWindow (192671), AlmanacBuffMenu (193589)
+    # Zombie text containers: AlmanacZombieMenu (189563), AlmanacZombieWindow (187081)
     almanac_scroll_rts = {186280: "AlmanacPlantMenu", 189200: "AlmanacPlantWindow", 185468: "AlmanacBuffMenu"}
-    almanac_desc_rts = {190504: "AlmanacPlantMenu", 192671: "AlmanacPlantWindow", 193589: "AlmanacBuffMenu"}
+    almanac_plant_desc_rts = {190504: "AlmanacPlantMenu", 192671: "AlmanacPlantWindow", 193589: "AlmanacBuffMenu"}
+    almanac_zombie_desc_rts = {189563: "AlmanacZombieMenu", 187081: "AlmanacZombieWindow"}
 
     for obj in env.objects:
         if obj.path_id in almanac_scroll_rts and obj.type.name in ("RectTransform", "Transform"):
@@ -825,14 +827,24 @@ def patch_ui_strings(
                 obj.set_raw_data(bytes(raw))
                 stats[f"patched_almanac_scroll_{obj.path_id}"] = True
                 print(f"Patched {almanac_scroll_rts[obj.path_id]} InroduceScroll RectTransform (PathID {obj.path_id}: pos.x=-2.2, size.x=265.0)")
-        elif obj.path_id in almanac_desc_rts and obj.type.name in ("RectTransform", "Transform"):
+        elif obj.path_id in almanac_plant_desc_rts and obj.type.name in ("RectTransform", "Transform"):
             raw = bytearray(obj.get_raw_data())
             if len(raw) >= 100:
-                struct.pack_into("<f", raw, 84, 1.5)
-                struct.pack_into("<f", raw, 92, 246.5)
+                # Add 20px right margin while preserving left margin (pos.x: 1.5 -> -8.5, size.x: 246.5 -> 226.5)
+                struct.pack_into("<f", raw, 84, -8.5)
+                struct.pack_into("<f", raw, 92, 226.5)
                 obj.set_raw_data(bytes(raw))
                 stats[f"patched_almanac_desc_{obj.path_id}"] = True
-                print(f"Patched {almanac_desc_rts[obj.path_id]} Description RectTransform (PathID {obj.path_id}: pos.x=1.5, size.x=246.5)")
+                print(f"Patched {almanac_plant_desc_rts[obj.path_id]} Description RectTransform (PathID {obj.path_id}: pos.x=-8.5, size.x=226.5)")
+        elif obj.path_id in almanac_zombie_desc_rts and obj.type.name in ("RectTransform", "Transform"):
+            raw = bytearray(obj.get_raw_data())
+            if len(raw) >= 100:
+                # Add 20px right margin while preserving left margin (pos.x: 1.0 -> -9.0, size.x: 240.0 -> 220.0)
+                struct.pack_into("<f", raw, 84, -9.0)
+                struct.pack_into("<f", raw, 92, 220.0)
+                obj.set_raw_data(bytes(raw))
+                stats[f"patched_almanac_zombie_desc_{obj.path_id}"] = True
+                print(f"Patched {almanac_zombie_desc_rts[obj.path_id]} Description RectTransform (PathID {obj.path_id}: pos.x=-9.0, size.x=220.0)")
 
     return stats
 
