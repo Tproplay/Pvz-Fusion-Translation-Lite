@@ -8,7 +8,7 @@
   "-------UI - Buttons": "UI - Buttons-------",
   "^查看([^\\s：]+)": "View {1}",
   "^返回([^\\s：]+)": "Back to {1}",
-  "回到([^\\s：]+)": "Back to {1}",
+  "^回到([^\\s：]+)": "Back to {1}",
   "-------UI - Playing": "UI - Playing-------",
   "快捷键：(\\d+)": "<size=20>Hotkey: {1}",
   "场上敌人数量：(\\d+)$": "Zombie(s): {1}",
@@ -832,5 +832,7 @@
   "^Prismatic\\s*(Flower Pot|Coffee Bean|Card Reader)$": "<size=75%>Prismatic {1}</size>",
   "^数量[：:\\s]*([^\\s\\n]+)$": "Count: {1}",
   "^数量[：:\\s]*([^\\s\\n]+)\\n总伤害[：:\\s]*([^\\s\\n]+)\\n平均伤害[：:\\s]*([^\\s\\n]+)": "Count: {1}\nCumulative Total Damage: {2}\nAverage Damage: {3}",
-  "^数量[：:\\s]*([^\\s\\n]+)\\n总伤害[：:\\s]*([^\\s\\n]+)": "Count: {1}\nCumulative Total Damage: {2}"
+  "^数量[：:\\s]*([^\\s\\n]+)\\n总伤害[：:\\s]*([^\\s\\n]+)": "Count: {1}\nCumulative Total Damage: {2}",
+  "^Back to\\s*最近记录点[。.]?": "Back to latest checkpoint.",
+  "最近记录点[。.]?": "latest checkpoint."
 }

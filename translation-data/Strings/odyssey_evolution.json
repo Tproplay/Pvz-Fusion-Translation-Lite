@@ -1150,5 +1150,15 @@
   "总伤害：{0:F2}亿\n": "Cumulative Total Damage: {0:F2} *100m\n",
   "平均伤害：{0:F2}万": "Average Damage: {0:F2} *10k",
   "平均伤害：{0:F2}亿": "Average Damage: {0:F2} *100m",
-  "平均伤害：{0}": "Average Damage: {0}"
+  "平均伤害：{0}": "Average Damage: {0}",
+  "研究、道具与探索随波次记录点保存；中途退出会回到最近记录点。": "Research, items, and exploration save at wave checkpoints; quitting midway returns to the latest checkpoint.",
+  "研究、道具与探索随波次记录点保存;中途退出会回到最近记录点。": "Research, items, and exploration save at wave checkpoints; quitting midway returns to the latest checkpoint.",
+  "研究、道具与探索随波次记录点保存，中途退出会回到最近记录点。": "Research, items, and exploration save at wave checkpoints; quitting midway returns to the latest checkpoint.",
+  "研究、道具与探索随波次记录点保存,中途退出会回到最近记录点。": "Research, items, and exploration save at wave checkpoints; quitting midway returns to the latest checkpoint.",
+  "Back to 最近记录点。": "Back to latest checkpoint.",
+  "Back to 最近记录点": "Back to latest checkpoint",
+  "最近记录点。": "the latest checkpoint.",
+  "最近记录点": "the latest checkpoint",
+  "回到最近记录点。": "Back to the latest checkpoint.",
+  "回到最近记录点": "Back to the latest checkpoint"
 }
