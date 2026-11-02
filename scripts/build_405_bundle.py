@@ -810,9 +810,7 @@ def patch_ui_strings(
             except Exception as e:
                 print(f"Warning patching {obj.path_id}: {e}")
 
-    # Patch Plant/Buff Almanac RectTransforms to fix text cutoff on left/right margins (50% balance)
-    # Original: InroduceScroll pos.x=-5.4, size.x=270.0; Description pos.x=0.0, size.x=253.0
-    # Balanced (50% adjustment): InroduceScroll pos.x=-3.2, size.x=265.0; Description pos.x=0.5, size.x=246.5
+    # Patch Plant/Buff Almanac RectTransforms to fix text cutoff on left/right margins (+2px right adjustment)
     # Scroll views: AlmanacPlantMenu (186280), AlmanacPlantWindow (189200), AlmanacBuffMenu (185468)
     # Text containers: AlmanacPlantMenu (190504), AlmanacPlantWindow (192671), AlmanacBuffMenu (193589)
     almanac_scroll_rts = {186280: "AlmanacPlantMenu", 189200: "AlmanacPlantWindow", 185468: "AlmanacBuffMenu"}
@@ -822,19 +820,19 @@ def patch_ui_strings(
         if obj.path_id in almanac_scroll_rts and obj.type.name in ("RectTransform", "Transform"):
             raw = bytearray(obj.get_raw_data())
             if len(raw) >= 120:
-                struct.pack_into("<f", raw, 108, -3.2)
+                struct.pack_into("<f", raw, 108, -2.2)
                 struct.pack_into("<f", raw, 116, 265.0)
                 obj.set_raw_data(bytes(raw))
                 stats[f"patched_almanac_scroll_{obj.path_id}"] = True
-                print(f"Patched {almanac_scroll_rts[obj.path_id]} InroduceScroll RectTransform (PathID {obj.path_id}: pos.x=-3.2, size.x=265.0)")
+                print(f"Patched {almanac_scroll_rts[obj.path_id]} InroduceScroll RectTransform (PathID {obj.path_id}: pos.x=-2.2, size.x=265.0)")
         elif obj.path_id in almanac_desc_rts and obj.type.name in ("RectTransform", "Transform"):
             raw = bytearray(obj.get_raw_data())
             if len(raw) >= 100:
-                struct.pack_into("<f", raw, 84, 0.5)
+                struct.pack_into("<f", raw, 84, 1.5)
                 struct.pack_into("<f", raw, 92, 246.5)
                 obj.set_raw_data(bytes(raw))
                 stats[f"patched_almanac_desc_{obj.path_id}"] = True
-                print(f"Patched {almanac_desc_rts[obj.path_id]} Description RectTransform (PathID {obj.path_id}: pos.x=0.5, size.x=246.5)")
+                print(f"Patched {almanac_desc_rts[obj.path_id]} Description RectTransform (PathID {obj.path_id}: pos.x=1.5, size.x=246.5)")
 
     return stats
 
