@@ -810,6 +810,25 @@ def patch_ui_strings(
             except Exception as e:
                 print(f"Warning patching {obj.path_id}: {e}")
 
+    # Patch Plant Almanac RectTransforms to fix text cutoff on left/right margins (align with Zombie Almanac)
+    for obj in env.objects:
+        if obj.path_id == 189200 and obj.type.name in ("RectTransform", "Transform"):
+            raw = bytearray(obj.get_raw_data())
+            if len(raw) >= 120:
+                struct.pack_into("<f", raw, 108, -1.0)
+                struct.pack_into("<f", raw, 116, 260.0)
+                obj.set_raw_data(bytes(raw))
+                stats["patched_almanac_plant_scroll_rt"] = True
+                print("Patched AlmanacPlantWindow InroduceScroll RectTransform (PathID 189200: pos.x=-1.0, size.x=260.0)")
+        elif obj.path_id == 192671 and obj.type.name in ("RectTransform", "Transform"):
+            raw = bytearray(obj.get_raw_data())
+            if len(raw) >= 100:
+                struct.pack_into("<f", raw, 84, 1.0)
+                struct.pack_into("<f", raw, 92, 240.0)
+                obj.set_raw_data(bytes(raw))
+                stats["patched_almanac_plant_desc_rt"] = True
+                print("Patched AlmanacPlantWindow Description RectTransform (PathID 192671: pos.x=1.0, size.x=240.0)")
+
     return stats
 
 
