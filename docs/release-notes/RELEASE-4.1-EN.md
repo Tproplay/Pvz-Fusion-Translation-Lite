@@ -29,8 +29,8 @@ A complete English translation release of **Plants vs. Zombies: Fusion (植物�
 
 | Platform | File | Size | SHA-256 Checksum | Google Drive Mirror |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 470.83 MB | `ee76ad5db679a1b19ba0f196eb4ccd19904f41e6386da8bc2798b59e4607dbb5` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 599.86 MB | `f1a11b150789cc37e753ad33859ff0a6849e7e24ac9958be6344414fbf27086a` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
+| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 470.83 MB | `4932eaefa24a8136fb2b2aa16cc88129af88820680d363e0f2e970a926c7faff` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 599.86 MB | `2b9e8c599a6636904d54699951365bb6e62b2b0c1e584bffa67f488b251218aa` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
 
 ### 🌐 Google Drive Release Folder
 - [Version 4.1 Folder](https://drive.google.com/drive/folders/1vFkBmV5aZXHBiYlVDd9H6xjclvs_G8fk?usp=sharing)
