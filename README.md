@@ -55,13 +55,12 @@ Do **not** copy an old game installation's entire directory over a new installat
 > *(An uninstall is only required if you are migrating from the official Chinese APK or another translator's build with a different signature).*
 
 1. Back up your existing `files/` folder before uninstalling or updating.
-2. If you previously had an `il2cpp/` folder inside `files/`, delete it so it does not override the new translation.
-3. Install the new English APK.
-4. Launch the game once to the main menu, then exit completely.
-5. Restore only your progress files:
+2. Install the new English APK.
+3. Launch the game once to the main menu, then exit completely.
+4. Restore only your progress files:
    - `playerData.json` (main profile, progression, unlocks, and coins)
-   - *(Optional)* `Player/Saves/`, `GardenUnifiedData.json`, `CustomIZ.json`, `AutoChessSaves/`
-6. Do **not** copy `il2cpp/`, `global-metadata.dat`, `data.unity3d`, or unknown cache files.
+   - `Player/Saves/`, `GardenUnifiedData.json`, `CustomIZ.json`, `AutoChessSaves/`
+5. Do **not** copy `il2cpp/`, `global-metadata.dat`, `data.unity3d`, or unknown cache files.
 
 ---
 
