@@ -509,19 +509,28 @@ def patch_text_assets(
     for obj in env.objects:
         if obj.type.name == "ResourceManager":
             rm = obj.read()
-            existing_entries = {(k.lower(), getattr(v, "path_id", 0)) for k, v in rm.m_Container}
-            new_entries = []
+            # In-place replace CustomIZ entries to prevent duplicate Resources.LoadAll returns
+            updated_container = []
+            renamed_iz_count = 0
             for k, v in rm.m_Container:
-                pid = getattr(v, "path_id", 0)
+                renamed_k = None
                 for old_name, new_name in custom_iz_level_map.items():
                     old_suffix = old_name.lower()
                     if k.lower().endswith(old_suffix):
                         prefix = k[: -len(old_suffix)]
-                        new_k = prefix + new_name.lower()
-                        if (new_k, pid) not in existing_entries:
-                            new_entries.append((new_k, v))
-                            existing_entries.add((new_k, pid))
+                        renamed_k = prefix + new_name.lower()
+                        break
+                if renamed_k is not None:
+                    updated_container.append((renamed_k, v))
+                    renamed_iz_count += 1
+                else:
+                    updated_container.append((k, v))
 
+            existing_entries = {(k.lower(), getattr(v, "path_id", 0)) for k, v in updated_container}
+            new_entries = []
+
+            for k, v in updated_container:
+                pid = getattr(v, "path_id", 0)
                 if k.lower().startswith("ui/travelrogue/"):
                     sub = k[len("ui/travelrogue/"):]
                     trans = exact_strings.get(sub)
@@ -533,7 +542,7 @@ def patch_text_assets(
                             existing_entries.add((new_k, pid))
 
             # Explicit wrench aliases to ensure BOTH wrench sprite (15441) and texture (1946) always resolve
-            for k, v in list(rm.m_Container):
+            for k, v in list(updated_container):
                 if k.lower() in ("ui/travelrogue/扳手", "ui/travelrogue/wrench"):
                     pid = getattr(v, "path_id", 0)
                     for alias in (
@@ -551,19 +560,14 @@ def patch_text_assets(
                             new_entries.append((alias, v))
                             existing_entries.add((alias, pid))
 
-            if new_entries:
-                rm.m_Container.extend(new_entries)
-                # CRITICAL: ResourceManager.m_Container MUST be sorted alphabetically by key
-                # because Unity engine uses std::lower_bound (binary search) to lookup resources.
-                # An unsorted m_Container breaks binary search and causes Resources.Load to return null!
-                rm.m_Container.sort(key=lambda x: x[0])
-                rm.save()
-                stats["resource_manager_entries_added"] = len(new_entries)
-                print(f"Added {len(new_entries)} ResourceManager entries for CustomIZ and TravelRogue assets (sorted)")
-            else:
-                # Even if no new entries added, ensure container is properly sorted
-                rm.m_Container.sort(key=lambda x: x[0])
-                rm.save()
+            rm.m_Container = updated_container + new_entries
+            # CRITICAL: ResourceManager.m_Container MUST be sorted alphabetically by key
+            # because Unity engine uses std::lower_bound (binary search) to lookup resources.
+            # An unsorted m_Container breaks binary search and causes Resources.Load to return null!
+            rm.m_Container.sort(key=lambda x: x[0])
+            rm.save()
+            stats["resource_manager_entries_added"] = len(new_entries) + renamed_iz_count
+            print(f"Updated ResourceManager: {renamed_iz_count} CustomIZ entries renamed in-place, {len(new_entries)} aliases added (sorted)")
             break
 
     return stats
