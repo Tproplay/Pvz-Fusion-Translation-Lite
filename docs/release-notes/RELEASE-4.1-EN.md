@@ -25,6 +25,23 @@ A complete English translation release of **Plants vs. Zombies: Fusion (植物�
 
 ---
 
+## 🛠️ Hotfix Updates
+
+- **Auto Wave Button UI**:
+  - Resized button text to `125%` and formatted to clean single-line labels (`Auto Wave: On`, `Auto Wave: Off`, `Auto Wave: Forced`) to prevent awkward line breaks and text overflow.
+- **High-Resolution Help Screen (`thanks.png`)**:
+  - Replaced the blurry 1400×600 help screen with an upscaled 2800×1200 texture. Configured sprite scaling (`pixelsToUnits = 200`) for 2x sharpness, corrected keybind instructions, and removed outdated information.
+- **Magic Brush Image Recognition Localization**:
+  - Added complete English translations for over 50 Magic Brush image service error messages, network warnings, canvas prompts, and status banners (including *"Image service is busy, please try again later."*).
+- **Almanac Layout & Zombie Name Fixes**:
+  - Shortened overly long zombie names (e.g., `Gatling Doom Newspaper(242)` and `Screen Door Buckshooter(114)`) and normalized formatting so zombie names and ID codes fit neatly in the Almanac header.
+- **Crash & Stability Fixes**:
+  - Resolved Unity JSON duplicate key exceptions during custom level loading in `ResourceManager`.
+  - Fixed boot/menu crash in *The Gods: Evolved* caused by internal enum reflection (`ShootingBuffType`).
+  - Fixed Hover Garden checkpoint return notice localization.
+
+---
+
 ## 📦 Downloads & Verification
 
 | Platform | File | Size | SHA-256 Checksum | Google Drive Mirror |
