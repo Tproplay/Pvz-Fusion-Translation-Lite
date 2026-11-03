@@ -834,5 +834,7 @@
   "^数量[：:\\s]*([^\\s\\n]+)\\n总伤害[：:\\s]*([^\\s\\n]+)\\n平均伤害[：:\\s]*([^\\s\\n]+)": "Count: {1}\nCumulative Total Damage: {2}\nAverage Damage: {3}",
   "^数量[：:\\s]*([^\\s\\n]+)\\n总伤害[：:\\s]*([^\\s\\n]+)": "Count: {1}\nCumulative Total Damage: {2}",
   "^Back to\\s*最近记录点[。.]?": "Back to latest checkpoint.",
-  "最近记录点[。.]?": "latest checkpoint."
+  "最近记录点[。.]?": "latest checkpoint.",
+  "^(\\[Magic Brush\\] Identification failed:\\s*)识图服务繁忙[，,]\\s*请稍后重试[。.]?": "{1}Image service is busy, please try again later.",
+  "识图服务繁忙[，,]\\s*请稍后重试[。.]?": "Image service is busy, please try again later."
 }
