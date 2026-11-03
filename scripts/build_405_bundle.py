@@ -917,6 +917,33 @@ def patch_textures(
             except Exception as e:
                 print(f"Warning: failed to patch texture {name}: {e}")
 
+    # Patch Sprite 'thanks' (PathID 15872) if thanks texture was replaced with 2800x1200
+    if "thanks" in texture_files:
+        try:
+            thanks_img = Image.open(texture_files["thanks"])
+            tw, th = thanks_img.size
+            if (tw, th) == (2800, 1200):
+                for obj in env.objects:
+                    if obj.type.name == "Sprite" and obj.path_id == 15872:
+                        sp = obj.read()
+                        sp.m_Rect.width = float(tw)
+                        sp.m_Rect.height = float(th)
+                        sp.m_PixelsToUnits = 200.0
+                        if hasattr(sp, "m_RD") and sp.m_RD:
+                            sp.m_RD.textureRect.width = float(tw)
+                            sp.m_RD.textureRect.height = float(th)
+                            if hasattr(sp.m_RD, "uvTransform"):
+                                sp.m_RD.uvTransform.x = 200.0
+                                sp.m_RD.uvTransform.y = 1400.0
+                                sp.m_RD.uvTransform.z = 200.0
+                                sp.m_RD.uvTransform.w = 600.0
+                        sp.save()
+                        print(f"Patched Sprite thanks (15872) to {tw}x{th} (pixelsToUnits=200.0)")
+                        stats["sprite_thanks_patched"] = True
+                        break
+        except Exception as e:
+            print(f"Warning: failed to patch Sprite thanks: {e}")
+
     return stats
 
 
