@@ -315,7 +315,44 @@ def load_modifier_sources(
                         title_translations[source_title] = translated_name
                     exact_title_translations[description] = translated_name
 
+    # Ingest combined modifier card sources from odyssey_evolution.json and translation_strings.json
+    exclude_modifier_prefixes = (
+        "\n", "===", "[", "UI", "IZ", "Tips", "Task", "http", "Path", "{",
+        "路线", "波次", "抽取", "阶段", "当前", "出怪", "难度", "最后一击", "第",
+        "结算", "总计", "普通", "银色", "金色", "钻石", "校验", "结论", "路径",
+        "基础", "最多", "最大", "植物类型", "融合配方", "总伤害", "阳光", "金币",
+        "诸神币", "冷却", "位置", "输入", "输出", "音游", "音符", "测试", "错误",
+        "已", "未", "无法", "是否", "快捷键", "按键", "左键", "右键", "版本", "更新",
+        "属性", "攻击", "修改", "读取", "设置",
+    )
+
+    for extra_name in ("odyssey_evolution.json", "translation_strings.json"):
+        extra_path = strings_dir / extra_name
+        if not extra_path.is_file():
+            continue
+        extra_payload = read_json(extra_path)
+        if not isinstance(extra_payload, dict):
+            continue
+        for source, target in extra_payload.items():
+            if (
+                isinstance(source, str)
+                and isinstance(target, str)
+                and not source.startswith(exclude_modifier_prefixes)
+                and not source.rstrip().endswith(("：", ":"))
+                and "{" not in source
+                and ("：" in source or ":\n" in source or (extra_name == "odyssey_evolution.json" and ":" in source))
+                and (":\n" in target or "：\n" in target or ": " in target or "：" in target or ":" in target)
+            ):
+                source_title = clean_modifier_source_title(source)
+                target_title = clean_modifier_source_title(target)
+                if target_title and not target_title.startswith("\n") and 0 < len(source_title) <= 25:
+                    sources.add(source)
+                    exact_title_translations.setdefault(source, target_title)
+                    if source_title not in ambiguous_title_translations:
+                        title_translations.setdefault(source_title, target_title)
+
     # Android 3.9 revises some bodies without updating the PC source dump.
+
     # Accept those exact fallbacks only when their parsed title agrees with the
     # PC record, or when the title is a reviewed 3.9-only modifier title.
     android_confirmed_path = strings_dir / "android_metadata_strings.json"
@@ -330,7 +367,12 @@ def load_modifier_sources(
         android_39_translations = {}
 
     for source, target in android_confirmed.items():
-        if "：" not in source or ": " not in target:
+        if (
+            "：" not in source
+            or ": " not in target
+            or source.rstrip().endswith(("：", ":"))
+            or target.rstrip().endswith(("：", ":"))
+        ):
             continue
         source_title = source.split("：", 1)[0]
         translated_title = target.split(": ", 1)[0]
@@ -370,6 +412,8 @@ def modifier_source_reason(
     reviewed_titles: set[str] | None = None,
 ) -> str | None:
     """Classify combined modifier strings without matching unrelated task text."""
+    if source.rstrip().endswith(("：", ":")):
+        return None
     if source in exact_sources:
         return "exact_pc_or_reviewed_source"
     if "：" not in source and ":" not in source:
@@ -788,6 +832,8 @@ def translate_literal(
 
     if not CJK_RE.search(text):
         return text, None
+    if text in ROUGE_SHOOTING_GROUP_NAMES:
+        return text, None
     if text in exact:
         method = (
             "pc_exact"
@@ -973,12 +1019,7 @@ def main() -> int:
     for index, literal in enumerate(literals):
         if CJK_RE.search(literal.text):
             cjk_before += 1
-        if literal.text in ROUGE_SHOOTING_GROUP_NAMES:
-            translated_text = literal.text
-            method = "preserved_internal_identifier"
-            preserved_new_39_indexes.add(index)
-        else:
-            translated_text, method = translate_literal(
+        translated_text, method = translate_literal(
             literal.text,
             exact,
             pc_exact_sources,
@@ -1022,8 +1063,10 @@ def main() -> int:
             )
             audit_record["occurrences"] = int(audit_record["occurrences"]) + 1
         modifier_reason = modifier_source_reason(literal.text, modifier_sources, modifier_reviewed_titles)
-        if modifier_reason is not None and not (
-            "：" in translated_text or ":" in translated_text
+        if modifier_reason is not None and (
+            not ("：" in translated_text or ":" in translated_text)
+            or literal.text.rstrip().endswith(("：", ":"))
+            or translated_text.rstrip().endswith(("：", ":"))
         ):
             modifier_reason = None
         if modifier_reason is not None and preserved_new_39:
@@ -1125,9 +1168,9 @@ def main() -> int:
         for index, item in enumerate(output_literals)
         if CJK_RE.search(item.text)
         and item.text in pc_exact_sources
+        and item.text not in ROUGE_SHOOTING_GROUP_NAMES
         and exact[item.text] != item.text
         and index not in preserved_new_39_indexes
-        and item.text not in ROUGE_SHOOTING_GROUP_NAMES
     ]
     if pc_exact_remnants:
         preview = json.dumps(pc_exact_remnants[:10], ensure_ascii=False)

@@ -379,7 +379,7 @@ def patch_text_assets(
             tree = json.loads(data.m_Script)
             updated_entries = 0
             for e in tree.get("entries", []):
-                for field in ("title", "description", "condition"):
+                for field in ("title", "description", "condition", "group"):
                     val = e.get(field)
                     if not val:
                         continue
@@ -819,7 +819,8 @@ def patch_ui_strings(
     # Plant/Buff text containers: AlmanacPlantMenu (190504), AlmanacPlantWindow (192671), AlmanacBuffMenu (193589)
     # Zombie text containers: AlmanacZombieMenu (189563), AlmanacZombieWindow (187081)
     almanac_scroll_rts = {186280: "AlmanacPlantMenu", 189200: "AlmanacPlantWindow", 185468: "AlmanacBuffMenu"}
-    almanac_plant_desc_rts = {190504: "AlmanacPlantMenu", 192671: "AlmanacPlantWindow", 193589: "AlmanacBuffMenu"}
+    almanac_plant_desc_rts = {190504: "AlmanacPlantMenu", 192671: "AlmanacPlantWindow"}
+    almanac_buff_desc_rts = {193589: "AlmanacBuffMenu"}
     almanac_zombie_desc_rts = {189563: "AlmanacZombieMenu", 187081: "AlmanacZombieWindow"}
 
     for obj in env.objects:
@@ -840,6 +841,42 @@ def patch_ui_strings(
                 obj.set_raw_data(bytes(raw))
                 stats[f"patched_almanac_desc_{obj.path_id}"] = True
                 print(f"Patched {almanac_plant_desc_rts[obj.path_id]} Description RectTransform (PathID {obj.path_id}: pos.x=-8.5, size.x=226.5)")
+        elif obj.path_id in almanac_buff_desc_rts and obj.type.name in ("RectTransform", "Transform"):
+            raw = bytearray(obj.get_raw_data())
+            if len(raw) >= 108:
+                struct.pack_into("<f", raw, 68, 0.0)
+                struct.pack_into("<f", raw, 72, 0.0)
+                struct.pack_into("<f", raw, 76, 0.0)
+                struct.pack_into("<f", raw, 80, 0.0)
+                struct.pack_into("<f", raw, 84, 0.0)
+                struct.pack_into("<f", raw, 88, 0.0)
+                struct.pack_into("<f", raw, 92, 223.0)
+                struct.pack_into("<f", raw, 100, 0.5)
+                struct.pack_into("<f", raw, 104, 1.0)
+                obj.set_raw_data(bytes(raw))
+                stats[f"patched_almanac_desc_{obj.path_id}"] = True
+                print(f"Patched {almanac_buff_desc_rts[obj.path_id]} Description RectTransform (PathID {obj.path_id}: size.x=223.0)")
+        elif obj.path_id == 210773 and obj.type.name == "MonoBehaviour":
+            # AlmanacBuffMenu Content VerticalLayoutGroup: add 14px left padding and 28px right padding, enable childControlWidth
+            raw = bytearray(obj.get_raw_data())
+            if len(raw) >= 84:
+                struct.pack_into("<i", raw, 32, 14)  # m_Padding.m_Left = 14
+                struct.pack_into("<i", raw, 36, 28)  # m_Padding.m_Right = 28
+                struct.pack_into("<i", raw, 40, 10)  # m_Padding.m_Top = 10
+                struct.pack_into("<i", raw, 56, 1)   # m_ChildForceExpandWidth = 1
+                struct.pack_into("<i", raw, 64, 1)   # m_ChildControlWidth = 1
+                obj.set_raw_data(bytes(raw))
+                stats["patched_almanac_buff_vlg"] = True
+                print("Patched AlmanacBuffMenu Content VerticalLayoutGroup (PathID 210773: padding=(L:14, R:28, T:10), controlWidth=1)")
+        elif obj.path_id == 206706 and obj.type.name == "MonoBehaviour":
+            # AlmanacBuffMenu Description TextMeshProUGUI: change font size from 24 to 18 (matching Plant/Zombie Almanac)
+            raw = bytearray(obj.get_raw_data())
+            if len(raw) >= 304:
+                struct.pack_into("<f", raw, 296, 18.0)  # m_fontSize = 18.0f
+                struct.pack_into("<f", raw, 300, 18.0)  # m_fontSizeBase = 18.0f
+                obj.set_raw_data(bytes(raw))
+                stats["patched_almanac_buff_tmp_font"] = True
+                print("Patched AlmanacBuffMenu Description TextMeshProUGUI (PathID 206706: fontSize=18.0)")
         elif obj.path_id in almanac_zombie_desc_rts and obj.type.name in ("RectTransform", "Transform"):
             raw = bytearray(obj.get_raw_data())
             if len(raw) >= 100:

@@ -1,6 +1,25 @@
-# Plants vs. Zombies: Fusion v4.1 — English Release (PC & Android)
+# Plants vs. Zombies: Fusion v4.1 — English Release (Hotfix 1 - PC & Android)
 
 A complete English translation release of **Plants vs. Zombies: Fusion (植物大战僵尸: 融合版) v4.1** for both Windows PC and Android.
+
+---
+
+## 🚨 Hotfix 1 (Nov 5, 2026)
+- **The Gods: Evolved Crash Fix**:
+  - Resolved `GameLevel.RogueShooting.ShootingGroupBuff` static initializer crash on startup caused by runtime reflection and `Enum.Parse(typeof(AdvBuff), ...)` attempting to resolve translated internal enum identifiers.
+  - Added strict protection to guarantee all 13 internal group keys (`业火`, `交易`, `光棱`, `全能`, `天罚`, `宝藏`, `战锤`, `明月`, `木桩`, `烈阳`, `硬化`, `裂空`, `铁卫`) remain untouched in IL2CPP metadata.
+- **The Gods: Almanac & Plant Stats Localization**:
+  - Localized stat category headers: `当前属性` -> **Current Stats**, `战斗属性` -> **Combat Stats**.
+  - Normalized stat formatting templates: `属性计数：{0}\n` -> **Stat Count: {0}\n**, `攻击间隔：{0}秒\n` -> **Attack Interval: {0}s\n**. Excluded stat templates with `{0}` from modifier card parsing to eliminate unwanted `<nobr>` wrappers and fullwidth colons.
+  - Fully translated plant upgrade paths: `质变：聚能弹道` -> **Ascend: Focused Trajectory**.
+  - Localized custom plant description overrides across all entries in `ShootingAlmanacIndex`.
+  - Cleaned up stray passive marker `被` from appearing before translated plant names (e.g. `被Apeacalypse`).
+  - Improved Suburban Almanac buff description typography, vertical layout padding, and font scaling.
+- **UI & Gameplay Polish**:
+  - Resized Auto Wave button text to `125%` and formatted to clean single-line labels (`Auto Wave: On`, `Auto Wave: Off`, `Auto Wave: Forced`) to prevent awkward line breaks.
+  - Replaced help screen with upscaled 2800×1200 high-resolution texture (`thanks.png`) with corrected keybind instructions.
+  - Added full English translations for Magic Brush image recognition prompts, status banners, and network error messages.
+  - Normalized overly long zombie names in Almanac headers.
 
 ---
 
@@ -25,29 +44,12 @@ A complete English translation release of **Plants vs. Zombies: Fusion (植物�
 
 ---
 
-## 🛠️ Hotfix Updates
-
-- **Auto Wave Button UI**:
-  - Resized button text to `125%` and formatted to clean single-line labels (`Auto Wave: On`, `Auto Wave: Off`, `Auto Wave: Forced`) to prevent awkward line breaks and text overflow.
-- **High-Resolution Help Screen (`thanks.png`)**:
-  - Replaced the blurry 1400×600 help screen with an upscaled 2800×1200 texture. Configured sprite scaling (`pixelsToUnits = 200`) for 2x sharpness, corrected keybind instructions, and removed outdated information.
-- **Magic Brush Image Recognition Localization**:
-  - Added complete English translations for over 50 Magic Brush image service error messages, network warnings, canvas prompts, and status banners (including *"Image service is busy, please try again later."*).
-- **Almanac Layout & Zombie Name Fixes**:
-  - Shortened overly long zombie names (e.g., `Gatling Doom Newspaper(242)` and `Screen Door Buckshooter(114)`) and normalized formatting so zombie names and ID codes fit neatly in the Almanac header.
-- **Crash & Stability Fixes**:
-  - Resolved Unity JSON duplicate key exceptions during custom level loading in `ResourceManager`.
-  - Fixed boot/menu crash in *The Gods: Evolved* caused by internal enum reflection (`ShootingBuffType`).
-  - Fixed Hover Garden checkpoint return notice localization.
-
----
-
 ## 📦 Downloads & Verification
 
 | Platform | File | Size | SHA-256 Checksum | Google Drive Mirror |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 470.83 MB | `4932eaefa24a8136fb2b2aa16cc88129af88820680d363e0f2e970a926c7faff` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 599.86 MB | `2b9e8c599a6636904d54699951365bb6e62b2b0c1e584bffa67f488b251218aa` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
+| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 470.80 MB | `752afc5e6c9e7cb37666ce8865ac0f0bdd5ea5df3cd31afdefda221d4b2a3945` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 599.88 MB | `0392eb3e82f0505a393df3b0500f817150eade812ce0cea5986b934f98293518` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
 
 ### 🌐 Google Drive Release Folder
 - [Version 4.1 Folder](https://drive.google.com/drive/folders/1vFkBmV5aZXHBiYlVDd9H6xjclvs_G8fk?usp=sharing)
