@@ -2,6 +2,8 @@ name: "🌐 Missing / Broken Translation"
 description: "Report untranslated Chinese text, grammar issues, or overlapping/truncated text."
 title: "[Translation]: "
 labels: ["translation"]
+assignees:
+  - Tproplay
 body:
   - type: markdown
     attributes:

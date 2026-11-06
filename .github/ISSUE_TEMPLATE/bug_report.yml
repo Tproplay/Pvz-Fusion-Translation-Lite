@@ -2,6 +2,8 @@ name: "🐛 Bug / Crash Report"
 description: "Report a game crash, error, visual glitch, or unexpected behavior."
 title: "[Bug]: "
 labels: ["bug"]
+assignees:
+  - Tproplay
 body:
   - type: markdown
     attributes:

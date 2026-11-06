@@ -2,6 +2,8 @@ name: "💡 Suggest a Change / Improvement"
 description: "Suggest an improvement to translations, UI formatting, modding support, or tooling."
 title: "[Suggestion]: "
 labels: ["enhancement"]
+assignees:
+  - Tproplay
 body:
   - type: markdown
     attributes:
