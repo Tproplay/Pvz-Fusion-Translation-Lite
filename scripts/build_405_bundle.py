@@ -870,13 +870,16 @@ def patch_ui_strings(
                 print("Patched AlmanacBuffMenu Content VerticalLayoutGroup (PathID 210773: padding=(L:14, R:28, T:10), controlWidth=1)")
         elif obj.path_id == 206706 and obj.type.name == "MonoBehaviour":
             # AlmanacBuffMenu Description TextMeshProUGUI: change font size from 24 to 18 (matching Plant/Zombie Almanac)
-            raw = bytearray(obj.get_raw_data())
-            if len(raw) >= 304:
-                struct.pack_into("<f", raw, 296, 18.0)  # m_fontSize = 18.0f
-                struct.pack_into("<f", raw, 300, 18.0)  # m_fontSizeBase = 18.0f
+            # Retain any translated text already patched in obj.data rather than reading unpatched raw bytes
+            raw = bytearray(getattr(obj, "data", None) or obj.get_raw_data())
+            parsed = read_tmp_text(bytes(raw))
+            font_offset = (parsed[1] + 192) if parsed is not None else 296
+            if len(raw) >= font_offset + 8:
+                struct.pack_into("<f", raw, font_offset, 18.0)      # m_fontSize = 18.0f
+                struct.pack_into("<f", raw, font_offset + 4, 18.0)  # m_fontSizeBase = 18.0f
                 obj.set_raw_data(bytes(raw))
                 stats["patched_almanac_buff_tmp_font"] = True
-                print("Patched AlmanacBuffMenu Description TextMeshProUGUI (PathID 206706: fontSize=18.0)")
+                print(f"Patched AlmanacBuffMenu Description TextMeshProUGUI (PathID 206706: fontSize=18.0 at offset {font_offset})")
         elif obj.path_id in almanac_zombie_desc_rts and obj.type.name in ("RectTransform", "Transform"):
             raw = bytearray(obj.get_raw_data())
             if len(raw) >= 100:

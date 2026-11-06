@@ -163,7 +163,15 @@ def main() -> int:
     parser.add_argument(
         "--base-apk",
         type=Path,
-        default=Path("build/pvzrh4.1.apk") if Path("build/pvzrh4.1.apk").exists() else Path("build/pvzrh4.0.5.apk"),
+        default=(
+            Path("build/pvzrh4.1.apk")
+            if Path("build/pvzrh4.1.apk").exists()
+            else (
+                Path("build/android-41/PvZ-Fusion-4.1-English-Android.apk")
+                if Path("build/android-41/PvZ-Fusion-4.1-English-Android.apk").exists()
+                else Path("build/pvzrh4.0.5.apk")
+            )
+        ),
         help="Path to clean official base Android APK (default: build/pvzrh4.1.apk)",
     )
     parser.add_argument(
