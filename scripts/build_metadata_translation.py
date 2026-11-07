@@ -39,7 +39,7 @@ SP_EVOLUTION_TRANSLATED_TITLE = "[SP Evolution]"
 def _load_json_data(rel_path: str):
     p = Path(__file__).resolve().parent.parent / "translation-data" / rel_path
     if p.is_file():
-        with open(p, "r", encoding="utf-8") as f:
+        with open(p, "r", encoding="utf-8-sig") as f:
             import json
             return json.load(f)
     return {}

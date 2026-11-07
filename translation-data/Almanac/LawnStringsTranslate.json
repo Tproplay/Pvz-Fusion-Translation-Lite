@@ -375,7 +375,7 @@
             "seedType": 219,
             "name": "Signpost Arrow",
             "introduce": "<align=left><color=black>Signpost Arrows are essential components of conveyor systems. Thanks to them, seed packets keep flowing steadily from the back lines to the front. Even when removed from conveyors, they still retain their ability to direct movement.</color>",
-            "info": "Zombies, please follow the directions. No pushing; move in an orderly fashion.\n\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Cannot be moved by the Glove.\n<color=black>•</color> Click to select another Signpost Arrow in the same lane or column and set it as the destination.\n<color=black>•</color> Zombies that touch it will be redirected toward the set destination.\n<color=black>•</color> Used in Zombie Sorter & Super Level Editor for making TD levels.\n<color=black>•</color> Outside of the editor, it transforms into an Imitater seed packet upon spawning.</color>",
+            "info": "Zombies, please follow the directions. No pushing; move in an orderly fashion.\n\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Cannot be moved by the Glove.\n<color=black>•</color> Click to select another Signpost Arrow in the same lane or column and set it as the destination.\n<color=black>•</color> Zombies that touch it will be redirected toward the set destination.\n<color=black>•</color> Used in Sort-a-Zombie & Super Level Editor for making TD levels.\n<color=black>•</color> Outside of the editor, it transforms into an Imitater seed packet upon spawning.</color>",
             "cost": ""
         },
         {
@@ -625,84 +625,84 @@
         },
         {
             "seedType": 300,
-            "name": "Swordsage Starfruit",
+            "name": "<color=#BA55D3>Swordsage Starfruit</color>",
             "introduce": "<align=left><color=black>\"The flowers in the hall intoxicate three thousand guests, and the sword frosts fourteen states.\" \"I won't board the ship when the emperor calls me, and I say I am a fairy in wine.\" Swordsage Starfruit likes to recite poems and practice his signature sword skills when he is drunk. The plants marveled at his power to defeat the zombies, but he said that he was aiming his flying sword at the bright moon in the sky, but when he put the sword away, it would fall back to the earth. </color>",
             "info": "Swordsage Starfruit sweeps through enemies and summons ten giant swords descending from the sky.\n\n<color=blue>Unsealed form of Swordmaster Starfruit</color>\n<color=#4A2900>Usage Conditions:\n<color=black>•</color> Abyss Challenge (Level 11-30), upgraded from Swordmaster Starfruit after beating Level 10. You can only have 1 Swordsage Starfruit on the lawn.\n<color=black>•</color> Unlockable in Purgatory Cursed Mode</color>\n<color=black>Damage: </color><color=#8B0000>(1800×2+1800×10)/6s</color>\n<color=black>Special: </color><color=#8B0000>When attacking, deals 1800 damage to zombies within a 3×3 area twice, then summons 10 giant swords that seek out enemies across the entire field, each dealing 1800 area damage upon landing.</color>",
             "cost": "Cost: <color=#8B0000>750</color>\nRecharge: <color=#8B0000>30s</color>"
         },
         {
             "seedType": 301,
-            "name": "Overclocked Cherrybomber",
+            "name": "<color=#BA55D3>Overclocked Cherrybomber</color>",
             "introduce": "<align=left><color=black>Other plants can't stop envying his explosive firepower. He just shrugs it off: \"I'm no genius here. It's all just hard work and sweat.\" Of course, he is referring to how he secretly stole everyone else's equipment and strapped it onto himself.</color>",
             "info": "Overclocked Cherrybomber is stronger than the former 'strongest' damage-dealer.\n\n<color=#4A2900>Usage Condition: Harvest Mode | Legendary Odyssey Plant</color>\n<color=black>Damage: </color><color=#8B0000>300×6/0.5s</color>\n<color=black>Special: </color><color=#8B0000> Shoots explosive cherries at a horrifying rate after charging up for a 1.5s.</color>",
             "cost": "\n"
         },
         {
             "seedType": 302,
-            "name": "Arteris Cabbage",
+            "name": "<color=#BA55D3>Arteris Cabbage</color>",
             "introduce": "<align=left><color=black>When the sky is painted in crimson light, war follows in her wake. Where peace cannot be found, she descends. She is the herald of bloodspill, the bringer of death: the Goddess of the Blood Moon.</color>",
             "info": "Born of the night, calling to fight. Under her blood moon, scarlet tides of zombies rise again and again.\n\n<color=blue>Unsealed form of Selene Cabbage</color>\n<color=#4A2900>Usage Condition: Harvest Mode | Legendary Odyssey Plant; Easter Egg Plant</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Has a 2% chance to replace Selene Cabbage when fusing in Night settings (Night, Fog, Night Roof). Arteris Cabbage retains all basic traits of Selene Cabbage.\n<color=black>•</color> While Arteris Cabbage is on the field, Mini Moons from Selene Cabbages become Mini Bloodmoons. These no longer provide Healing, but instead summon buffed Hypnotized Zombies every 10s. The first summon has a 3s cooldown.\n<color=black>•</color> Each Arteris Cabbage provides a +50% Toughness and Damage buff to the summoned Zombies.\n<color=black>•</color> The number and position of summons depend on \"barren tiles,\" defined as tiles without an Arteris or Selene Cabbage on them or in their 3×3 area.</color>",
             "cost": "\n"
         },
         {
             "seedType": 303,
-            "name": "Mimic-rye",
+            "name": "<color=#BA55D3>Mimic-rye</color>",
             "introduce": "<align=left><color=black>Mimic-rye is a master of imitation. Ever since joining a imitation show, even the originals he mimicked could only take second place.</color>",
             "info": "Mimic-rye regularly transforms into nearby offensive or defensive plants, growing stronger through mimic-ry'e'.\n\n<color=#4A2900>Usage Condition: Harvest Mode</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Every 30s, transforms into a random plant within a 3×3 area.\n<color=black>•</color> Gains +100% attack and +50% max HP on the first successful transformation; each subsequent transformation grants an additional +30% attack and +20% max HP.\n<color=black>•</color> Can transform into: non-flying plants whose damage is not 0 or toughness exceeds 300, excluding pumpkins, lily pads, pots, and other barley-type plants (and their transformations).</color>",
             "cost": "\n"
         },
         {
             "seedType": 304,
-            "name": "Enlightened Solarnova",
+            "name": "<color=#BA55D3>Enlightened Solarnova</color>",
             "introduce": "<align=left><color=black>Legend says she once served the Sun itself, carrying its fiercest light within her radiant bloom. When danger draws near, Enlightened Solarnova turns that blessing into judgment - every beam of sunlight she fires is a decree of holy fire.</color>",
             "info": "Enlightened Solarnova forges her produced sun and nearby projectiles into solar judgments that rain down from above, causing area explosions.\n\n<color=#4A2900>Usage Condition: Harvest Mode | Legendary Odyssey Plant</color>\n<color=black>Sun Output: </color><color=#8B0000>50/3s</color>\n<color=black>Damage: </color><color=#8B0000>1800 (Cremator)</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> When producing sun, if zombies are present, converts the sun into a solar judgment and fires it at the nearest zombie.\n<color=black>•</color> When firing a solar judgment, absorbs plant-side projectiles within a 1.5-tile radius, gaining +2% damage per projectile absorbed.\n<color=black>•</color> Solar Judgments: Falls from the sky, dealing AoE damage (1.5-tile radius) and dropping 50 sun; can target flying zombies.\n<color=black>Ultimate: </color>Costs 16000 Coins; fires 1 solar judgment at every zombie present.</color>",
             "cost": "\n"
         },
         {
             "seedType": 305,
-            "name": "Supremacy-shroom",
+            "name": "<color=#BA55D3>Supremacy-shroom</color>",
             "introduce": "<align=left><color=black>Supremacy-shroom hails from the deepest, most crowded abyss and commands the most elusive dreamscapes. In her, the balance of yin and yang is perfectly realized, and even powerful monsters have been tamed by her hand. In private, she is also a veteran collector of zombie figurines.</color>",
             "info": "Supremacy-shroom summons a hypnotized Mini-boss to fight for you.\n\n<color=#4A2900>Usage Condition: Harvest Mode | Legendary Odyssey Plant</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> 1.5s after appearance, randomly summons a hypnotized Mini-boss zombie that fights for you from the following. Summoned hypnotized Mini-boss cannot be pulled back by Mind-blovers or captured by Pumpkaptivator.\n<color=black>•</color> Abyssal Gargantuar: Also provides a 90% incoming damage reduction for all plants while present.\n<color=black>•</color> Giga Football Striker: Also heals all plants by HP equal to 0.2× their max HP every 3s while present.\n<color=black>•</color> Professor Cherryz: Immobile. Shoots one explosive cherry every 0.1s. Loses his newspaper on appearance and converts up to 30 non-miniboss, non-gargantuar zombies on the field from both sides into enraged hypnotized Gatling Cherry Newspaper Zombies.</color>",
             "cost": "\n"
         },
         {
             "seedType": 306,
-            "name": "Eclipse Fumigator",
+            "name": "<color=#BA55D3>Eclipse Fumigator</color>",
             "introduce": "<align=left><color=black>Born from the scattered ashes of the universe's dawn, he sleeps wrapped in darkness, with shadows as his pillow. Ages of slumber have done nothing to dull his power. No matter the foe, he meets them with nothing but disdain. In his spare time, however, he takes great care of his luxuriant hair.</color>",
             "info": "Eclipse Fumigator spews toxic mist and venom spikes that rapidly corrode zombies, growing stronger the longer it attacks.\n\n<color=#4A2900>Usage Condition: Harvest Mode | Legendary Odyssey Plant</color>\n<color=black>Damage: </color><color=#8B0000>20×2/0.5s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> While attacking, sprays poison fume across the entire lane and fires 2 projectiles from a vortex.\n<color=black>•</color> Poison Fume: Infinite pierce; applies 1 Poison point and inflicts Toxic Effect; deals 3% max HP damage to zombies below half HP.\n<color=black>•</color> Projectiles: Pierce up to 2 times; on hit, inflict Toxic Effect in a small area with damage raised by [number of Poison points, min. 5] times, then apply 1 Poison point.\n<color=black>•</color> Attacks faster after 15 consecutive attacks, and even faster after 45.</color>",
             "cost": "\n"
         },
         {
             "seedType": 307,
-            "name": "Primal Twin Solar-nut",
+            "name": "<color=#BA55D3>Primal Twin Solar-nut</color>",
             "introduce": "<align=left><color=black>\"What will the garden of the future look like?\" To find out, Twin Solar-nut of the past built a light-powered time device and journeyed to the present. He had planned to take a quick look and return, but after seeing versions of himself wrecking a lab, inhabiting a zombie's body, and even skipping a beach ice cream party, he decided to stay a while and set things right.</color>",
             "info": "Primal Twin Solar-nut is the older, stronger ancestor of Twin Solar-nut.\n\n<color=#4A2900>Usage Condition: Harvest Mode</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> When damaged, negates the hit, instead takes a fixed 50 damage and drops 15 Sun.\n<color=black>•</color> Tap to spend 500 Sun to restore 100% Toughness and create a Giant Solar-nut in the tile ahead.</color>",
             "cost": "\n"
         },
         {
             "seedType": 308,
-            "name": "Bedrock Tall-nut",
+            "name": "<color=#BA55D3>Bedrock Tall-nut</color>",
             "introduce": "<align=left><color=black>When Bedrock Tall-nut awoke from his slumber, the world before him was vastly different from the one he remembered. He had no idea how long he had slept, recalling only that he seemed to have been moved around frequently during his nap. Later, while chatting with other plants in the garden, he learned that he had been resold as an ancient artifact during the centuries he had slept through.</color>",
             "info": "An indestructible Tall-nut; its resilience exists in a realm far beyond normal standards.\n\n<color=#4A2900>Usage Condition: Harvest Mode</color>\n<color=black>Toughness: </color><color=#8B0000>640000</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Tall plant, anti-crush.\n<color=black>•</color> Immune to damage and mining progress. Can still be affected by insta-kill mechanics and the curse effect.</color>",
             "cost": ""
         },
         {
             "seedType": 309,
-            "name": "A.L.E.C.",
+            "name": "<color=#BA55D3>A.L.E.C.</color>",
             "introduce": "<align=left><color=black>As a rising mainstream celebrity in the midst of a career transition, A.L.E.C.'s finances have long been a hot topic of discussion. His income mainly comes from fighting, appearing on variety shows and interviews, and selling Chomp-nut merchandise. His expenses include image management, volunteering to clean up community trash, and paying Chomper Wall-nut for the royalty fee.</color>",
             "info": "Short for Arsenalized Long-range Elite Chompzilla, he is a perfectly armed powerhouse equipped with a heavy machine gun and sniper rifle.\n\n<color=#4A2900>Usage Condition: Harvest Mode</color>\n<color=black>Toughness: </color><color=#8B0000>8000</color>\n<color=black>Damage: </color><color=#8B0000>Sniper: 1800/1.5s\nMachine Gun: 450×12/1.5s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Incoming damage is capped at 1/3 Toughness, anti-crush.\n<color=black>•</color> Targets enemies in front across the entire lawn. Fires a single-target laser at the nearest zombie that can target air, then fires bullets that track the same target. Bullets have a 1/8 chance to swallow targets. Can swallow giant zombies.\n<color=black>•</color> Every 6th attack performs a headshot, dealing 1M damage and activating his Ultimate: \n- Restores health equal to 1× Toughness\n- Summons 12 Giant Zomb-nuts that damage and knock back enemies on contact.\n- Fires bullets continuously along fixed trajectories for 1s. These do not track targets.</color>",
             "cost": ""
         },
         {
             "seedType": 310,
-            "name": "Ultra Mecha-nut",
+            "name": "<color=#BA55D3>Ultra Mecha-nut</color>",
             "introduce": "<align=left><color=black>The Ultra Mecha-nut is a plant you can spot from across the lawn. Rumor has it that it was once modified by Dr. Edgar, though he himself doesn't seem to recall the event. Meanwhile, with the help of his fellow Wall-nuts, his renewable energy business has officially gone public under the stock ticker \"NUTS\".</color>",
             "info": "Possesses a massive body that absorbs damage for all plants on the lawn, and heals itself when other plants are healed.\n\n<color=#4A2900>Usage Condition: Harvest Mode</color>\n<color=black>Toughness: </color><color=#8B0000>64000</color>\n<color=black>Damage Cap: </color><color=#8B0000>1000</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Titan and tall plant, anti-crush.\n<color=black>•</color> Max HP can exceed toughness.\n<color=black>•</color> Absorbs damage for all plants across the field. Heals itself by the same amount whenever other plants on the field heal, and heals ×10 the amount from metal objects compared to Giga Mecha-nut.</color>",
             "cost": ""
         },
         {
             "seedType": 311,
-            "name": "Final Magnetar",
+            "name": "<color=#BA55D3>Final Magnetar</color>",
             "introduce": "<align=left><color=black>He forges his armor with the density of a neutron star and commands his orbiting guards to the rhythm of a pulsar. Zombies are nothing more than tiny specks of dust, destined to fade away with time. He gives them little thought. In the near-eternal lifespan of this magnetar, he has seen far too many such specks.</color>",
             "info": "The stardust converges, forming constellastions of a crown and robe.\n\n<color=#4A2900>Usage Condition: Harvest Mode</color>\n<color=black>Damage: </color><color=#8B0000>300×5/1s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Attacks continuously regardless of whether a target is acquired.\n<color=black>•</color> Projectiles track targets across the entire field, prioritising flying targets. Damage against flying targets is ×10.\n<color=black>•</color> Summons a satellite every 6s:\n· Orbits around it at a radius of 3 tiles just above the ground;\n· Upon contacting a zombie, deals knockback and damage equal to 30% of Attack every 0.02s, then splits into 5 projectiles dealing 1× Attack each;\n· Explodes directly in front after 4s, dealing damage equal to the satellite's total damage dealt through direct contact.</color>",
             "cost": ""
@@ -3355,9 +3355,9 @@
         },
         {
             "seedType": 1272,
-            "name": "Berserker Snipea",
+            "name": "Reaper Snipea",
             "introduce": "<align=left><color=black>\"Ever heard plants whisper in the dead of night?\" He wipes his old rifle. \"She's slow, but she's never let me down…\" A dark light cuts the air. \"Time to beat my 48 out of 50 hit record.\"</color>",
-            "info": "Berserker Snipea rapidly snipes zombies from accross the field with infinite pierce, and it can use charges to create explosions!\n\n<color=#4A2900>Usage Condition: Odyssey Mode</color>\n<color=black>Damage: </color><color=#8B0000>100/0.3s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Unlimited pierce and can target zombies in all positions; +1 Doom & Frenzy charge per hit.\n<color=black>•</color> Consumes 300 Doom charges to trigger a Doom-shroom blast (72× base damage) at the location of the first zombie hit.\n<color=black>•</color> Consumes 100 Frenzy charges for double the fire rate, lasting for 8s.\n<color=black>•</color> 10% chance to crit for 6× damage (crit is guaranteed against zombies with the Irradiated debuff).</color>",
+            "info": "Reaper Snipea rapidly snipes zombies from across the field with infinite pierce, and it can use charges to create explosions!\n\n<color=#4A2900>Usage Condition: Odyssey Mode</color>\n<color=black>Damage: </color><color=#8B0000>100/0.3s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Unlimited pierce and can target zombies in all positions; +1 Doom & Frenzy charge per hit.\n<color=black>•</color> Consumes 300 Doom charges to trigger a Doom-shroom blast (72× base damage) at the location of the first zombie hit.\n<color=black>•</color> Consumes 100 Frenzy charges for double the fire rate, lasting for 8s.\n<color=black>•</color> 10% chance to crit for 6× damage (crit is guaranteed against zombies with the Irradiated debuff).</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Snipea + Doom-shroom</color>"
         },
         {
@@ -5056,14 +5056,14 @@
         },
         {
             "seedType": 312,
-            "name": "Hurricane Dragon",
+            "name": "<color=#BA55D3>Hurricane Dragon</color>",
             "introduce": "<align=left><color=black>Long ago, an aged craftsman entered the deep mountains to fell bamboo for New Year's firecrackers. Knowing his illness had lingered long and this might be his life's final masterpiece, he chose a thousand-year-old bamboo and filled it with cinnabar using master craftsmanship. On New Year's Eve, he lit the fuse; the powder burned away in silence. As the craftsman closed his eyes in melancholy, the bamboo suddenly soared into the sky, engulfed in blazing flames and roaring into the distance—its cry like a phoenix and roar like a dragon. The villagers were awestruck, and the craftsman rejoiced in delight; his illness was thus cured.</color>",
             "info": "Scattered bullets gather dragon souls; in the awakened state, spits piercing Dragon Flame projectiles.\n\n<color=black>Requirement: </color><color=#8B0000>Mystery Mode</color>\n<color=black>Damage: </color><color=#8B0000>300×10/0.33s\n1500×5/0.66s (Dragon Flame)</color>\n<color=black>Special: </color><color=#8B0000>Click to switch attack modes. Projectiles spread within ±15°.</color>\n<color=black>Spread Mode: </color><color=#8B0000>Gain 1 energy per round.</color>\n<color=black>Dragon Flame Mode: </color><color=#8B0000>Consumes 3 energy per round. Projectiles have infinite piercing and fly up to 5 tiles.</color>",
             "cost": ""
         },
         {
             "seedType": 313,
-            "name": "Parallel Spacetime Torchwood",
+            "name": "<color=#BA55D3>Parallel Spacetime Torchwood</color>",
             "introduce": "<align=left><color=black>Parallel Spacetime Torchwood is proud of his tree hollow. His hollow already houses a miniature parallel universe and can hold even more things: books, gourmet food, plushies, and so on. Because this miniature universe merely overlaps his current universe in other dimensions, he has been choosing his position very carefully to keep this parallel universe intact.</color>",
             "info": "Manipulates parallel spacetime, projecting passing projectiles across every lane.\n\n<color=black>Requirement: </color><color=#8B0000>Mystery Mode</color>\n<color=black>Special: ① </color><color=#8B0000>Splits passing plant projectiles into one for each lane.</color>\n<color=black>② </color><color=#8B0000>Only one can be planted per lane, and all Parallel Spacetime Torchwoods must be planted in the same column.</color>",
             "cost": ""

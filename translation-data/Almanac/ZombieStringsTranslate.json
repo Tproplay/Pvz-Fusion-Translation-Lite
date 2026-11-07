@@ -1418,7 +1418,7 @@
         },
         {
             "theZombieType": 339,
-            "name": "<BOSS> Abyssal Trident",
+            "name": "Abyssal Trident",
             "introduce": "<align=left><color=black>After prolonged trials, the Ultimate Trident Zombie finally earned the approval of the Abyssal Trident, transforming from an enslaved tool into a master of storms, casting aside primitive instincts of gnawing and destruction. At this moment, he and the trident embody the will of the ancient abyss. Before absolute lightning, no matter how fierce the struggle, all is but a fleeting ripple in the eternal waves.\n</color>",
             "info": "Descends amidst storms; the trident's raging tides submerge all.\n\n<color=black>Toughness: </color><color=#8B0000>90000</color>\n<color=black>Special: </color><color=#8B0000>Immune to Freeze, Immobilize, and Knockback. Cycles between Channeling Lightning and Discharging Lightning.</color>\n<color=black>Channel Lightning: </color><color=#8B0000>Hurls giant tridents at random plants, then continuously summons two columns of Deep Sea Trident Warriors. After 9s, retrieves the giant trident and gains thunder power.</color>\n<color=black>Discharge Lightning: </color><color=#8B0000>50% chance to direct lightning at a random plant (dealing 120 damage 12 times); otherwise channels it into himself, dashing across the lawn as ball lightning and instantly killing plants in its path.</color>"
         },

@@ -251,25 +251,25 @@ def patch_text_assets(
     almanac_dir = data_dir / "Almanac"
     strings_dir = data_dir / "Strings"
 
-    with (almanac_dir / "LawnStringsTranslate.json").open("r", encoding="utf-8") as f:
+    with (almanac_dir / "LawnStringsTranslate.json").open("r", encoding="utf-8-sig") as f:
         lawn_trans = json.load(f)
-    with (almanac_dir / "ZombieStringsTranslate.json").open("r", encoding="utf-8") as f:
+    with (almanac_dir / "ZombieStringsTranslate.json").open("r", encoding="utf-8-sig") as f:
         zombie_trans = json.load(f)
-    with (almanac_dir / "DetailStringsTranslate.json").open("r", encoding="utf-8") as f:
+    with (almanac_dir / "DetailStringsTranslate.json").open("r", encoding="utf-8-sig") as f:
         detail_trans = json.load(f)
-    with (strings_dir / "translation_strings.json").open("r", encoding="utf-8") as f:
+    with (strings_dir / "translation_strings.json").open("r", encoding="utf-8-sig") as f:
         exact_strings = json.load(f)
 
     for extra_fname in ("odyssey_evolution.json", "travel_buffs.json", "abyss_buffs.json"):
         extra_p = strings_dir / extra_fname
         if extra_p.is_file():
             try:
-                exact_strings.update(json.load(extra_p.open("r", encoding="utf-8")))
+                exact_strings.update(json.load(extra_p.open("r", encoding="utf-8-sig")))
             except Exception:
                 pass
 
     regex_map = {}
-    with (strings_dir / "translation_regexs.json").open("r", encoding="utf-8") as f:
+    with (strings_dir / "translation_regexs.json").open("r", encoding="utf-8-sig") as f:
         regex_map.update(json.load(f))
     compiled_regexs = []
     for pat, repl in regex_map.items():
@@ -590,14 +590,14 @@ def patch_ui_strings(
     almanac_dir = data_dir / "Almanac"
 
     exact_map = {}
-    with (strings_dir / "translation_strings.json").open("r", encoding="utf-8") as f:
+    with (strings_dir / "translation_strings.json").open("r", encoding="utf-8-sig") as f:
         exact_map.update(json.load(f))
 
     # Add plant and zombie names to UI exact map
     if (dumps_dir / "LawnStrings.json").exists() and (almanac_dir / "LawnStringsTranslate.json").exists():
-        with (dumps_dir / "LawnStrings.json").open("r", encoding="utf-8") as f:
+        with (dumps_dir / "LawnStrings.json").open("r", encoding="utf-8-sig") as f:
             d_lawn = json.load(f)
-        with (almanac_dir / "LawnStringsTranslate.json").open("r", encoding="utf-8") as f:
+        with (almanac_dir / "LawnStringsTranslate.json").open("r", encoding="utf-8-sig") as f:
             t_lawn = json.load(f)
         trans_plants = {p["seedType"]: p for p in t_lawn.get("plants", []) if "seedType" in p}
         for d in d_lawn.get("plants", []):
@@ -608,9 +608,9 @@ def patch_ui_strings(
                     exact_map[cn] = en
 
     if (dumps_dir / "ZombieStrings.json").exists() and (almanac_dir / "ZombieStringsTranslate.json").exists():
-        with (dumps_dir / "ZombieStrings.json").open("r", encoding="utf-8") as f:
+        with (dumps_dir / "ZombieStrings.json").open("r", encoding="utf-8-sig") as f:
             d_zomb = json.load(f)
-        with (almanac_dir / "ZombieStringsTranslate.json").open("r", encoding="utf-8") as f:
+        with (almanac_dir / "ZombieStringsTranslate.json").open("r", encoding="utf-8-sig") as f:
             t_zomb = json.load(f)
         trans_zomb = {z["theZombieType"]: z for z in t_zomb.get("zombies", []) if "theZombieType" in z}
         for d in d_zomb.get("zombies", []):
@@ -621,20 +621,20 @@ def patch_ui_strings(
                     exact_map[cn] = en
 
     backing_file = strings_dir / "runtime_backing_strings.json"
-    runtime_backing = json.load(backing_file.open("r", encoding="utf-8")) if backing_file.is_file() else {}
+    runtime_backing = json.load(backing_file.open("r", encoding="utf-8-sig")) if backing_file.is_file() else {}
 
     for fname in ["customlevel_strings.json", "abyss_buffs.json", "travel_buffs.json", "odyssey_evolution.json"]:
         extra_path = strings_dir / fname
         if extra_path.is_file():
             try:
-                extra_data = json.loads(extra_path.read_text(encoding="utf-8"))
+                extra_data = json.loads(extra_path.read_text(encoding="utf-8-sig"))
                 if isinstance(extra_data, dict):
                     exact_map.update({k: v for k, v in extra_data.items() if isinstance(v, str)})
             except Exception:
                 pass
 
     regex_map = {}
-    with (strings_dir / "translation_regexs.json").open("r", encoding="utf-8") as f:
+    with (strings_dir / "translation_regexs.json").open("r", encoding="utf-8-sig") as f:
         regex_map.update(json.load(f))
     if (strings_dir / "customlevel_regexs.json").is_file():
         with (strings_dir / "customlevel_regexs.json").open("r", encoding="utf-8") as f:
@@ -908,7 +908,7 @@ def patch_fonts(
         if obj.type.name == "Font":
             data = obj.read()
             name = data.m_Name
-            if name in ("fzcq", "fzjz", "汉仪夏日体W"):
+            if name in ("fzcq", "fzjz", "汉仪夏日体W", "黑体"):
                 data.m_FontData = ttf_data
                 obj.save_typetree(data)
                 stats["fonts_replaced"].append(
