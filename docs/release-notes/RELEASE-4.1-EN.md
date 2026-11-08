@@ -1,6 +1,21 @@
-# Plants vs. Zombies: Fusion v4.1 — English Release (Hotfix 2 - PC & Android)
+# Plants vs. Zombies: Fusion v4.1 — English Release (Hotfix 3 - PC & Android)
 
 A complete English translation release of **Plants vs. Zombies: Fusion (植物大战僵尸: 融合版) v4.1** for both Windows PC and Android.
+
+---
+
+## 🚨 Hotfix 3 (Nov 8, 2026)
+- **In-Game Changelog Typography**:
+  - Injected `English.ttf` into `黑体` (SimHei, Font 7106), ensuring the in-game changelog dialogue (`NoticePauseMenu`) cleanly renders using the English PvZ font instead of the default Chinese font.
+- **Missing UI & Level Strings Localization**:
+  - Localized warehouse expansion alert: `完成第5关即可扩大仓库容量` / `完成第{0}关即可扩大仓库容量` -> **Complete Level {0} to expand storage capacity**.
+  - Localized Custom Level Editor action button: `删除植物` -> **Delete Plant**.
+  - Refined Whims of Fate modifier strings: `命运无常` -> **Whims of Fate: Each Modifier draw randomly rolls between -27 and +33 Luck**.
+  - Normalized combat statistics: `总伤害` -> **Total Damage**.
+  - Polished Suburban Almanac plant and zombie descriptions, equipment terms, and travel buffs.
+- **Build & System Enhancements**:
+  - Added transparent UTF-8 BOM (`utf-8-sig`) decoding across all build tools to prevent encoding issues when editing translation dictionaries.
+  - Updated repository issue templates to automatically assign maintainers for prompt issue tracking.
 
 ---
 
@@ -58,8 +73,8 @@ A complete English translation release of **Plants vs. Zombies: Fusion (植物�
 
 | Platform | File | Size | SHA-256 Checksum | Google Drive Mirror |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 467.48 MB | `637aa89c32ea6f5c7f1a93bde4e0cc009796302e6ff7b3feb15ba881b9fd0895` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 599.88 MB | `901382841cec2bc5c733d740f3b7dadd419c11ba342f41348e622b636ca140d7` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
+| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 464.63 MB | `2b6a6fe25db9bb095e2e7aa2eed8a8c934d1a4c2cf630e130177302d6dd908c9` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 596.59 MB | `cda939f4d45b10742a8a7f21f39ae8a29bf45c9725731b2617e2273ea5af6516` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
 
 ### 🌐 Google Drive Release Folder
 - [Version 4.1 Folder](https://drive.google.com/drive/folders/1vFkBmV5aZXHBiYlVDd9H6xjclvs_G8fk?usp=sharing)

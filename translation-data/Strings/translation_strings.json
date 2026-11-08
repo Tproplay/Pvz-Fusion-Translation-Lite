@@ -9159,5 +9159,7 @@
   "暂无素材记录": "No ingredient records",
   "素材 {0} · 已种品质：{1}\n已种装备：{2}\n\n{3}": "Ingredient {0} · Planted Quality: {1}\nPlanted Gear: {2}\n\n{3}",
   "卡牌 #{0} 操作完成；已种植物快照不回写": "Card #{0} operation complete; planted plant snapshot not written back",
-  "已种植": "Planted"
+  "已种植": "Planted",
+  "删除植物": "Delete Plant",
+  "完成第{0}关即可扩大仓库容量": "Complete Level {0} to expand storage capacity"
 }
