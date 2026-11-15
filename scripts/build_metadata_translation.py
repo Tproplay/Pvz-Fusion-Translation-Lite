@@ -326,6 +326,9 @@ def load_modifier_sources(
         "属性", "攻击", "修改", "读取", "设置",
     )
 
+    in_level_path = strings_dir / "in_level_overrides.json"
+    in_level_set = set(read_json(in_level_path).keys()) if in_level_path.is_file() else set(METADATA_IN_LEVEL_OVERRIDES.keys())
+
     for extra_name in ("odyssey_evolution.json", "translation_strings.json"):
         extra_path = strings_dir / extra_name
         if not extra_path.is_file():
@@ -337,6 +340,7 @@ def load_modifier_sources(
             if (
                 isinstance(source, str)
                 and isinstance(target, str)
+                and source not in in_level_set
                 and not source.startswith(exclude_modifier_prefixes)
                 and not source.rstrip().endswith(("：", ":"))
                 and "{" not in source
@@ -1063,6 +1067,8 @@ def main() -> int:
             )
             audit_record["occurrences"] = int(audit_record["occurrences"]) + 1
         modifier_reason = modifier_source_reason(literal.text, modifier_sources, modifier_reviewed_titles)
+        if literal.text in in_level_overrides:
+            modifier_reason = None
         if modifier_reason is not None and (
             not ("：" in translated_text or ":" in translated_text)
             or literal.text.rstrip().endswith(("：", ":"))

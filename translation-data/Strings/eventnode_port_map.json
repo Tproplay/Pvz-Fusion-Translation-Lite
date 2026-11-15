@@ -1,0 +1,3816 @@
+{
+  "_metadata": {
+    "version": "4.1",
+    "description": "PvZ Fusion Custom Level EventNodes translation mapping between Chinese and English (nodes, port names, directions, and field identifiers).",
+    "total_nodes": 272,
+    "total_port_mappings": 728
+  },
+  "nodes": {
+    "AddMultipleChoiceOptionNode": {
+      "name_cn": "为奖励菜单增加一个可点击选项",
+      "name_en": "AddMultipleChoiceOptionNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "list_PortName",
+        "title_PortName",
+        "description_PortName",
+        "plantType_PortName",
+        "zombieType_PortName",
+        "optionSelected_PortName"
+      ]
+    },
+    "AddNode": {
+      "name_cn": "计算加法结果",
+      "name_en": "AddNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "AddPlantCardNode": {
+      "name_cn": "添加植物卡牌",
+      "name_en": "Add Plant Card",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plantType_PortName",
+        "cooldown_PortName",
+        "cost_PortName",
+        "useDefaultData_PortName",
+        "success_PortName",
+        "failed_PortName",
+        "onPlant_PortName",
+        "plantedPlant_PortName"
+      ]
+    },
+    "AddZombieCardNode": {
+      "name_cn": "添加僵尸卡牌",
+      "name_en": "Add Zombie Card",
+      "category": "Actions",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AndNode": {
+      "name_cn": "与",
+      "name_en": "And",
+      "category": "Logic",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "output_PortName"
+      ]
+    },
+    "AppendBoolListNode": {
+      "name_cn": "将布尔值追加到共享列表中",
+      "name_en": "AppendBoolListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AppendFloatListNode": {
+      "name_cn": "将小数值追加到共享列表中",
+      "name_en": "AppendFloatListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AppendIntListNode": {
+      "name_cn": "将整数值追加到共享列表中",
+      "name_en": "AppendIntListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AppendObjectListNode": {
+      "name_cn": "将对象值追加到共享列表中",
+      "name_en": "AppendObjectListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AppendPlantTypeListNode": {
+      "name_cn": "将植物类型值追加到共享列表中",
+      "name_en": "AppendPlantTypeListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AppendStringListNode": {
+      "name_cn": "将字符串值追加到共享列表中",
+      "name_en": "AppendStringListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AppendZombieTypeListNode": {
+      "name_cn": "将僵尸类型值追加到共享列表中",
+      "name_en": "AppendZombieTypeListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AsciiToStringNode": {
+      "name_cn": "将0～127的ASCII码转换为一个字符",
+      "name_en": "AsciiToStringNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "AttributePanel": {
+      "name_cn": "AttributePanel",
+      "name_en": "AttributePanel",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "BindObjectNode": {
+      "name_cn": "用名字保存对象",
+      "name_en": "BindObjectNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "BindPlantNode": {
+      "name_cn": "给场上一株植物起名字",
+      "name_en": "BindPlantNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "BindZombieNode": {
+      "name_cn": "给场上一个僵尸起名字",
+      "name_en": "BindZombieNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "BoolValueNode": {
+      "name_cn": "给多个节点提供固定真假",
+      "name_en": "BoolValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "value_PortName"
+      ]
+    },
+    "BoolVariableAsset": {
+      "name_cn": "BoolVariableAsset",
+      "name_en": "BoolVariableAsset",
+      "category": "General",
+      "parent": "VariableAsset",
+      "port_fields": []
+    },
+    "BoolVariableNode": {
+      "name_cn": "引用关卡变量面板中一个共享真假变量",
+      "name_en": "BoolVariableNode",
+      "category": "General",
+      "parent": "VariableNode",
+      "port_fields": [
+        "variable_PortName"
+      ]
+    },
+    "BranchNode": {
+      "name_cn": "分支",
+      "name_en": "Branch",
+      "category": "Flow Control",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "condition_PortName",
+        "then_PortName",
+        "else_PortName"
+      ]
+    },
+    "BulletTypeValueNode": {
+      "name_cn": "选择游戏内子弹种类",
+      "name_en": "Select in-game projectile type",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ChangeEventMapNode": {
+      "name_cn": "在同地形地图之间切换昼夜背景",
+      "name_en": "ChangeEventMapNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ChangeEventMusicNode": {
+      "name_cn": "播放所选游戏内音乐",
+      "name_en": "ChangeEventMusicNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ChangeStageNode": {
+      "name_cn": "把本局事件图切换到指定玩法阶段",
+      "name_en": "ChangeStageNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "ClearListValuesNode": {
+      "name_cn": "移除共享列表全部内容",
+      "name_en": "ClearListValuesNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "CompareFloatNode": {
+      "name_cn": "比较两个小数",
+      "name_en": "CompareFloatNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "valueA_PortName",
+        "valueB_PortName",
+        "greater_PortName",
+        "less_PortName",
+        "equal_PortName"
+      ]
+    },
+    "CompareGameObjectNode": {
+      "name_cn": "比较两个物品对象",
+      "name_en": "CompareGameObjectNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "gameObjectA_PortName",
+        "gameObjectB_PortName",
+        "equal_PortName"
+      ]
+    },
+    "CompareIntNode": {
+      "name_cn": "比较两个整数",
+      "name_en": "CompareIntNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "valueA_PortName",
+        "valueB_PortName",
+        "greater_PortName",
+        "less_PortName",
+        "equal_PortName"
+      ]
+    },
+    "ComparePlantTypeNode": {
+      "name_cn": "判断两个植物种类是否相同",
+      "name_en": "ComparePlantTypeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "plantTypeA_PortName",
+        "plantTypeB_PortName",
+        "equal_PortName"
+      ]
+    },
+    "CompareToolTypeNode": {
+      "name_cn": "判断两个道具种类是否相同",
+      "name_en": "Determine whether two item types are identical",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "CompareZombieTypeNode": {
+      "name_cn": "判断两个僵尸种类是否相同",
+      "name_en": "CompareZombieTypeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "zombieTypeA_PortName",
+        "zombieTypeB_PortName",
+        "equal_PortName"
+      ]
+    },
+    "ConnectionLine": {
+      "name_cn": "ConnectionLine",
+      "name_en": "ConnectionLine",
+      "category": "General",
+      "parent": "MaskableGraphic",
+      "port_fields": []
+    },
+    "CopyListValuesNode": {
+      "name_cn": "用源列表的内容替换目标列表",
+      "name_en": "CopyListValuesNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "CounterNode": {
+      "name_cn": "记录触发次数",
+      "name_en": "CounterNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "shouldReset_PortName",
+        "count_PortName",
+        "onCount_PortName"
+      ]
+    },
+    "CreateCherryExplodeNode": {
+      "name_cn": "直接产生樱桃爆炸效果",
+      "name_en": "CreateCherryExplodeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName",
+        "damage_PortName"
+      ]
+    },
+    "CreateCraterNode": {
+      "name_cn": "在指定位置创建弹坑",
+      "name_en": "CreateCraterNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName"
+      ]
+    },
+    "CreateDoomShroomEffectNode": {
+      "name_cn": "直接产生毁灭菇爆炸效果",
+      "name_en": "CreateDoomShroomEffectNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName",
+        "damage_PortName",
+        "setPit_PortName"
+      ]
+    },
+    "CreateEventObjectNode": {
+      "name_cn": "创建由当前关卡事件图管理的空对象",
+      "name_en": "CreateEventObjectNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "CreateGraveNode": {
+      "name_cn": "在指定位置创建墓碑",
+      "name_en": "CreateGraveNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName"
+      ]
+    },
+    "CreateIceBlockNode": {
+      "name_cn": "在指定位置创建冰块",
+      "name_en": "CreateIceBlockNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName",
+        "plantType_PortName"
+      ]
+    },
+    "CreateIceShroomEffectNode": {
+      "name_cn": "直接产生寒冰菇冻结效果",
+      "name_en": "CreateIceShroomEffectNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "duration_PortName"
+      ]
+    },
+    "CreateInfoCardNode": {
+      "name_cn": "创建信息卡",
+      "name_en": "Create Info Card",
+      "category": "UI",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "bigTitle_PortName",
+        "smallTitle_PortName",
+        "onCardClicked_PortName"
+      ]
+    },
+    "CreateJalapenoEffectNode": {
+      "name_cn": "直接产生火爆辣椒效果",
+      "name_en": "CreateJalapenoEffectNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "row_PortName",
+        "damage_PortName"
+      ]
+    },
+    "CreateLadderNode": {
+      "name_cn": "在指定位置创建梯子",
+      "name_en": "CreateLadderNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName"
+      ]
+    },
+    "CreateParticleNode": {
+      "name_cn": "在指定位置创建白烟特效",
+      "name_en": "CreateParticleNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "row_PortName",
+        "column_PortName"
+      ]
+    },
+    "CreatePlantCardNode": {
+      "name_cn": "在场上生成可拾取的植物卡牌",
+      "name_en": "CreatePlantCardNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName",
+        "plantType_PortName",
+        "onCreated_PortName",
+        "outPlantType_PortName"
+      ]
+    },
+    "CreateZombieExplodeNode": {
+      "name_cn": "直接产生小丑爆炸效果",
+      "name_en": "CreateZombieExplodeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName"
+      ]
+    },
+    "CreateZombieNode": {
+      "name_cn": "生成僵尸",
+      "name_en": "Create Zombie",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "row_PortName",
+        "zombieType_PortName",
+        "isMindControlled_PortName",
+        "column_PortName",
+        "onCreated_PortName",
+        "zombie_PortName"
+      ]
+    },
+    "CreatorHelpWindow": {
+      "name_cn": "CreatorHelpWindow",
+      "name_en": "CreatorHelpWindow",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "CursePlantNode": {
+      "name_cn": "给植物施加指定固定数值的诅咒",
+      "name_en": "CursePlantNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "DamagePlantNode": {
+      "name_cn": "伤害植物",
+      "name_en": "Damage Plant",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "damage_PortName",
+        "onCompleted_PortName"
+      ]
+    },
+    "DamageZombieNode": {
+      "name_cn": "伤害僵尸",
+      "name_en": "Damage Zombie",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "zombie_PortName",
+        "damage_PortName"
+      ]
+    },
+    "DeleteCardByTypeNode": {
+      "name_cn": "从卡槽移除指定种类的植物卡牌",
+      "name_en": "DeleteCardByTypeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plantType_PortName",
+        "completed_PortName"
+      ]
+    },
+    "DeleteGridItemsNode": {
+      "name_cn": "删除指定格子的墓碑、弹坑、梯子或冰块",
+      "name_en": "DeleteGridItemsNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "DeleteInfoCardsNode": {
+      "name_cn": "删除全部信息卡",
+      "name_en": "DeleteInfoCardsNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "DeleteZombieCardsNode": {
+      "name_cn": "删除当前卡槽里指定类型的所有僵尸卡牌",
+      "name_en": "DeleteZombieCardsNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "DestroyEventObjectNode": {
+      "name_cn": "删除当前事件图创建的场景标记",
+      "name_en": "DestroyEventObjectNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "DiePlantNode": {
+      "name_cn": "杀死植物",
+      "name_en": "Kill Plant",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "onCompleted_PortName"
+      ]
+    },
+    "DivideNode": {
+      "name_cn": "计算除法结果",
+      "name_en": "DivideNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "DoOnceNode": {
+      "name_cn": "仅执行一次",
+      "name_en": "Do Once",
+      "category": "Flow Control",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "EventDataEditorWindow": {
+      "name_cn": "EventDataEditorWindow",
+      "name_en": "EventDataEditorWindow",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "EventDropdownListLayout": {
+      "name_cn": "EventDropdownListLayout",
+      "name_en": "EventDropdownListLayout",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "EventListValue": {
+      "name_cn": "EventListValue",
+      "name_en": "EventListValue",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "EventNodeCanvas": {
+      "name_cn": "EventNodeCanvas",
+      "name_en": "EventNodeCanvas",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "EventNodeContextMenu": {
+      "name_cn": "EventNodeContextMenu",
+      "name_en": "EventNodeContextMenu",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "EventNodeGraph": {
+      "name_cn": "EventNodeGraph",
+      "name_en": "EventNodeGraph",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "EventNodeManager": {
+      "name_cn": "EventNodeManager",
+      "name_en": "EventNodeManager",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "FeedGoldenBeanNode": {
+      "name_cn": "对指定植物调用实际投喂金咖啡豆流程",
+      "name_en": "FeedGoldenBeanNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FindBoolListValueNode": {
+      "name_cn": "输出匹配值第一次出现的位置",
+      "name_en": "FindBoolListValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FindFloatListValueNode": {
+      "name_cn": "输出匹配值第一次出现的位置",
+      "name_en": "FindFloatListValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FindIntListValueNode": {
+      "name_cn": "输出匹配值第一次出现的位置",
+      "name_en": "FindIntListValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FindObjectListValueNode": {
+      "name_cn": "输出匹配值第一次出现的位置",
+      "name_en": "FindObjectListValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FindPlantTypeListValueNode": {
+      "name_cn": "输出匹配值第一次出现的位置",
+      "name_en": "FindPlantTypeListValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FindStringListValueNode": {
+      "name_cn": "输出匹配值第一次出现的位置",
+      "name_en": "FindStringListValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FindZombieTypeListValueNode": {
+      "name_cn": "输出匹配值第一次出现的位置",
+      "name_en": "FindZombieTypeListValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FloatToBoolNode": {
+      "name_cn": "0为假",
+      "name_en": "FloatToBoolNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FloatToIntNode": {
+      "name_cn": "把小数转换为整数",
+      "name_en": "FloatToIntNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "float_PortName",
+        "int_PortName"
+      ]
+    },
+    "FloatToStringNode": {
+      "name_cn": "把数字转换成用于显示的文字",
+      "name_en": "FloatToStringNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "value_PortName",
+        "decimals_PortName",
+        "result_PortName"
+      ]
+    },
+    "FloatValueNode": {
+      "name_cn": "给多个节点提供固定小数",
+      "name_en": "FloatValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "value_PortName"
+      ]
+    },
+    "FloatVariableArithmeticNode": {
+      "name_cn": "一次触发直接给共享变量加、减、乘、除或取余",
+      "name_en": "FloatVariableArithmeticNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "FloatVariableAsset": {
+      "name_cn": "FloatVariableAsset",
+      "name_en": "FloatVariableAsset",
+      "category": "General",
+      "parent": "VariableAsset",
+      "port_fields": []
+    },
+    "FloatVariableNode": {
+      "name_cn": "引用关卡变量面板中一个共享小数变量",
+      "name_en": "FloatVariableNode",
+      "category": "General",
+      "parent": "VariableNode",
+      "port_fields": [
+        "variable_PortName"
+      ]
+    },
+    "ForEachAllZombiesNode": {
+      "name_cn": "逐一处理当前战场所有存活僵尸",
+      "name_en": "ForEachAllZombiesNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ForEachPlantNode": {
+      "name_cn": "依次处理列表中的每个植物",
+      "name_en": "ForEachPlantNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plantList_PortName",
+        "loopBody_PortName",
+        "currentPlant_PortName",
+        "currentIndex_PortName",
+        "onCompleted_PortName"
+      ]
+    },
+    "ForEachPlantTypeNode": {
+      "name_cn": "依次处理列表中的每个植物种类",
+      "name_en": "ForEachPlantTypeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plantTypeList_PortName",
+        "loopBody_PortName",
+        "currentPlantType_PortName",
+        "currentIndex_PortName",
+        "onCompleted_PortName"
+      ]
+    },
+    "ForEachZombieNode": {
+      "name_cn": "依次输出列表中的每只存活僵尸",
+      "name_en": "ForEachZombieNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ForLoopNode": {
+      "name_cn": "在同一帧内重复执行循环体",
+      "name_en": "ForLoopNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "count_PortName",
+        "output_PortName",
+        "index_PortName"
+      ]
+    },
+    "GameOverNode": {
+      "name_cn": "主动让这一局失败",
+      "name_en": "GameOverNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "reason_PortName"
+      ]
+    },
+    "GameWinNode": {
+      "name_cn": "主动让这一局进入胜利结算",
+      "name_en": "GameWinNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName"
+      ]
+    },
+    "GetAllPlantsNode": {
+      "name_cn": "取得场上登记的植物列表",
+      "name_en": "GetAllPlantsNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "plants_PortName"
+      ]
+    },
+    "GetAllZombiesNode": {
+      "name_cn": "获取当前棋盘仍存活的僵尸快照",
+      "name_en": "GetAllZombiesNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetBoolListItemNode": {
+      "name_cn": "读取共享列表指定位置的值",
+      "name_en": "GetBoolListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetBoolVariableValueNode": {
+      "name_cn": "读取真假变量目前保存的值",
+      "name_en": "GetBoolVariableValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "variable_PortName",
+        "value_PortName"
+      ]
+    },
+    "GetBoundPlantNode": {
+      "name_cn": "按名字找到之前绑定的植物",
+      "name_en": "GetBoundPlantNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "GetBoundZombieNode": {
+      "name_cn": "按名字找到之前绑定的僵尸",
+      "name_en": "GetBoundZombieNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "GetEventPositionNode": {
+      "name_cn": "读取这次执行链最近记录的鼠标或实体位置",
+      "name_en": "GetEventPositionNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "GetFloatListItemNode": {
+      "name_cn": "读取共享列表指定位置的值",
+      "name_en": "GetFloatListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetFloatVariableValueNode": {
+      "name_cn": "读取小数变量目前保存的值",
+      "name_en": "GetFloatVariableValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "variable_PortName",
+        "value_PortName"
+      ]
+    },
+    "GetHeldToolNode": {
+      "name_cn": "获取鼠标当前持有的物品对象及种类",
+      "name_en": "GetHeldToolNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetIntListItemNode": {
+      "name_cn": "读取共享列表指定位置的值",
+      "name_en": "GetIntListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetIntVariableValueNode": {
+      "name_cn": "读取整数变量目前保存的值",
+      "name_en": "GetIntVariableValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "variable_PortName",
+        "value_PortName"
+      ]
+    },
+    "GetListLengthNode": {
+      "name_cn": "读取共享列表当前元素个数",
+      "name_en": "GetListLengthNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetMoneyAmountNode": {
+      "name_cn": "读取本局棋盘当前金币",
+      "name_en": "GetMoneyAmountNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetMoneyNode": {
+      "name_cn": "给玩家增加指定数量的金币",
+      "name_en": "Grants player the specified amount of Money",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "moneyAmount_PortName"
+      ]
+    },
+    "GetMouseWorldPositionNode": {
+      "name_cn": "读取鼠标在战场的世界坐标及所在格子",
+      "name_en": "GetMouseWorldPositionNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetNearestZombieNode": {
+      "name_cn": "查询离指定行列最近的僵尸",
+      "name_en": "GetNearestZombieNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "row_PortName",
+        "column_PortName",
+        "zombie_PortName"
+      ]
+    },
+    "GetObjectListItemNode": {
+      "name_cn": "读取共享列表指定位置的值",
+      "name_en": "GetObjectListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetObjectTransformNode": {
+      "name_cn": "获取对象变换",
+      "name_en": "Get Object Transform",
+      "category": "Transform",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetPlantAttackSpeedNode": {
+      "name_cn": "读取当前攻击速度倍率和基础攻击间隔",
+      "name_en": "GetPlantAttackSpeedNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetPlantAttributeCountdownNode": {
+      "name_cn": "读取当前属性倒计时和最大秒数",
+      "name_en": "GetPlantAttributeCountdownNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetPlantBasicComponentsNode": {
+      "name_cn": "递归拆分融合配方",
+      "name_en": "GetPlantBasicComponentsNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetPlantTypeListItemNode": {
+      "name_cn": "读取共享列表指定位置的值",
+      "name_en": "GetPlantTypeListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetPlantsInCellNode": {
+      "name_cn": "取得某格登记的全部植物",
+      "name_en": "GetPlantsInCellNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "row_PortName",
+        "column_PortName",
+        "plants_PortName"
+      ]
+    },
+    "GetPlantsOnLayerNode": {
+      "name_cn": "只查询某格指定位置层的植物",
+      "name_en": "GetPlantsOnLayerNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "GetRandomPlantTypeNode": {
+      "name_cn": "从输入列表抽取一种植物",
+      "name_en": "GetRandomPlantTypeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "list_PortName",
+        "result_PortName"
+      ]
+    },
+    "GetStageNode": {
+      "name_cn": "读取当前玩法阶段的名称",
+      "name_en": "GetStageNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "GetStringListItemNode": {
+      "name_cn": "读取共享列表指定位置的值",
+      "name_en": "GetStringListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetStringVariableValueNode": {
+      "name_cn": "读取共享字符串变量当前保存的文字",
+      "name_en": "GetStringVariableValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetSunAmountNode": {
+      "name_cn": "读取玩家当前持有的阳光数量",
+      "name_en": "GetSunAmountNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "sunAmount_PortName"
+      ]
+    },
+    "GetSunNode": {
+      "name_cn": "给玩家增加指定数量的阳光",
+      "name_en": "Grants player the specified amount of Sun",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "sunAmount_PortName"
+      ]
+    },
+    "GetToolCooldownNode": {
+      "name_cn": "读取指定道具的总冷却、剩余时间与是否存在",
+      "name_en": "Read total cooldown, remaining time, and existence of the specified item",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetTravelBuffNode": {
+      "name_cn": "给本局增加指定旅行词条",
+      "name_en": "GetTravelBuffNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "onSuccess_PortName"
+      ]
+    },
+    "GetTravelEntryNode": {
+      "name_cn": "给本局增加指定旅行词条",
+      "name_en": "GetTravelEntryNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName"
+      ]
+    },
+    "GetZombieStatsNode": {
+      "name_cn": "读取本体血量、最大血量、攻击力、防具血量、基础移速或体型",
+      "name_en": "GetZombieStatsNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetZombieStatusNode": {
+      "name_cn": "读取指定状态剩余秒数、开启标记或层数",
+      "name_en": "GetZombieStatusNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GetZombieTypeListItemNode": {
+      "name_cn": "读取共享列表指定位置的值",
+      "name_en": "GetZombieTypeListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "GivePlantShieldNode": {
+      "name_cn": "对指定植物增加护盾",
+      "name_en": "GivePlantShieldNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "shieldAmount_PortName"
+      ]
+    },
+    "HealPlantNode": {
+      "name_cn": "治疗植物",
+      "name_en": "Heal Plant",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "healAmount_PortName",
+        "onHealed_PortName"
+      ]
+    },
+    "InsertBoolListNode": {
+      "name_cn": "将布尔值插入到共享列表中",
+      "name_en": "InsertBoolListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "InsertFloatListNode": {
+      "name_cn": "将小数值插入到共享列表中",
+      "name_en": "InsertFloatListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "InsertIntListNode": {
+      "name_cn": "将整数值插入到共享列表中",
+      "name_en": "InsertIntListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "InsertObjectListNode": {
+      "name_cn": "将对象值插入到共享列表中",
+      "name_en": "InsertObjectListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "InsertPlantTypeListNode": {
+      "name_cn": "将植物类型值插入到共享列表中",
+      "name_en": "InsertPlantTypeListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "InsertStringListNode": {
+      "name_cn": "将字符串值插入到共享列表中",
+      "name_en": "InsertStringListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "InsertZombieTypeListNode": {
+      "name_cn": "将僵尸类型值插入到共享列表中",
+      "name_en": "InsertZombieTypeListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "IntAddNode": {
+      "name_cn": "计算整数加法结果",
+      "name_en": "IntAddNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "IntDivideNode": {
+      "name_cn": "计算整数除法结果",
+      "name_en": "IntDivideNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "IntModuloNode": {
+      "name_cn": "计算整数取模结果",
+      "name_en": "IntModuloNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "IntMultiplyNode": {
+      "name_cn": "计算整数乘法结果",
+      "name_en": "IntMultiplyNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "IntSubtractNode": {
+      "name_cn": "计算整数减法结果",
+      "name_en": "IntSubtractNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "IntToBoolNode": {
+      "name_cn": "0为假",
+      "name_en": "IntToBoolNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "IntToFloatNode": {
+      "name_cn": "把整数转换为小数类型",
+      "name_en": "IntToFloatNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "int_PortName",
+        "float_PortName"
+      ]
+    },
+    "IntToStringNode": {
+      "name_cn": "将数值或枚举转换为可读文字",
+      "name_en": "IntToStringNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "IntValueNode": {
+      "name_cn": "给多个节点提供固定整数",
+      "name_en": "IntValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "value_PortName"
+      ]
+    },
+    "IntVariableArithmeticNode": {
+      "name_cn": "一次触发直接给共享变量加、减、乘、除或取余",
+      "name_en": "IntVariableArithmeticNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "IntVariableAsset": {
+      "name_cn": "IntVariableAsset",
+      "name_en": "IntVariableAsset",
+      "category": "General",
+      "parent": "VariableAsset",
+      "port_fields": []
+    },
+    "IntVariableNode": {
+      "name_cn": "引用关卡变量面板中一个共享整数变量",
+      "name_en": "IntVariableNode",
+      "category": "General",
+      "parent": "VariableNode",
+      "port_fields": [
+        "variable_PortName"
+      ]
+    },
+    "ListVariableAsset": {
+      "name_cn": "ListVariableAsset",
+      "name_en": "ListVariableAsset",
+      "category": "General",
+      "parent": "VariableAsset",
+      "port_fields": []
+    },
+    "ListVariableNode": {
+      "name_cn": "引用共享的有类型列表",
+      "name_en": "ListVariableNode",
+      "category": "General",
+      "parent": "VariableNode",
+      "port_fields": []
+    },
+    "LogarithmNode": {
+      "name_cn": "对有限小数计算幂或指定底数的对数",
+      "name_en": "LogarithmNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "MakeVector3Node": {
+      "name_cn": "将三个小数组合为世界坐标",
+      "name_en": "MakeVector3Node",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "MergeMultipleChoiceOptionListsNode": {
+      "name_cn": "把两个奖励选项列表合成一个",
+      "name_en": "MergeMultipleChoiceOptionListsNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "list1_PortName",
+        "list2_PortName"
+      ]
+    },
+    "MergePlantTypeListsNode": {
+      "name_cn": "把两份植物种类列表合在一起",
+      "name_en": "MergePlantTypeListsNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "listA_PortName",
+        "listB_PortName",
+        "mergedList_PortName",
+        "count_PortName"
+      ]
+    },
+    "ModifyEventBulletNode": {
+      "name_cn": "修改仍存活的事件子弹大小、速度、伤害或方向",
+      "name_en": "Modify size, speed, damage, or direction of surviving event projectiles",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ModifyPlantAttackNode": {
+      "name_cn": "修改指定植物的攻击加成",
+      "name_en": "ModifyPlantAttackNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "multiplier_PortName",
+        "onModified_PortName",
+        "plantOut_PortName"
+      ]
+    },
+    "ModifyPlantHealthNode": {
+      "name_cn": "修改指定植物的生命加成",
+      "name_en": "ModifyPlantHealthNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "multiplier_PortName",
+        "onModified_PortName",
+        "plantOut_PortName"
+      ]
+    },
+    "ModifyZombieHealthNode": {
+      "name_cn": "修改指定僵尸的生命倍率",
+      "name_en": "ModifyZombieHealthNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "zombie_PortName",
+        "ratio_PortName",
+        "onModified_PortName",
+        "zombieOut_PortName"
+      ]
+    },
+    "MouseClickData": {
+      "name_cn": "MouseClickData",
+      "name_en": "MouseClickData",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "MovePlantNode": {
+      "name_cn": "移动植物",
+      "name_en": "Move Plant",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "column_PortName",
+        "row_PortName",
+        "force_PortName",
+        "onMoved_PortName",
+        "movedPlant_PortName"
+      ]
+    },
+    "MoveZombieNode": {
+      "name_cn": "移动僵尸",
+      "name_en": "Move Zombie",
+      "category": "Actions",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "zombie_PortName",
+        "column_PortName",
+        "row_PortName",
+        "onMoved_PortName",
+        "movedZombie_PortName"
+      ]
+    },
+    "MultiPlantTypeListNode": {
+      "name_cn": "在一个节点中配置多个植物种类",
+      "name_en": "MultiPlantTypeListNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "plantTypeList_PortName"
+      ]
+    },
+    "MultiplyNode": {
+      "name_cn": "计算乘法结果",
+      "name_en": "MultiplyNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "NodeConnection": {
+      "name_cn": "NodeConnection",
+      "name_en": "NodeConnection",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "NodeGroup": {
+      "name_cn": "NodeGroup",
+      "name_en": "NodeGroup",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "NodeGroupUI": {
+      "name_cn": "NodeGroupUI",
+      "name_en": "NodeGroupUI",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "NodeInfoPanel": {
+      "name_cn": "NodeInfoPanel",
+      "name_en": "NodeInfoPanel",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "NodeInputDefault": {
+      "name_cn": "NodeInputDefault",
+      "name_en": "NodeInputDefault",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "NodeTypeInfo": {
+      "name_cn": "NodeTypeInfo",
+      "name_en": "NodeTypeInfo",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "NodeTypeRegistry": {
+      "name_cn": "NodeTypeRegistry",
+      "name_en": "NodeTypeRegistry",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "NotNode": {
+      "name_cn": "非",
+      "name_en": "Not",
+      "category": "Logic",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "input_PortName",
+        "output_PortName"
+      ]
+    },
+    "ObjectToPlantNode": {
+      "name_cn": "读取对象上的植物组件",
+      "name_en": "ObjectToPlantNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ObjectToStringNode": {
+      "name_cn": "生成对象在当前运行图内唯一的引用文本",
+      "name_en": "ObjectToStringNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ObjectToZombieNode": {
+      "name_cn": "读取对象上的僵尸组件",
+      "name_en": "ObjectToZombieNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "OnBoardStartNode": {
+      "name_cn": "关卡开始",
+      "name_en": "On Board Start",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName"
+      ]
+    },
+    "OnGameStartNode": {
+      "name_cn": "关卡正式开始",
+      "name_en": "On Game Start",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName"
+      ]
+    },
+    "OnKeyPressNode": {
+      "name_cn": "按键按下",
+      "name_en": "On Key Press",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName"
+      ]
+    },
+    "OnMouseClickNode": {
+      "name_cn": "鼠标点击",
+      "name_en": "On Mouse Click",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "row_PortName",
+        "column_PortName",
+        "item_PortName",
+        "isLeftButton_PortName"
+      ]
+    },
+    "OnPlantClickNode": {
+      "name_cn": "植物被点击",
+      "name_en": "On Plant Clicked",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName"
+      ]
+    },
+    "OnPlantCreateNode": {
+      "name_cn": "植物被种植",
+      "name_en": "On Plant Planted",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName"
+      ]
+    },
+    "OnPlantDeathCompleteNode": {
+      "name_cn": "植物死亡完成",
+      "name_en": "On Plant Death Complete",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName",
+        "dieReason_PortName"
+      ]
+    },
+    "OnPlantDieNode": {
+      "name_cn": "植物死亡时",
+      "name_en": "On Plant Dying",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "plant_PortName"
+      ]
+    },
+    "OnPlantMixedNode": {
+      "name_cn": "植物融合完成时执行规则",
+      "name_en": "OnPlantMixedNode",
+      "category": "General",
+      "parent": "OnPlantCreateNode",
+      "port_fields": []
+    },
+    "OnStageEnterNode": {
+      "name_cn": "进入指定名称的玩法阶段时启动规则",
+      "name_en": "OnStageEnterNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "OnWaveClearedNode": {
+      "name_cn": "波次清除",
+      "name_en": "On Wave Cleared",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "OnWorldPlantEffectNode": {
+      "name_cn": "监听全场寒冰菇或单行火爆辣椒效果",
+      "name_en": "OnWorldPlantEffectNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "OnZombieClickNode": {
+      "name_cn": "在战场左键点击存活僵尸时触发",
+      "name_en": "OnZombieClickNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "OnZombieDieNode": {
+      "name_cn": "僵尸死亡",
+      "name_en": "On Zombie Died",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "zombie_PortName"
+      ]
+    },
+    "OnZombieHealthBelowNode": {
+      "name_cn": "僵尸血量低于",
+      "name_en": "On Zombie Health Below",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "OnZombieSpawnNode": {
+      "name_cn": "僵尸生成",
+      "name_en": "On Zombie Spawned",
+      "category": "Events",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "zombie_PortName"
+      ]
+    },
+    "OrNode": {
+      "name_cn": "或",
+      "name_en": "Or",
+      "category": "Logic",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "output_PortName"
+      ]
+    },
+    "PlantSplitNode": {
+      "name_cn": "从具体植物读取行、列和种类",
+      "name_en": "PlantSplitNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "plant_PortName",
+        "column_PortName",
+        "row_PortName",
+        "plantType_PortName",
+        "health_PortName",
+        "attributeCountdown_PortName"
+      ]
+    },
+    "PlantToObjectNode": {
+      "name_cn": "将植物转换为场景对象引用",
+      "name_en": "PlantToObjectNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "PlantTypeListStorageNode": {
+      "name_cn": "在这一局里保存并修改植物种类列表",
+      "name_en": "PlantTypeListStorageNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "list_PortName",
+        "plantType_PortName",
+        "currentList_PortName",
+        "count_PortName",
+        "onComplete_PortName"
+      ]
+    },
+    "PlantTypeToStringNode": {
+      "name_cn": "将数值或枚举转换为可读文字",
+      "name_en": "PlantTypeToStringNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "PlantTypeValueNode": {
+      "name_cn": "提供一个固定植物种类",
+      "name_en": "PlantTypeValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "value_PortName"
+      ]
+    },
+    "PlaySoundNode": {
+      "name_cn": "播放已有的游戏音效",
+      "name_en": "PlaySoundNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "soundId_PortName"
+      ]
+    },
+    "PlayZombieAnimNode": {
+      "name_cn": "让指定僵尸切换动画",
+      "name_en": "PlayZombieAnimNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "zombie_PortName"
+      ]
+    },
+    "PortDefinition": {
+      "name_cn": "PortDefinition",
+      "name_en": "PortDefinition",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "PowerNode": {
+      "name_cn": "幂运算",
+      "name_en": "Power",
+      "category": "Math",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "PulseNode": {
+      "name_cn": "仅在同步执行下游期间输出true",
+      "name_en": "PulseNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "state_PortName",
+        "onPulse_PortName"
+      ]
+    },
+    "RandomFloatNode": {
+      "name_cn": "在范围内抽取随机小数",
+      "name_en": "RandomFloatNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "min_PortName",
+        "max_PortName",
+        "result_PortName"
+      ]
+    },
+    "RandomIntNode": {
+      "name_cn": "在范围内抽取随机整数",
+      "name_en": "RandomIntNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "min_PortName",
+        "max_PortName",
+        "result_PortName"
+      ]
+    },
+    "RandomTriggerNode": {
+      "name_cn": "随机触发",
+      "name_en": "Random Trigger",
+      "category": "Flow Control",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "count_PortName",
+        "allowRepeat_PortName",
+        "output_PortName"
+      ]
+    },
+    "RemoveListItemNode": {
+      "name_cn": "删除指定索引的一项",
+      "name_en": "RemoveListItemNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "RemovePlantTypeNode": {
+      "name_cn": "从植物种类列表移除指定种类",
+      "name_en": "RemovePlantTypeNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "list_PortName",
+        "plantType_PortName",
+        "resultList_PortName",
+        "success_PortName"
+      ]
+    },
+    "RemoveTravelEntryNode": {
+      "name_cn": "移除本局指定旅行词条",
+      "name_en": "RemoveTravelEntryNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "RepeatUntilNode": {
+      "name_cn": "条件未成立时重复执行动作",
+      "name_en": "RepeatUntilNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ReplaceBoolListNode": {
+      "name_cn": "将布尔值替换到共享列表中",
+      "name_en": "ReplaceBoolListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ReplaceFloatListNode": {
+      "name_cn": "将小数值替换到共享列表中",
+      "name_en": "ReplaceFloatListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ReplaceIntListNode": {
+      "name_cn": "将整数值替换到共享列表中",
+      "name_en": "ReplaceIntListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ReplaceObjectListNode": {
+      "name_cn": "将对象值替换到共享列表中",
+      "name_en": "ReplaceObjectListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ReplacePlantTypeListNode": {
+      "name_cn": "将植物类型值替换到共享列表中",
+      "name_en": "ReplacePlantTypeListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ReplaceStringListNode": {
+      "name_cn": "将字符串值替换到共享列表中",
+      "name_en": "ReplaceStringListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ReplaceZombieTypeListNode": {
+      "name_cn": "将僵尸类型值替换到共享列表中",
+      "name_en": "ReplaceZombieTypeListNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "RuntimeEventNodeEditor": {
+      "name_cn": "RuntimeEventNodeEditor",
+      "name_en": "RuntimeEventNodeEditor",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "RuntimeNodeUI": {
+      "name_cn": "RuntimeNodeUI",
+      "name_en": "RuntimeNodeUI",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "RuntimePortUI": {
+      "name_cn": "RuntimePortUI",
+      "name_en": "RuntimePortUI",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "SetBoolVariableValueNode": {
+      "name_cn": "把新值存进共享真假变量",
+      "name_en": "SetBoolVariableValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "variable_PortName",
+        "value_PortName",
+        "variableOut_PortName",
+        "onComplete_PortName"
+      ]
+    },
+    "SetEventObjectTransformNode": {
+      "name_cn": "移动和缩放创建场景对象节点生成的标记",
+      "name_en": "SetEventObjectTransformNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetFloatVariableValueNode": {
+      "name_cn": "把新值存进共享小数变量",
+      "name_en": "SetFloatVariableValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "variable_PortName",
+        "value_PortName",
+        "variableOut_PortName",
+        "onComplete_PortName"
+      ]
+    },
+    "SetIntVariableValueNode": {
+      "name_cn": "把新值存进共享整数变量",
+      "name_en": "SetIntVariableValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "variable_PortName",
+        "value_PortName",
+        "variableOut_PortName",
+        "onComplete_PortName"
+      ]
+    },
+    "SetPlantAttackIntervalNode": {
+      "name_cn": "设置指定植物自身的基础攻击间隔",
+      "name_en": "SetPlantAttackIntervalNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetPlantAttackSpeedNode": {
+      "name_cn": "覆盖该植物的总攻击速度加成",
+      "name_en": "SetPlantAttackSpeedNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetPlantAttributeCountdownNode": {
+      "name_cn": "设置植物技能、成长或吞咽等使用的属性倒计时",
+      "name_en": "SetPlantAttributeCountdownNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetPlantNode": {
+      "name_cn": "在指定格子创建一种植物",
+      "name_en": "SetPlantNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "column_PortName",
+        "row_PortName",
+        "plantType_PortName",
+        "forcePlant_PortName",
+        "onCreated_PortName",
+        "onCreateFailed_PortName",
+        "plant_PortName"
+      ]
+    },
+    "SetStringVariableValueNode": {
+      "name_cn": "触发后修改共享字符串变量",
+      "name_en": "SetStringVariableValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetToolCooldownNode": {
+      "name_cn": "修改本局铲子、手套、锤子或小推车的冷却",
+      "name_en": "Modify the cooldown of shovel, gloves, hammer, or lawnmower for this match",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetWaveCountdownPausedNode": {
+      "name_cn": "暂停自动进入下一波",
+      "name_en": "SetWaveCountdownPausedNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetZombieCardCooldownNode": {
+      "name_cn": "修改当前卡槽中同种僵尸卡的总冷却和剩余冷却",
+      "name_en": "Modify total cooldown and remaining cooldown of the same zombie card in current slot",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetZombieHouseRuleNode": {
+      "name_cn": "设置僵尸进家规则",
+      "name_en": "Set Zombie House Rule",
+      "category": "Rules",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetZombieMindControlledNode": {
+      "name_cn": "把指定僵尸变为玩家一方",
+      "name_en": "SetZombieMindControlledNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "zombie_PortName"
+      ]
+    },
+    "SetZombieStatsNode": {
+      "name_cn": "设置本体血量、最大血量、攻击力、防具血量、基础移速或体型",
+      "name_en": "SetZombieStatsNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SetZombieStatusNode": {
+      "name_cn": "设置指定僵尸的状态、持续秒数或层数",
+      "name_en": "SetZombieStatusNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ShootEventBulletNode": {
+      "name_cn": "在指定格子或鼠标位置向给定方向发射子弹",
+      "name_en": "Fires a projectile in a given direction at the specified grid tile or mouse position.",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ShowMultipleChoiceMenuNode": {
+      "name_cn": "打开多选菜单",
+      "name_en": "ShowMultipleChoiceMenuNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "options_PortName",
+        "refreshable_PortName",
+        "refreshCount_PortName",
+        "cancelable_PortName",
+        "windowCount_PortName",
+        "actionOnExit_PortName",
+        "actionOnRefresh_PortName"
+      ]
+    },
+    "ShowTextNode": {
+      "name_cn": "在游戏屏幕上显示一段提示",
+      "name_en": "ShowTextNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "text_PortName",
+        "duration_PortName"
+      ]
+    },
+    "SilencePlantNode": {
+      "name_cn": "按照植物原有沉默规则暂停行动",
+      "name_en": "SilencePlantNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "SinglePlantTypeListNode": {
+      "name_cn": "把一种植物包装为列表",
+      "name_en": "SinglePlantTypeListNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "plantTypeList_PortName"
+      ]
+    },
+    "SourcePortInfo": {
+      "name_cn": "SourcePortInfo",
+      "name_en": "SourcePortInfo",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "StringConcatNode": {
+      "name_cn": "把两段文字按顺序拼在一起",
+      "name_en": "StringConcatNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "StringToAsciiNode": {
+      "name_cn": "读取字符串指定位置的ASCII码",
+      "name_en": "StringToAsciiNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "StringToFloatNode": {
+      "name_cn": "解析数字、枚举名称或枚举编号",
+      "name_en": "StringToFloatNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "StringToIntNode": {
+      "name_cn": "解析数字、枚举名称或枚举编号",
+      "name_en": "StringToIntNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "StringToObjectNode": {
+      "name_cn": "读取对象引用文本或对象绑定名称对应的对象",
+      "name_en": "StringToObjectNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "StringToPlantTypeNode": {
+      "name_cn": "解析数字、枚举名称或枚举编号",
+      "name_en": "StringToPlantTypeNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "StringToZombieTypeNode": {
+      "name_cn": "解析数字、枚举名称或枚举编号",
+      "name_en": "StringToZombieTypeNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "StringValueNode": {
+      "name_cn": "给多个节点提供固定文本",
+      "name_en": "StringValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "value_PortName"
+      ]
+    },
+    "StringVariableAsset": {
+      "name_cn": "StringVariableAsset",
+      "name_en": "StringVariableAsset",
+      "category": "General",
+      "parent": "VariableAsset",
+      "port_fields": []
+    },
+    "StringVariableNode": {
+      "name_cn": "引用共享字符串变量",
+      "name_en": "StringVariableNode",
+      "category": "General",
+      "parent": "VariableNode",
+      "port_fields": []
+    },
+    "SubtractNode": {
+      "name_cn": "计算减法结果",
+      "name_en": "SubtractNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "a_PortName",
+        "b_PortName",
+        "result_PortName"
+      ]
+    },
+    "ToggleCycleNode": {
+      "name_cn": "开启或关闭一个按固定间隔重复的动作",
+      "name_en": "ToggleCycleNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "interval_PortName",
+        "cycle_PortName",
+        "onEnable_PortName",
+        "onDisable_PortName"
+      ]
+    },
+    "ToggleNode": {
+      "name_cn": "每次触发在开与关之间切换",
+      "name_en": "ToggleNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "state_PortName",
+        "onChanged_PortName"
+      ]
+    },
+    "ToolTypeValueNode": {
+      "name_cn": "选择道具种类",
+      "name_en": "ToolTypeValueNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "TryPlantSuperSkillNode": {
+      "name_cn": "直接尝试触发植物的金咖啡豆大招",
+      "name_en": "TryPlantSuperSkillNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "TypedChoiceMenuNode": {
+      "name_cn": "打开多选菜单",
+      "name_en": "TypedChoiceMenuNode",
+      "category": "General",
+      "parent": "ShowMultipleChoiceMenuNode",
+      "port_fields": []
+    },
+    "TypedChoiceMergeNode": {
+      "name_cn": "把两个奖励选项列表合成一个",
+      "name_en": "TypedChoiceMergeNode",
+      "category": "General",
+      "parent": "MergeMultipleChoiceOptionListsNode",
+      "port_fields": []
+    },
+    "TypedChoiceOptionNode": {
+      "name_cn": "为奖励菜单增加一个可点击选项",
+      "name_en": "TypedChoiceOptionNode",
+      "category": "General",
+      "parent": "AddMultipleChoiceOptionNode",
+      "port_fields": []
+    },
+    "UpgradeEventPlantNode": {
+      "name_cn": "升级事件植物",
+      "name_en": "Upgrade Event Plant",
+      "category": "Actions",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "UseMoneyNode": {
+      "name_cn": "尝试扣除指定数量的金币",
+      "name_en": "UseMoneyNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "moneyAmount_PortName",
+        "onSuccess_PortName",
+        "onFailed_PortName"
+      ]
+    },
+    "UseSunNode": {
+      "name_cn": "尝试扣除指定数量的阳光",
+      "name_en": "UseSunNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "sunAmount_PortName",
+        "onSuccess_PortName",
+        "onFailed_PortName"
+      ]
+    },
+    "VariableAsset": {
+      "name_cn": "VariableAsset",
+      "name_en": "VariableAsset",
+      "category": "General",
+      "parent": null,
+      "port_fields": []
+    },
+    "VariableItemDragHandler": {
+      "name_cn": "VariableItemDragHandler",
+      "name_en": "VariableItemDragHandler",
+      "category": "General",
+      "parent": "MonoBehaviour",
+      "port_fields": []
+    },
+    "VariableNode": {
+      "name_cn": "变量引用的基础实现",
+      "name_en": "VariableNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": []
+    },
+    "WaitNode": {
+      "name_cn": "收到信号后等待若干秒",
+      "name_en": "WaitNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "duration_PortName",
+        "output_PortName"
+      ]
+    },
+    "WaitUntilNode": {
+      "name_cn": "按指定间隔检查条件",
+      "name_en": "WaitUntilNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "WaveEventNode": {
+      "name_cn": "每次波次增加时执行规则",
+      "name_en": "WaveEventNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "wave_PortName"
+      ]
+    },
+    "WhileLoopNode": {
+      "name_cn": "While循环",
+      "name_en": "While Loop",
+      "category": "Flow Control",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "trigger_PortName",
+        "condition_PortName",
+        "output_PortName",
+        "index_PortName"
+      ]
+    },
+    "ZombieSplitNode": {
+      "name_cn": "从具体僵尸读取行、列和种类",
+      "name_en": "ZombieSplitNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "zombie_PortName",
+        "column_PortName",
+        "row_PortName",
+        "zombieType_PortName",
+        "isHypnotized_PortName"
+      ]
+    },
+    "ZombieToObjectNode": {
+      "name_cn": "将僵尸转换为场景对象引用",
+      "name_en": "ZombieToObjectNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ZombieTypeToStringNode": {
+      "name_cn": "将数值或枚举转换为可读文字",
+      "name_en": "ZombieTypeToStringNode",
+      "category": "General",
+      "parent": "EventSuggestedNode",
+      "port_fields": []
+    },
+    "ZombieTypeValueNode": {
+      "name_cn": "提供一个固定僵尸种类",
+      "name_en": "ZombieTypeValueNode",
+      "category": "General",
+      "parent": "EventNodeBase",
+      "port_fields": [
+        "value_PortName"
+      ]
+    }
+  },
+  "ports": {
+    "cn_to_en": {
+      "触发": "Trigger",
+      "执行": "Execute",
+      "完成": "On Complete",
+      "创建完成": "On Complete",
+      "失败": "Failed",
+      "失败原因": "Failure Reason",
+      "成功": "On Success",
+      "真": "True",
+      "假": "False",
+      "循环体": "Loop Body",
+      "循环结束": "Loop End",
+      "点击卡牌时触发": "Trigger on Card Click",
+      "点击": "On Click",
+      "进家失败": "Defeat on House Entry",
+      "输出": "Output",
+      "输入": "Input",
+      "条件": "Condition",
+      "结果": "Result",
+      "列表": "List",
+      "列表A": "List A",
+      "列表B": "List B",
+      "索引": "Index",
+      "当前索引": "Current Index",
+      "元素": "Element",
+      "数量": "Count",
+      "长度": "Length",
+      "对象": "Object",
+      "变量": "Variable",
+      "变量名": "Variable Name",
+      "值": "Value",
+      "初始值": "Initial Value",
+      "当前值": "Current Value",
+      "目标值": "Target Value",
+      "大于": "Greater than",
+      "小于": "Less than",
+      "等于": "Equal to",
+      "不等于": "Not Equal to",
+      "大于等于": "Greater than or Equal to",
+      "小于等于": "Less than or Equal to",
+      "A": "A",
+      "B": "B",
+      "操作数A": "Operand A",
+      "操作数B": "Operand B",
+      "底数": "Base",
+      "指数": "Exponent",
+      "乘数": "Multiplier",
+      "比例": "Ratio",
+      "小数位数": "Decimal Place",
+      "植物": "Plant",
+      "植物类型": "Plant Type",
+      "植物列表": "Plant List",
+      "当前植物": "Current Plant",
+      "当前植物类型": "Current Plant Type",
+      "目标植物": "Target Plant",
+      "僵尸": "Zombie",
+      "僵尸类型": "Zombie Type",
+      "僵尸列表": "Zombie List",
+      "当前僵尸": "Current Zombie",
+      "目标僵尸": "Target Zombie",
+      "卡牌": "Card",
+      "卡牌对象": "Card Object",
+      "子弹": "Projectile",
+      "子弹类型": "Projectile Type",
+      "障碍物": "Obstacle",
+      "坑洞": "Pit",
+      "冰道": "Ice Trail",
+      "冰块": "Ice Block",
+      "行": "Lane",
+      "列": "Column",
+      "列（小数）": "Column (Decimal)",
+      "目标行": "Target Lane",
+      "目标列": "Target Column",
+      "目标列（小数）": "Target Column (Decimal)",
+      "位置": "Position",
+      "坐标": "Coordinates",
+      "X": "X",
+      "Y": "Y",
+      "Z": "Z",
+      "X坐标": "X Position",
+      "Y坐标": "Y Position",
+      "Z坐标": "Z Position",
+      "速度": "Speed",
+      "角度": "Angle",
+      "旋转": "Rotation",
+      "缩放": "Scale",
+      "大小": "Scale",
+      "距离": "Distance",
+      "伤害": "Damage",
+      "血量": "Health",
+      "最大血量": "Max Health",
+      "当前血量": "Current Health",
+      "治疗量": "Heal Amount",
+      "护盾值": "Shield Value",
+      "死亡原因": "Cause of Death",
+      "原因": "Reason",
+      "持续时间": "Duration",
+      "间隔": "Interval",
+      "延迟": "Delay",
+      "冷却": "Cooldown",
+      "概率": "Probability",
+      "等级": "Level",
+      "目标等级": "Target Level",
+      "升至目标等级": "Upgrade to Target Level",
+      "阳光": "Sun",
+      "阳光数量": "Sun Amount",
+      "金币": "Coins",
+      "金币数量": "Coin Amount",
+      "费用": "Cost",
+      "标题": "Title",
+      "大标题": "Title",
+      "小标题": "Subtitle",
+      "文本": "Text",
+      "默认文本": "Default Text",
+      "描述": "Description",
+      "音效": "Sound Effect",
+      "音效ID": "Sound ID",
+      "音乐": "Music",
+      "波次": "Wave Count",
+      "阶段": "Stage",
+      "合并列表": "Merge List",
+      "未合并": "Unmerge",
+      "选项列表": "Option List",
+      "选中的选项": "Selected Option",
+      "发放": "Grant",
+      "发放卡牌": "Grant Card",
+      "发放数量": "Grant Count",
+      "击杀并发奖励": "Kill and Grant Reward",
+      "数值": "Value",
+      "名称或编号": "Name or ID",
+      "名称": "Name",
+      "值A": "Value A",
+      "值B": "Value B",
+      "新值": "New Value",
+      "列表1": "List 1",
+      "列表2": "List 2",
+      "植物类型A": "Plant Type A",
+      "植物类型B": "Plant Type B",
+      "条件A": "Condition A",
+      "条件B": "Condition B",
+      "真（触发）": "True (Trigger)",
+      "假（停止）": "False (Stop)",
+      "创建成功": "On Success",
+      "创建失败": "On Failure",
+      "消耗成功": "On Success",
+      "退出时触发": "Trigger on Exit",
+      "选项被点击": "Option Clicked",
+      "金币不足": "Insufficient Coins!",
+      "阳光不足": "Insufficient Sun!",
+      "间隔秒数": "Interval (Seconds)",
+      "等待时间": "Duration",
+      "周期事件": "Cycle Event",
+      "周期间隔": "Interval",
+      "伤害值": "Damage Value",
+      "回血量": "Heal Amount",
+      "余数": "Remainder",
+      "除数": "Divisor",
+      "被除数": "Dividend",
+      "和": "Sum",
+      "积": "Product",
+      "随机浮点数": "Random Float",
+      "植物编号": "Plant ID",
+      "每次循环": "Each Iteration",
+      "重置": "Reset",
+      "超时": "Timed Out",
+      "计数": "Target Count",
+      "包含": "Contains",
+      "相同": "Is Equal",
+      "有效": "Valid",
+      "最大值": "Maximum",
+      "最小值": "Minimum",
+      "最多检查次数": "Max Check Attempts",
+      "循环次数": "Cycle Count",
+      "调整相机投影大小": "<size=16>Camera Zoom",
+      "选择你的植物": "<size=20>Choose Your Plants",
+      "重选上次卡牌": "Select Previous Loadout",
+      "自选僵尸卡牌": "Pick Zombies",
+      "自选植物卡牌": "Pick Plants",
+      "填充随机植物": "Random Fill\nwith Plants",
+      "查看植物": "View Plants",
+      "查看僵尸": "View Zombies",
+      "请选择禁用的植物": "<size=20>Choose Plants to Disable",
+      "前往设置僵尸": "Set Zombies",
+      "旅行植物": "Odyssey Plants",
+      "随机僵尸": "Zombie Gacha",
+      "植物僵尸": "Zombotany",
+      "随机植物": "Plant Gacha",
+      "随机植物VS随机僵尸": "Plant Gacha vs Zombie Gacha",
+      "旅行": "Odyssey",
+      "手套可以自由移动或融合植物": "Gloves can be used to move or fuse plants manually.",
+      "听说了吗？有的睡莲头上会长植物": "Have you heard that Lily Pad can have plants grow on their heads?",
+      "礼盒，能开出全部的基础植物": "Gift Box: Can grant any base plant",
+      "小喷菇是黑夜里十分重要的植物": "You can get a fusion of 3 Puff-shrooms by fusing into a Puff-shroom stack.",
+      "无法抓取下半部分植物": "You can only grab plants from the top half of the lawn.",
+      "你为你的卡库新增了一种卡牌": "A new plant is available in Plant Select.",
+      "你为你的花园找到了一株植物": "You've found a new plant for your Zen Garden.",
+      "无法抓取梯子下的植物": "You can't move plants that are laddered.",
+      "该模式不能移动需要保护的植物": "You cannot move plants that need to be protected in this mode.",
+      "普通僵尸": "Normal Zombies",
+      "究极僵尸": "Odyssey Zombies",
+      "按V键切换僵尸手套来挪动僵尸": "Press V to Toggle Zombie Gloves to move Zombies.",
+      "损失场上一半的植物": "Lose half of the plants on the field",
+      "从中选择10个植物": "<size=16>Select 10 Common Odyssey fusions to bring along!",
+      "未选取此植物": "This Common Odyssey fusion was not selected in the Initial Selection Phase.",
+      "排山倒海：一种种一列": "Enable Column Planting",
+      "错误：尝试在地图外面放僵尸": "Error: Attempting to spawn Zombies out of bounds.",
+      "已解锁全部植物": "All Plants Unlocked",
+      "轮已经完成": "The round is completed.",
+      "究极植物": "Odyssey Plants",
+      "是否抽取一种究极植物": "??? Where",
+      "生存模式：旅行": "Odyssey: \nClassic",
+      "培养植物": "Upgrade Plants",
+      "锤僵尸": "Whack a Zombie",
+      "多线并行": "Multi-Track Multi-Task",
+      "丢失小推车数量": "Number of lost lawn mowers:",
+      "6路旅行": "Odyssey",
+      "彩色卡牌": "Unique Plants",
+      "普通卡牌": "Basic Plants",
+      "我是僵尸": "I, Zombie",
+      "按方向键WASD来移动植物": "Move the peashooters with WASD (Zombie Health Display: R).\nGet to 2048 to win!",
+      "诅咒模式禁用该植物": "This plant is banned in Cursed Mode.",
+      "获得4个随机植物": "Acquire 4 random plants",
+      "获得1株上方植物": "Acquire the plant shown above",
+      "获得2个随机基础植物": "Acquire 2 random base plants",
+      "获得1个随机超级植物": "Acquire 1 random advanced plant",
+      "获得1个随机究极植物": "Acquire 1 random Odyssey plant",
+      "无法移动boss类僵尸": "Unable to move Mini-bosses!",
+      "你只能在红线左侧放置植物": "Plants can only be placed to the left of the red line.",
+      "独特卡牌": "Collected Plants",
+      "樱桃机枪学者僵尸": "Gatling Cherry Scholar",
+      "樱桃机枪学士僵尸": "Gatling Cherry Bachelor",
+      "樱桃机枪硕士僵尸": "Gatling Cherry Doctor",
+      "黑橄榄僵尸": "Giga Football Zombie",
+      "白衣舞王僵尸": "Sergeant Michael Zombie",
+      "机械舰艇僵尸": "Sharkmarine-X",
+      "导弹机械舰艇僵尸": "Destroyer Sharkmarine",
+      "冲锋机械舰艇僵尸": "Charger Sharkmarine",
+      "雷鸣机械潜艇僵尸": "Boomer Sharkmarine",
+      "雷鸣冲锋舰艇僵尸": "Narwhalmarine",
+      "橄榄三叉戟僵尸": "Giga Trident Zombie",
+      "碧海三叉戟僵尸": "Giga Trident-nut Firstmate",
+      "下界合金矿镐僵尸": "Netherite Miner Zombie",
+      "下界合金钻僵尸": "Netherite Driller Zombie",
+      "武装下界合金钻僵尸": "Netherite Excavator",
+      "舞装战车僵尸": "Plated Michael Zomboni",
+      "轻甲舞装战车僵尸": "Armored Michael Zomboni",
+      "重甲舞装战车僵尸": "Colossus Michael Zomboni",
+      "玩偶匣跳跳僵尸": "Knight Clown-on-the-Pogo",
+      "远程爆破一行": "Row-buster",
+      "攻击最后一列": "Attacks the last column",
+      "选择你的究极植物": "Choose your Odyssey Plants:",
+      "至少选择5个植物": "Select at least 5 Plants.",
+      "解锁新植物": "Obtain a new plant",
+      "你已拥有该植物": "You already have this plant!",
+      "升级你的植物": "Upgrade to this plant",
+      "仓库已满，已优先丢弃低价值卡牌": "Storage Is Full! Low-value Packets have been discarded",
+      "你为你的背包新增了一种卡牌": "You've found a new Packet for your Storage!",
+      "即将丢弃背包中的卡牌": "Packets in your storage will be discarded shortly!",
+      "请先推进冒险模式获取该植物": "Unlock the Plant first by progressing through Adventure Mode!",
+      "预选植物": "Pre-selected Plants",
+      "预先选择的植物": "Pre-selected Plants",
+      "选择植物": "Select Plant",
+      "收藏该植物": "Favorite Plant",
+      "最初的旅行": "Classic Route",
+      "更多僵尸": "More Zombies",
+      "出怪加速，更多僵尸": "More Zombies + Zombie Spawn Speed UP",
+      "超级植物": "Advanced Plants",
+      "塔防植物": "TD Mode Plants",
+      "金属植物": "Metal Plants",
+      "坚果植物": "Defensive Plants",
+      "水生植物": "Aquatic Plants",
+      "飞行植物": "Flying Plants",
+      "磁力植物": "Magnetic Plants",
+      "大型植物": "Titan Plants",
+      "全部僵尸": "All Zombies",
+      "boss僵尸": "Mini-bosses",
+      "进化僵尸": "Evolved Zombies",
+      "你还没有解锁该植物": "This Plant has not been unlocked yet!",
+      "购买血量": "HP\nUP!",
+      "每局开始赠送一个基础植物": "Start each level with a basic plant already planted (except Roof)",
+      "小局逆转：魅惑10个僵尸": "Hypnotize 10 Zombies",
+      "每局开始在每行生成一只魅惑僵尸": "Spawn a Hypnotized Zombie in each lane at level start",
+      "冰天雪地：同时冻结50个僵尸": "Freeze 50 Zombies at once",
+      "水上霸主：不在陆地上放置植物": "Don't plant in Land Lanes",
+      "只会随机出白天的植物和僵尸": "The gacha pool contains only Day Plants and Day Zombies.",
+      "星辉支线：我是僵尸": "Starbound Side Story: Zombies vs Zombies",
+      "随机模式中出现强究极僵尸": "<size=90%>Epic Odyssey Zombies can appear in Gacha Mode",
+      "随机模式中出现进化僵尸": "Evolved Zombies can appear in Gacha Mode",
+      "放置植物": "Spawn Plant",
+      "放置僵尸": "Spawn Zombie",
+      "白卡植物": "Utility Plants",
+      "彩卡植物": "Unique Plants",
+      "魅惑罐子一定开出魅惑僵尸": "Hypno Vase is guaranteed to spawn a Hypnotized Zombie",
+      "请勿新增重复植物": "You cannot upgrade to the same plant",
+      "没有空位种植植物": "No available space to place Plants!",
+      "没有位置": "No available space!",
+      "已删除关卡，请手动刷新关卡列表": "Level deleted. Please reload the list manually.",
+      "需要被保护的植物": "Losing this plant\ncauses game over",
+      "红线所在列": "Column w/ Red Line",
+      "允许融合究极植物": "Allow Odyssey Fusions",
+      "关卡列表": "Level List",
+      "全部植物": "All Plants",
+      "图鉴——植物": "<nobr><size=70%>The Suburban Almanac — Plants</size></nobr>",
+      "图鉴——僵尸": "<nobr><size=85%>The Suburban Almanac — Zombies</size></nobr>",
+      "关卡下载完成": "Level downloaded.",
+      "对策植物": "Counters",
+      "目标必须在同一行或者同一列": "The Target must be on the same lane or same column!",
+      "事件触发": "Event Trigger",
+      "创建植物": "Spawn Plant",
+      "移动植物": "Move Plant",
+      "创建植物卡牌": "Spawn Seed Packet",
+      "修改植物血量": "Modify Plant HP",
+      "获取格子植物": "Get Plant on Tile",
+      "遍历植物列表": "Iterate Plant List",
+      "遍历植物类型列表": "Iterate Plant Type List",
+      "单植物类型列表": "Single-plant-type List",
+      "合并植物类型列表": "Combine Plant Type List",
+      "创建僵尸": "Spawn Zombie",
+      "获取最近的僵尸": "Get nearest Zombie",
+      "修改僵尸血量": "Modify Zombie HP",
+      "合并选项列表": "Merge Option List",
+      "删除卡槽植物卡牌": "Remove Plant Cards from Slots",
+      "添加植物卡牌": "Add Plant to Slot",
+      "循环完成": "On Complete",
+      "植物类型列表": "Plant Type List",
+      "当前列表": "Current List",
+      "设置列表": "Set List",
+      "结果列表": "Result List",
+      "窗口数量": "Window Count",
+      "刷新时触发": "Trigger on Reroll",
+      "种植时触发": "Trigger on Planting",
+      "种植的植物": "Planted Plant",
+      "冻住的植物": "Frozen Plant",
+      "计数完成": "On Complete",
+      "低矮、高大、巨型植物": "Plant Mechanics - Plant Sizes",
+      "可密植、坚实、金属植物": "Plant Mechanics - Plant Properties",
+      "箱子里没有任何卡牌": "This Pumpkin Chest is empty.",
+      "超级我是僵尸": "Super I, Zombie",
+      "普通植物": "Basic Plants",
+      "每次召唤多生成一只僵尸": "Empress-shroom: Everytime a hypnotized zombie is spawned, an extra one will spawn as well.",
+      "魅惑僵尸": "Hypnotized Zombies",
+      "请选择可用植物数量": "Please select a maximum number of plants.",
+      "额外5次刷新机会，正常僵尸数量": "5 extra rerolls, normal Zombie count",
+      "伤害完成": "Damage Complete",
+      "死亡完成": "Kill Complete",
+      "植物血量": "Plant HP",
+      "获取场上全部植物": "Get all Plants on Lawn",
+      "多植物类型列表": "Multi-plant-type List",
+      "移动僵尸": "Move Zombie",
+      "创建信息卡牌": "Create Info Box",
+      "随机触发": "Random Trigger",
+      "触发数量": "Trigger Count",
+      "重复触发": "Is Repeatable",
+      "在关卡开始时触发": "Triggers on level start",
+      "当特定波次来临时触发": "Triggers when the specified wave arrives",
+      "当按下指定键盘按键时触发": "Triggers on keyboard press of the specified key",
+      "当植物被种下时触发": "Triggers when the specified plant is placed",
+      "当点击植物时触发": "Triggers when the specified plant is clicked",
+      "当植物血量归零时触发": "Triggers when the specified plant's HP reaches 0",
+      "当僵尸死亡时触发": "Triggers when the specified zombie dies",
+      "当僵尸生成时触发": "Triggers when the specified zombie spawns",
+      "在关卡内创建植物": "Spawns the specified plant on the field",
+      "在指定行列创建植物卡牌": "Spawns a seed packet at the specified lane and column",
+      "获取当前场上所有植物列表": "Gets a list of all plants currently on the field",
+      "创建包含单个植物类型的列表": "Creates a list containing a single plant type",
+      "创建包含多个植物类型的列表": "Creates a list containing multiple plant types",
+      "存储、修改和读取植物类型列表": "Stores, modifies, and reads a plant type list",
+      "在指定行列创建僵尸": "Spawns a zombie at the specified lane and column",
+      "获取距离指定行列最近的僵尸": "Gets the zombie closest to the specified lane and column",
+      "合并两个选项列表": "Merges two option lists",
+      "获取玩家当前的阳光数量": "Gets the player's current Sun amount",
+      "冒险植物": "Adventure Plants",
+      "自定义UI位置": "Customize UI Positions",
+      "左下方按钮的尺寸大小": "Bottom-left Buttons Size",
+      "禁止在对手地盘放植物": "Giftboxes/plants cannot be placed on the opponent's side!",
+      "使用手推车购买植物": "You can buy plants here using the Wheelbarrow!",
+      "特立独行": "Zombie Sacrifice",
+      "从多个选项中自选一株专家植物": "Choose 1 Specialist Plant from several options.",
+      "刷新本行": "Reroll this row",
+      "一无所有\n但也开到了一些僵尸": "Better Luck Next Time!\nYou got some zombies though!",
+      "可以点击上一页查看其他卡牌": "You can click on \"Previous\" for your other plants",
+      "诅咒植物": "Evil Plants",
+      "场地上不能有僵尸": "There may not be Zombies on the lawn!",
+      "花园植物": "Garden Plants",
+      "二创植物": "Mod Plants",
+      "二创僵尸": "Mod Zombies",
+      "低矮植物": "Short Plant",
+      "高大植物": "Tall Plant",
+      "巨型植物": "Titan Plant",
+      "可密植植物": "Stackable Plant",
+      "坚实植物": "Defensive Plant",
+      "+ 列表": "+ List",
+      "首次触发": "Trigger On First Run",
+      "已触发": "Triggered",
+      "命名植物": "Name Plant",
+      "获取命名植物": "Get Named Plant",
+      "命名僵尸": "Name Zombie",
+      "获取命名僵尸": "Get Named Zombie",
+      "获取鼠标世界位置": "Get Mouse World Position",
+      "创建场景对象": "Create Scene Object",
+      "读取对象位置和大小": "Get Object Transform (Position & Size)",
+      "设置场景对象位置和大小": "Set Scene Object Transform (Position & Size)",
+      "删除场景对象": "Destroy Scene Object",
+      "绑定场景对象": "Bind Scene Object",
+      "按位置层获取植物": "Get Plant by Layer Position",
+      "获取本次事件位置": "Get Current Event Position",
+      "有位置": "Has Position",
+      "沉默植物": "Silence Plant",
+      "清空列表": "Clear List",
+      "删除信息卡牌": "Remove Info Card",
+      "删除数量": "Remove Count",
+      "图标植物": "Icon Plant",
+      "字符串转对象": "String to Object",
+      "植物转对象": "Plant to Object",
+      "对象转植物": "Object to Plant",
+      "僵尸转对象": "Zombie to Object",
+      "对象转僵尸": "Object to Zombie",
+      "最多{0}株植物": "At most {0} plants",
+      "在前方生成一束天网攻击僵尸": ": Summons a Celestial Beam at the farthest available column to attack zombies",
+      "会持续射击鼠标所在位置": " continuously shoots at the cursor position",
+      "点击礼盒抽取植物": "Tap the Gift Box to draw a plant",
+      "僵尸死亡时有概率复活成随机僵尸": "Zombies have a chance to revive as a random zombie after death",
+      "融合植物": "Fusion Plants",
+      "{0}给你放了{1}个僵尸": "{0} spawned {1} zombies for you",
+      "基础植物": "Base Plants",
+      "选择基础植物": "Select Base Plant",
+      "搜索基础植物": "Search Base Plant",
+      "搜索词条或植物": "Search Modifier or Plant",
+      "解锁植物": "Unlock Plant",
+      "奖池列表": "Prize Pool List",
+      "未完成": "Incomplete",
+      "弱究植物": "Minor Ultimate Plants",
+      "强究植物": "Major Ultimate Plants",
+      "遇到樱桃机枪读报僵尸": "Encounter Cherry Gatling Newspaper Zombie",
+      "使用阳光炸弹炸到10个僵尸": "Hit 10 zombies with a Sun Bomb",
+      "使用大坚果碾压10个僵尸": "Crush 10 zombies with a Giant Wall-nut",
+      "使用魅惑菇魅惑一只僵尸": "Hypnotize a zombie with Hypno-shroom",
+      "遇到舞王僵尸": "Encounter Dancing Zombie",
+      "使用魅惑胆小菇强制魅惑僵尸": "Forcefully hypnotize with Hypno Scaredy-shroom",
+      "使魅惑坚果召唤黄金盲盒僵尸": "Have Hypno-nut summon a Golden Blind Box Zombie",
+      "让睡莲生产植物": "Have Lily Pad produce a plant",
+      "在一个磁力系统中连接50个植物": "Connect 50 plants in a single magnetic grid",
+      "让魅惑磁力菇召唤机械巨人僵尸": "Have Hypno Magnet-shroom summon Mech Gargantuar",
+      "使用寒冰加农炮融合植物": "Fuse plants using Ice Cannon",
+      "使用火焰加农炮融合植物": "Fuse plants using Fire Cannon",
+      "终端植物": "Terminal Plant",
+      " · 专家植物": " · Specialist Plant",
+      " · 先解锁基础植物": " · Unlock base plant first",
+      "在场上多生成一个木桩僵尸": "Spawn an additional Stake Zombie on the field.",
+      "进化途中的植物": "Evolving Plant",
+      "暂无基础植物": "No base plant available",
+      "搜索专家植物": "Search Specialist Plant",
+      "尚未解锁的专家植物": "Locked Specialist Plant",
+      "没有匹配的专家植物": "No matching specialist plants",
+      "字符串、列表与对象": "Strings, Lists & Objects",
+      "+ 对象": "+ Object",
+      "共享列表": "Shared List",
+      "分类节点列表": "Categorized Node List",
+      "源列表": "Source List",
+      "目标列表": "Target List",
+      "遍历僵尸列表": "Iterate Zombie List",
+      "共触发": "Total Triggers",
+      "合并两个专用选项列表": "Merges two dedicated option lists.",
+      "植物对象": "Plant Entity",
+      "物品对象": "Item Object",
+      "遍历全场僵尸": "Iterate Over All Zombies",
+      "事件对象": "Event Object",
+      "一类防具血量": "Armor 1 HP",
+      "二类防具血量": "Armor 2 HP",
+      "本体血量": "Body HP",
+      "本体最大血量": "Max Body HP",
+      "子弹种类列表": "Projectile Type List",
+      "子弹对象": "Projectile Object",
+      "奖励选项列表": "Reward Option List",
+      "植物种类列表": "Plant Category List",
+      "僵尸种类列表": "Zombie Category List",
+      "获取全场僵尸": "Get All Zombies on Field",
+      "僵尸对象": "Zombie Entity",
+      "修改数量": "Modify Amount",
+      "第一防具血量": "Primary Armor HP",
+      "第二防具血量": "Secondary Armor HP",
+      "删除僵尸卡牌": "Delete Zombie Card",
+      "添加僵尸卡牌": "Add Zombie Card",
+      "创建卡牌": "Create Card",
+      "请选择一个任务完成": "Please select a quest to complete",
+      "路线管理：不在2、4路放置植物": "Task B: Don't plant in Lane 2 or Lane 4 (except Flower Pots and its fusions)",
+      "竹阵坚守：累计击杀30个僵尸": "Task A: Kill 30 Zombies with Bamblocks",
+      "通关后随机刷新本关场景和僵尸": "After clearing the level, randomly reroll its scene and zombies\n",
+      "额外5次刷新机会,正常僵尸数量": "5 extra rerolls, normal Zombie count",
+      "获得新植物": "New Plant Obtained",
+      "\n但也开到了一些僵尸": "\nBut also uncovered some zombies",
+      "但也开到了一些僵尸": "But you also got some zombies!",
+      "木桩僵尸": "Dummy Zombie",
+      "第{0}行": "Row {0}",
+      "不能吹走非僵尸": "Cannot blow away non-zombies.",
+      "最少数量": "Min Count",
+      "无法在诸神模式中移动僵尸": "Cannot move zombies in The Gods mode.",
+      "无法拆解该植物": "Cannot dismantle this plant.",
+      "拆解植物": "Dismantle Plant",
+      "列车同行": "Astral Express",
+      "【排山倒海】：一种种一列": "[Overwhelming Force]: Plant an entire column at once.",
+      "冷却完成": "Cooldown complete.",
+      "第1列": "Column 1",
+      "收藏至第一列": "Add to column 1",
+      "第2列": "Column 2",
+      "收藏至第二列": "Add to column 2",
+      "第3列": "Column 3",
+      "收藏至第三列": "Add to column 3",
+      "十旗挑战\n植物僵尸": "Ten-Flag Challenge:\nZomBotany",
+      "海豚橄榄高坚果僵尸": "Dolphin Football Tall-nut",
+      "樱桃战神僵尸": "Cherry Warlord Zombie",
+      "确认铲除这株植物": "Confirm digging up this plant",
+      "保留植物": "Keep Plant",
+      "已完成": "Completed",
+      "查看卡牌": "View Cards",
+      "View 卡牌": "View Cards",
+      "飞行": "Flying",
+      "第{0}行 · 第{1}列": "Row {0}, Col {1}",
+      "诸神图鉴·植物": "Gods Almanac · Plants",
+      "诸神图鉴·僵尸": "Gods Almanac · Zombies",
+      "装到目标卡牌": "Equip to Target Card",
+      "旗帜僵尸": "Flag Zombie",
+      "路障僵尸": "Conehead Zombie",
+      "撑杆僵尸": "Pole Vaulting Zombie",
+      "铁桶僵尸": "Buckethead Zombie",
+      "读报僵尸": "Newspaper Zombie",
+      "舞王撑杆僵尸": "Dancing Pole Vaulter",
+      "伴舞撑杆僵尸": "Backup Pole Vaulter",
+      "铁门僵尸": "Screen Door Zombie",
+      "橄榄球僵尸": "Football Zombie",
+      "舞王僵尸": "Michael Zombie",
+      "鸭子救生圈僵尸": "Ducky Tube Zombie",
+      "鸭子救生圈路障僵尸": "Ducky Tube Conehead",
+      "鸭子救生圈铁桶僵尸": "Ducky Tube Buckethead",
+      "机械海豚僵尸": "Zombarine",
+      "学者僵尸": "Scholar Zombie",
+      "雪橇车僵尸": "Zomboni",
+      "潜水僵尸": "Snorkel Zombie",
+      "雪橇冰车僵尸": "Bobsled Zomboni",
+      "三叉戟僵尸": "Trident Zombie",
+      "钻石套娃僵尸": "Diamond-box Zombie",
+      "黄金套娃僵尸": "Gold-box Zombie",
+      "白银套娃僵尸": "Silver-box Zombie",
+      "玩偶匣僵尸": "Jack-in-the-Box Zombie",
+      "气球僵尸": "Balloon Zombie",
+      "飞艇僵尸": "Zomppelin",
+      "矿工僵尸": "Digger Zombie",
+      "铁桶坚果气球僵尸": "Bucknut-copter Zombie",
+      "小丑王僵尸": "Clown-in-the-Box Zombie",
+      "投篮车僵尸": "Catapult Zombie",
+      "跳跳僵尸": "Pogo Zombie",
+      "扶梯僵尸": "Ladder Zombie",
+      "瓜跳僵尸": "Melon Pogo Zombie",
+      "巨人僵尸": "Gargantuar",
+      "红眼巨人僵尸": "Giga Gargantuar",
+      "小鬼僵尸": "Imp",
+      "机械巨人僵尸": "Mecha Gargantuar",
+      "红眼机械巨人僵尸": "Giga Mecha Gargantuar",
+      "机械保龄球僵尸": "Mecha-nut Zombie",
+      "武装巨人僵尸": "Armored Gargantuar",
+      "蹦极僵尸": "Bungee Zombie",
+      "雪人僵尸": "Yeti Zombie",
+      "年兽僵尸": "Nian Zombie",
+      "雪枪僵尸": "Frost Legion Snowball Launcher",
+      "雪盾僵尸": "Frost Legion Shieldbearer",
+      "雪叉僵尸": "Frost Legion Harpooneer",
+      "超时空豌豆射手僵尸": "Chronoporter Zombie",
+      "雪人飞碟僵尸": "Frost Legion Freezer Disc",
+      "冰块僵尸": "Frost Legion Blockhead",
+      "勘探者僵尸": "Miner Zombie",
+      "海豚读报僵尸": "Dolphinhead Newspaper",
+      "海豚橄榄球僵尸": "Dolphinhead Football",
+      "贪欲蹦极僵尸": "Burglar Bungee Zombie",
+      "沙滩舞王僵尸": "Beach Michael Zombie",
+      "咒梯僵尸": "Lifelink Ladder Zombie",
+      "魅惑辣椒僵尸": "Hypno Pepper Zombie",
+      "魅惑辣椒矿工僵尸": "Hypno Pepper Digger",
+      "三叉戟巨人僵尸": "Trident Gargantuar",
+      "冠军撑杆僵尸": "Olympic Pole Vaulting",
+      "无色橄榄球僵尸": "Chameleon Football",
+      "黄色橄榄球僵尸": "Rush Football Zombie",
+      "超时空撑杆僵尸": "Chronovaulter Zombie",
+      "撑杆教练僵尸": "Coach Zombie",
+      "铁桶读报僵尸": "Buckethead Newspaper",
+      "雪原僵尸": "Frost Legionnaire Zombie",
+      "蓝冰僵尸": "Frost Legion Packed Ice",
+      "复合路障僵尸": "Aluminum-head Zombie",
+      "撑杆橄榄球僵尸": "Pole Vaulting Football",
+      "豌豆射手僵尸": "Peashooter Zombie",
+      "樱桃射手僵尸": "Cherryshooter Zombie",
+      "超级樱桃射手僵尸": "Explode-o-shooter Zombie",
+      "坚果僵尸": "Wall-nut Zombie",
+      "樱桃读报僵尸": "Cherryshooter Newspaper",
+      "盲盒僵尸": "Mystery-box Zombie",
+      "铁桶坚果僵尸": "Buck-nut Zombie",
+      "樱桃坚果僵尸": "Cherry-nut Zombie",
+      "铁桶豌豆僵尸": "Buckshooter Zombie",
+      "橄榄高坚果僵尸": "Football-nut Zombie",
+      "黄金盲盒僵尸": "Golden Mystery-box",
+      "寒冰高坚果僵尸": "Frost Tall-nut Zombie",
+      "爆破投篮车僵尸": "Explode-o-pult Zombie",
+      "武装铁桶豌豆僵尸": "Screen Door Buckshooter",
+      "窝瓜僵尸": "Squash Zombie",
+      "火爆窝瓜僵尸": "Spicy Squash Zombie",
+      "辣椒僵尸": "Jalapeno Zombie",
+      "机枪橄榄球僵尸": "Pea Commando Zombie",
+      "铁桶豌豆气球僵尸": "Buckshoot-copter Zombie",
+      "毁灭菇僵尸": "Doom-shroom Zombie",
+      "盲盒巨人僵尸": "Mystery Gargantuar",
+      "蓝眼巨人僵尸": "Turbo Gargantuar",
+      "绿眼巨人僵尸": "Shepherd Gargantuar",
+      "黄眼巨人僵尸": "Volley Gargantuar",
+      "跑酷僵尸": "Parkour Zombie",
+      "火焰高坚果僵尸": "Flame Tall-nut Zombie",
+      "黑曜石高坚果僵尸": "Obsidian Tall-nut Zombie",
+      "阳光坚果僵尸": "Solar-nut Zombie",
+      "阳光帝果僵尸": "Twin Solar-nut Zombie",
+      "机枪射手僵尸": "Gatling Pea Zombie",
+      "寒冰机枪射手僵尸": "Gatling Snow Zombie",
+      "不朽高坚果雪人僵尸": "Bedrock Tall-nut Yeti",
+      "猫瓜僵尸": "Nyan Squash Zombie",
+      "超级机械海豚僵尸": "Sharkmarine",
+      "舞王冰车僵尸": "Michael Zomboni",
+      "超级三叉戟僵尸": "Giga Trident-nut Zombie",
+      "樱桃机枪读报僵尸": "Gatling Cherry Newspaper",
+      "黑橄榄高坚果僵尸": "Giga Football-nut Zombie",
+      "基洛夫飞艇僵尸": "Kirov Zomppelin",
+      "黑曜石小鬼僵尸": "Abyssal Imp",
+      "钻石盲盒僵尸": "Diamond Mystery-box",
+      "机枪黑橄榄僵尸": "Buckshot Commando Zombie",
+      "寒冰雪爪僵尸": "Frost Tall-nut Iceclaw",
+      "小鬼国王僵尸": "Imperor",
+      "镭射幽浮僵尸": "Frost Legion Frayer Disc",
+      "雪兽骑士僵尸": "Frost Legion Beastmaster",
+      "毁灭机枪读报僵尸": "Gatling Doom Newspaper",
+      "黑曜石雪爪僵尸": "Obsidian Tall-nut Iceclaw",
+      "超时空气球僵尸": "Astronut-copter Zombie",
+      "黑橄榄骑兵僵尸": "Black Knight Zombie",
+      "冰封三叉戟僵尸": "Harpooneer Frost Tall-nut",
+      "识别请求尚未完成": "Identification request is not yet complete.",
+      "十旗挑战：植物僵尸": "10-Flag Challenge: Zombotany",
+      "十旗挑战：随机僵尸": "10-Flag Challenge: Random Zombies",
+      "十旗挑战：随机植物": "10-Flag Challenge: Random Plants",
+      "十旗挑战：随机植物VS随机僵尸": "10-Flag Challenge: Random Plants VS Random Zombies",
+      "这个位置没有卡牌": "No card in this slot",
+      "选择这株植物": "Select this plant",
+      "删除植物": "Delete Plant",
+      "冷却时间": "Recharge",
+      "价格": "Cost",
+      "使用默认数据": "Use Default",
+      "添加成功": "On Success",
+      "添加失败": "On Failure",
+      "冷却秒数": "Cooldown (s)",
+      "立即可用": "Available Immediately",
+      "ASCII Code": "ASCII Code",
+      "String": "String",
+      "Valid": "Valid",
+      "对象A": "Object A",
+      "对象B": "Object B",
+      "相等": "Equal",
+      "僵尸类型A": "Zombie Type A",
+      "僵尸类型B": "Zombie Type B",
+      "是否重置": "Is Resetting",
+      "创建弹坑": "Spawn Crater",
+      "冻结时间": "Freeze Duration",
+      "是否魅惑": "Is Hypnotized",
+      "诅咒值": "Curse Value",
+      "全部": "All",
+      "商": "Quotient",
+      "已生效": "Applied",
+      "Value": "Value",
+      "Boolean": "Boolean",
+      "Float": "Float",
+      "Integer": "Integer",
+      "浮点数": "Float",
+      "整数": "Integer",
+      "Decimal Place": "Decimal Place",
+      "字符串": "String",
+      "操作数": "Operand",
+      "当前类型": "Current Type",
+      "存在": "Exists",
+      "类型": "Type",
+      "倍率": "Multiplier",
+      "攻击间隔": "Attack Interval",
+      "剩余秒数": "Remaining Seconds",
+      "最大秒数": "Max Seconds",
+      "随机植物类型": "Random Plant Type",
+      "阶段名": "Phase Name",
+      "总秒数": "Total Seconds",
+      "回血成功": "Healing Successful",
+      "被减数": "Minuend",
+      "减数": "Subtrahend",
+      "差": "Difference",
+      "列表长度": "List Length",
+      "攻击力加成x100%": "Damage Bonus*100%",
+      "修改成功": "On Success",
+      "血量加成x100%": "HP Bonus*100%",
+      "血量倍率": "HP Multiplier",
+      "强制": "Forced",
+      "移动成功": "On Success",
+      "Object": "Object",
+      "Plant": "Plant",
+      "Exists": "Exists",
+      "Text": "Text",
+      "Zombie": "Zombie",
+      "手上的物品": "Item on Hand",
+      "是左键": "Is Left Click",
+      "属性倒计时": "Stat Countdown",
+      "状态": "State",
+      "脉冲触发时": "On Pulse",
+      "随机整数": "Random Integer",
+      "要删除的类型": "Type to Remove",
+      "是否成功": "Is Successful",
+      "已移除": "Removed",
+      "大小倍率": "Size Multiplier",
+      "秒数": "Seconds",
+      "强制种植": "Force Plant",
+      "暂停": "Pause",
+      "在鼠标处": "At Mouse Position",
+      "僵尸阵营": "Zombie Faction",
+      "可刷新": "Is Rerollable",
+      "刷新次数": "Reroll Count",
+      "可取消": "Is Skippable",
+      "Index": "Index",
+      "切换开始时": "On Toggle On",
+      "切换关闭时": "On Toggle Off",
+      "状态改变时": "On State Change",
+      "星辉": "Stellar",
+      "是否被魅惑": "Is Hypnotized"
+    },
+    "en_to_cn": {
+      "Trigger": "触发",
+      "Execute": "执行",
+      "On Complete": "完成",
+      "Failed": "失败",
+      "Failure Reason": "失败原因",
+      "On Success": "移动成功",
+      "True": "真",
+      "False": "假",
+      "Loop Body": "循环体",
+      "Loop End": "循环结束",
+      "Trigger on Card Click": "点击卡牌时触发",
+      "On Click": "点击",
+      "Defeat on House Entry": "进家失败",
+      "Output": "输出",
+      "Input": "输入",
+      "Condition": "条件",
+      "Result": "结果",
+      "List": "列表",
+      "List A": "列表A",
+      "List B": "列表B",
+      "Index": "Index",
+      "Current Index": "当前索引",
+      "Element": "元素",
+      "Count": "数量",
+      "Length": "长度",
+      "Object": "对象",
+      "Variable": "变量",
+      "Variable Name": "变量名",
+      "Value": "值",
+      "Initial Value": "初始值",
+      "Current Value": "当前值",
+      "Target Value": "目标值",
+      "Greater than": "大于",
+      "Less than": "小于",
+      "Equal to": "等于",
+      "Not Equal to": "不等于",
+      "Greater than or Equal to": "大于等于",
+      "Less than or Equal to": "小于等于",
+      "A": "A",
+      "B": "B",
+      "Operand A": "操作数A",
+      "Operand B": "操作数B",
+      "Base": "底数",
+      "Exponent": "指数",
+      "Multiplier": "倍率",
+      "Ratio": "比例",
+      "Decimal Place": "Decimal Place",
+      "Plant": "植物",
+      "Plant Type": "植物类型",
+      "Plant List": "植物列表",
+      "Current Plant": "当前植物",
+      "Current Plant Type": "当前植物类型",
+      "Target Plant": "目标植物",
+      "Zombie": "僵尸",
+      "Zombie Type": "僵尸类型",
+      "Zombie List": "僵尸列表",
+      "Current Zombie": "当前僵尸",
+      "Target Zombie": "目标僵尸",
+      "Card": "卡牌",
+      "Card Object": "卡牌对象",
+      "Projectile": "子弹",
+      "Projectile Type": "子弹类型",
+      "Obstacle": "障碍物",
+      "Pit": "坑洞",
+      "Ice Trail": "冰道",
+      "Ice Block": "冰块",
+      "Lane": "行",
+      "Column": "列",
+      "Column (Decimal)": "列（小数）",
+      "Target Lane": "目标行",
+      "Target Column": "目标列",
+      "Target Column (Decimal)": "目标列（小数）",
+      "Position": "位置",
+      "Coordinates": "坐标",
+      "X": "X",
+      "Y": "Y",
+      "Z": "Z",
+      "X Position": "X坐标",
+      "Y Position": "Y坐标",
+      "Z Position": "Z坐标",
+      "Speed": "速度",
+      "Angle": "角度",
+      "Rotation": "旋转",
+      "Scale": "缩放",
+      "Distance": "距离",
+      "Damage": "伤害",
+      "Health": "血量",
+      "Max Health": "最大血量",
+      "Current Health": "当前血量",
+      "Heal Amount": "治疗量",
+      "Shield Value": "护盾值",
+      "Cause of Death": "死亡原因",
+      "Reason": "原因",
+      "Duration": "等待时间",
+      "Interval": "周期间隔",
+      "Delay": "延迟",
+      "Cooldown": "冷却",
+      "Probability": "概率",
+      "Level": "等级",
+      "Target Level": "目标等级",
+      "Upgrade to Target Level": "升至目标等级",
+      "Sun": "阳光",
+      "Sun Amount": "阳光数量",
+      "Coins": "金币",
+      "Coin Amount": "金币数量",
+      "Cost": "价格",
+      "Title": "标题",
+      "Subtitle": "小标题",
+      "Text": "文本",
+      "Default Text": "默认文本",
+      "Description": "描述",
+      "Sound Effect": "音效",
+      "Sound ID": "音效ID",
+      "Music": "音乐",
+      "Wave Count": "波次",
+      "Stage": "阶段",
+      "Merge List": "合并列表",
+      "Unmerge": "未合并",
+      "Option List": "选项列表",
+      "Selected Option": "选中的选项",
+      "Grant": "发放",
+      "Grant Card": "发放卡牌",
+      "Grant Count": "发放数量",
+      "Kill and Grant Reward": "击杀并发奖励",
+      "Name or ID": "名称或编号",
+      "Name": "名称",
+      "Value A": "值A",
+      "Value B": "值B",
+      "New Value": "新值",
+      "List 1": "列表1",
+      "List 2": "列表2",
+      "Plant Type A": "植物类型A",
+      "Plant Type B": "植物类型B",
+      "Condition A": "条件A",
+      "Condition B": "条件B",
+      "True (Trigger)": "真（触发）",
+      "False (Stop)": "假（停止）",
+      "On Failure": "添加失败",
+      "Trigger on Exit": "退出时触发",
+      "Option Clicked": "选项被点击",
+      "Insufficient Coins!": "金币不足",
+      "Insufficient Sun!": "阳光不足",
+      "Interval (Seconds)": "间隔秒数",
+      "Cycle Event": "周期事件",
+      "Damage Value": "伤害值",
+      "Remainder": "余数",
+      "Divisor": "除数",
+      "Dividend": "被除数",
+      "Sum": "和",
+      "Product": "积",
+      "Random Float": "随机浮点数",
+      "Plant ID": "植物编号",
+      "Each Iteration": "每次循环",
+      "Reset": "重置",
+      "Timed Out": "超时",
+      "Target Count": "计数",
+      "Contains": "包含",
+      "Is Equal": "相同",
+      "Valid": "Valid",
+      "Maximum": "最大值",
+      "Minimum": "最小值",
+      "Max Check Attempts": "最多检查次数",
+      "Cycle Count": "循环次数",
+      "<size=16>Camera Zoom": "调整相机投影大小",
+      "<size=20>Choose Your Plants": "选择你的植物",
+      "Select Previous Loadout": "重选上次卡牌",
+      "Pick Zombies": "自选僵尸卡牌",
+      "Pick Plants": "自选植物卡牌",
+      "Random Fill\nwith Plants": "填充随机植物",
+      "View Plants": "查看植物",
+      "View Zombies": "查看僵尸",
+      "<size=20>Choose Plants to Disable": "请选择禁用的植物",
+      "Set Zombies": "前往设置僵尸",
+      "Odyssey Plants": "究极植物",
+      "Zombie Gacha": "随机僵尸",
+      "Zombotany": "植物僵尸",
+      "Plant Gacha": "随机植物",
+      "Plant Gacha vs Zombie Gacha": "随机植物VS随机僵尸",
+      "Odyssey": "6路旅行",
+      "Gloves can be used to move or fuse plants manually.": "手套可以自由移动或融合植物",
+      "Have you heard that Lily Pad can have plants grow on their heads?": "听说了吗？有的睡莲头上会长植物",
+      "Gift Box: Can grant any base plant": "礼盒，能开出全部的基础植物",
+      "You can get a fusion of 3 Puff-shrooms by fusing into a Puff-shroom stack.": "小喷菇是黑夜里十分重要的植物",
+      "You can only grab plants from the top half of the lawn.": "无法抓取下半部分植物",
+      "A new plant is available in Plant Select.": "你为你的卡库新增了一种卡牌",
+      "You've found a new plant for your Zen Garden.": "你为你的花园找到了一株植物",
+      "You can't move plants that are laddered.": "无法抓取梯子下的植物",
+      "You cannot move plants that need to be protected in this mode.": "该模式不能移动需要保护的植物",
+      "Normal Zombies": "普通僵尸",
+      "Odyssey Zombies": "究极僵尸",
+      "Press V to Toggle Zombie Gloves to move Zombies.": "按V键切换僵尸手套来挪动僵尸",
+      "Lose half of the plants on the field": "损失场上一半的植物",
+      "<size=16>Select 10 Common Odyssey fusions to bring along!": "从中选择10个植物",
+      "This Common Odyssey fusion was not selected in the Initial Selection Phase.": "未选取此植物",
+      "Enable Column Planting": "排山倒海：一种种一列",
+      "Error: Attempting to spawn Zombies out of bounds.": "错误：尝试在地图外面放僵尸",
+      "All Plants Unlocked": "已解锁全部植物",
+      "The round is completed.": "轮已经完成",
+      "??? Where": "是否抽取一种究极植物",
+      "Odyssey: \nClassic": "生存模式：旅行",
+      "Upgrade Plants": "培养植物",
+      "Whack a Zombie": "锤僵尸",
+      "Multi-Track Multi-Task": "多线并行",
+      "Number of lost lawn mowers:": "丢失小推车数量",
+      "Unique Plants": "彩卡植物",
+      "Basic Plants": "普通植物",
+      "I, Zombie": "我是僵尸",
+      "Move the peashooters with WASD (Zombie Health Display: R).\nGet to 2048 to win!": "按方向键WASD来移动植物",
+      "This plant is banned in Cursed Mode.": "诅咒模式禁用该植物",
+      "Acquire 4 random plants": "获得4个随机植物",
+      "Acquire the plant shown above": "获得1株上方植物",
+      "Acquire 2 random base plants": "获得2个随机基础植物",
+      "Acquire 1 random advanced plant": "获得1个随机超级植物",
+      "Acquire 1 random Odyssey plant": "获得1个随机究极植物",
+      "Unable to move Mini-bosses!": "无法移动boss类僵尸",
+      "Plants can only be placed to the left of the red line.": "你只能在红线左侧放置植物",
+      "Collected Plants": "独特卡牌",
+      "Gatling Cherry Scholar": "樱桃机枪学者僵尸",
+      "Gatling Cherry Bachelor": "樱桃机枪学士僵尸",
+      "Gatling Cherry Doctor": "樱桃机枪硕士僵尸",
+      "Giga Football Zombie": "黑橄榄僵尸",
+      "Sergeant Michael Zombie": "白衣舞王僵尸",
+      "Sharkmarine-X": "机械舰艇僵尸",
+      "Destroyer Sharkmarine": "导弹机械舰艇僵尸",
+      "Charger Sharkmarine": "冲锋机械舰艇僵尸",
+      "Boomer Sharkmarine": "雷鸣机械潜艇僵尸",
+      "Narwhalmarine": "雷鸣冲锋舰艇僵尸",
+      "Giga Trident Zombie": "橄榄三叉戟僵尸",
+      "Giga Trident-nut Firstmate": "碧海三叉戟僵尸",
+      "Netherite Miner Zombie": "下界合金矿镐僵尸",
+      "Netherite Driller Zombie": "下界合金钻僵尸",
+      "Netherite Excavator": "武装下界合金钻僵尸",
+      "Plated Michael Zomboni": "舞装战车僵尸",
+      "Armored Michael Zomboni": "轻甲舞装战车僵尸",
+      "Colossus Michael Zomboni": "重甲舞装战车僵尸",
+      "Knight Clown-on-the-Pogo": "玩偶匣跳跳僵尸",
+      "Row-buster": "远程爆破一行",
+      "Attacks the last column": "攻击最后一列",
+      "Choose your Odyssey Plants:": "选择你的究极植物",
+      "Select at least 5 Plants.": "至少选择5个植物",
+      "Obtain a new plant": "解锁新植物",
+      "You already have this plant!": "你已拥有该植物",
+      "Upgrade to this plant": "升级你的植物",
+      "Storage Is Full! Low-value Packets have been discarded": "仓库已满，已优先丢弃低价值卡牌",
+      "You've found a new Packet for your Storage!": "你为你的背包新增了一种卡牌",
+      "Packets in your storage will be discarded shortly!": "即将丢弃背包中的卡牌",
+      "Unlock the Plant first by progressing through Adventure Mode!": "请先推进冒险模式获取该植物",
+      "Pre-selected Plants": "预先选择的植物",
+      "Select Plant": "选择植物",
+      "Favorite Plant": "收藏该植物",
+      "Classic Route": "最初的旅行",
+      "More Zombies": "更多僵尸",
+      "More Zombies + Zombie Spawn Speed UP": "出怪加速，更多僵尸",
+      "Advanced Plants": "超级植物",
+      "TD Mode Plants": "塔防植物",
+      "Metal Plants": "金属植物",
+      "Defensive Plants": "坚果植物",
+      "Aquatic Plants": "水生植物",
+      "Flying Plants": "飞行植物",
+      "Magnetic Plants": "磁力植物",
+      "Titan Plants": "大型植物",
+      "All Zombies": "全部僵尸",
+      "Mini-bosses": "boss僵尸",
+      "Evolved Zombies": "进化僵尸",
+      "This Plant has not been unlocked yet!": "你还没有解锁该植物",
+      "HP\nUP!": "购买血量",
+      "Start each level with a basic plant already planted (except Roof)": "每局开始赠送一个基础植物",
+      "Hypnotize 10 Zombies": "小局逆转：魅惑10个僵尸",
+      "Spawn a Hypnotized Zombie in each lane at level start": "每局开始在每行生成一只魅惑僵尸",
+      "Freeze 50 Zombies at once": "冰天雪地：同时冻结50个僵尸",
+      "Don't plant in Land Lanes": "水上霸主：不在陆地上放置植物",
+      "The gacha pool contains only Day Plants and Day Zombies.": "只会随机出白天的植物和僵尸",
+      "Starbound Side Story: Zombies vs Zombies": "星辉支线：我是僵尸",
+      "<size=90%>Epic Odyssey Zombies can appear in Gacha Mode": "随机模式中出现强究极僵尸",
+      "Evolved Zombies can appear in Gacha Mode": "随机模式中出现进化僵尸",
+      "Spawn Plant": "创建植物",
+      "Spawn Zombie": "创建僵尸",
+      "Utility Plants": "白卡植物",
+      "Hypno Vase is guaranteed to spawn a Hypnotized Zombie": "魅惑罐子一定开出魅惑僵尸",
+      "You cannot upgrade to the same plant": "请勿新增重复植物",
+      "No available space to place Plants!": "没有空位种植植物",
+      "No available space!": "没有位置",
+      "Level deleted. Please reload the list manually.": "已删除关卡，请手动刷新关卡列表",
+      "Losing this plant\ncauses game over": "需要被保护的植物",
+      "Column w/ Red Line": "红线所在列",
+      "Allow Odyssey Fusions": "允许融合究极植物",
+      "Level List": "关卡列表",
+      "All Plants": "全部植物",
+      "<nobr><size=70%>The Suburban Almanac — Plants</size></nobr>": "图鉴——植物",
+      "<nobr><size=85%>The Suburban Almanac — Zombies</size></nobr>": "图鉴——僵尸",
+      "Level downloaded.": "关卡下载完成",
+      "Counters": "对策植物",
+      "The Target must be on the same lane or same column!": "目标必须在同一行或者同一列",
+      "Event Trigger": "事件触发",
+      "Move Plant": "移动植物",
+      "Spawn Seed Packet": "创建植物卡牌",
+      "Modify Plant HP": "修改植物血量",
+      "Get Plant on Tile": "获取格子植物",
+      "Iterate Plant List": "遍历植物列表",
+      "Iterate Plant Type List": "遍历植物类型列表",
+      "Single-plant-type List": "单植物类型列表",
+      "Combine Plant Type List": "合并植物类型列表",
+      "Get nearest Zombie": "获取最近的僵尸",
+      "Modify Zombie HP": "修改僵尸血量",
+      "Merge Option List": "合并选项列表",
+      "Remove Plant Cards from Slots": "删除卡槽植物卡牌",
+      "Add Plant to Slot": "添加植物卡牌",
+      "Plant Type List": "植物类型列表",
+      "Current List": "当前列表",
+      "Set List": "设置列表",
+      "Result List": "结果列表",
+      "Window Count": "窗口数量",
+      "Trigger on Reroll": "刷新时触发",
+      "Trigger on Planting": "种植时触发",
+      "Planted Plant": "种植的植物",
+      "Frozen Plant": "冻住的植物",
+      "Plant Mechanics - Plant Sizes": "低矮、高大、巨型植物",
+      "Plant Mechanics - Plant Properties": "可密植、坚实、金属植物",
+      "This Pumpkin Chest is empty.": "箱子里没有任何卡牌",
+      "Super I, Zombie": "超级我是僵尸",
+      "Empress-shroom: Everytime a hypnotized zombie is spawned, an extra one will spawn as well.": "每次召唤多生成一只僵尸",
+      "Hypnotized Zombies": "魅惑僵尸",
+      "Please select a maximum number of plants.": "请选择可用植物数量",
+      "5 extra rerolls, normal Zombie count": "额外5次刷新机会,正常僵尸数量",
+      "Damage Complete": "伤害完成",
+      "Kill Complete": "死亡完成",
+      "Plant HP": "植物血量",
+      "Get all Plants on Lawn": "获取场上全部植物",
+      "Multi-plant-type List": "多植物类型列表",
+      "Move Zombie": "移动僵尸",
+      "Create Info Box": "创建信息卡牌",
+      "Random Trigger": "随机触发",
+      "Trigger Count": "触发数量",
+      "Is Repeatable": "重复触发",
+      "Triggers on level start": "在关卡开始时触发",
+      "Triggers when the specified wave arrives": "当特定波次来临时触发",
+      "Triggers on keyboard press of the specified key": "当按下指定键盘按键时触发",
+      "Triggers when the specified plant is placed": "当植物被种下时触发",
+      "Triggers when the specified plant is clicked": "当点击植物时触发",
+      "Triggers when the specified plant's HP reaches 0": "当植物血量归零时触发",
+      "Triggers when the specified zombie dies": "当僵尸死亡时触发",
+      "Triggers when the specified zombie spawns": "当僵尸生成时触发",
+      "Spawns the specified plant on the field": "在关卡内创建植物",
+      "Spawns a seed packet at the specified lane and column": "在指定行列创建植物卡牌",
+      "Gets a list of all plants currently on the field": "获取当前场上所有植物列表",
+      "Creates a list containing a single plant type": "创建包含单个植物类型的列表",
+      "Creates a list containing multiple plant types": "创建包含多个植物类型的列表",
+      "Stores, modifies, and reads a plant type list": "存储、修改和读取植物类型列表",
+      "Spawns a zombie at the specified lane and column": "在指定行列创建僵尸",
+      "Gets the zombie closest to the specified lane and column": "获取距离指定行列最近的僵尸",
+      "Merges two option lists": "合并两个选项列表",
+      "Gets the player's current Sun amount": "获取玩家当前的阳光数量",
+      "Adventure Plants": "冒险植物",
+      "Customize UI Positions": "自定义UI位置",
+      "Bottom-left Buttons Size": "左下方按钮的尺寸大小",
+      "Giftboxes/plants cannot be placed on the opponent's side!": "禁止在对手地盘放植物",
+      "You can buy plants here using the Wheelbarrow!": "使用手推车购买植物",
+      "Zombie Sacrifice": "特立独行",
+      "Choose 1 Specialist Plant from several options.": "从多个选项中自选一株专家植物",
+      "Reroll this row": "刷新本行",
+      "Better Luck Next Time!\nYou got some zombies though!": "一无所有\n但也开到了一些僵尸",
+      "You can click on \"Previous\" for your other plants": "可以点击上一页查看其他卡牌",
+      "Evil Plants": "诅咒植物",
+      "There may not be Zombies on the lawn!": "场地上不能有僵尸",
+      "Garden Plants": "花园植物",
+      "Mod Plants": "二创植物",
+      "Mod Zombies": "二创僵尸",
+      "Short Plant": "低矮植物",
+      "Tall Plant": "高大植物",
+      "Titan Plant": "巨型植物",
+      "Stackable Plant": "可密植植物",
+      "Defensive Plant": "坚实植物",
+      "+ List": "+ 列表",
+      "Trigger On First Run": "首次触发",
+      "Triggered": "已触发",
+      "Name Plant": "命名植物",
+      "Get Named Plant": "获取命名植物",
+      "Name Zombie": "命名僵尸",
+      "Get Named Zombie": "获取命名僵尸",
+      "Get Mouse World Position": "获取鼠标世界位置",
+      "Create Scene Object": "创建场景对象",
+      "Get Object Transform (Position & Size)": "读取对象位置和大小",
+      "Set Scene Object Transform (Position & Size)": "设置场景对象位置和大小",
+      "Destroy Scene Object": "删除场景对象",
+      "Bind Scene Object": "绑定场景对象",
+      "Get Plant by Layer Position": "按位置层获取植物",
+      "Get Current Event Position": "获取本次事件位置",
+      "Has Position": "有位置",
+      "Silence Plant": "沉默植物",
+      "Clear List": "清空列表",
+      "Remove Info Card": "删除信息卡牌",
+      "Remove Count": "删除数量",
+      "Icon Plant": "图标植物",
+      "String to Object": "字符串转对象",
+      "Plant to Object": "植物转对象",
+      "Object to Plant": "对象转植物",
+      "Zombie to Object": "僵尸转对象",
+      "Object to Zombie": "对象转僵尸",
+      "At most {0} plants": "最多{0}株植物",
+      ": Summons a Celestial Beam at the farthest available column to attack zombies": "在前方生成一束天网攻击僵尸",
+      " continuously shoots at the cursor position": "会持续射击鼠标所在位置",
+      "Tap the Gift Box to draw a plant": "点击礼盒抽取植物",
+      "Zombies have a chance to revive as a random zombie after death": "僵尸死亡时有概率复活成随机僵尸",
+      "Fusion Plants": "融合植物",
+      "{0} spawned {1} zombies for you": "{0}给你放了{1}个僵尸",
+      "Base Plants": "基础植物",
+      "Select Base Plant": "选择基础植物",
+      "Search Base Plant": "搜索基础植物",
+      "Search Modifier or Plant": "搜索词条或植物",
+      "Unlock Plant": "解锁植物",
+      "Prize Pool List": "奖池列表",
+      "Incomplete": "未完成",
+      "Minor Ultimate Plants": "弱究植物",
+      "Major Ultimate Plants": "强究植物",
+      "Encounter Cherry Gatling Newspaper Zombie": "遇到樱桃机枪读报僵尸",
+      "Hit 10 zombies with a Sun Bomb": "使用阳光炸弹炸到10个僵尸",
+      "Crush 10 zombies with a Giant Wall-nut": "使用大坚果碾压10个僵尸",
+      "Hypnotize a zombie with Hypno-shroom": "使用魅惑菇魅惑一只僵尸",
+      "Encounter Dancing Zombie": "遇到舞王僵尸",
+      "Forcefully hypnotize with Hypno Scaredy-shroom": "使用魅惑胆小菇强制魅惑僵尸",
+      "Have Hypno-nut summon a Golden Blind Box Zombie": "使魅惑坚果召唤黄金盲盒僵尸",
+      "Have Lily Pad produce a plant": "让睡莲生产植物",
+      "Connect 50 plants in a single magnetic grid": "在一个磁力系统中连接50个植物",
+      "Have Hypno Magnet-shroom summon Mech Gargantuar": "让魅惑磁力菇召唤机械巨人僵尸",
+      "Fuse plants using Ice Cannon": "使用寒冰加农炮融合植物",
+      "Fuse plants using Fire Cannon": "使用火焰加农炮融合植物",
+      "Terminal Plant": "终端植物",
+      " · Specialist Plant": " · 专家植物",
+      " · Unlock base plant first": " · 先解锁基础植物",
+      "Spawn an additional Stake Zombie on the field.": "在场上多生成一个木桩僵尸",
+      "Evolving Plant": "进化途中的植物",
+      "No base plant available": "暂无基础植物",
+      "Search Specialist Plant": "搜索专家植物",
+      "Locked Specialist Plant": "尚未解锁的专家植物",
+      "No matching specialist plants": "没有匹配的专家植物",
+      "Strings, Lists & Objects": "字符串、列表与对象",
+      "+ Object": "+ 对象",
+      "Shared List": "共享列表",
+      "Categorized Node List": "分类节点列表",
+      "Source List": "源列表",
+      "Target List": "目标列表",
+      "Iterate Zombie List": "遍历僵尸列表",
+      "Total Triggers": "共触发",
+      "Merges two dedicated option lists.": "合并两个专用选项列表",
+      "Plant Entity": "植物对象",
+      "Item Object": "物品对象",
+      "Iterate Over All Zombies": "遍历全场僵尸",
+      "Event Object": "事件对象",
+      "Armor 1 HP": "一类防具血量",
+      "Armor 2 HP": "二类防具血量",
+      "Body HP": "本体血量",
+      "Max Body HP": "本体最大血量",
+      "Projectile Type List": "子弹种类列表",
+      "Projectile Object": "子弹对象",
+      "Reward Option List": "奖励选项列表",
+      "Plant Category List": "植物种类列表",
+      "Zombie Category List": "僵尸种类列表",
+      "Get All Zombies on Field": "获取全场僵尸",
+      "Zombie Entity": "僵尸对象",
+      "Modify Amount": "修改数量",
+      "Primary Armor HP": "第一防具血量",
+      "Secondary Armor HP": "第二防具血量",
+      "Delete Zombie Card": "删除僵尸卡牌",
+      "Add Zombie Card": "添加僵尸卡牌",
+      "Create Card": "创建卡牌",
+      "Please select a quest to complete": "请选择一个任务完成",
+      "Task B: Don't plant in Lane 2 or Lane 4 (except Flower Pots and its fusions)": "路线管理：不在2、4路放置植物",
+      "Task A: Kill 30 Zombies with Bamblocks": "竹阵坚守：累计击杀30个僵尸",
+      "After clearing the level, randomly reroll its scene and zombies\n": "通关后随机刷新本关场景和僵尸",
+      "New Plant Obtained": "获得新植物",
+      "\nBut also uncovered some zombies": "\n但也开到了一些僵尸",
+      "But you also got some zombies!": "但也开到了一些僵尸",
+      "Dummy Zombie": "木桩僵尸",
+      "Row {0}": "第{0}行",
+      "Cannot blow away non-zombies.": "不能吹走非僵尸",
+      "Min Count": "最少数量",
+      "Cannot move zombies in The Gods mode.": "无法在诸神模式中移动僵尸",
+      "Cannot dismantle this plant.": "无法拆解该植物",
+      "Dismantle Plant": "拆解植物",
+      "Astral Express": "列车同行",
+      "[Overwhelming Force]: Plant an entire column at once.": "【排山倒海】：一种种一列",
+      "Cooldown complete.": "冷却完成",
+      "Column 1": "第1列",
+      "Add to column 1": "收藏至第一列",
+      "Column 2": "第2列",
+      "Add to column 2": "收藏至第二列",
+      "Column 3": "第3列",
+      "Add to column 3": "收藏至第三列",
+      "Ten-Flag Challenge:\nZomBotany": "十旗挑战\n植物僵尸",
+      "Dolphin Football Tall-nut": "海豚橄榄高坚果僵尸",
+      "Cherry Warlord Zombie": "樱桃战神僵尸",
+      "Confirm digging up this plant": "确认铲除这株植物",
+      "Keep Plant": "保留植物",
+      "Completed": "已完成",
+      "View Cards": "View 卡牌",
+      "Flying": "飞行",
+      "Row {0}, Col {1}": "第{0}行 · 第{1}列",
+      "Gods Almanac · Plants": "诸神图鉴·植物",
+      "Gods Almanac · Zombies": "诸神图鉴·僵尸",
+      "Equip to Target Card": "装到目标卡牌",
+      "Flag Zombie": "旗帜僵尸",
+      "Conehead Zombie": "路障僵尸",
+      "Pole Vaulting Zombie": "撑杆僵尸",
+      "Buckethead Zombie": "铁桶僵尸",
+      "Newspaper Zombie": "读报僵尸",
+      "Dancing Pole Vaulter": "舞王撑杆僵尸",
+      "Backup Pole Vaulter": "伴舞撑杆僵尸",
+      "Screen Door Zombie": "铁门僵尸",
+      "Football Zombie": "橄榄球僵尸",
+      "Michael Zombie": "舞王僵尸",
+      "Ducky Tube Zombie": "鸭子救生圈僵尸",
+      "Ducky Tube Conehead": "鸭子救生圈路障僵尸",
+      "Ducky Tube Buckethead": "鸭子救生圈铁桶僵尸",
+      "Zombarine": "机械海豚僵尸",
+      "Scholar Zombie": "学者僵尸",
+      "Zomboni": "雪橇车僵尸",
+      "Snorkel Zombie": "潜水僵尸",
+      "Bobsled Zomboni": "雪橇冰车僵尸",
+      "Trident Zombie": "三叉戟僵尸",
+      "Diamond-box Zombie": "钻石套娃僵尸",
+      "Gold-box Zombie": "黄金套娃僵尸",
+      "Silver-box Zombie": "白银套娃僵尸",
+      "Jack-in-the-Box Zombie": "玩偶匣僵尸",
+      "Balloon Zombie": "气球僵尸",
+      "Zomppelin": "飞艇僵尸",
+      "Digger Zombie": "矿工僵尸",
+      "Bucknut-copter Zombie": "铁桶坚果气球僵尸",
+      "Clown-in-the-Box Zombie": "小丑王僵尸",
+      "Catapult Zombie": "投篮车僵尸",
+      "Pogo Zombie": "跳跳僵尸",
+      "Ladder Zombie": "扶梯僵尸",
+      "Melon Pogo Zombie": "瓜跳僵尸",
+      "Gargantuar": "巨人僵尸",
+      "Giga Gargantuar": "红眼巨人僵尸",
+      "Imp": "小鬼僵尸",
+      "Mecha Gargantuar": "机械巨人僵尸",
+      "Giga Mecha Gargantuar": "红眼机械巨人僵尸",
+      "Mecha-nut Zombie": "机械保龄球僵尸",
+      "Armored Gargantuar": "武装巨人僵尸",
+      "Bungee Zombie": "蹦极僵尸",
+      "Yeti Zombie": "雪人僵尸",
+      "Nian Zombie": "年兽僵尸",
+      "Frost Legion Snowball Launcher": "雪枪僵尸",
+      "Frost Legion Shieldbearer": "雪盾僵尸",
+      "Frost Legion Harpooneer": "雪叉僵尸",
+      "Chronoporter Zombie": "超时空豌豆射手僵尸",
+      "Frost Legion Freezer Disc": "雪人飞碟僵尸",
+      "Frost Legion Blockhead": "冰块僵尸",
+      "Miner Zombie": "勘探者僵尸",
+      "Dolphinhead Newspaper": "海豚读报僵尸",
+      "Dolphinhead Football": "海豚橄榄球僵尸",
+      "Burglar Bungee Zombie": "贪欲蹦极僵尸",
+      "Beach Michael Zombie": "沙滩舞王僵尸",
+      "Lifelink Ladder Zombie": "咒梯僵尸",
+      "Hypno Pepper Zombie": "魅惑辣椒僵尸",
+      "Hypno Pepper Digger": "魅惑辣椒矿工僵尸",
+      "Trident Gargantuar": "三叉戟巨人僵尸",
+      "Olympic Pole Vaulting": "冠军撑杆僵尸",
+      "Chameleon Football": "无色橄榄球僵尸",
+      "Rush Football Zombie": "黄色橄榄球僵尸",
+      "Chronovaulter Zombie": "超时空撑杆僵尸",
+      "Coach Zombie": "撑杆教练僵尸",
+      "Buckethead Newspaper": "铁桶读报僵尸",
+      "Frost Legionnaire Zombie": "雪原僵尸",
+      "Frost Legion Packed Ice": "蓝冰僵尸",
+      "Aluminum-head Zombie": "复合路障僵尸",
+      "Pole Vaulting Football": "撑杆橄榄球僵尸",
+      "Peashooter Zombie": "豌豆射手僵尸",
+      "Cherryshooter Zombie": "樱桃射手僵尸",
+      "Explode-o-shooter Zombie": "超级樱桃射手僵尸",
+      "Wall-nut Zombie": "坚果僵尸",
+      "Cherryshooter Newspaper": "樱桃读报僵尸",
+      "Mystery-box Zombie": "盲盒僵尸",
+      "Buck-nut Zombie": "铁桶坚果僵尸",
+      "Cherry-nut Zombie": "樱桃坚果僵尸",
+      "Buckshooter Zombie": "铁桶豌豆僵尸",
+      "Football-nut Zombie": "橄榄高坚果僵尸",
+      "Golden Mystery-box": "黄金盲盒僵尸",
+      "Frost Tall-nut Zombie": "寒冰高坚果僵尸",
+      "Explode-o-pult Zombie": "爆破投篮车僵尸",
+      "Screen Door Buckshooter": "武装铁桶豌豆僵尸",
+      "Squash Zombie": "窝瓜僵尸",
+      "Spicy Squash Zombie": "火爆窝瓜僵尸",
+      "Jalapeno Zombie": "辣椒僵尸",
+      "Pea Commando Zombie": "机枪橄榄球僵尸",
+      "Buckshoot-copter Zombie": "铁桶豌豆气球僵尸",
+      "Doom-shroom Zombie": "毁灭菇僵尸",
+      "Mystery Gargantuar": "盲盒巨人僵尸",
+      "Turbo Gargantuar": "蓝眼巨人僵尸",
+      "Shepherd Gargantuar": "绿眼巨人僵尸",
+      "Volley Gargantuar": "黄眼巨人僵尸",
+      "Parkour Zombie": "跑酷僵尸",
+      "Flame Tall-nut Zombie": "火焰高坚果僵尸",
+      "Obsidian Tall-nut Zombie": "黑曜石高坚果僵尸",
+      "Solar-nut Zombie": "阳光坚果僵尸",
+      "Twin Solar-nut Zombie": "阳光帝果僵尸",
+      "Gatling Pea Zombie": "机枪射手僵尸",
+      "Gatling Snow Zombie": "寒冰机枪射手僵尸",
+      "Bedrock Tall-nut Yeti": "不朽高坚果雪人僵尸",
+      "Nyan Squash Zombie": "猫瓜僵尸",
+      "Sharkmarine": "超级机械海豚僵尸",
+      "Michael Zomboni": "舞王冰车僵尸",
+      "Giga Trident-nut Zombie": "超级三叉戟僵尸",
+      "Gatling Cherry Newspaper": "樱桃机枪读报僵尸",
+      "Giga Football-nut Zombie": "黑橄榄高坚果僵尸",
+      "Kirov Zomppelin": "基洛夫飞艇僵尸",
+      "Abyssal Imp": "黑曜石小鬼僵尸",
+      "Diamond Mystery-box": "钻石盲盒僵尸",
+      "Buckshot Commando Zombie": "机枪黑橄榄僵尸",
+      "Frost Tall-nut Iceclaw": "寒冰雪爪僵尸",
+      "Imperor": "小鬼国王僵尸",
+      "Frost Legion Frayer Disc": "镭射幽浮僵尸",
+      "Frost Legion Beastmaster": "雪兽骑士僵尸",
+      "Gatling Doom Newspaper": "毁灭机枪读报僵尸",
+      "Obsidian Tall-nut Iceclaw": "黑曜石雪爪僵尸",
+      "Astronut-copter Zombie": "超时空气球僵尸",
+      "Black Knight Zombie": "黑橄榄骑兵僵尸",
+      "Harpooneer Frost Tall-nut": "冰封三叉戟僵尸",
+      "Identification request is not yet complete.": "识别请求尚未完成",
+      "10-Flag Challenge: Zombotany": "十旗挑战：植物僵尸",
+      "10-Flag Challenge: Random Zombies": "十旗挑战：随机僵尸",
+      "10-Flag Challenge: Random Plants": "十旗挑战：随机植物",
+      "10-Flag Challenge: Random Plants VS Random Zombies": "十旗挑战：随机植物VS随机僵尸",
+      "No card in this slot": "这个位置没有卡牌",
+      "Select this plant": "选择这株植物",
+      "Delete Plant": "删除植物",
+      "Recharge": "冷却时间",
+      "Use Default": "使用默认数据",
+      "Cooldown (s)": "冷却秒数",
+      "Available Immediately": "立即可用",
+      "ASCII Code": "ASCII Code",
+      "String": "字符串",
+      "Object A": "对象A",
+      "Object B": "对象B",
+      "Equal": "相等",
+      "Zombie Type A": "僵尸类型A",
+      "Zombie Type B": "僵尸类型B",
+      "Is Resetting": "是否重置",
+      "Spawn Crater": "创建弹坑",
+      "Freeze Duration": "冻结时间",
+      "Is Hypnotized": "是否被魅惑",
+      "Curse Value": "诅咒值",
+      "All": "全部",
+      "Quotient": "商",
+      "Applied": "已生效",
+      "Boolean": "Boolean",
+      "Float": "浮点数",
+      "Integer": "整数",
+      "Operand": "操作数",
+      "Current Type": "当前类型",
+      "Exists": "Exists",
+      "Type": "类型",
+      "Attack Interval": "攻击间隔",
+      "Remaining Seconds": "剩余秒数",
+      "Max Seconds": "最大秒数",
+      "Random Plant Type": "随机植物类型",
+      "Phase Name": "阶段名",
+      "Total Seconds": "总秒数",
+      "Healing Successful": "回血成功",
+      "Minuend": "被减数",
+      "Subtrahend": "减数",
+      "Difference": "差",
+      "List Length": "列表长度",
+      "Damage Bonus*100%": "攻击力加成x100%",
+      "HP Bonus*100%": "血量加成x100%",
+      "HP Multiplier": "血量倍率",
+      "Forced": "强制",
+      "Item on Hand": "手上的物品",
+      "Is Left Click": "是左键",
+      "Stat Countdown": "属性倒计时",
+      "State": "状态",
+      "On Pulse": "脉冲触发时",
+      "Random Integer": "随机整数",
+      "Type to Remove": "要删除的类型",
+      "Is Successful": "是否成功",
+      "Removed": "已移除",
+      "Size Multiplier": "大小倍率",
+      "Seconds": "秒数",
+      "Force Plant": "强制种植",
+      "Pause": "暂停",
+      "At Mouse Position": "在鼠标处",
+      "Zombie Faction": "僵尸阵营",
+      "Is Rerollable": "可刷新",
+      "Reroll Count": "刷新次数",
+      "Is Skippable": "可取消",
+      "On Toggle On": "切换开始时",
+      "On Toggle Off": "切换关闭时",
+      "On State Change": "状态改变时",
+      "Stellar": "星辉",
+      "Row": "行",
+      "Bullet": "子弹"
+    }
+  }
+}
