@@ -17,6 +17,7 @@ This project provides automated tools to build, test, and package complete Engli
 | :--- | :--- | :--- |
 | **PC (Windows)** | [GitHub Release (v4.1)](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | [Google Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
 | **Android (APK)** | [GitHub Release (v4.1)](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | [Google Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
+| **Custom Level Converter** | [GitHub Release Download](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/download/v4.1/PvZ-Fusion-Custom-Level-Converter.zip) | [Google Drive Mirror](https://drive.google.com/file/d/1-IDkf0dmqLkaIBYpWeSGc36VwwVnNsDd/view?usp=sharing) |
 
 > 📁 **Google Drive Folder**: Access all v4.1 downloads in the [Version 4.1 Folder](https://drive.google.com/drive/folders/1vFkBmV5aZXHBiYlVDd9H6xjclvs_G8fk?usp=sharing).
 >
@@ -74,9 +75,33 @@ Do **not** copy an old game installation's entire directory over a new installat
 
 ---
 
+## 🔧 Custom Level Port Converter
+
+Community levels created in the **Chinese version** of PvZ Fusion store port names in Chinese (`"触发"`, `"行"`, `"完成"`, etc.). The English build expects English names, so these levels fail to wire correctly without conversion.
+
+**`scripts/tools/convert_custom_level.py`** fixes this automatically:
+
+```bash
+# Convert a single level file (outputs *_en.json)
+python scripts/tools/convert_custom_level.py my_level.json
+
+# Convert a whole folder
+python scripts/tools/convert_custom_level.py path/to/levels/
+
+# In-place with backup
+python scripts/tools/convert_custom_level.py level.json --in-place --backup
+
+# Windows: drag & drop onto convert_level.bat
+```
+
+📖 Full documentation: [docs/CUSTOM-LEVEL-CONVERTER.md](docs/CUSTOM-LEVEL-CONVERTER.md)
+
+---
+
 ## Documentation & Reference Links
 
 - [Architecture & Developer Guide (Build Commands & Repo Structure)](docs/ARCHITECTURE.md)
+- [Custom Level Port Converter Guide](docs/CUSTOM-LEVEL-CONVERTER.md)
 - [Android Release Signing Key & Verification](docs/signing/SIGNING-KEY.md)
 - [Release Notes Archive](docs/release-notes/)
 - [Release Template](docs/RELEASE_TEMPLATE.md)
