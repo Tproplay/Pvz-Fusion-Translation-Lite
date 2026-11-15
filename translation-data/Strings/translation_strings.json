@@ -6186,7 +6186,7 @@
   "44_5\n生命偷取": "44_5\nLifesteal",
   "45_5\n生命偷取II": "45_5\nLifesteal II",
   "46_10\n燃血": "46_10\nBlood Burn",
-  "<color=red>旅行羁绊：": "<color=red>Travel Synergies: ",
+  "<color=red>旅行羁绊：": "\n\n<color=red>Travel Synergies:\n",
   "\n\n但": "\n\nBut",
   " 第{0}轮": " Round {0}",
   "仓库可用容量不足": "Insufficient storage capacity",
