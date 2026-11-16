@@ -9252,5 +9252,6 @@
   "[SetBoolVariableValueNode] 变量节点未连接，节点ID: ": "[SetBoolVariableValueNode] Variable node not connected, Node ID: ",
   "[SetFloatVariableValueNode] 变量节点未连接，节点ID: ": "[SetFloatVariableValueNode] Variable node not connected, Node ID: ",
   "[SetIntVariableValueNode] 变量节点未连接，节点ID: ": "[SetIntVariableValueNode] Variable node not connected, Node ID: ",
-  "[SetZombieMindControlledNode] 僵尸对象为空，无法魅惑，节点ID: ": "[SetZombieMindControlledNode] Zombie object is null, cannot hypnotize, Node ID: "
+  "[SetZombieMindControlledNode] 僵尸对象为空，无法魅惑，节点ID: ": "[SetZombieMindControlledNode] Zombie object is null, cannot hypnotize, Node ID: ",
+  "渊海": "Pozeidon"
 }
