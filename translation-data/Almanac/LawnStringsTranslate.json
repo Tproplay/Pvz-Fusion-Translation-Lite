@@ -4853,9 +4853,9 @@
         },
         {
             "seedType": 1486,
-            "name": "Floating Chomper",
-            "introduce": "<align=left><color=black>After shedding its cumbersome roots, Floating Chomper took its first step toward conquering the skies as a predator. The advantage of attacking from above greatly expanded its menu, but it also brought an unexpected problem: it ate so many zombies that its face turned green..</color>",
-            "info": "Floating Chomper hovers in the air and devours nearby ground or airborne targets.\n\n<color=black>Damage: </color><color=#8B0000> Insta-kill (Devour)</color>\n<color=black>Digestion Time: </color><color=#8B0000>40s</color>\n<color=black>Special: </color><color=#8B0000>Can eat both land and flying zombies.</color>",
+            "name": "Flytrapper",
+            "introduce": "<align=left><color=black>After shedding its cumbersome roots, Flytrapper took its first step toward conquering the skies as a predator. The advantage of attacking from above greatly expanded its menu, but it also brought an unexpected problem: it ate so many zombies that its face turned green..</color>",
+            "info": "Flytrapper hovers in the air and devours nearby ground or airborne targets.\n\n<color=black>Damage: </color><color=#8B0000> Insta-kill (Devour)</color>\n<color=black>Digestion Time: </color><color=#8B0000>40s</color>\n<color=black>Special: </color><color=#8B0000>Can eat both land and flying zombies.</color>",
             "cost": "\nFusion Recipe: <color=#8B0000>Chomper + Blover</color>\n"
         },
         {
