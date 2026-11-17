@@ -2898,7 +2898,7 @@
       "第3列": "Column 3",
       "收藏至第三列": "Add to column 3",
       "十旗挑战\n植物僵尸": "Ten-Flag Challenge:\nZomBotany",
-      "海豚橄榄高坚果僵尸": "Dolphin Football Tall-nut Zombie",
+      "海豚橄榄高坚果僵尸": "Football Dolphin Tall-nut Zombie",
       "樱桃战神僵尸": "Cherry War God Zombie",
       "确认铲除这株植物": "Confirm digging up this plant",
       "保留植物": "Keep Plant",
@@ -3812,7 +3812,8 @@
       "Row": "行",
       "Bullet": "子弹",
       "Dolphin Football Tall-nut Zombie": "海豚橄榄高坚果僵尸",
-      "Cherry War God Zombie": "樱桃战神僵尸"
+      "Cherry War God Zombie": "樱桃战神僵尸",
+      "Football Dolphin Tall-nut Zombie": "海豚橄榄高坚果僵尸"
     }
   }
 }

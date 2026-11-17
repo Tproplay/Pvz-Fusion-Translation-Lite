@@ -1424,8 +1424,8 @@
         },
         {
             "theZombieType": 134,
-            "name": "Dolphin Football Tall-nut Zombie",
-            "introduce": "<align=left><color=black>Hard workouts gave Dolphin Football Tall-nut Zombie a robust physique, but also gave him a pointed head. Though he insists it's to reduce wind drag, the zombies unanimously believe he simply hasn't finished evolving since crawling out of the sea.\n</color>",
+            "name": "Football Dolphin Tall-nut Zombie",
+            "introduce": "<align=left><color=black>Hard workouts gave Football Dolphin Tall-nut Zombie a robust physique, but also gave him a pointed head. Though he insists it's to reduce wind drag, the zombies unanimously believe he simply hasn't finished evolving since crawling out of the sea.\n</color>",
             "info": "Weaves back and forth across the lawn to disrupt defense, moving with greater finesse when in good health.\n\n<color=black>Bite Damage: </color><color=#8B0000>100</color>\n<color=black>Toughness: </color><color=#8B0000>3000 + 12000 (Type 1)</color>\n<color=black>Speed: </color><color=#8B0000>Fast</color>\n<color=black>Special: </color><color=#8B0000>Immune to Immobilize and Knockback. Moves back and forth to the right of column 1. Inflicts Wet status on contact with plants. Ignores plants while Type 1 armor HP is above 2/3.</color>"
         },
         {
