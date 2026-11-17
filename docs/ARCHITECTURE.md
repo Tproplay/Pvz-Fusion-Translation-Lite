@@ -89,7 +89,7 @@ All translation data is strictly separated from build scripts:
 │   ├── build_pc.py                       # Dedicated PC build script (metadata + bundle)
 │   ├── build_android.py                  # Android APK build + signing
 │   ├── build_metadata_translation.py     # Deterministic IL2CPP metadata builder
-│   ├── build_405_bundle.py               # Unified Unity data.unity3d patcher
+│   ├── build_bundle.py                   # Unified Unity data.unity3d patcher
 │   ├── package_apk_payload.py            # Surgical APK payload replacer
 │   ├── package_pc_zip.py                 # PC release ZIP packager (release only)
 │   ├── package_harmony_fix.py            # BepInEx Harmony Fix packager
@@ -181,7 +181,7 @@ flowchart TD
     subgraph Toolkit ["Translation Pipeline"]
         Scripts["scripts/build_pc.py / build_android.py"]
         MetaGen["scripts/build_metadata_translation.py"]
-        BundleGen["scripts/build_405_bundle.py"]
+        BundleGen["scripts/build_bundle.py"]
         APKPack["scripts/package_apk_payload.py"]
     end
 

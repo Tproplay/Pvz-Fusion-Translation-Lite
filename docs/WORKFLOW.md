@@ -79,7 +79,7 @@ Run `scripts/audit_remaining_cjk.py` after every build.
 
 ## 5. Patch `data.unity3d`
 
-Run `scripts/build_405_bundle.py` (invoked automatically by `build_pc.py`) to patch:
+Run `scripts/build_bundle.py` (invoked automatically by `build_pc.py`) to patch:
 
 1. Almanac text databases (`LawnStrings`, `ZombieStrings`, `DetailStrings`, `LevelCreatorHelp`) replaced with translated versions.
 2. Dynamic UI `TextAsset` objects translated in-place.

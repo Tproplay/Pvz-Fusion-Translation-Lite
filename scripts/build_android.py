@@ -83,7 +83,7 @@ def build_android(
     bundle_report = android_output / "bundle-report.json"
     cmd_android_bundle = [
         py_exe,
-        str(scripts_dir / "build_405_bundle.py"),
+        str(scripts_dir / "build_bundle.py"),
         "--base-bundle", str(bundle_orig),
         "--data-dir", str(data_dir),
         "--output", str(bundle_target),

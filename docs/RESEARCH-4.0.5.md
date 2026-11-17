@@ -123,7 +123,7 @@ A major feature of v4.0.5 is the **Custom Level Editor** (关卡制作器 / 事�
 2. **Almanac Typography & Size Tags**:
    - **Almanac Description Font Size**: TextMeshPro Almanac description components (`Description` under `AlmanacPlantWindow/InroduceScroll/Viewport/Content`, path ID 201854) have a native base font size of **18pt** (`m_fontSize = 18.0`).
    - **The `<size=36>` Bug**: Legacy PC translations previously embedded `<size=36>` in text assets. On Android and PC, this forced TextMeshPro to double the font size from 18pt to 36pt, resulting in massive text where only 2–3 words fit per line.
-   - **Unified Typography Rule**: The build pipeline (`clean_size_tags` in `scripts/build_405_bundle.py`) strips all `<size>` tags across all platforms. Without `<size>` tag overrides, TextMeshPro renders cleanly at its native 18pt font, fitting 6–8 words per line with normal proportions matching the official game layout.
+   - **Unified Typography Rule**: The build pipeline (`clean_size_tags` in `scripts/build_bundle.py`) strips all `<size>` tags across all platforms. Without `<size>` tag overrides, TextMeshPro renders cleanly at its native 18pt font, fitting 6–8 words per line with normal proportions matching the official game layout.
 3. **Platform MonoScript Path IDs**:
    - PC and Android bundles have different `path_id` assignments for UI scripts:
      - **PC**: `TextMeshPro` = 2359, `TextMeshProUGUI` = 3797, `UnityEngine.UI.Text` = 1568.

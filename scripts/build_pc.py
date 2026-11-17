@@ -78,7 +78,7 @@ def build_pc(
         print("\n[2/2] Building PC data.unity3d...")
         cmd_bundle = [
             py_exe,
-            str(scripts_dir / "build_405_bundle.py"),
+            str(scripts_dir / "build_bundle.py"),
             "--base-bundle", str(bundle_orig),
             "--data-dir", str(data_dir),
             "--output", str(bundle_target),
