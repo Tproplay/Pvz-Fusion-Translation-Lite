@@ -317,8 +317,10 @@ def patch_text_assets(
                     for k in ("introduce", "info", "cost", "description"):
                         if k in record and isinstance(record[k], str):
                             record[k] = clean_size_tags(record[k])
-                    if "cost" in record and isinstance(record["cost"], str) and record["cost"] and not record["cost"].endswith("\n"):
-                        record["cost"] = record["cost"] + "\n"
+                    if "cost" in record and isinstance(record["cost"], str) and record["cost"]:
+                        record["cost"] = record["cost"].lstrip("\r\n")
+                        if not record["cost"].endswith("\n"):
+                            record["cost"] = record["cost"] + "\n"
                     plant.update(record)
                     updated += 1
             data.m_Script = json.dumps(tree, ensure_ascii=False, indent=4)
