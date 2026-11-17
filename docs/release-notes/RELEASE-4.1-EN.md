@@ -1,6 +1,32 @@
-# Plants vs. Zombies: Fusion v4.1 — English Release (Hotfix 3 - PC & Android)
+# Plants vs. Zombies: Fusion v4.1 — English Release (Hotfix 4 - PC & Android)
 
 A complete English translation release of **Plants vs. Zombies: Fusion (植物大战僵尸: 融合版) v4.1** for both Windows PC and Android.
+
+---
+
+## 🚨 Hotfix 4 (Nov 17, 2026)
+- **Plant & Zombie Renames**:
+  - Reverted Plant 1486 from Floating Chomper back to **Flytrapper** (食蝇草 / 捕蝇草).
+  - Renamed Plant 1484: Gloom-shroom + Gatling Pea -> **Gatling Gloom-shroom** (机枪曾哥).
+  - Renamed Plant 1487: Spikeweed + Spikerock -> **Spike King** (地刺王).
+  - Renamed Plant 1492: Blover + Fume-shroom -> **Blover Fume-shroom** (三叶大喷菇).
+  - Renamed Plant 1493: Flower Pot + Fume-shroom -> **Potted Fume-shroom** (大喷盆).
+  - Renamed Plant 1496: Melon-pult + Peashooter -> **Melon Peashooter** (西瓜豌豆射手).
+  - Renamed Plant 1497: Scaredy-shroom + Threepeater -> **Triple Scaredy-shroom** (三联胆小菇).
+  - Renamed Plant 1498: Squash + Sun-shroom -> **Squash-shroom** (窝瓜菇).
+  - Renamed Plant 1499: Cabbage-pult + Peashooter -> **Cabbage Peashooter** (卷心菜豌豆射手).
+  - Renamed Plant 1500: Scaredy-shroom + Winter Melon -> **Scaredy-melon** (胆小西瓜).
+  - Renamed Plant 5006: Doom-shroom + Shatter-shroom -> **Ultimate Shatter-shroom** (终极碎裂菇).
+  - Renamed Plant 5008: Magnet-shroom + Squash Wall-nut -> **Magnetic Squash-nut** (磁力窝瓜坚果).
+  - Renamed Plant 313: Parallel Torchwood -> **Parallel Torchwood** (平行火炬树桩).
+  - Renamed Zombie 134: Dolphin Rider + Football + Tall-nut -> **Football Dolphin Tall-nut Zombie** (橄榄海豚高坚果僵尸).
+  - Renamed Zombie 135: Cherry War God Zombie -> **Cherry War God Zombie** (樱桃战神僵尸).
+- **Harvest Mode Formatting & Nomenclature**:
+  - Removed `<color=#BA55D3>` purple tags from all Harvest Mode plants (Seed IDs 300 to 313) for clean, unified rendering in seed selection and Almanac.
+  - Standardized all occurrences of `Mystery Mode` to **Harvest Mode** across descriptions, guides, and text entries.
+- **Suburban Almanac Layout Polish**:
+  - Eliminated the double blank line gap between plant descriptions and fusion/conversion recipes across all 581 plants by stripping redundant leading newlines.
+  - Reduced spacing before the Travel Synergies section (`Travel Synergies:`) from 2 blank lines to a clean 1 blank line gap for tight, legible formatting.
 
 ---
 
@@ -73,8 +99,8 @@ A complete English translation release of **Plants vs. Zombies: Fusion (植物�
 
 | Platform | File | Size | SHA-256 Checksum | Google Drive Mirror |
 | :--- | :--- | :--- | :--- | :--- |
-| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 464.63 MB | `2b6a6fe25db9bb095e2e7aa2eed8a8c934d1a4c2cf630e130177302d6dd908c9` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
-| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 596.59 MB | `cda939f4d45b10742a8a7f21f39ae8a29bf45c9725731b2617e2273ea5af6516` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
+| **PC (Windows)** | [`PvZ-Fusion-4.1-English-PC.zip`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 468.59 MB | `2747cd05e2c899cebd19c94f2d79dbe4337ab0f9a6b74ef7102b30aa6456bba3` | [PC Drive Mirror](https://drive.google.com/file/d/1icQjixqbtUE6k0XM9ehCD_hJL30vs-3R/view?usp=sharing) |
+| **Android** | [`PvZ-Fusion-4.1-English-Android.apk`](https://github.com/Tproplay/Pvz-Fusion-Translation-Lite/releases/tag/v4.1) | 597.16 MB | `d217f44adbb1e7303958c6464f8d74fa4cbcfcd4aa9236745cf23b32e1eb0e0a` | [Android Drive Mirror](https://drive.google.com/file/d/1iu52ubJdl3rYl-Umgw2sevTtHhAIdemU/view?usp=sharing) |
 
 ### 🌐 Google Drive Release Folder
 - [Version 4.1 Folder](https://drive.google.com/drive/folders/1vFkBmV5aZXHBiYlVDd9H6xjclvs_G8fk?usp=sharing)
