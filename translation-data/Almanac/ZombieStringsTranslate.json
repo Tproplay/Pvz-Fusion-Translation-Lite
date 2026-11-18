@@ -92,7 +92,7 @@
     },
     {
       "theZombieType": 15,
-      "name": "Scholar Zombie",
+      "name": "Scholar",
       "introduce": "<align=left><size=36><color=black>As a leading authority in the academic realm, Scholar Zombie is frequently seen in the library. His passion for reading runs deep, and disturbing him while he reads can spark his fury. This old gentleman will make sure you understand the true meaning of \"knowledge is power.\"</color>",
       "info": "<size=36>Deals huge damage alongside his sturdy books.\n\n<color=black>Damage: </color><color=#4B0082>400</color>\n<color=black>Toughness: </color><color=#4B0082>720 +1100 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>Short-term invincibility and increased speed (movement speed ×10, attack speed ×3) after his book is broken.</color>"
     },
@@ -122,25 +122,25 @@
     },
     {
       "theZombieType": 20,
-      "name": "Trident Zombie",
+      "name": "Trident",
       "introduce": "<align=left><size=36><color=black>Trident Zombie was originally just a regular javelin thrower who became a fisherman after retiring. However, when he went to the river to fish, he sank because he couldn't swim. When he came ashore, he realized he had become what he is now.</color>",
       "info": "<size=36>Throws a trident to attack your plants.\n\n<color=black>Toughness: </color><color=#4B0082>720</color>\n<color=black>Traits: </color><color=#4B0082>6-9s after entering or when blocked, throws a trident that applies drenched, causing damage to plants equal to 20% (minimum of 60) of their current HP.</color>\n<color=black>Minimum Search Range: </color><color=#4B0082>3 Tiles in Front</color>"
     },
     {
       "theZombieType": 21,
-      "name": "Diamond-box Zombie",
+      "name": "Diamond-box",
       "introduce": "<align=left><size=36><color=black>Tonight, Diamond-box Zombies will unveil their dazzling world. Their eyes shine like the brightest stars in the night sky, and the golden light appears to flow like a river through time, illuminating the uncertain path ahead. Each time the lid of the box is gently opened, it feels like unlocking a door to another realm.</color>",
       "info": "<size=36>Is this.. a Conehead Zombie? \n\n<color=black>Toughness: </color><color=#4B0082>2000 + 4400 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Turns into a Gold-box Zombie upon losing its armor.</color>"
     },
     {
       "theZombieType": 22,
-      "name": "Gold-box Zombie",
+      "name": "Gold-box",
       "introduce": "<align=left><size=36><color=black>\"Underneath the golden box, other boxes in different colors await. Can you guess what the box inside is made from?\"</color>",
       "info": "<size=36>Is this.. a Conehead Zombie? \n\n<color=black>Toughness: </color><color=#4B0082>2000 + 2200 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Turns into a Silver-box Zombie upon losing its armor.</color>"
     },
     {
       "theZombieType": 23,
-      "name": "Silver-box Zombie",
+      "name": "Silver-box",
       "introduce": "<align=left><size=36><color=black>Silver-box Zombie thinks of the box on his head as a pot, so it must be one. Given his mindset, why don't you grasp his perspective? And you do see the exclamation mark on his box, right?</color>",
       "info": "<size=36>Is this.. a Conehead Zombie? \n\n<color=black>Toughness: </color><color=#4B0082>2000 + 1100 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Turns into a Conehead Zombie upon losing its armor.</color>"
     },
@@ -206,7 +206,7 @@
     },
     {
       "theZombieType": 34,
-      "name": "Melon Pogo Zombie",
+      "name": "Melon Pogo",
       "introduce": "<align=left><size=36><color=black>Quote: \"It's highly unlikely for shells to explode in the same crater twice! This is what 'Crater Theory' states.\" Melon Pogo Zombie says while adjusting his melon peel hat. However, no one told him that his red-and-green color scheme stands out a bit too much in a crowd of zombies.</color>",
       "info": "<size=36>This zombie charges up and leaps into your defenses!\n\n<color=black>Toughness: </color><color=#4B0082>270 + 2200 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>If in the right side of the lawn, charges up for 5s, then performs a big jump (about 4 Tiles long). Only does this once.\n<color=black>Weakness: </color><color=#4B0082>Umbrella Fusions</color>"
     },
@@ -314,7 +314,7 @@
     },
     {
       "theZombieType": 52,
-      "name": "Chronoporter Zombie",
+      "name": "Chronoporter",
       "introduce": "<align=left><size=36><color=black>What exactly is behind the portal held by the Chronoporter Zombie? No zombie really knows — nor do they care to find out. But when their old pals start crawling out one after another, they're more than happy to step up and ask if there's any fresh brains inside.</color>",
       "info": "<size=36>A force beyond time and space, drawn from the edges of reality itself.\n\n<color=black>Damage: </color><color=#4B0082>20/1.5s</color>\n<color=black>Toughness: </color><color=#4B0082>270 + 200 (Type 2)</color>\n<color=black>Traits: </color><color=#4B0082>Fires chrono peas at your defense. Every 6s, randomly summons a regular, Conehead, Buckethead, or Screen Door zombie from the portal. Drops a Chrono Core upon death.</color>"
     },
@@ -326,7 +326,7 @@
     },
     {
       "theZombieType": 54,
-      "name": "Dummy Zombie",
+      "name": "Dummy",
       "introduce": "<align=left><size=36><color=black>I cannot die.</color>",
       "info": "<size=36>Literally testing dummy.\n\n<color=black>Toughness: </color><color=#4B0082>10000 (Invincible)</color>\n<color=black>Traits: </color><color=#4B0082>Shows last received damage, received damage dps and total received damage.</color>"
     },
@@ -350,7 +350,7 @@
     },
     {
       "theZombieType": 58,
-      "name": "Miner Zombie",
+      "name": "Miner",
       "introduce": "<align=left><size=36><color=black>\"I don’t want to live in this world,\" Miner Zombie laments, finding no joy in his monotonous life. He just wants to dig up enough obsidian to build a portal and leave. Not to mention that the other side of the portal is even more dangerous and monotonous, he has no chance of lighting the portal at all. The only known ignition tool is guarded deep inside ancient pyramids found in only two locations of the world, where torch-bearing zombies roam.</color>",
       "info": "<size=36>Wields a random pickaxe to mine through your defense.\n\n<color=black>Damage: </color><color=#4B0082>50 (non-biting)</color>\n<color=black>Toughness: </color><color=#4B0082>720 + 1400 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Attacks accumulate mining progress against defensive plants, insta-killing the plant when it reaches 100%. \n<color=black>•</color> Mining progress = (number of attacks × pickaxe damage) / plant HP.\n<color=black>•</color> On appearance, randomly receives a pickaxe with different pickaxe powers. When targeting plants with Toughness below their pickaxe powers, pickaxe damage is multiplied by 5.\n<color=black>•</color>Pickaxe Types:\n  - Gold Pickaxe: 150 damage | 4000 power\n  - Iron Pickaxe: 50 damage | 16000 power\n  - Diamond Pickaxe: 100 damage | 32000 power\n<color=black>•</color> Defensive plants: Nuts, Pumpkins, Burger Blaster, Pearmafrost.</color>"
     },
@@ -386,7 +386,7 @@
     },
     {
       "theZombieType": 64,
-      "name": "Beach Michael Zombie",
+      "name": "Beach Michael",
       "introduce": "<align=left><size=36><color=black>Beach Michael Zombie is unmatched when it comes to unearthing hidden relics. Always coming first in competitions, many other zombies look up to his talent. Only Dr. Edgar Zomboss finds it unsettling that every relic looks unnervingly similar to Beach Michael Zombie, though.</color>",
       "info": "<size=36>Michael is on vacation with a newfound passion for uncovering stone statues from lost coastal civilizations!\n\n<color=black>Toughness: </color><color=#4B0082>720</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Summons 4 Dancing Statues with 500 HP. If not destroyed after 15s, each Statue breaks and spawns a Beach Michael with HP equal to the statue's remaining HP.\n<color=black>•</color> In non-TD modes, Statues appear in the same spots where a regular Michael would summon Dancing Pole Vaulters.</color>"
     },
@@ -428,7 +428,7 @@
     },
     {
       "theZombieType": 71,
-      "name": "Hydrofowl Zombie",
+      "name": "Hydrofowl",
       "introduce": "<align=left><size=36><color=black>Hard to believe such a small speedboat could have serious leaks. What else do you expect when you don't commission Gfish Corps? But no worries — the manufacturer has an excellent fix: convert it into a hovercraft! Fuel consumption is higher, but premium fuel is also available.</color>",
       "info": "<size=36>Skims across water at high speed; collides with plants and ejects the driver before self-destruction.\n\n<color=black>Toughness: </color><color=#4B0082>1350</color>\n<color=black>Movement Speed: </color><color=#4B0082>Fast</color>\n<color=black>Traits: </color><color=#4B0082>Crushes the first plant on collision, ejects an Imp onto the nearby land and self-destructs.</color>"
     },
@@ -476,19 +476,19 @@
     },
     {
       "theZombieType": 79,
-      "name": "Rush Football Zombie",
+      "name": "Rush Football",
       "introduce": "<align=left><size=36><color=black>Rather than smashing through defenses head-on, the Rush Football Zombie excels at using his agility to dash straight past them. What confuses him most is that, despite effortlessly bypassing countless defenses, he still can't get past that seemingly harmless lawn mower.</color>",
       "info": "<size=36>Advances by nimbly circumventing blocking plants.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 1400  (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Ignores plants.</color>"
     },
     {
       "theZombieType": 80,
-      "name": "Chronovaulter Zombie",
+      "name": "Chronovaulter",
       "introduce": "<align=left><size=36><color=black>Thanks to its unique ability to teleport, Chronovaulter Zombie can easily tackle pole vaults of any height and clears the bar 100% of the time. The only problem giving him a headache right now is that he often lands in the stands.</color>",
       "info": "<size=36>Uses its pole to open a temporal vortex and leap into unexpected places.\n\n<color=black>Toughness: </color><color=#4B0082>720 + 1100 (Type 1)</color>\n<color=black>Movement Speed: </color><color=#4B0082>Medium</color>\n<color=black>Traits: </color><color=#4B0082>When vaulting over a plant, it will teleport randomly on a tile within a 3x3 area. Drops a Chrono Core upon death.</color>"
     },
     {
       "theZombieType": 81,
-      "name": "Coach Zombie",
+      "name": "Coach",
       "introduce": "<align=left><size=36><color=black>\"Don't walk away,\" what a touching phrase… unfortunately it's coming from the Coach Zombie. Every pole vaulter already knows what he'll say next: \"Don't walk away, start running!\"</color>",
       "info": "<size=36>Trains Pole Vaulting Zombies. If his manual is destroyed, he'll start barking orders and personally step in to lead.\n\n<color=black>Toughness: </color><color=#4B0082>720 + 720  (Type 2)</color>\n<color=black>Movement Speed: </color><color=#4B0082>Slow; Medium Fast after manual is destroyed</color>\n<color=black>Traits: </color><color=#4B0082>Increases the jump distance of all pole-vaulting zombies in his lane by 1 tile. After his manual is destroyed, this bonus increases to 1.5 tiles and he summons a Pole Vaulting Zombie in the same lane. This buff is unstackable and always uses the larger value if multiple are active.</color>"
     },
@@ -524,13 +524,13 @@
     },
     {
       "theZombieType": 87,
-      "name": "Tinfoilhead Zombie",
+      "name": "Tinfoilhead",
       "introduce": "<align=left><size=36><color=black>Tinfoilhead Zombie is delightfully ecstatic that Magnet-shroom can't absorb his armor, but at the same time he's a bit puzzled — after all, silver-gray and hard things are Iron. That's just common sense for us zombies! \"Aluminium? What is that?\"</color>",
       "info": "<size=36>Wears a sturdy and insulating aluminum helmet.\n\n<color=black>Toughness: </color>270 + 1470 (Type 1)\n<color=black>Movement Speed: </color>Slow</color>"
     },
     {
       "theZombieType": 88,
-      "name": "Elephant Zombie",
+      "name": "Elephant",
       "introduce": "<align=left><size=36><color=black></color>",
       "info": "<size=36>A behemoth that can easily trample your defenses.\n\n<color=black>Toughness: </color>6000\n<color=black>Movement Speed: </color>Slow\n<color=black>Traits: </color><color=#4B0082>Giant zombie. Immune to knockback. When moving forward, crushes plants and pushes non-mini-boss zombies beside its feet forward.</color>"
     },
@@ -632,7 +632,7 @@
     },
     {
       "theZombieType": 105,
-      "name": "Mystery-box Zombie",
+      "name": "Mystery-box",
       "introduce": "<align=left><size=36><color=black>Mystery-box Zombie came to be when an unassuming zombie put on a tattered cardboard box. It quickly realized there was a set of clothes waiting to be used, but couldn't quite put them on because the box didn't have eyeholes.\n\n- Written by Hazy</color>",
       "info": "<size=36>No one knows what's hiding inside the box.\n\n<color=black>Toughness: </color><color=#4B0082>270 + 370 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> After the box falls off, spawns a random non-Odyssey zombie with 20/40/60/80/100/120% of the original zombie's Toughness.\n<color=black>•</color> There is a 1% chance that a random Odyssey Modifier will drop when its box is dropped, up to 1 per minute.</color>"
     },
@@ -752,7 +752,7 @@
     },
     {
       "theZombieType": 125,
-      "name": "Parkour Zombie",
+      "name": "Parkour",
       "introduce": "<align=left><size=36><color=black>He's world-famous for his flashy moves and masterful skills, but none of that matters to him. After all, only humans care about handing out fancy titles for fame and talent. What's that got to do with a zombie?</color>",
       "info": "<size=36>A tough, smug parkour enthusiast who, once locked in, swerves and sprints with a burst of speed.\n\n<color=blue>Xiaoxiaosu Collab Zombie, exclusive to Vasebreaker and Gacha Modes</color>\n<color=black>Toughness: </color><color=#4B0082>9527</color>\n<color=black>Traits: </color><color=#4B0082>Switches lanes and speeds up by 3× when HP drops to 2/3.</color>"
     },
@@ -848,7 +848,7 @@
     },
     {
       "theZombieType": 207,
-      "name": "Superstar Zombie",
+      "name": "Superstar",
       "introduce": "<align=left><size=36><color=black>Superstar Zombie, a legendary idol in the zombie world, has extremely high standards for himself. After completing his studies at Edgar's Dance Academy, he mastered the Super Moonwalk, which was named \"The Sixth Wonder of the Zombie World,\" earning him a large fanbase.</color>",
       "info": "<size=36>A fast-moving zombie that slides into your defense, a tough opponent to face.\n\n<color=black>Toughness: </color><color=#4B0082>3000</color>\n<color=black>Traits: </color><color=#4B0082>Slips into the battlefield, reduces damage by 90% while sliding, then summons 4 Dancing Pole Vaulters.</color>\n<color=black>Odyssey Modifiers:\n</color><color=#4B0082>1. Michael Zombies and Superstar Zombies now ignore plants when entering the lawn\n2. Now summons 4 Super Dancing Pole Vaulters instead</color>"
     },
@@ -1202,7 +1202,7 @@
     },
     {
       "theZombieType": 303,
-      "name": "Giga Football Zombie",
+      "name": "Giga Football",
       "introduce": "<align=left><size=36><color=black>Tired of the spotlight, Giga Football Zombie swapped out his bright red jersey for a pitch-black one that blends into the night. Unfortunately, the new look makes him resemble a bank robber more than a footballer.</color>",
       "info": "<size=36>A linebacker geared for stealth.\n\n<color=black>Toughness: </color><color=#4B0082>6000 + 6000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>Tier 1 Evolved Zombie.</color>"
     },
@@ -1274,7 +1274,7 @@
     },
     {
       "theZombieType": 315,
-      "name": "Giga Trident Zombie",
+      "name": "Giga Trident",
       "introduce": "<align=left><size=36><color=black>Wearing waterproof overalls and wielding a shiny trident, he's ready to fish. Don't forget the helmet — it's less for protection from plants, more for defense against jealous fishermen.</color>",
       "info": "<size=36>Throws tridents at your backline.\n\n<color=black>Toughness: </color><color=#4B0082>3000 + 3000 (Type 1)</color>\n<color=black>Traits: </color><color=#4B0082>\n<color=black>•</color> Tier 1 Evolved Zombie.\n<color=black>•</color> 6-9s after entering or when blocked, throws 4 tridents at the last column.\n<color=black>•</color> Each trident causes damage to plants equal to 20% (minimum of 60) of their current Toughness.</color>"
     },

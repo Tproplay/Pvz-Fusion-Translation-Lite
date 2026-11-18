@@ -88,7 +88,7 @@
       "seedType": 12,
       "name": "Lily Pad",
       "introduce": "<align=left><size=36><color=black>Lily Pad never complains. Lily Pad never wants to know what's going on. Put a plant on top of Lily Pad, he won't say a thing. Does he have startling opinions or shocking secrets? Nobody knows. Lily Pad keeps it all inside.</color></size>",
-      "info": "<size=36>Lily Pads let you plant non-aquatic plants on top of them.\n\n<color=black>Special: </color><color=#8B0000>Short plant. Non-aquatic plants can be planted on it. When specific plants are placed, Lily Pad transforms into a variant of it that can <i>automatically plant</i> the plant that transformed it every 90s.</color>\n<color=black>Variants: </color><color=#8B0000>Sunflower, Wall-nut, Fume-Shroom, Threepeater, Squash, Torchwood, Jalapeno.</color>\n<color=black>Special Variants: </color><color=#8B0000>Doom-shroom:\n-Cannot be shoveled or moved, immune to damage and does not block zombies.\n-Cannot be turned into another variant. Kills any plant on itself except Doom-shrooms and Evil plants.\n-Can start to produce Doom-shrooms 90s after appearance. Every second, all producting Doom Pads have a 0.5% chance to spawn a Doom-shroom.\n-When a Doom-shroom explosion (except Doom Kelp) triggers on a water tile, a Doom Pad is spawned on that tile.\n-Can only be removed by turning it into a Cattail using a Fertilizer or Cattail seed packet.</color></size>",
+      "info": "<size=36>Lily Pads let you plant non-aquatic plants on top of them.\n\n<color=black>Special: </color><color=#8B0000>Short plant. Non-aquatic plants can be planted on it. When specific plants are placed, Lily Pad transforms into a variant of it that can automatically plant the plant that transformed it every 90s.</color>\n<color=black>Variants: </color><color=#8B0000>Sunflower, Wall-nut, Fume-Shroom, Threepeater, Squash, Torchwood, Jalapeno.</color>\n<color=black>Special Variants: </color><color=#8B0000>Doom-shroom:\n-Cannot be shoveled or moved, immune to damage and does not block zombies.\n-Cannot be turned into another variant. Kills any plant on itself except Doom-shrooms and Evil plants.\n-Can start to produce Doom-shrooms 90s after appearance. Every second, all producting Doom Pads have a 0.5% chance to spawn a Doom-shroom.\n-When a Doom-shroom explosion (except Doom Kelp) triggers on a water tile, a Doom Pad is spawned on that tile.\n-Can only be removed by turning it into a Cattail using a Fertilizer or Cattail seed packet.</color></size>",
       "cost": "<size=36>Cost: <color=#8B0000>25</color>\nRecharge: <color=#8B0000>7.5s</color></size>"
     },
     {
@@ -472,7 +472,7 @@
     {
       "seedType": 233,
       "name": "Frozen Giftbox",
-      "introduce": "<align=left><size=36><color=black>Among all the gift boxes in the shop, the frozen one is the least loved. Why? Well… it's known for being the victim of <i>cold</i> treatments.</color>",
+      "introduce": "<align=left><size=36><color=black>Among all the gift boxes in the shop, the frozen one is the least loved. Why? Well… it's known for being the victim of cold treatments.</color>",
       "info": "<size=36>Frozen Giftboxes are a little cheaper than others, but come with frozen plants instead.\n\n<color=black>Special: </color><color=#8B0000>Spawns a random frozen base plant.</color>",
       "cost": "<size=36>Cost: <color=#8B0000>50</color>\nRecharge: <color=#8B0000>15s</color>"
     },
@@ -962,7 +962,7 @@
     {
       "seedType": 936,
       "name": "Radiant Pot",
-      "introduce": "<align=left><size=36><color=black>Deep in the garden, where the sun always shines, Radiant Pot stands in quiet devotion. He doesn't chatter, nor does he boast—he simply gives, weaving sunlight into golden coins, waiting patiently for you to grow as <i>radiant</i> as he is.</color>",
+      "introduce": "<align=left><size=36><color=black>Deep in the garden, where the sun always shines, Radiant Pot stands in quiet devotion. He doesn't chatter, nor does he boast—he simply gives, weaving sunlight into golden coins, waiting patiently for you to grow as radiant as he is.</color>",
       "info": "<size=36>Radiant Pot generates lots of Coins and Sun, especially if you're running low!\n\n<color=#4A2900>Usage Condition: Odyssey Mode</color>\n<color=black>Special:</color><color=#8B0000>\n<color=black>•</color> Produces 50 Sun and 300 Coins every n=(Current Sun/1000) Seconds, where 3 ≤ n ≤ 15.\n<color=black>•</color> Inherits Golden Pot's Ultimate-syncing ability.</color>\n<color=black>Odyssey Modifiers:</color>\n<color=#8B0000>1. Upgrade costs from Silver Pots to Golden Pots will not exceed 8000\n2. Coins exceeding the maximum amount will be converted into Sun at a rate of 2:1</color>",
       "cost": "<size=36>\nFusion Recipe: </color><color=#8B0000>Sunflower > Golden Pot</color>"
     },
@@ -2383,7 +2383,7 @@
     {
       "seedType": 1133,
       "name": "Umbrella Pot",
-      "introduce": "<align=left><size=36><color=black>Other flower pots are puzzled by the dense foliage of Umbrella Pot, but Umbrella Pot simply says, \"I just read the book <i>The Pot's Guide to Hair Care</i>.\"</color>",
+      "introduce": "<align=left><size=36><color=black>Other flower pots are puzzled by the dense foliage of Umbrella Pot, but Umbrella Pot simply says, \"I just read the book The Pot's Guide to Hair Care.\"</color>",
       "info": "<size=36>Umbrella Pot enhances umbrella-type plants in unique ways!\n\n<color=black>Umbrella Husk:</color> <color=#8B0000>+2 Seconds immobilization, +50% knockback distance</color>\n<color=black>Umbrella Clove, Umbrella Ultimate Moves:</color> <color=#8B0000>Knockback distance ×2</color>\n<color=black>Umbrella Rind, Aegis:</color> <color=#8B0000>Damage of reflected projectiles ×2</color>\n<color=black>Umbrella Kale, Midas:</color> <color=#8B0000>Can attack zombies on adjacent lanes\n<color=black>Other Umbrellas: </color><color=#8B0000>Knockback distance +50%</color></color>",
       "cost": "<size=36>Fusion Recipe: <color=#8B0000>Umbrella Leaf > Flower Pot</color>"
     },
@@ -2404,7 +2404,7 @@
     {
       "seedType": 1136,
       "name": "Silver Pot",
-      "introduce": "<align=left><size=36><color=black>\"People are always saying 'gold this, silver that,' as if we have a hierarchy,\" Silver Pot said. \"Marigold is silver, yet it's still called a Mari<i>gold</i>.\" His words might have been more convincing if his gaze weren't fixed on the Cocoa Bean by the roof's edge.</color>",
+      "introduce": "<align=left><size=36><color=black>\"People are always saying 'gold this, silver that,' as if we have a hierarchy,\" Silver Pot said. \"Marigold is silver, yet it's still called a Marigold.\" His words might have been more convincing if his gaze weren't fixed on the Cocoa Bean by the roof's edge.</color>",
       "info": "<size=36>Silver Pot generates extra silver for you while barely taking up any space!\n\n<color=black>Coin Output: </color><color=#8B0000>25/25s</color>",
       "cost": "<size=36>Fusion Recipe: <color=#8B0000>Marigold > Flower Pot</color>"
     },
@@ -2768,7 +2768,7 @@
     {
       "seedType": 1188,
       "name": "Golden Sunflower",
-      "introduce": "<align=left><size=36><color=black>Standing guard over a trophy had been <i>so</i> last season. Now? She was ready to shine—and not just under the sun. \"Look, I love a good tan, but let's be real... I was made for the fight!\"</color>",
+      "introduce": "<align=left><size=36><color=black>Standing guard over a trophy had been so last season. Now? She was ready to shine—and not just under the sun. \"Look, I love a good tan, but let's be real... I was made for the fight!\"</color>",
       "info": "<size=36>Golden Sunflower stores sun in a personal piggy bank at a fast rate, its ultimate gives all that sun to you!\n\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Every 10 seconds, 50 Sun is accumulated, up to 10,000.\n<color=black>•</color> The Sun limit in the level is adjusted to 50,000.\n<color=black>•</color> The excess will be stored in the available Golden Sunflowers.\n<color=black>Ultimate: </color><color=#8B0000>Costs 1000 Coins; makes all Golden Sunflowers release their stored Sun.</color>",
       "cost": "<size=36>Upgrade Cost: </color><color=#8B0000>3000 Coins; each existing Golden Sunflower will double the cost</color>"
     },
@@ -3762,7 +3762,7 @@
     {
       "seedType": 1330,
       "name": "Cherry-spreader",
-      "introduce": "<align=left><size=36><color=black>\"Delicious cherries!\" \"Fresh cherries!\" \"Cheap cherries!\" Cherry-spreader's three mouths shout tirelessly, yet their cherry business never seems to take off. Those who have tried them say these cherries are just <i>too</i> sticky.</color>",
+      "introduce": "<align=left><size=36><color=black>\"Delicious cherries!\" \"Fresh cherries!\" \"Cheap cherries!\" Cherry-spreader's three mouths shout tirelessly, yet their cherry business never seems to take off. Those who have tried them say these cherries are just too sticky.</color>",
       "info": "<size=36>Cherry-spreader fires half-ripe cherries across three lanes. They stick to zombies and mature after a short delay, then explode.\n\n<color=black>Damage: </color><color=#8B0000>20×3/1.5s</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Projectiles attach to targets and explode after 6s with a 1-tile splash radius. Each zombie can only have one half-ripe cherry attached.\n<color=black>•</color> While attached, half-ripe cherries absorb 25% of all cherry-type projectile and cherry explosion damage the zombie takes, adding that to its final explosion damage.</color>",
       "cost": "<size=36>Fusion Recipe: <color=#8B0000>Cherry Bomb + Threepeater</color>"
     },
@@ -4686,7 +4686,7 @@
     {
       "seedType": 1462,
       "name": "Frostbiter",
-      "introduce": "<align=left><size=36><color=black>After becoming a breakout star in the <i>Arctic Monster</i> series, Frostbiter quickly became rather picky. He only wears custom vintage outfits, refuses to appear in any show that doesn't air during prime time, and eats nothing but various kinds of ice cream.</color>",
+      "introduce": "<align=left><size=36><color=black>After becoming a breakout star in the Arctic Monster series, Frostbiter quickly became rather picky. He only wears custom vintage outfits, refuses to appear in any show that doesn't air during prime time, and eats nothing but various kinds of ice cream.</color>",
       "info": "<size=36>Frostbiter eats only frozen zombies.\n\n<color=black>Damage: </color><color=#8B0000>40 / Insta-kill (Devour)</color>\n<color=black>Special: </color><color=#8B0000>\n<color=black>•</color> Can only swallow frozen zombies. Successfully swallowing a zombie releases an Ice-shroom effect that only freezes for 1 second.\n<color=black>•</color> If unsuccessful, deals damage to zombies in a 3×3 area, inflicts Chilled, and applies 50 Cryo Points.</color>",
       "cost": "<size=36>Fusion Recipe: <color=#8B0000>Chomper + Ice-shroom</color>"
     },
@@ -4756,7 +4756,7 @@
     {
       "seedType": 1472,
       "name": "Fume-spreader",
-      "introduce": "<align=left><size=36><color=black>Thanks to the success of <i>Bad Fungi</i>, the game based on him, Fume-spreader has gained both fame and fortune as an inventor and aviator. \"Being different is an opportunity given to me by King Fungi,\" he humbly told reporters. \"I simply seized that opportunity. I couldn't have made the game without these two extra spore heads. They make excellent propellers.\"</color>",
+      "introduce": "<align=left><size=36><color=black>Thanks to the success of Bad Fungi, the game based on him, Fume-spreader has gained both fame and fortune as an inventor and aviator. \"Being different is an opportunity given to me by King Fungi,\" he humbly told reporters. \"I simply seized that opportunity. I couldn't have made the game without these two extra spore heads. They make excellent propellers.\"</color>",
       "info": "<size=36>Fume-spreader fires fumes down 3 lanes.\n\n<color=black>Damage: </color><color=#8B0000>40×3/1.5s</color>\n<color=black>Special: </color><color=#8B0000>When planted in an edge lane, its damage in its own lane is doubled.</color>",
       "cost": "<size=36>Fusion Recipe: <color=#8B0000>Fume-shroom + Threepeater</color>"
     },
@@ -4896,7 +4896,7 @@
     {
       "seedType": 1492,
       "name": "Balloon-shroom",
-      "introduce": "<align=left><size=36><color=black>Due to its sincere friendship with Fume-spreader, Balloon-shroom natrually became the very first player of <i>Bad Fungi</i>. \"I'm very satisfied with the gaming experience!\" After playing, Balloon-shroom shared its thoughts, \"Though I still don't quite understand why I had to hang outside the cockpit.\"</color>",
+      "introduce": "<align=left><size=36><color=black>Due to its sincere friendship with Fume-spreader, Balloon-shroom natrually became the very first player of Bad Fungi. \"I'm very satisfied with the gaming experience!\" After playing, Balloon-shroom shared its thoughts, \"Though I still don't quite understand why I had to hang outside the cockpit.\"</color>",
       "info": "<size=36>Emits fumes to strike flying enemies while also dropping rains of spores to pepper the ground.\n\n<color=black>Damage: </color><color=#8B0000>40/1.5s</color>\n<color=black>Special: </color><color=#8B0000> Flying plant. Fumes only hits aerial zombies. But each attack also drops 12 spores that deals 10 damage across its attack range. Hitting non-aerial zombies below.</color>",
       "cost": "<size=36>Fusion Recipe: <color=#8B0000>Fume-Shroom + Blover</color>"
     },
