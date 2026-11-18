@@ -2898,8 +2898,8 @@
       "第3列": "Column 3",
       "收藏至第三列": "Add to column 3",
       "十旗挑战\n植物僵尸": "Ten-Flag Challenge:\nZomBotany",
-      "海豚橄榄高坚果僵尸": "Football Dolphin Tall-nut Zombie",
-      "樱桃战神僵尸": "Cherry War God Zombie",
+      "海豚橄榄高坚果僵尸": "Giga Dolphin-nut Zombie",
+      "樱桃战神僵尸": "Zombizilla",
       "确认铲除这株植物": "Confirm digging up this plant",
       "保留植物": "Keep Plant",
       "已完成": "Completed",
@@ -2975,7 +2975,7 @@
       "铁桶读报僵尸": "Buckethead Newspaper",
       "雪原僵尸": "Frost Legionnaire Zombie",
       "蓝冰僵尸": "Frost Legion Packed Ice",
-      "复合路障僵尸": "Aluminum-head Zombie",
+      "复合路障僵尸": "Tinfoilhead Zombie",
       "撑杆橄榄球僵尸": "Pole Vaulting Football",
       "豌豆射手僵尸": "Peashooter Zombie",
       "樱桃射手僵尸": "Cherryshooter Zombie",
@@ -3685,7 +3685,7 @@
       "Buckethead Newspaper": "铁桶读报僵尸",
       "Frost Legionnaire Zombie": "雪原僵尸",
       "Frost Legion Packed Ice": "蓝冰僵尸",
-      "Aluminum-head Zombie": "复合路障僵尸",
+      "Tinfoilhead Zombie": "复合路障僵尸",
       "Pole Vaulting Football": "撑杆橄榄球僵尸",
       "Peashooter Zombie": "豌豆射手僵尸",
       "Cherryshooter Zombie": "樱桃射手僵尸",
@@ -3812,8 +3812,8 @@
       "Row": "行",
       "Bullet": "子弹",
       "Dolphin Football Tall-nut Zombie": "海豚橄榄高坚果僵尸",
-      "Cherry War God Zombie": "樱桃战神僵尸",
-      "Football Dolphin Tall-nut Zombie": "海豚橄榄高坚果僵尸"
+      "Zombizilla": "樱桃战神僵尸",
+      "Giga Dolphin-nut Zombie": "海豚橄榄高坚果僵尸"
     }
   }
 }

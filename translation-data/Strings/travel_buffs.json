@@ -330,7 +330,7 @@
         },
         "3000": {
             "name": "Eternal Bulwark",
-            "desc": "When Cherrizilla and Obsidian Tall-nut (or their subspecies) are both present, Cherrizilla/Garlizilla no longer has a maximum Toughness cap, and Obsidian Tall-nut/Obsidian Mine gains a 90% damage reduction"
+            "desc": "When Zombizilla and Obsidian Tall-nut (or their subspecies) are both present, Zombizilla/Garlizilla no longer has a maximum Toughness cap, and Obsidian Tall-nut/Obsidian Mine gains a 90% damage reduction"
         },
         "3001": {
             "name": "Astral Convergence",
@@ -429,12 +429,12 @@
             "desc": "Lawnmowers: Final damage +200%, Attack speed +300%"
         },
         "6001": {
-            "name": "Cherrizilla Mastery I",
-            "desc": "Cherrizilla: Healing Power +100%"
+            "name": "Zombizilla Mastery I",
+            "desc": "Zombizilla: Healing Power +100%"
         },
         "6002": {
-            "name": "Cherrizilla Mastery II",
-            "desc": "Cherrizilla: Attack Damage +50%"
+            "name": "Zombizilla Mastery II",
+            "desc": "Zombizilla: Attack Damage +50%"
         },
         "6003": {
             "name": "Gatling Cherrybomber Mastery I",
@@ -678,7 +678,7 @@
         },
         "12027": {
             "name": "Ascend: Sorrow",
-            "desc": "Gatling Gloom-shroom now always unleashes its Ultimate, but with half the projectiles"
+            "desc": "Melancholy Commando now always unleashes its Ultimate, but with half the projectiles"
         },
         "13000": {
             "name": "Blast Protection",
@@ -932,11 +932,11 @@
     "ultimateBuffs": {
         "0": {
             "name": "Bloodlust",
-            "desc": "Cherrizilla & Garlizilla: HP Recovery ×3"
+            "desc": "Zombizilla & Garlizilla: HP Recovery ×3"
         },
         "1": {
             "name": "Voracity",
-            "desc": "Cherrizilla & Garlizilla: Devour CD reduced to 15s"
+            "desc": "Zombizilla & Garlizilla: Devour CD reduced to 15s"
         },
         "2": {
             "name": "Megaton Blast",
@@ -1136,7 +1136,7 @@
         },
         "51": {
             "name": "Focused Fire",
-            "desc": "Buckshot Commando: All Commandos Ultimate Damage ×2 and no longer spread, Gatling Gloom-shroom's projectiles now seek zombies | Synchronizer Snipea: All Snipeas required shots before triggering Headshot -3"
+            "desc": "Buckshot Commando: All Commandos Ultimate Damage ×2 and no longer spread, Melancholy Commando's projectiles now seek zombies | Synchronizer Snipea: All Snipeas required shots before triggering Headshot -3"
         },
         "52": {
             "name": "Obsidian Formation",
@@ -1732,7 +1732,7 @@
     "unlocks": {
         "0": {
             "name": "",
-            "desc": "Unlock Cherrizilla: Chompzilla + Cherry Chomper\nand its Subspecies Garlizilla\nConversion: Cherry Bomb <-> Garlic"
+            "desc": "Unlock Zombizilla: Chompzilla + Cherry Chomper\nand its Subspecies Garlizilla\nConversion: Cherry Bomb <-> Garlic"
         },
         "1": {
             "name": "",
@@ -1812,7 +1812,7 @@
         },
         "20": {
             "name": "",
-            "desc": "Unlock Maelonstrom: Winter Melon + Chrono Melon\nand its Subspecies Fungularity\nConversion: Melon-pult <-> Doom-shroom"
+            "desc": "Unlock Maelonstrom: Winter Melon + Rift-pult\nand its Subspecies Fungularity\nConversion: Melon-pult <-> Doom-shroom"
         },
         "21": {
             "name": "",
